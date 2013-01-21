@@ -8,26 +8,34 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: Think.class.php 2791 2012-02-29 10:08:57Z liu21st $
 
 /**
+ +------------------------------------------------------------------------------
  * ThinkPHP Portal类
+ +------------------------------------------------------------------------------
  * @category   Think
  * @package  Think
  * @subpackage  Core
  * @author    liu21st <liu21st@gmail.com>
+ * @version   $Id: Think.class.php 2791 2012-02-29 10:08:57Z liu21st $
+ +------------------------------------------------------------------------------
  */
 class Think {
 
     private static $_instance = array();
 
     /**
+     +----------------------------------------------------------
      * 应用程序初始化
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @return void
+     +----------------------------------------------------------
      */
-    static public function start() {
+    static public function Start() {
         // 设定错误和异常处理
-        register_shutdown_function(array('Think','fatalError'));
         set_error_handler(array('Think','appError'));
         set_exception_handler(array('Think','appException'));
         // 注册AUTOLOAD方法
@@ -42,21 +50,27 @@ class Think {
 
     //[RUNTIME]
     /**
+     +----------------------------------------------------------
      * 读取配置信息 编译项目
+     +----------------------------------------------------------
      * @access private
+     +----------------------------------------------------------
      * @return string
+     +----------------------------------------------------------
      */
     static private function buildApp() {
-        
+        // 加载底层惯例配置文件
+        C(include THINK_PATH.'Conf/convention.php');
+
         // 读取运行模式
-        if(defined('MODE_NAME')) { // 读取模式的设置
+        if(defined('MODE_NAME')) { // 模式的设置并入核心模式
             $mode   = include MODE_PATH.strtolower(MODE_NAME).'.php';
         }else{
             $mode   =  array();
         }
-        // 加载核心惯例配置文件
-        C(include THINK_PATH.'Conf/convention.php');
-        if(isset($mode['config'])) {// 加载模式配置文件
+
+        // 加载模式配置文件
+        if(isset($mode['config'])) {
             C( is_array($mode['config'])?$mode['config']:include $mode['config'] );
         }
 
@@ -87,7 +101,7 @@ class Think {
         $compile   = '';
         // 读取核心编译文件列表
         if(isset($mode['core'])) {
-            $list  =  $mode['core'];
+            $list   =  $mode['core'];
         }else{
             $list  =  array(
                 THINK_PATH.'Common/functions.php', // 标准模式函数库
@@ -120,9 +134,8 @@ class Think {
         if(isset($mode['alias'])) {
             $alias = is_array($mode['alias'])?$mode['alias']:include $mode['alias'];
             alias_import($alias);
-            if(!APP_DEBUG) $compile .= 'alias_import('.var_export($alias,true).');';               
+            if(!APP_DEBUG) $compile .= 'alias_import('.var_export($alias,true).');';
         }
-     
         // 加载项目别名定义
         if(is_file(CONF_PATH.'alias.php')){ 
             $alias = include CONF_PATH.'alias.php';
@@ -148,62 +161,35 @@ class Think {
     //[/RUNTIME]
 
     /**
+     +----------------------------------------------------------
      * 系统自动加载ThinkPHP类库
      * 并且支持配置自动加载路径
+     +----------------------------------------------------------
      * @param string $class 对象类名
+     +----------------------------------------------------------
      * @return void
+     +----------------------------------------------------------
      */
     public static function autoload($class) {
         // 检查是否存在别名定义
         if(alias_import($class)) return ;
-        $libPath    =   defined('BASE_LIB_PATH')?BASE_LIB_PATH:LIB_PATH;
-        $group      =   defined('GROUP_NAME') && C('APP_GROUP_MODE')==0 ?GROUP_NAME.'/':'';
-        $file       =   $class.'.class.php';
+
         if(substr($class,-8)=='Behavior') { // 加载行为
-            if(require_array(array(
-                CORE_PATH.'Behavior/'.$file,
-                EXTEND_PATH.'Behavior/'.$file,
-                LIB_PATH.'Behavior/'.$file,
-                $libPath.'Behavior/'.$file),true)
-                || (defined('MODE_NAME') && require_cache(MODE_PATH.ucwords(MODE_NAME).'/Behavior/'.$file))) {
+            if(require_cache(CORE_PATH.'Behavior/'.$class.'.class.php') 
+                || require_cache(EXTEND_PATH.'Behavior/'.$class.'.class.php') 
+                || require_cache(LIB_PATH.'Behavior/'.$class.'.class.php')
+                || (defined('MODE_NAME') && require_cache(MODE_PATH.ucwords(MODE_NAME).'/Behavior/'.$class.'.class.php'))) {
                 return ;
             }
         }elseif(substr($class,-5)=='Model'){ // 加载模型
-            if(require_array(array(
-                LIB_PATH.'Model/'.$group.$file,
-                $libPath.'Model/'.$file,
-                EXTEND_PATH.'Model/'.$file),true)) {
+            if(require_cache(LIB_PATH.'Model/'.$class.'.class.php')
+                || require_cache(EXTEND_PATH.'Model/'.$class.'.class.php') ) {
                 return ;
             }
         }elseif(substr($class,-6)=='Action'){ // 加载控制器
-            if(require_array(array(
-                LIB_PATH.'Action/'.$group.$file,
-                $libPath.'Action/'.$file,
-                EXTEND_PATH.'Action/'.$file),true)) {
-                return ;
-            }
-        }elseif(substr($class,0,5)=='Cache'){ // 加载缓存驱动
-            if(require_array(array(
-                EXTEND_PATH.'Driver/Cache/'.$file,
-                CORE_PATH.'Driver/Cache/'.$file),true)){
-                return ;
-            }
-        }elseif(substr($class,0,2)=='Db'){ // 加载数据库驱动
-            if(require_array(array(
-                EXTEND_PATH.'Driver/Db/'.$file,
-                CORE_PATH.'Driver/Db/'.$file),true)){
-                return ;
-            }
-        }elseif(substr($class,0,8)=='Template'){ // 加载模板引擎驱动
-            if(require_array(array(
-                EXTEND_PATH.'Driver/Template/'.$file,
-                CORE_PATH.'Driver/Template/'.$file),true)){
-                return ;
-            }
-        }elseif(substr($class,0,6)=='TagLib'){ // 加载标签库驱动
-            if(require_array(array(
-                EXTEND_PATH.'Driver/TagLib/'.$file,
-                CORE_PATH.'Driver/TagLib/'.$file),true)) {
+            if((defined('GROUP_NAME') && require_cache(LIB_PATH.'Action/'.GROUP_NAME.'/'.$class.'.class.php'))
+                || require_cache(LIB_PATH.'Action/'.$class.'.class.php')
+                || require_cache(EXTEND_PATH.'Action/'.$class.'.class.php') ) {
                 return ;
             }
         }
@@ -218,10 +204,14 @@ class Think {
     }
 
     /**
+     +----------------------------------------------------------
      * 取得对象实例 支持调用类的静态方法
+     +----------------------------------------------------------
      * @param string $class 对象类名
      * @param string $method 类的静态方法名
+     +----------------------------------------------------------
      * @return object
+     +----------------------------------------------------------
      */
     static public function instance($class,$method='') {
         $identify   =   $class.$method;
@@ -240,55 +230,77 @@ class Think {
     }
 
     /**
+     +----------------------------------------------------------
      * 自定义异常处理
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param mixed $e 异常对象
+     +----------------------------------------------------------
      */
     static public function appException($e) {
         halt($e->__toString());
     }
 
     /**
+     +----------------------------------------------------------
      * 自定义错误处理
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param int $errno 错误类型
      * @param string $errstr 错误信息
      * @param string $errfile 错误文件
      * @param int $errline 错误行数
+     +----------------------------------------------------------
      * @return void
+     +----------------------------------------------------------
      */
     static public function appError($errno, $errstr, $errfile, $errline) {
       switch ($errno) {
           case E_ERROR:
-          case E_PARSE:
-          case E_CORE_ERROR:
-          case E_COMPILE_ERROR:
           case E_USER_ERROR:
-            ob_end_clean();
-            // 页面压缩输出支持
-            if(C('OUTPUT_ENCODE')){
-                $zlib = ini_get('zlib.output_compression');
-                if(empty($zlib)) ob_start('ob_gzhandler');
-            }
-            $errorStr = "$errstr ".$errfile." 第 $errline 行.";
-            if(C('LOG_RECORD')) Log::write("[$errno] ".$errorStr,Log::ERR);
-            function_exists('halt')?halt($errorStr):exit('ERROR:'.$errorStr);
+            $errorStr = "[$errno] $errstr ".basename($errfile)." 第 $errline 行.";
+            if(C('LOG_RECORD')) Log::write($errorStr,Log::ERR);
+            halt($errorStr);
             break;
           case E_STRICT:
           case E_USER_WARNING:
           case E_USER_NOTICE:
           default:
-            $errorStr = "[$errno] $errstr ".$errfile." 第 $errline 行.";
-            trace($errorStr,'','NOTIC');
+            $errorStr = "[$errno] $errstr ".basename($errfile)." 第 $errline 行.";
+            Log::record($errorStr,Log::NOTICE);
             break;
       }
     }
-    
-    // 致命错误捕获
-    static public function fatalError() {
-        if ($e = error_get_last()) {
-            Think::appError($e['type'],$e['message'],$e['file'],$e['line']);
-        }
+
+    /**
+     +----------------------------------------------------------
+     * 自动变量设置
+     +----------------------------------------------------------
+     * @access public
+     +----------------------------------------------------------
+     * @param $name 属性名称
+     * @param $value  属性值
+     +----------------------------------------------------------
+     */
+    public function __set($name ,$value) {
+        if(property_exists($this,$name))
+            $this->$name = $value;
     }
 
+    /**
+     +----------------------------------------------------------
+     * 自动变量获取
+     +----------------------------------------------------------
+     * @access public
+     +----------------------------------------------------------
+     * @param $name 属性名称
+     +----------------------------------------------------------
+     * @return mixed
+     +----------------------------------------------------------
+     */
+    public function __get($name) {
+        return isset($this->$name)?$this->$name:null;
+    }
 }

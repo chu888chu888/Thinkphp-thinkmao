@@ -8,14 +8,12 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: CheckRouteBehavior.class.php 2840 2012-03-23 05:56:20Z liu21st@gmail.com $
 
-defined('THINK_PATH') or exit();
 /**
- * 系统行为扩展：路由检测
- * @category   Think
- * @package  Think
- * @subpackage  Behavior
- * @author   liu21st <liu21st@gmail.com>
+ +------------------------------------------------------------------------------
+ * 系统行为扩展 路由检测
+ +------------------------------------------------------------------------------
  */
 class CheckRouteBehavior extends Behavior {
     // 行为参数定义（默认值） 可在项目配置中覆盖
@@ -42,8 +40,8 @@ class CheckRouteBehavior extends Behavior {
                 if(0===strpos($rule,'/') && preg_match($rule,$regx,$matches)) { // 正则路由
                     return $return = $this->parseRegex($matches,$route,$regx);
                 }else{ // 规则路由
-                    $len1   =   substr_count($regx,'/');
-                    $len2   =   substr_count($rule,'/');
+                    $len1=   substr_count($regx,'/');
+                    $len2 =  substr_count($rule,'/');
                     if($len1>=$len2) {
                         if('$' == substr($rule,-1,1)) {// 完整匹配
                             if($len1 != $len2) {
@@ -95,7 +93,7 @@ class CheckRouteBehavior extends Behavior {
         $var  =  array();
         if(false !== strpos($url,'?')) { // [分组/模块/操作?]参数1=值1&参数2=值2...
             $info   =  parse_url($url);
-            $path   = explode('/',$info['path']);
+            $path = explode('/',$info['path']);
             parse_str($info['query'],$var);
         }elseif(strpos($url,'/')){ // [分组/模块/操作]
             $path = explode('/',$url);
@@ -148,7 +146,7 @@ class CheckRouteBehavior extends Behavior {
         if(0=== strpos($url,'/') || 0===strpos($url,'http')) { // 路由重定向跳转
             if(strpos($url,':')) { // 传递动态参数
                 $values  =  array_values($matches);
-                $url  =  preg_replace('/:(\d+)/e','$values[\\1-1]',$url);
+                $url  =  preg_replace('/:(\d)/e','$values[\\1-1]',$url);
             }
             header("Location: $url", true,(is_array($route) && isset($route[1]))?$route[1]:301);
             exit;
@@ -165,7 +163,7 @@ class CheckRouteBehavior extends Behavior {
             $var   =   array_merge($matches,$var);
             // 解析剩余的URL参数
             if($paths) {
-                preg_replace('@(\w+)\/([^\/]+)@e', '$var[strtolower(\'\\1\')]=strip_tags(\'\\2\');', implode('/',$paths));
+                preg_replace('@(\w+)\/([^,\/]+)@e', '$var[strtolower(\'\\1\')]=strip_tags(\'\\2\');', implode('/',$paths));
             }
             // 解析路由自动传人参数
             if(is_array($route) && isset($route[1])) {
@@ -188,7 +186,7 @@ class CheckRouteBehavior extends Behavior {
     private function parseRegex($matches,$route,$regx) {
         // 获取路由地址规则
         $url   =  is_array($route)?$route[0]:$route;
-        $url   =  preg_replace('/:(\d+)/e','$matches[\\1]',$url);
+        $url   =  preg_replace('/:(\d)/e','$matches[\\1]',$url);
         if(0=== strpos($url,'/') || 0===strpos($url,'http')) { // 路由重定向跳转
             header("Location: $url", true,(is_array($route) && isset($route[1]))?$route[1]:301);
             exit;

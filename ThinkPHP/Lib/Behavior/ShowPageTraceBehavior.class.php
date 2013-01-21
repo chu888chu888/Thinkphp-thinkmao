@@ -8,106 +8,55 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: ShowPageTraceBehavior.class.php 2702 2012-02-02 12:35:01Z liu21st $
 
-defined('THINK_PATH') or exit();
 /**
- * 系统行为扩展：页面Trace显示输出
- * @category   Think
- * @package  Think
- * @subpackage  Behavior
- * @author   liu21st <liu21st@gmail.com>
+ +------------------------------------------------------------------------------
+ * 系统行为扩展 页面Trace显示输出
+ +------------------------------------------------------------------------------
  */
 class ShowPageTraceBehavior extends Behavior {
     // 行为参数定义
     protected $options   =  array(
-        'SHOW_PAGE_TRACE'   => false,   // 显示页面Trace信息
-        'TRACE_PAGE_TABS'   => array('BASE'=>'基本','FILE'=>'文件','INFO'=>'流程','ERR|NOTIC'=>'错误','SQL'=>'SQL','DEBUG'=>'调试'), // 页面Trace可定制的选项卡 
-        'PAGE_TRACE_SAVE'   => false,
+        'SHOW_PAGE_TRACE'        => false,   // 显示页面Trace信息
     );
 
     // 行为扩展的执行入口必须是run
     public function run(&$params){
-        if(!IS_AJAX && C('SHOW_PAGE_TRACE')) {
+        if(C('SHOW_PAGE_TRACE')) {
             echo $this->showTrace();
         }
     }
 
     /**
+     +----------------------------------------------------------
      * 显示页面Trace信息
+     +----------------------------------------------------------
      * @access private
+     +----------------------------------------------------------
      */
     private function showTrace() {
          // 系统默认显示信息
-        $files  =  get_included_files();
-        $info   =   array();
-        foreach ($files as $key=>$file){
-            $info[] = $file.' ( '.number_format(filesize($file)/1024,2).' KB )';
-        }
-        $trace  =   array();
-        $base   =   array(
-            '请求信息'  =>  date('Y-m-d H:i:s',$_SERVER['REQUEST_TIME']).' '.$_SERVER['SERVER_PROTOCOL'].' '.$_SERVER['REQUEST_METHOD'].' : '.__SELF__,
-            '运行时间'  =>  $this->showTime(),
-            '内存开销'  =>  MEMORY_LIMIT_ON?number_format((memory_get_usage() - $GLOBALS['_startUseMems'])/1024,2).' kb':'不支持',
-            '查询信息'  =>  N('db_query').' queries '.N('db_write').' writes ',
-            '文件加载'  =>  count(get_included_files()),
-            '缓存信息'  =>  N('cache_read').' gets '.N('cache_write').' writes ',
-            '配置加载'  =>  count(c()),
-            '会话信息'  =>  'SESSION_ID='.session_id(),
+        $log  =   Log::$log;
+        $files =  get_included_files();
+        $trace   =  array(
+            '请求时间'=>  date('Y-m-d H:i:s',$_SERVER['REQUEST_TIME']),
+            '当前页面'=>  __SELF__,
+            '请求协议'=>  $_SERVER['SERVER_PROTOCOL'].' '.$_SERVER['REQUEST_METHOD'],
+            '运行信息'=>  $this->showTime(),
+            '会话ID'    =>  session_id(),
+            '日志记录'=>  count($log)?count($log).'条日志<br/>'.implode('<br/>',$log):'无日志记录',
+            '加载文件'=>  count($files).str_replace("\n",'<br/>',substr(substr(print_r($files,true),7),0,-2)),
             );
+
         // 读取项目定义的Trace文件
         $traceFile  =   CONF_PATH.'trace.php';
         if(is_file($traceFile)) {
-            $base   =   array_merge($base,include $traceFile);
+            // 定义格式 return array('当前页面'=>$_SERVER['PHP_SELF'],'通信协议'=>$_SERVER['SERVER_PROTOCOL'],...);
+            $trace   =  array_merge(include $traceFile,$trace);
         }
-        $debug  =   trace();
-        $tabs   =   C('TRACE_PAGE_TABS');
-        foreach ($tabs as $name=>$title){
-            switch(strtoupper($name)) {
-                case 'BASE':// 基本信息
-                    $trace[$title]  =   $base;
-                    break;
-                case 'FILE': // 文件信息
-                    $trace[$title]  =   $info;
-                    break;
-                default:// 调试信息
-                    $name       =   strtoupper($name);
-                    if(strpos($name,'|')) {// 多组信息
-                        $array  =   explode('|',$name);
-                        $result =   array();
-                        foreach($array as $name){
-                            $result   +=   isset($debug[$name])?$debug[$name]:array();
-                        }
-                        $trace[$title]  =   $result;
-                    }else{
-                        $trace[$title]  =   isset($debug[$name])?$debug[$name]:'';
-                    }
-            }
-        }
-        if($save = C('PAGE_TRACE_SAVE')) { // 保存页面Trace日志
-            if(is_array($save)) {// 选择选项卡保存
-                $tabs   =   C('TRACE_PAGE_TABS');
-                $array  =   array();
-                foreach ($save as $tab){
-                    $array[] =   $tabs[$tab];
-                }
-            }
-            $content    =   date('[ c ]').' '.get_client_ip().' '.$_SERVER['REQUEST_URI']."\r\n";
-            foreach ($trace as $key=>$val){
-                if(!isset($array) || in_array($key,$array)) {
-                    $content    .=  '[ '.$key." ]\r\n";
-                    if(is_array($val)) {
-                        foreach ($val as $k=>$v){
-                            $content .= (!is_numeric($k)?$k.':':'').print_r($v,true)."\r\n";
-                        }
-                    }else{
-                        $content .= print_r($val,true)."\r\n";
-                    }
-                    $content .= "\r\n";
-                }
-            }
-            error_log(str_replace('<br/>',"\r\n",$content), Log::FILE,LOG_PATH.date('y_m_d').'_trace.log');
-        }
-        unset($files,$info,$base);
+        // 设置trace信息
+        trace($trace);
         // 调用Trace页面模板
         ob_start();
         include C('TMPL_TRACE_FILE')?C('TMPL_TRACE_FILE'):THINK_PATH.'Tpl/page_trace.tpl';
@@ -115,13 +64,38 @@ class ShowPageTraceBehavior extends Behavior {
     }
 
     /**
-     * 获取运行时间
+     +----------------------------------------------------------
+     * 显示运行时间、数据库操作、缓存次数、内存使用信息
+     +----------------------------------------------------------
+     * @access private
+     +----------------------------------------------------------
+     * @return string
+     +----------------------------------------------------------
      */
     private function showTime() {
         // 显示运行时间
         G('beginTime',$GLOBALS['_beginTime']);
         G('viewEndTime');
+        $showTime   =   'Process: '.G('beginTime','viewEndTime').'s ';
         // 显示详细运行时间
-        return G('beginTime','viewEndTime').'s ( Load:'.G('beginTime','loadTime').'s Init:'.G('loadTime','initTime').'s Exec:'.G('initTime','viewStartTime').'s Template:'.G('viewStartTime','viewEndTime').'s )';
+        $showTime .= '( Load:'.G('beginTime','loadTime').'s Init:'.G('loadTime','initTime').'s Exec:'.G('initTime','viewStartTime').'s Template:'.G('viewStartTime','viewEndTime').'s )';
+        // 显示数据库操作次数
+        if(class_exists('Db',false) ) {
+            $showTime .= ' | DB :'.N('db_query').' queries '.N('db_write').' writes ';
+        }
+        // 显示缓存读写次数
+        if( class_exists('Cache',false)) {
+            $showTime .= ' | Cache :'.N('cache_read').' gets '.N('cache_write').' writes ';
+        }
+        // 显示内存开销
+        if(MEMORY_LIMIT_ON ) {
+            $showTime .= ' | UseMem:'. number_format((memory_get_usage() - $GLOBALS['_startUseMems'])/1024).' kb';
+        }
+        // 显示文件加载数
+        $showTime .= ' | LoadFile:'.count(get_included_files());
+        // 显示函数调用次数 自定义函数,内置函数
+        $fun  =  get_defined_functions();
+        $showTime .= ' | CallFun:'.count($fun['user']).','.count($fun['internal']);
+        return $showTime;
     }
 }

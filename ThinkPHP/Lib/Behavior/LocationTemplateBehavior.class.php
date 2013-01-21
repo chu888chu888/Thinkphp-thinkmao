@@ -8,14 +8,12 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: LocationTemplateBehavior.class.php 2702 2012-02-02 12:35:01Z liu21st $
 
-defined('THINK_PATH') or exit();
 /**
- * 系统行为扩展：定位模板文件
- * @category   Think
- * @package  Think
- * @subpackage  Behavior
- * @author   liu21st <liu21st@gmail.com>
+ +------------------------------------------------------------------------------
+ * 系统行为扩展 自动定位模板文件
+ +------------------------------------------------------------------------------
  */
 class LocationTemplateBehavior extends Behavior {
     // 行为扩展的执行入口必须是run
@@ -26,10 +24,17 @@ class LocationTemplateBehavior extends Behavior {
     }
 
     /**
+     +----------------------------------------------------------
      * 自动定位模板文件
+     +----------------------------------------------------------
      * @access private
+     +----------------------------------------------------------
      * @param string $templateFile 文件名
+     +----------------------------------------------------------
      * @return string
+     +----------------------------------------------------------
+     * @throws ThinkExecption
+     +----------------------------------------------------------
      */
     private function parseTemplateFile($templateFile) {
         if(''==$templateFile) {
@@ -45,7 +50,8 @@ class LocationTemplateBehavior extends Behavior {
             }else{
                 $path = THEME_PATH;
             }
-            $templateFile  =  $path.$module.C('TMPL_FILE_DEPR').$action.C('TMPL_TEMPLATE_SUFFIX');
+            $depr = defined('GROUP_NAME')?C('TMPL_FILE_DEPR'):'/';
+            $templateFile  =  $path.$module.$depr.$action.C('TMPL_TEMPLATE_SUFFIX');
         }
         if(!file_exists_case($templateFile))
             throw_exception(L('_TEMPLATE_NOT_EXIST_').'['.$templateFile.']');

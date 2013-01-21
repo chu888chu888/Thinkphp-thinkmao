@@ -8,25 +8,23 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: ShowRuntimeBehavior.class.php 2702 2012-02-02 12:35:01Z liu21st $
 
-defined('THINK_PATH') or exit();
 /**
- * 系统行为扩展：运行时间信息显示
- * @category   Think
- * @package  Think
- * @subpackage  Behavior
- * @author   liu21st <liu21st@gmail.com>
+ +------------------------------------------------------------------------------
+ * 系统行为扩展 运行时间信息显示
+ +------------------------------------------------------------------------------
  */
 class ShowRuntimeBehavior extends Behavior {
     // 行为参数定义
     protected $options   =  array(
-        'SHOW_RUN_TIME'		=> false,   // 运行时间显示
-        'SHOW_ADV_TIME'		=> false,   // 显示详细的运行时间
-        'SHOW_DB_TIMES'		=> false,   // 显示数据库查询和写入次数
-        'SHOW_CACHE_TIMES'	=> false,   // 显示缓存操作次数
-        'SHOW_USE_MEM'		=> false,   // 显示内存开销
-        'SHOW_LOAD_FILE'    => false,   // 显示加载文件数
-        'SHOW_FUN_TIMES'    => false ,  // 显示函数调用次数
+        'SHOW_RUN_TIME'			=> false,   // 运行时间显示
+        'SHOW_ADV_TIME'			=> false,   // 显示详细的运行时间
+        'SHOW_DB_TIMES'			=> false,   // 显示数据库查询和写入次数
+        'SHOW_CACHE_TIMES'		=> false,   // 显示缓存操作次数
+        'SHOW_USE_MEM'			=> false,   // 显示内存开销
+        'SHOW_LOAD_FILE'          => false,   // 显示加载文件数
+        'SHOW_FUN_TIMES'         => false ,  // 显示函数调用次数
     );
 
     // 行为扩展的执行入口必须是run
@@ -47,9 +45,13 @@ class ShowRuntimeBehavior extends Behavior {
     }
 
     /**
+     +----------------------------------------------------------
      * 显示运行时间、数据库操作、缓存次数、内存使用信息
+     +----------------------------------------------------------
      * @access private
+     +----------------------------------------------------------
      * @return string
+     +----------------------------------------------------------
      */
     private function showTime() {
         // 显示运行时间

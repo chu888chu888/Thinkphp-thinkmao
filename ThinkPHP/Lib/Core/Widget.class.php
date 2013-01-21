@@ -8,13 +8,18 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: Widget.class.php 2783 2012-02-25 06:49:45Z liu21st $
 
 /**
+ +------------------------------------------------------------------------------
  * ThinkPHP Widget类 抽象类
+ +------------------------------------------------------------------------------
  * @category   Think
  * @package  Think
- * @subpackage  Core
+ * @subpackage  Util
  * @author liu21st <liu21st@gmail.com>
+ * @version  $Id: Widget.class.php 2783 2012-02-25 06:49:45Z liu21st $
+ +------------------------------------------------------------------------------
  */
 abstract class Widget {
 
@@ -22,20 +27,30 @@ abstract class Widget {
     protected $template =  '';
 
     /**
+     +----------------------------------------------------------
      * 渲染输出 render方法是Widget唯一的接口
      * 使用字符串返回 不能有任何输出
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param mixed $data  要渲染的数据
+     +----------------------------------------------------------
      * @return string
+     +----------------------------------------------------------
      */
     abstract public function render($data);
 
     /**
+     +----------------------------------------------------------
      * 渲染模板输出 供render方法内部调用
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param string $templateFile  模板文件
      * @param mixed $var  模板变量
+     +----------------------------------------------------------
      * @return string
+     +----------------------------------------------------------
      */
     protected function renderFile($templateFile='',$var='') {
         ob_start();
@@ -44,7 +59,7 @@ abstract class Widget {
             // 自动定位模板文件
             $name   = substr(get_class($this),0,-6);
             $filename   =  empty($templateFile)?$name:$templateFile;
-            $templateFile = BASE_LIB_PATH.'Widget/'.$name.'/'.$filename.C('TMPL_TEMPLATE_SUFFIX');
+            $templateFile = LIB_PATH.'Widget/'.$name.'/'.$filename.C('TMPL_TEMPLATE_SUFFIX');
             if(!file_exists_case($templateFile))
                 throw_exception(L('_TEMPLATE_NOT_EXIST_').'['.$templateFile.']');
         }
@@ -82,11 +97,16 @@ abstract class Widget {
     }
 
     /**
+     +----------------------------------------------------------
      * 检查缓存文件是否有效
      * 如果无效则需要重新编译
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param string $tmplTemplateFile  模板文件名
+     +----------------------------------------------------------
      * @return boolen
+     +----------------------------------------------------------
      */
     protected function checkCache($tmplTemplateFile) {
         if (!C('TMPL_CACHE_ON')) // 优先对配置设定检测

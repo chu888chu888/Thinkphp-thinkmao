@@ -8,29 +8,26 @@
 // +----------------------------------------------------------------------
 // | Author: liu21st <liu21st@gmail.com>
 // +----------------------------------------------------------------------
+// $Id: ReadHtmlCacheBehavior.class.php 2744 2012-02-18 11:27:14Z liu21st $
 
-defined('THINK_PATH') or exit();
 /**
- * 系统行为扩展：静态缓存读取
- * @category   Think
- * @package  Think
- * @subpackage  Behavior
- * @author   liu21st <liu21st@gmail.com>
+ +------------------------------------------------------------------------------
+ * 系统行为扩展 静态缓存读取
+ +------------------------------------------------------------------------------
  */
 class ReadHtmlCacheBehavior extends Behavior {
     protected $options   =  array(
-            'HTML_CACHE_ON'     =>  false,
-            'HTML_CACHE_TIME'   =>  60,
-            'HTML_CACHE_RULES'  =>  array(),
-            'HTML_FILE_SUFFIX'  =>  '.html',
+            'HTML_CACHE_ON'=>false,
+            'HTML_CACHE_TIME'=>60,
+            'HTML_CACHE_RULES'=>array(),
+            'HTML_FILE_SUFFIX'=>'.html',
         );
 
     // 行为扩展的执行入口必须是run
     public function run(&$params){
         // 开启静态缓存
         if(C('HTML_CACHE_ON'))  {
-            $cacheTime = $this->requireHtmlCache();
-            if( false !== $cacheTime && $this->checkHTMLCache(HTML_FILE_NAME,$cacheTime)) { //静态页面有效
+            if(($cacheTime = $this->requireHtmlCache()) && $this->checkHTMLCache(HTML_FILE_NAME,$cacheTime)) { //静态页面有效
                 // 读取静态页面输出
                 readfile(HTML_FILE_NAME);
                 exit();
@@ -43,18 +40,16 @@ class ReadHtmlCacheBehavior extends Behavior {
         // 分析当前的静态规则
          $htmls = C('HTML_CACHE_RULES'); // 读取静态规则
          if(!empty($htmls)) {
-            $htmls = array_change_key_case($htmls);
-            // 静态规则文件定义格式 actionName=>array('静态规则','缓存时间','附加规则')
+            // 静态规则文件定义格式 actionName=>array(‘静态规则’,’缓存时间’,’附加规则')
             // 'read'=>array('{id},{name}',60,'md5') 必须保证静态规则的唯一性 和 可判断性
             // 检测静态规则
             $moduleName = strtolower(MODULE_NAME);
-            $actionName = strtolower(ACTION_NAME);
-            if(isset($htmls[$moduleName.':'.$actionName])) {
-                $html   =   $htmls[$moduleName.':'.$actionName];   // 某个模块的操作的静态规则
+            if(isset($htmls[$moduleName.':'.ACTION_NAME])) {
+                $html   =   $htmls[$moduleName.':'.ACTION_NAME];   // 某个模块的操作的静态规则
             }elseif(isset($htmls[$moduleName.':'])){// 某个模块的静态规则
                 $html   =   $htmls[$moduleName.':'];
-            }elseif(isset($htmls[$actionName])){
-                $html   =   $htmls[$actionName]; // 所有操作的静态规则
+            }elseif(isset($htmls[ACTION_NAME])){
+                $html   =   $htmls[ACTION_NAME]; // 所有操作的静态规则
             }elseif(isset($htmls['*'])){
                 $html   =   $htmls['*']; // 全局静态规则
             }elseif(isset($htmls['empty:index']) && !class_exists(MODULE_NAME.'Action')){
@@ -64,15 +59,15 @@ class ReadHtmlCacheBehavior extends Behavior {
             }
             if(!empty($html)) {
                 // 解读静态规则
-                $rule   = $html[0];
+                $rule    = $html[0];
                 // 以$_开头的系统变量
-                $rule   = preg_replace('/{\$(_\w+)\.(\w+)\|(\w+)}/e',"\\3(\$\\1['\\2'])",$rule);
-                $rule   = preg_replace('/{\$(_\w+)\.(\w+)}/e',"\$\\1['\\2']",$rule);
+                $rule  = preg_replace('/{\$(_\w+)\.(\w+)\|(\w+)}/e',"\\3(\$\\1['\\2'])",$rule);
+                $rule  = preg_replace('/{\$(_\w+)\.(\w+)}/e',"\$\\1['\\2']",$rule);
                 // {ID|FUN} GET变量的简写
-                $rule   = preg_replace('/{(\w+)\|(\w+)}/e',"\\2(\$_GET['\\1'])",$rule);
-                $rule   = preg_replace('/{(\w+)}/e',"\$_GET['\\1']",$rule);
+                $rule  = preg_replace('/{(\w+)\|(\w+)}/e',"\\2(\$_GET['\\1'])",$rule);
+                $rule  = preg_replace('/{(\w+)}/e',"\$_GET['\\1']",$rule);
                 // 特殊系统变量
-                $rule   = str_ireplace(
+                $rule  = str_ireplace(
                     array('{:app}','{:module}','{:action}','{:group}'),
                     array(APP_NAME,MODULE_NAME,ACTION_NAME,defined('GROUP_NAME')?GROUP_NAME:''),
                     $rule);
@@ -90,12 +85,17 @@ class ReadHtmlCacheBehavior extends Behavior {
     }
 
     /**
+     +----------------------------------------------------------
      * 检查静态HTML文件是否有效
      * 如果无效需要重新更新
+     +----------------------------------------------------------
      * @access public
+     +----------------------------------------------------------
      * @param string $cacheFile  静态文件名
      * @param integer $cacheTime  缓存有效期
+     +----------------------------------------------------------
      * @return boolen
+     +----------------------------------------------------------
      */
     static public function checkHTMLCache($cacheFile='',$cacheTime='') {
         if(!is_file($cacheFile)){
@@ -105,7 +105,7 @@ class ReadHtmlCacheBehavior extends Behavior {
             return false;
         }elseif(!is_numeric($cacheTime) && function_exists($cacheTime)){
             return $cacheTime($cacheFile);
-        }elseif ($cacheTime != 0 && NOW_TIME > filemtime($cacheFile)+$cacheTime) {
+        }elseif ($cacheTime != 0 && time() > filemtime($cacheFile)+$cacheTime) {
             // 文件是否在有效期
             return false;
         }
@@ -115,8 +115,8 @@ class ReadHtmlCacheBehavior extends Behavior {
 
     //检测是否是空操作
     static private function isEmptyAction($module,$action) {
-        $className  =   $module.'Action';
-        $class      =   new $className;
+        $className =  $module.'Action';
+        $class=new $className;
         return !method_exists($class,$action);
     }
 
