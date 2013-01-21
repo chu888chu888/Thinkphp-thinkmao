@@ -1,0 +1,51 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/channel.css" />
+    </head>
+    <body>
+        <table class="channel_list">
+            <thead>
+                <tr>
+                    <td>文件类型</td>
+                    <td>文件名</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+        <tbody>
+            <list from="$art" name="n">
+               <tr>
+                   <td style="font-size: 14px;font-weight: bold">文章</td>
+                   <td>{$n.a_title}</td>
+                   <td class="mod">
+                       <a href="__CONTROL__/backa/aid/{$n.aid}">恢复</a>
+                       <a href="__CONTROL__/dela/aid/{$n.aid}">彻底删除</a>
+                   </td>
+               </tr>            
+            </list>
+            <list from="$chan" name="m">
+               <tr>
+                   <td style="font-size: 14px;font-weight: bold">栏目</td>
+                   <td>{$m.c_title}</td>
+                   <td class="mod">
+                       <a href="__CONTROL__/backc/cid/{$m.cid}">恢复</a>
+                       <a href="__CONTROL__/delc/cid/{$m.cid}">彻底删除</a> 
+                   </td>
+               </tr>            
+            </list>
+         </tbody>
+        </table>     
+         <h4 class="addtop">
+             <a href="__CONTROL__/allback" style="color:#fff;font-size:14px">全部还原</a></h4>
+             
+        <h4 class="addtop">
+             <a href="__CONTROL__/alldel" style="color:#fff;font-size:14px">全部删除</a></h4>
+    </body>
+</html>

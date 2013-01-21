@@ -1,0 +1,25 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/css/art.css" />
+    </head>
+    <body>
+        <form action="__CONTROL__/mod" method="post">
+          <div class="add_title">请输入标题</div>
+          <input type="hidden" value="{$data[0]['aid']}" name="aid" />
+          <input type="text" name="a_title" class="out_t" value="{$data[0]['a_title']}"/>
+           <span class="add_title">输入内容</span>
+           <keditor name='a_con' value=" {$data[0]['a_con']}"/>    
+<!--          <textarea name="a_con" class="add_con">
+               {$data[0]['a_con']}
+          </textarea>-->
+          <input type="submit" class="submit" value="修改"/>
+        </form>
+    </body>
+</html>

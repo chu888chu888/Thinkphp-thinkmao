@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding:0px;
+    list-style: none;
+    font: 14px/20px 微软雅黑;
+}
+a{
+    text-decoration: none;
+}

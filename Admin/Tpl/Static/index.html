@@ -1,0 +1,35 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/static.css" />
+    </head>
+    <body>
+        <div class="ititle">
+            网站静态页面管理
+        </div>
+        <div class="iby">
+        <div class="ifont">
+            <if value="$flag eq 'true'">
+                首页静态文件已经存在
+                <else/>
+                首页静态文件不存在    
+            </if>
+        </div>
+     </div>
+        <div>
+            <if value="$flag eq 'true'">
+                <a class="ifoot" href="__CONTROL__/res/cid/88"> 重新生成</a>
+                <a class="ifoot" href="__CONTROL__/delstatic/cid/88" id="del">删除静态文件</a>
+                <else/>
+                <a class="ifoot" href="__CONTROL__/res/cid/88">立即生成</a> 
+            </if>
+        </div>
+    </body>
+</html>

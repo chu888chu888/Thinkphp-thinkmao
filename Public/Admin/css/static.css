@@ -1,0 +1,105 @@
+*{
+    font: 14px/20px 微软雅黑;
+}
+.ititle {
+height: 60px;
+width: 100%;
+border-bottom: 2px solid #009A61;
+line-height: 60px;
+text-align: left;
+text-indent: 2em;
+font-size: 20px;
+font-weight: bolder;
+}
+.iby{
+    height: 100px;
+    width: auto;
+}
+.ifont{
+    width:300px;
+    height:100px;
+    padding-left: 100px;
+    line-height: 100px;
+    font-size: 15px;
+    color:red;
+}
+.ifoot{
+    width:100px;
+    height:30px;
+    line-height: 30px;
+    font-size: 13px;
+    display: block;
+    background-color: #009A61;
+    margin-left: 400px;
+    text-align: center;
+    color:#fff;
+    display: inline-block;
+}
+#del{
+    margin-left: 50px;
+}
+#ltb{
+    width:100%;
+}
+#ltb tr{
+    height:30px;
+    line-height: 30px;
+}
+.option{
+    width: auto;
+    text-align: center;
+}
+.option span{  
+    cursor: pointer;    
+}
+.option span:hover{
+    color:red;
+}
+.sub{
+    height:20px;
+    width:50px;
+    float: right;
+    background-color: #009A61;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    color:#fff;
+     margin-right: 30px;
+     cursor: pointer;
+}
+.suba{
+    height:20px;
+    width:50px;
+    float: right;
+    background-color: #009A61;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    color:#fff;
+     margin-right: 30px;
+     cursor: pointer;
+}
+.page *{
+    display:inline-block;
+    float: left;
+    margin-left: 10px;
+    padding: 3px 5px;
+    background-color: #F2F2F2;
+    line-height: 20px;
+}
+ .page{
+    height:20px !important;
+    height:50px;
+    width: auto;
+    overflow: hidden;
+    line-height: 20px;
+    margin-top: 30px;
+}
+.page .selfpage{
+    font-weight: bolder;
+    color:blue;
+}
+.page a{
+    color:#009A61;
+}
+

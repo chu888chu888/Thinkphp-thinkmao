@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/css/backup.css" />
+           <link rel="stylesheet" href="__PUBLIC__/css/code.css" />
+         <link rel="stylesheet" href="__PUBLIC__/css/base.css" />
+    </head>
+    <body>
+         <div class="ititle">
+            数据备份
+        </div>
+        <form action="__CONTROL__/backup_c" method="post">
+            <table style="height:500px;width:300px;margin-left: 200px;">
+                <tr>
+                    <td>选择备份的数据库</td>
+                    <td>
+                        <input type="text" name="db_name" value="c9"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>备份存放的目录</td>
+                    <td>
+                        <input type="text" name="dir" value="./Backup"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    选择要备份的表
+                    </td>
+                </tr>
+               
+                     <list from="$table" name="$n">
+                      <tr>
+                              <td style="text-align: right">
+                            {$n.Tables_in_c9}
+                             </td>
+                                <td style="text-align: center">                       
+                            <input type="checkbox" name="table[]" value="{$n.Tables_in_c9}"/>                    
+                               </td>
+                        </tr>
+                     </list>
+               
+                <tr>
+                    <td>备份的时间间隔</td>
+                    <td>
+                        <input type="text" name="step_time" value="3" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>每次备份的条数</td>
+                    <td>
+                        <input type="text" name="row" value="300" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        配置文件的备注
+                    </td>
+                    <td>
+                        <input type="text" name="msg" value="cms"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="确定" style="height:20px;width:50px;color:#fff;margin-left:400px;margin-top: -20px;border:none;background-color: #009A61 "/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+#ou{
+    /*height:652px;*/
+    height:900px;
+}
+.head{
+    height:50px;
+    width:100%;
+    background-image:url(../img/header-bg.png);
+    background-repeat:repeat-x;
+    position:fixed;
+    top:0px;
+    left:0px;
+    margin-bottom: 0px;
+}
+.theme{
+    font-size: 40px;
+    font-weight: bolder;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+.t_guid{   
+    height:50px;   
+}
+.t_guid li{
+   display: inline-block;
+   float: right;
+   height:20px !important;
+   height: 40px;
+   margin-top: 20px;
+   padding: 0px 10px;
+   margin-right: 5px;
+   border: 1px solid #ADADAD;
+}
+.t_guid li a{
+    color:#000;
+    font-size: 12px;
+    
+}
+.left{
+    display: inline-block;
+    width:120px;
+    height:100%;
+    background-color: #F3F3F3;
+    margin-top: -3px;
+    padding-top: 20px;
+    float: left;
+    text-indent: 0.5em;
+    border-right: 4px solid #EAEAEA;
+    margin-top: 30px;
+}
+.left ul{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-bottom: solid 2px #009A61;    
+}
+.left ul li{
+    margin-top: 10px;
+}
+.left ul li a{
+    font-size: 13px;
+    color: #0040E2;
+}
+.left ul li a:hover{
+    text-decoration: underline;
+}
+.main{
+    margin-left: -10px;
+    font-size: 15px;
+    font-weight:bolder;
+}
+.right{
+    display: inline-block;
+    float: left;
+    height: 100%;
+    margin-top: 50px;
+    width:auto;
+    height:645px;
+}
+.right iframe{
+    width: 100%;
+    height: 100%;
+    border: 0px;
+}

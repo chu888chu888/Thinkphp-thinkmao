@@ -1,0 +1,24 @@
+.ititle {
+height: 60px;
+width: 100%;
+border-bottom: 2px solid #009A61;
+line-height: 60px;
+text-align: left;
+text-indent: 2em;
+font-size: 20px;
+font-weight: bolder;
+}
+.codetable{
+    width:500px;
+    height:200px;
+    margin-left: 200px;
+}
+.codesub{
+    border: none;
+    background-color: #009A61;
+    color:#fff;
+    width:50px;
+    height:20px;
+    margin-left: 600px;
+    display: block;
+}
