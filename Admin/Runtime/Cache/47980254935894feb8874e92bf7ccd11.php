@@ -12,7 +12,7 @@ and open the template in the editor.
         <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js">
         </script>
          <script type="text/javascript">
-              var url = "<?php echo U('code');?>";
+              var url = "<?php echo U('code');?>"
         </script>
         <script type="text/javascript" src="__PUBLIC__/Admin/js/login.js">
         </script>
@@ -37,7 +37,7 @@ and open the template in the editor.
                         管理员密码:
                     </td>
                     <td>
-                        <input type="text" name="password"/>
+                        <input type="password" name="password"/>
                     </td>
                 </label>
                 </tr>

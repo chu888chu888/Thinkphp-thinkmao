@@ -2246,3 +2246,477 @@
 [ 2013-01-21T16:32:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
 [ 2013-01-21T16:32:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
 [ 2013-01-21T16:32:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000232s ]
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000064s ]
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000141s ]
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-21T17:18:14+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000179s ]
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000408s ]
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000154s ]
+[ 2013-01-21T17:18:21+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000337s ]
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000385s ]
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+[ 2013-01-21T17:18:22+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000162s ]
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:19:04+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:20:04+08:00 ] /thinkmao/Admin.php/login | ERR: (ThinkException) 无法加载模块login
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000061s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000158s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000036s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000063s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.021919s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.022008s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000277s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000150s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000102s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000188s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001375s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.003653s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.003789s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000174s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-21T17:20:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000158s ]
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-21T17:20:23+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000074s ]
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000161s ]
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-21T17:20:53+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000160s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000301s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000106s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000261s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.001796s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001872s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000083s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000287s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000804s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000846s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000085s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000214s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000071s ]
+[ 2013-01-21T17:21:01+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000108s ]
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000399s ]
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:21:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000160s ]
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-21T17:22:37+08:00 ] /thinkmao/Admin.php/Login/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000174s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000392s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000243s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000486s ]
+[ 2013-01-21T17:28:13+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE array(lock=>'否')  [ RunTime:0.000081s ]
+[ 2013-01-21T17:28:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:28:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:28:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-21T17:28:17+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:28:17+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:28:17+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-21T17:28:17+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000435s ]
+[ 2013-01-21T17:28:17+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE array(lock=>'否')  [ RunTime:0.000064s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000392s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000153s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000241s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001004s ]
+[ 2013-01-21T17:28:39+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin`  [ RunTime:0.000259s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000392s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000503s ]
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:32+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000185s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000411s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000168s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000247s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001032s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000169s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000389s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000166s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000247s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000477s ]
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:33+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000157s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000177s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000054s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000444s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000154s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000161s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000383s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000474s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000147s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000166s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000398s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000165s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000245s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001004s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000338s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000400s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000163s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000243s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001075s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000151s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001028s ]
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:34+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000153s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000179s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000493s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000157s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000391s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000450s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000148s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000183s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000414s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000433s ]
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:29:35+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' )  [ RunTime:0.000146s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000063s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000306s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000074s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.001837s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001885s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000097s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000049s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000304s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.001058s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.001105s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000072s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000194s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:32:24+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000426s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000438s ]
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant username - assumed 'username' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant password - assumed 'password' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:33:15+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' ) AND ( `username` = 'mao' ) AND ( `password` = '96e79218965eb72c92a549dd5a330112' )  [ RunTime:0.000174s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000412s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000431s ]
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant username - assumed 'username' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant password - assumed 'password' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:11+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' ) AND ( `username` = 'mao' ) AND ( `password` = 'bdce470427ac52a881c8464e21e0c7d0' )  [ RunTime:0.000182s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000064s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000161s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000429s ]
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant username - assumed 'username' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant password - assumed 'password' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:35:16+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' ) AND ( `username` = 'mao' ) AND ( `password` = '96e79218965eb72c92a549dd5a330112' )  [ RunTime:0.000218s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000177s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000051s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.002581s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002655s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000103s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000071s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000347s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.001060s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.001108s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000185s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:36:35+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run CheckRoute Behavior [ RunTime:0.000220s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000442s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.000502s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant lock - assumed 'lock' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant username - assumed 'username' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | NOTIC: [8] Use of undefined constant password - assumed 'password' LoginAction.class.php 第 14 行.
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | SQL: SELECT * FROM `hd_admin` WHERE ( `lock` = '否' ) AND ( `username` = 'mao' ) AND ( `password` = '96e79218965eb72c92a549dd5a330112' )  [ RunTime:0.000207s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run LocationTemplate Behavior [ RunTime:0.000125s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000234s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ParseTemplate Behavior [ RunTime:0.007326s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007466s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ContentReplace Behavior [ RunTime:0.000294s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run TokenBuild Behavior [ RunTime:0.000152s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000079s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ShowRuntime Behavior [ RunTime:0.000186s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000934s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Run ShowPageTrace Behavior [ RunTime:0.002180s ]
+[ 2013-01-21T17:36:49+08:00 ] /thinkmao/Admin.php/Login/login | INFO: Tag[ view_end ] --END-- [ RunTime:0.002290s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000404s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000106s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000191s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.006767s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006898s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000272s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000149s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000086s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000184s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000913s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.002143s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.002251s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000164s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-21T17:36:51+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000159s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000042s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.002018s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002068s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000115s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000341s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000880s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000923s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000423s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:40:09+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000179s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.002300s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002395s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000152s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000058s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000391s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000899s ]
+[ 2013-01-21T17:40:11+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000948s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000184s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000380s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000105s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000206s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.005446s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005563s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000247s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000147s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000083s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000182s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000880s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.002183s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.002312s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000385s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000244s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ route_check ] --END-- [ RunTime:0.000193s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_template ] --END-- [ RunTime:0.000070s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ParseTemplate Behavior [ RunTime:0.002484s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002558s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ContentReplace Behavior [ RunTime:0.000113s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000339s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Run ShowPageTrace Behavior [ RunTime:0.000895s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login | INFO: Tag[ view_end ] --END-- [ RunTime:0.000939s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000176s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000401s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-21T17:40:12+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
