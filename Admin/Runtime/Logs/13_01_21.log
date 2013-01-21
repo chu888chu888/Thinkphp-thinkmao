@@ -1,0 +1,3 @@
+[ 2013-01-21T11:37:58+08:00 ] /thinkmao/Admin.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-21T11:37:58+08:00 ] /thinkmao/Admin.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000123s ]
+[ 2013-01-21T11:37:58+08:00 ] /thinkmao/Admin.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000245s ]
