@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 01 月 22 日 12:31
+-- 生成日期: 2013 年 01 月 23 日 02:20
 -- 服务器版本: 5.5.29
 -- PHP 版本: 5.4.10
 
@@ -45,11 +45,22 @@ INSERT INTO `hd_admin` (`id`, `username`, `password`, `lock`) VALUES
 CREATE TABLE IF NOT EXISTS `hd_brand` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL DEFAULT '' COMMENT '品牌名称',
-  `logo` varchar(45) NOT NULL DEFAULT '' COMMENT '品牌LOGO',
+  `logo` varchar(100) NOT NULL DEFAULT '' COMMENT '品牌LOGO',
   `cid` int(10) unsigned NOT NULL COMMENT '所属栏目ID',
+  `hot` enum('0','1') DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `cid` (`cid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='商品品牌' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品品牌' AUTO_INCREMENT=5 ;
+
+--
+-- 转存表中的数据 `hd_brand`
+--
+
+INSERT INTO `hd_brand` (`id`, `name`, `logo`, `cid`, `hot`) VALUES
+(1, '华为', '/thinkmao/Uploads/brand/201301/50fe387f1ad29.jpg', 1, '0'),
+(2, '华为', '/thinkmao/Uploads/brand/201301/50fe3b5b70337.jpg', 1, '0'),
+(3, 'adidas', '/thinkmao/Uploads/brand/201301/50fe3d31c2828.png', 4, '0'),
+(4, 'apple', '/thinkmao/Uploads/brand/201301/50fe727a0ca7c.png', 2, '1');
 
 -- --------------------------------------------------------
 
@@ -119,6 +130,10 @@ CREATE TABLE IF NOT EXISTS `hd_goods` (
   `bid` int(10) unsigned NOT NULL COMMENT '所属品牌ID',
   `tid` int(10) unsigned NOT NULL COMMENT '所属类型ID',
   `aid` int(10) unsigned NOT NULL COMMENT '上架管理员ID',
+  `mprice` char(50) NOT NULL DEFAULT '0',
+  `service` text,
+  `intro` text,
+  `img` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `cid` (`cid`),
   KEY `bid` (`bid`),
@@ -142,6 +157,21 @@ CREATE TABLE IF NOT EXISTS `hd_goods_attr` (
   KEY `aid` (`aid`),
   KEY `gid` (`gid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='商品属性值' AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `hd_goods_gallery`
+--
+
+CREATE TABLE IF NOT EXISTS `hd_goods_gallery` (
+  `img_id` int(11) NOT NULL AUTO_INCREMENT,
+  `good_id` int(11) DEFAULT NULL,
+  `img_url` varchar(200) DEFAULT NULL,
+  `thumb_url` varchar(200) DEFAULT NULL,
+  `img_mid_url` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`img_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
