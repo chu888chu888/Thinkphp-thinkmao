@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+    </head>
+    <body>
+        <table class="channel_list">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>属性名</td>
+                    <td>属性值</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+        <tbody>
+            <foreach name='data' item='n'>
+               <tr>
+                   <td>{$n.id}</td>
+                   <td>{$n.name}</td>
+                   <td>              
+                       {$n.value}               
+                   </td>
+                   <td class="mod">
+                       <a href="{:U('edit_type_attr_show')}?id={$n.id}">编辑属性</a>
+                       <a href="{:U('del_type_attr')}?id={$n.id}">删除属性</a>                       
+                       
+                   </td>
+               </tr>            
+            </foreach>
+         </tbody>
+        </table>       
+         <h4><a href="{:U('edit_good_attr_show')}?id={$id}" class="addtop">添加属性</a></h4>
+    </body>
+</html>

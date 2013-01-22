@@ -1,15 +1,15 @@
 .agform{
     height:100px;
-    width:300px;
+    width:500px;
     margin: 20px auto;
 }
 .agform table{
-    height:150px;
-    width:300px;
+    height:auto;
+    width:500px;
 }
 .agform table tr td{
-    height:30px;
-    line-height: 30px;
+    height:50px;
+    line-height: 50px;
     border-bottom: 1px dashed #ccc;
 }
 .put{
@@ -20,5 +20,13 @@
     float: left;
     margin-left: 10px;
     line-height: 30px;
+}
+.more{
+    color:red;
+    font-weight: bold;
+    cursor: pointer;
+}
+.more:hover{
+    color:blue;
 }
 

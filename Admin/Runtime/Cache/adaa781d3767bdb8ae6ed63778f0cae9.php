@@ -15,19 +15,18 @@ and open the template in the editor.
             <thead>
                 <tr>
                     <td>ID</td>
-                    <td>商品类型名称</td>
+                    <td>分类名称</td>
                     <td>操作</td>
                 </tr>
             </thead>
         <tbody>
-        <?php if(is_array($good_type)): foreach($good_type as $key=>$n): ?><tr>
+        <?php if(is_array($cate)): foreach($cate as $key=>$n): ?><tr>
                    <td><?php echo ($n["id"]); ?></td>
-                   <td class="c_title"><?php echo ($n["name"]); ?></td>
+                   <td class="c_title"><?php echo ($n["html"]); echo ($n["name"]); ?></td>
                    <td class="mod">
-                       |&nbsp;<a href="<?php echo U('good_attr_list');?>?id=<?php echo ($n["id"]); ?>">属性列表</a>|
-                       <a href="<?php echo U('edit_good_attr_show');?>?id=<?php echo ($n["id"]); ?>">添加属性</a>|
-                       <a href="<?php echo U('edit_good_type_show');?>?id=<?php echo ($n["id"]); ?>">编辑类型</a>|
-                       <a href="<?php echo U('del_good_type');?>?id=<?php echo ($n["id"]); ?>">删除该类型</a>
+                       <a href="<?php echo U('add_top_cate_show');?>?pid=<?php echo ($n["id"]); ?>">增加子分类</a>
+                       <a href="<?php echo U('del_cate');?>?id=<?php echo ($n["id"]); ?>">删除该分类</a>
+                       <a href="<?php echo U('mod_cate');?>?id=<?php echo ($n["id"]); ?>">修改该分类</a>
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>
@@ -35,6 +34,6 @@ and open the template in the editor.
         <div class="page">
             <?php echo ($page); ?>
         </div>
-        <h4><a href="<?php echo U('add_good_type_show');?>" class="addtop">添加商品类型</a></h4>
+        <h4><a href="<?php echo U('add_top_cate_show');?>?pid=0" class="addtop">添加顶级分类</a></h4>
     </body>
 </html>

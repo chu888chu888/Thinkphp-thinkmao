@@ -17,7 +17,7 @@ and open the template in the editor.
             商品属性添加
         </div>
         <form action="<?php echo U('edit_good_attr');?>" method="post" class="agform">
-            <table style="height:500px;width:500px;margin-left: -100px">
+            <table>
             <tr>
                 <td class="ahead">
                 请输入属性名称:
