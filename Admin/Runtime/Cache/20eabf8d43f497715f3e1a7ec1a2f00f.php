@@ -42,7 +42,7 @@ and open the template in the editor.
                     <li><a href="__WEB__/Style/index">添加商品</a></li>
                     <li><a href="__WEB__/Style/index">商品品牌</a></li>
                     <li><a href="__WEB__/Style/index">商品分类</a></li>
-                    <li><a href="__WEB__/Style/index">商品类型</a></li>
+                    <li><a href="<?php echo U('Goods/good_type');?>">商品类型</a></li>
                 </ul>
                 <ul>
                     <li class="main">配置管理</li>

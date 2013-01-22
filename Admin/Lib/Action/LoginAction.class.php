@@ -11,11 +11,17 @@
 
       public function login(){
           $db = M("admin");
-          $admin =$db->where(array(lock=>'否',username=>$_POST['username'],password=>md5($_POST['password'])))->select();
-          if(count($admin)!=0){
-              $this->success("登陆成功");
+          $admin =$db->where(array(lock=>'否',username=>$_POST['username'],password=>md5($_POST['password'])))->find();
+          if(count($admin)!=0){            
+            if($_SESSION['verify']==md5($_POST['verify'])){
+                session('uid', $admin['id']);
+                session('username', $admin['username']);
+                redirect(U('Index/index'));
+            }else{
+                $this->error('验证码错误',U("index"));
+            }
           }else{
-              $this->error('登陆失败');
+              $this->error('查询无此管理员用户',U("index"));
           }
       }
   }

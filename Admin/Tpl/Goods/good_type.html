@@ -1,0 +1,42 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />        
+    </head>
+    <body>
+        <table class="channel_list">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>商品类型名称</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+        <tbody>
+        <foreach name='good_type' item='n'>
+               <tr>
+                   <td>{$n.id}</td>
+                   <td class="c_title">{$n.name}</td>
+                   <td class="mod">
+                       |&nbsp;<a href="__CONTROL__/addshow/pid/{$n.cid}">属性列表</a>|
+                       <a href="{:U('edit_good_attr_show')}?id={$n.id}">添加属性</a>|
+                       <a href="{:U('edit_good_type_show')}?id={$n.id}">编辑类型</a>|
+                       <a href="{:U('del_good_type')}?id={$n.id}">删除该类型</a>
+                   </td>
+               </tr>            
+            </foreach>
+         </tbody>
+        </table>
+        <div class="page">
+            {$page}
+        </div>
+        <h4><a href="{:U('add_good_type_show')}" class="addtop">添加商品类型</a></h4>
+    </body>
+</html>

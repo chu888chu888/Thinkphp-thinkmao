@@ -1,0 +1,24 @@
+.agform{
+    height:100px;
+    width:300px;
+    margin: 20px auto;
+}
+.agform table{
+    height:150px;
+    width:300px;
+}
+.agform table tr td{
+    height:30px;
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+}
+.put{
+    width:200px;
+}
+.ega{
+    display:block;
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+}
+

@@ -7,3 +7,33 @@
 a{
     text-decoration: none;
 }
+.ititle {
+height: 60px;
+width: 100%;
+border-bottom: 2px solid #009A61;
+line-height: 60px;
+text-align: left;
+text-indent: 2em;
+font-size: 20px;
+font-weight: bolder;
+}
+.ahead{
+    height:30px;
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+input{
+    border: 2px solid #009A61;
+    padding: 2px 4px;
+    height:25px;
+}
+.gsubmit{
+    width:60px;
+    height:25px;
+    font-size: 15px;
+    line-height: 10px;
+    color:blue;
+    text-align: center;
+    font-weight: bold;
+}

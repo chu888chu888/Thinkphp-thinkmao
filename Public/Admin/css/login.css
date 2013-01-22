@@ -1,12 +1,13 @@
 body{
-    background-color:#eee;
+    background-color:#fff;
 }
 .login{
     height:300px;
     width:500px;
     background-color: #fff;
-    margin: 300px auto;
+    margin: 100px auto;
     padding-top: 50px;
+    border: 10px solid #eee;
 }
 .login table{
     width:300px;
@@ -14,6 +15,8 @@ body{
     margin:20px auto;
     background-color: #0055FF;
     height:200px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 .lfont{
     color:#fff;
@@ -22,3 +25,12 @@ body{
 input{
     border: 0px;
 }
+.submit{
+    height:20px;
+    width:50px;
+    border:0px;
+    color:#fff;
+    background-color:red;
+    font-weight: bolder;
+}
+

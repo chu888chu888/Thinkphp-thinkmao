@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-            'SHOW_PAGE_TRACE' => true,
+            'SHOW_PAGE_TRACE' => false,
             'LOAD_EXT_CONFIG' => 'db',
             'LOAD_EXT_FILE'=>'function',
             'DB_TYPE'=>'mysql',
@@ -11,6 +11,7 @@ return array(
             'DB_PORT'=>'3360',
             'DB_PREFIX'=>'hd_',
             'TOKEN_ON'=>false,
+            
             
 );
 ?>
