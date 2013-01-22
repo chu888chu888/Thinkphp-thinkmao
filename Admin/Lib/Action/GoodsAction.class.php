@@ -1,29 +1,6 @@
 <?php
    class GoodsAction extends CommonAction{
-       /**
-        * 商品列表
-        */
-       public function goods_list(){
-           
-       }
-       /**
-        * 商品添加
-        */
-       public function good_add(){
-           
-       }
-       /**
-        * 商品品牌
-        */
-       public function good_grand(){
-           
-       }
-       /**
-        * 商品分类
-        */
-       public function goods_cate(){
-           
-       }
+      
        /**
         * 商品类型
         */

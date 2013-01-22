@@ -11,5 +11,8 @@
               redirect(U("Login/index"));
           }
       } 
+      Public function uploadify () {
+		include './Public/Uploadify/uploadify.php';
+	}
   }
 ?>

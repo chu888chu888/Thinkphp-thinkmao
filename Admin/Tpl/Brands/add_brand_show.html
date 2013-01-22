@@ -1,0 +1,84 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Common/css/base.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Admin/css/add_good.css"/>
+        <script src="__PUBLIC__/Common/js/jquery-1.8.3.js">
+            
+        </script>
+    </head>
+    <body>
+        <div class="ititle">
+            商品品牌添加
+        </div>
+        <form action="{:U('add_brand')}" method="post" class="agform">
+            <table>
+                <tr>
+                    <td class="ahead">
+                        请输入品牌的名称
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="name" class="put"/>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="ahead">
+                        上传品牌LOGO
+                    </td>
+                </tr>
+                <tr style="border: none;height:auto">
+                    <td>
+                         <upload name='logo' display='110,60' limit='1' path='./Uploads/brand'/>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="ahead">
+                        品牌所属分类
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="cid">
+                            <option value="">请选择</option>
+                            <foreach name='category' item='v'>
+                                <option value="{$v.id}">{$v.html}{$v.name}</option>
+                            </foreach>
+                        </select>
+                    </td>
+                </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <tr>
+                    <td align="right">
+                        <input type="submit" value="确定" class="gsubmit"/> 
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
