@@ -94,7 +94,24 @@ and open the template in the editor.
 
 
 
-
+                 <tr>
+                    <td class="ahead">
+                        是否为热卖品牌
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <span>是:</span>
+                        <input type="radio" name="hot" value="1"/>
+                        </label>
+                         <label>
+                             <span>否:</span>
+                             
+                         <input type="radio" name="hot" value="0"/>
+                        </label>
+                    </td>
+                </tr>
 
 
 

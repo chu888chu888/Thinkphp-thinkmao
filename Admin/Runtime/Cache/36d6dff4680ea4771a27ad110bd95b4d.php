@@ -9,6 +9,7 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link type="text/css" rel="stylesheet" href="__PUBLIC__/Common/css/base.css"/>
         <link type="text/css" rel="stylesheet" href="__PUBLIC__/Admin/css/add_good.css"/>
+        <script type="text/javascript" src=""></script>
     </head>
     <body>
         <div class="ititle">
