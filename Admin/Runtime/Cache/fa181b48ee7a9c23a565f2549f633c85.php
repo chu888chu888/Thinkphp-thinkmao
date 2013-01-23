@@ -1,5 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <title></title>   
@@ -24,7 +23,7 @@
             <li>商品相册</li>
             <li>售后服务</li> 
         </ul>
-        <form action="" method="post" class="form">
+        <form action="put_good" method="post" class="form">
             <div class="innerbox">
                 <table class="tb">
                     <tr>
@@ -65,7 +64,7 @@
                     <tr>
                         <td class="tname">商品品牌:</td>
                         <td>
-                            <select name="bid[]" id="brand">
+                            <select name="bid" id="brand">
                                 <option value="0">选择品牌:</option>
                             </select>
                         </td>
@@ -142,7 +141,7 @@
             </div>    
             
             <div class="innerbox">
-                <table class="tb">
+                <table class="tb" id="attr">
                     <tr>
                         <td class="tfont" width="100px;">选择商品属性:</td>
                          <td>
@@ -159,8 +158,7 @@
              <div class="innerbox">
                  <table class="tb" style="width:80%">
                     <tr>
-                        <td class="tfont" width="100px;">商品图册:</td>
-                        
+                        <td class="tfont" width="100px;">商品图册:</td>                        
                     </tr>
                      <tr>
                           <td>
@@ -191,15 +189,14 @@
 	uploadOptions.disHeight = 180;
 	uploadOptions.formData = {
 		<?php echo C('VAR_SESSION_ID');?> : '<?php echo session_id();?>',
-		width : '0',
-		height : '0',
+		width : '250,80',
+		height : '280,90',
 		path : './Uploads/img_list/'
 	};
 	$('#img').uploadify(uploadOptions);
 </script>
                         </td>
-                     </tr>
-                   
+                     </tr>                   
                 </table>
             </div>    
            

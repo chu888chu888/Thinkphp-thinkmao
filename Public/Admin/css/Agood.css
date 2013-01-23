@@ -41,9 +41,7 @@ input{
     height:50px;
     border-bottom: 1px dashed #ccc;   
 }
-.tb tr td{
-    padding-left: 20px;
-}
+
 .tname{
     width: 100px;
     text-align: center;
@@ -55,7 +53,7 @@ input{
 .innerbox{
     height:auto;
     width:100%;
-    display: none;
+    display:none;
 }
 .edit{
     height:auto;
@@ -66,4 +64,18 @@ input{
 .tfont{
     font-size: 15px;
     font-weight: bold;
+}
+.addattr{
+    color:red;
+    cursor:pointer;
+    font-weight: bold;
+    width:30px;
+    padding-left: 0px;
+}
+.delattr{
+    color:blue;
+    cursor:pointer;
+    font-weight: bold;
+    width:30px;
+    padding-left: 0px;
 }

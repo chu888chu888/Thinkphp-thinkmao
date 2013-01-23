@@ -15,6 +15,13 @@ $(function(){
     $("#good_type").change(function(){
         var obj = $("option:selected",this);
         var id = obj.attr("value");
+        $("#attr tr").each(
+               function(i){
+                   if(i != 0){
+                       $(this).remove();
+                   }
+               }
+          )
         list_attr(id);
     })
     
@@ -28,21 +35,43 @@ $(function(){
             data:id,
             success:function(data){
                 eval("var attr = "+data);
-                for(var i=0;i<attr.length;i++){
-                    if(attr[i].value=='0'){
-                        var valstr = "<input type='text' name='attr[]/>'";
+                var tr = '';
+                var tr_attr='';
+                var tr_spec='';
+                for(var i=0;i<attr.length;i++){                    
+                    if(attr[i].value==0){
+                        var valstr = "<input type='text' name='attr["+attr[i].id+"]'/>";
+                        tr_attr += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px" colspan="3">'+valstr+'</td></tr>';
                     }else{
-                        var valstr = "<select name='attr[]'><option value='0'>请选择</option></select>";
-                    }
-                    var tr = '<tr class="tfont" width="100px"><td>'+attr[i].name+'</td></td>'+valstr+'</td></tr>';
-                    alert(tr);
-                    $("#tb").append(tr);
+                        var name1 = "spec["+attr[i].id+"]["+attr[i].name+"][]";
+                        var name2 = "spec["+attr[i].id+"]['price'][]";
+                        var specv = attr[i].value.split('|');
+                        var option = '';
+                        for(var m=0;m<specv.length;m++){
+                            option +='<option value='+specv[m]+'>'+specv[m]+'</option>';
+                        }
+                        var valstr = "<select name="+name1+" ><option value='0'>请选择</option>"+option+"</select>";
+                        var valstrs ="<td class='addattr'>more+</td><td style='width:50px;text-align:right'>价格:</td><td><input type='text' style='width:50px;border:2px solid #ccc;height:20px;padding-left:0px' name="+name2+"</td>&nbsp;&nbsp;&nbsp;元"
+                        tr_spec += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px">'+valstr+'</td>'+valstrs+'</tr>';
+                    }      
                 }
+                tr = tr_attr+tr_spec;
+                $("#attr").append(tr);
             } 
         })       
         
     }
     
+    
+    $(".addattr").live("click",function(){
+        var objclone = $(this).parent().clone();
+        objclone.children('td').eq(2).attr("class","delattr").text("del-");
+        objclone.insertAfter($(this).parent());
+    })
+    
+    $(".delattr").live("click",function(){
+        $(this).parent().remove();
+    })
     
     
     /**

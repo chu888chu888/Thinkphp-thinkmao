@@ -72,6 +72,12 @@ class AddGoodAction extends CommonAction  {
          $data = $attr->where("tid = ".$tid)->select();
          echo json_encode($data);
      }
+     /**
+      * 插入商品数据
+      */
+     public function put_good(){
+         p($_POST);
+     }
   
 }
 

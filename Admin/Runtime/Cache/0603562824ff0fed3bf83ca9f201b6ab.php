@@ -24,8 +24,8 @@
                        <?php echo ($n["value"]); ?>               
                    </td>
                    <td class="mod">
-                       <a href="<?php echo U('edit_singl_good_attr_show');?>?id=<?php echo ($n["id"]); ?>">编辑属性</a>
-                       <a href="<?php echo U('del_good_attr');?>?id=<?php echo ($n["id"]); ?>">删除属性</a>                       
+                       <a href="<?php echo U('edit_type_attr_show');?>?id=<?php echo ($n["id"]); ?>">编辑属性</a>
+                       <a href="<?php echo U('del_type_attr');?>?id=<?php echo ($n["id"]); ?>">删除属性</a>                       
                        
                    </td>
                </tr><?php endforeach; endif; ?>
