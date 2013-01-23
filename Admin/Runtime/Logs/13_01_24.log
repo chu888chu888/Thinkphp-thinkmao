@@ -1,0 +1,889 @@
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run CheckRoute Behavior [ RunTime:0.002411s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.002674s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000194s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000280s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run LocationTemplate Behavior [ RunTime:0.001262s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.001404s ]
+[ 2013-01-24T00:32:49+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ParseTemplate Behavior [ RunTime:0.031710s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.031800s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ContentReplace Behavior [ RunTime:0.000442s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run TokenBuild Behavior [ RunTime:0.000549s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000336s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000457s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001921s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000486s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000525s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000124s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000267s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000072s ]
+[ 2013-01-24T00:32:50+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000102s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000308s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000549s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000177s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000256s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000145s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000234s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.022175s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.022308s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000337s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000161s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000088s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000196s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001114s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000136s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000224s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000182s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.022431s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.022495s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000086s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000063s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000064s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000318s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-24T00:32:57+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000122s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000254s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000074s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000103s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.019038s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.011024s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.027075s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.014722s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000215s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000333s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.016661s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.016741s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000197s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000079s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000034s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000082s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000475s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000049s ]
+[ 2013-01-24T00:33:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000082s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000130s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000283s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000063s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.035936s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.010325s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000997s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000391s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000240s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.140227s ]
+[ 2013-01-24T00:33:53+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.001004s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000202s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000447s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000247s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000123s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000211s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003551s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003634s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000140s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000074s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000076s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000408s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000043s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000186s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000035s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000063s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001454s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001509s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000089s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000082s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000338s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-24T00:34:23+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000160s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000387s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000166s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000245s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000996s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000302s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000737s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000304s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000089s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006725s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006781s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000189s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000075s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000438s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000050s ]
+[ 2013-01-24T00:34:26+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000110s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000232s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000064s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000090s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000044s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000075s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003387s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003440s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000129s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000063s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000090s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000394s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000042s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000064s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000181s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000097s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001458s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001508s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000099s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000332s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:36:35+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000160s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000392s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000243s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.001000s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000272s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000620s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000266s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000208s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000300s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.013531s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013612s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000199s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000051s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000075s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000429s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000054s ]
+[ 2013-01-24T00:36:38+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000091s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000115s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000295s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000099s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000153s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000444s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.000196s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000182s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000083s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000469s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 10 LIMIT 1   [ RunTime:0.000160s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000080s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000339s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000409s ]
+[ 2013-01-24T00:36:41+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000112s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000182s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000074s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003288s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003344s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000125s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000338s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000052s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000080s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000166s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000066s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000096s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001417s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001468s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000088s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000348s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-24T00:40:51+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000179s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000469s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000132s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000318s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000098s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000088s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000124s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007391s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007461s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000218s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000077s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000471s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000051s ]
+[ 2013-01-24T00:40:52+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000179s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000731s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.000307s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000183s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000440s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000168s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000083s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000442s ]
+[ 2013-01-24T00:40:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000131s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000167s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000400s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000104s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000191s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.009237s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.009375s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000321s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000149s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000079s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000186s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001027s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000075s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001439s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001498s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000076s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000311s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000038s ]
+[ 2013-01-24T00:41:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000196s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000467s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000129s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000309s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000096s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000090s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000126s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006980s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007039s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000190s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000076s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000441s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000057s ]
+[ 2013-01-24T00:41:28+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000094s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000187s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.001010s ]
+[ 2013-01-24T00:41:31+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.000421s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000385s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000225s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000950s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000334s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000236s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.001086s ]
+[ 2013-01-24T00:41:32+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000341s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000347s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000105s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000167s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000121s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.005964s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006047s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000232s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000090s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000109s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000605s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000063s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000105s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000474s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000035s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000062s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001355s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001409s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000090s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000324s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:43:33+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000160s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000379s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.001124s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000253s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000638s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000146s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000110s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000173s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.013094s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.013174s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000206s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000074s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000039s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000096s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000521s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000054s ]
+[ 2013-01-24T00:43:43+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000093s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000187s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000038s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004532s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004583s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000115s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000348s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000038s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000096s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000247s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000081s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000136s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000057s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000104s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.002127s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002205s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000121s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000112s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000043s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000097s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000540s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000058s ]
+[ 2013-01-24T00:44:01+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000099s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000181s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000072s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000101s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000448s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000145s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000308s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000087s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000095s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000129s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007211s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007290s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000238s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000054s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000080s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000480s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000057s ]
+[ 2013-01-24T00:44:03+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000098s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000095s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000239s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000084s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000127s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000438s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.000201s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000123s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000255s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000068s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000097s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000444s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000195s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000095s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000370s ]
+[ 2013-01-24T00:44:07+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000140s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000132s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000262s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000073s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000105s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000473s ]
+[ 2013-01-24T00:44:46+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 6  [ RunTime:0.000218s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000164s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000060s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000566s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 6  [ RunTime:0.000233s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000084s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000209s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000108s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000433s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 2 LIMIT 1   [ RunTime:0.000170s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 1 LIMIT 1   [ RunTime:0.000095s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000366s ]
+[ 2013-01-24T00:44:48+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000135s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000187s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000046s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003254s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003308s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000109s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000338s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000038s ]
+[ 2013-01-24T00:47:30+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000396s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000104s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000192s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.004694s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004775s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000086s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000049s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000025s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000288s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-24T00:47:31+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000184s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000436s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_category`  [ RunTime:0.000127s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SHOW COLUMNS FROM `hd_goods_type` [ RunTime:0.000311s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | SQL: SELECT * FROM `hd_goods_type`  [ RunTime:0.000090s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000124s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 50 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 17 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: str TagLibPic.class.php 第 67 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in /var/www/html/thinkmao/Admin/Lib/TagLib/TagLibPic.class.php on line 78 and defined TagLib.class.php 第 111 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined variable: tag TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | NOTIC: [8] Undefined index:  TagLib.class.php 第 122 行.
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006795s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006855s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ContentReplace Behavior [ RunTime:0.000163s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run TokenBuild Behavior [ RunTime:0.000072s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000076s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000427s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000057s ]
+[ 2013-01-24T00:47:33+08:00 ] /thinkmao/Admin.php/AddGood/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000101s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000061s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000176s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.001232s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.004407s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000160s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000373s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000074s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000482s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000166s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000090s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000396s ]
+[ 2013-01-24T00:47:37+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000172s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000180s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000412s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000481s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 6  [ RunTime:0.000210s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000115s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000288s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000050s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000079s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000424s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 2 LIMIT 1   [ RunTime:0.000177s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 1 LIMIT 1   [ RunTime:0.000090s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000365s ]
+[ 2013-01-24T00:47:44+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000143s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run CheckRoute Behavior [ RunTime:0.000061s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ route_check ] --END-- [ RunTime:0.000165s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.001015s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/attr | SQL: SELECT * FROM `hd_type_attr` WHERE tid = 3  [ RunTime:0.002364s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run CheckRoute Behavior [ RunTime:0.000077s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ route_check ] --END-- [ RunTime:0.000185s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000060s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000459s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 6 LIMIT 1   [ RunTime:0.000162s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | NOTIC: [8] Use of undefined constant id - assumed 'id' AddGoodAction.class.php 第 36 行.
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT `id`,`pid` FROM `hd_category` WHERE id = 4 LIMIT 1   [ RunTime:0.000100s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000399s ]
+[ 2013-01-24T00:48:57+08:00 ] /thinkmao/Admin.php/AddGood/brands | SQL: SELECT * FROM `hd_brand`  [ RunTime:0.000149s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run CheckRoute Behavior [ RunTime:0.000160s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.001089s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000707s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | SQL: SELECT brand.id AS id,brand.name AS name,brand.logo AS logo,category.name AS cname FROM hd_brand brand LEFT JOIN hd_category category ON brand.cid = category.id  [ RunTime:0.000474s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000175s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000263s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run ParseTemplate Behavior [ RunTime:0.025111s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.025290s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run ContentReplace Behavior [ RunTime:0.000414s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run TokenBuild Behavior [ RunTime:0.000173s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000087s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000210s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001108s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000119s ]
+[ 2013-01-24T00:49:05+08:00 ] /thinkmao/Admin.php/Brands/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000202s ]

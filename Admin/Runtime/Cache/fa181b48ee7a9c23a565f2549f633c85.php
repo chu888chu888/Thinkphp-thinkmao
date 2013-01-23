@@ -112,6 +112,12 @@
             <div class="innerbox">
                 <table class="tb ed">
                     <tr>
+                        <td style="width:200px;">商品的点击次数:</td>                  
+                        <td align="left">
+                            <input type="text" name="click" style="width: 60px"/>&nbsp;&nbsp;&nbsp;次
+                        </td>
+                    </tr>
+                    <tr>
                         <td style="width:200px;">是否为推荐商品：</td>                  
                         <td align="left">
                             <label>
@@ -143,15 +149,14 @@
             <div class="innerbox">
                 <table class="tb" id="attr">
                     <tr>
-                        <td class="tfont" width="100px;">选择商品属性:</td>
+                        <td class="tfont" width="100px;">选择商品类型:</td>
                          <td>
                         <select name="tid" id="good_type">
                             <option value="0">选择商品类型</option>
                             <?php if(is_array($goods_type)): foreach($goods_type as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                         </td>
-                    </tr>
-                   
+                    </tr>                   
                 </table>
             </div>    
             
@@ -196,7 +201,27 @@
 	$('#img').uploadify(uploadOptions);
 </script>
                         </td>
-                     </tr>                   
+                     </tr>
+                      <tr>
+                        <td class="tfont" width="100px;">列表页展示图:</td>                        
+                    </tr>
+                     <tr>
+                          <td>
+                              <input type='file' id='pic' name='pic'/><div></div>
+<script type='text/javascript'>
+	uploadOptions.uploadLimit = 1;
+	uploadOptions.disWidth = 140;
+	uploadOptions.disHeight = 180;
+	uploadOptions.formData = {
+		<?php echo C('VAR_SESSION_ID');?> : '<?php echo session_id();?>',
+		width : '0',
+		height : '0',
+		path : './Uploads/img_list/'
+	};
+	$('#pic').uploadify(uploadOptions);
+</script>
+                        </td>
+                     </tr>
                 </table>
             </div>    
            

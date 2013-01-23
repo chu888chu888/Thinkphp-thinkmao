@@ -14,7 +14,11 @@ $(function(){
     
     $("#good_type").change(function(){
         var obj = $("option:selected",this);
-        var id = obj.attr("value");
+        var id = obj.attr("value");        
+        list_attr(id);
+    })
+    
+    function list_attr(id){
         $("#attr tr").each(
                function(i){
                    if(i != 0){
@@ -22,10 +26,6 @@ $(function(){
                    }
                }
           )
-        list_attr(id);
-    })
-    
-    function list_attr(id){
          var id = {
             id:id
         }       
@@ -43,7 +43,7 @@ $(function(){
                         var valstr = "<input type='text' name='attr["+attr[i].id+"]'/>";
                         tr_attr += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px" colspan="3">'+valstr+'</td></tr>';
                     }else{
-                        var name1 = "spec["+attr[i].id+"]["+attr[i].name+"][]";
+                        var name1 = "spec["+attr[i].id+"]['value'][]";
                         var name2 = "spec["+attr[i].id+"]['price'][]";
                         var specv = attr[i].value.split('|');
                         var option = '';
@@ -83,7 +83,13 @@ $(function(){
         var obj = $("option:selected",this);
         var pid = obj.attr('pid');
         var cid = obj.val();
-        var tid = obj.attr('tid');      
+        var tid = obj.attr('tid');
+        list_attr(tid);
+        $("#good_type").children('option').each(function(){
+            if($(this).attr("value")==tid){               
+                $(this).attr("selected","selected");
+            }
+        })
         if(pid == 0){
             alert('顶级栏目无法添加商品');
             $("option",this).eq(0).attr("selected",true);

@@ -37,3 +37,12 @@ input{
     text-align: center;
     font-weight: bold;
 }
+.upload-img img{
+    height:100px;
+    width:100px;   
+}
+.upload-img{
+    border: 1px solid #ccc;
+    height:120px !important;
+  
+}

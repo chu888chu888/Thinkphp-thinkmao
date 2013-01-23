@@ -1,0 +1,3 @@
+[ 2013-01-24T00:33:28+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-24T00:33:28+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000376s ]
+[ 2013-01-24T00:33:28+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000681s ]
