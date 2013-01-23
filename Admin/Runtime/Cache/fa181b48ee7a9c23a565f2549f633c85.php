@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="__PUBLIC__/Admin/css/Agood.css" />
         <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
         <script src="__PUBLIC__/Admin/js/addgood.js"></script>
+        <script type="text/javascript">
+            var brands_url = '<?php echo U("brands");?>';
+            var attr_url = '<?php echo U("attr");?>';
+        </script>
     </head>
     <body>
         <div class="ititle">
@@ -61,7 +65,7 @@
                     <tr>
                         <td class="tname">商品品牌:</td>
                         <td>
-                            <select name="bid[]" id="">
+                            <select name="bid[]" id="brand">
                                 <option value="0">选择品牌:</option>
                             </select>
                         </td>
@@ -142,8 +146,9 @@
                     <tr>
                         <td class="tfont" width="100px;">选择商品属性:</td>
                          <td>
-                        <select name="tid">
-                            <option value="">选择商品属性</option>
+                        <select name="tid" id="good_type">
+                            <option value="0">选择商品类型</option>
+                            <?php if(is_array($goods_type)): foreach($goods_type as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                         </td>
                     </tr>

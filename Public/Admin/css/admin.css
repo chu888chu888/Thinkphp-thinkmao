@@ -72,11 +72,11 @@
 }
 .right{
     display: inline-block;
-    float: left;
-    height: 100%;
+    float: left;   
     margin-top: 50px;
     width:auto;
-    height:645px;
+    /*height:645px;*/
+    height:1500px;;
 }
 .right iframe{
     width: 100%;
