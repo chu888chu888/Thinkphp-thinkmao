@@ -43,8 +43,8 @@ $(function(){
                         var valstr = "<input type='text' name='attr["+attr[i].id+"]'/>";
                         tr_attr += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px" colspan="3">'+valstr+'</td></tr>';
                     }else{
-                        var name1 = "spec["+attr[i].id+"]['value'][]";
-                        var name2 = "spec["+attr[i].id+"]['price'][]";
+                        var name1 = "spec["+attr[i].id+"][value][]";
+                        var name2 = "spec["+attr[i].id+"][price][]";
                         var specv = attr[i].value.split('|');
                         var option = '';
                         for(var m=0;m<specv.length;m++){

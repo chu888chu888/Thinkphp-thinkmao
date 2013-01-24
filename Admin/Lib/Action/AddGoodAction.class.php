@@ -85,12 +85,12 @@ class AddGoodAction extends CommonAction  {
              'name'=>$_POST['name'],
              'unit'=>$_POST['unit'],
              'number'=>$_POST['number'],
-             'price'=>$_POST['price'],
+             'price'=>(float)$_POST['price'],
              'pic'=>$_POST['pic'],
-             'click'=>$_POST['click'],
-             'recommend'=>$_POST['recommend'],
-             'hot'=>$_POST['hot'],
-             'time'=>time(),
+             'click'=>(int)$_POST['click'],
+             'recommend'=>isset($_POST['recommend']) ? 1 : 0,
+             'hot'=>isset ($_POST['hot']) ? 1 :0,
+             'time'=>$_SERVER['REQUEST_TIME'],
              'cid'=>$cid_str,
              'bid'=>$_POST['bid'],
               'tid'=>$_POST['tid'],
@@ -105,6 +105,9 @@ class AddGoodAction extends CommonAction  {
              )             
          );
          $attr = array();
+         /**
+          * 组合属性
+          */
          if(isset($_POST['attr'])){
          foreach ($_POST['attr'] as $key => $value) {
              if(empty($_POST['attr'][$key]))
@@ -115,21 +118,25 @@ class AddGoodAction extends CommonAction  {
                 );             
             }
          }
-         if(isset($_POST['spec'])){
+         /**
+          * 组合规格
+          */
+         if(isset($_POST['spec'])){            
              foreach ($_POST['spec'] as $key => $v) {
-                 for($i=0;$i<count($v['value']);$i++){
-                     if(empty($v['value'][i])){
+                 for($i=0;$i<count($v["value"]);$i++){
+                     if(empty($v['value'][$i])){                       
                          continue;
-                     }
+                     }                  
                      $attr[] = array(
                          'value'=>$v['value'][$i],
                          'price'=>(float)$v['price'][$i],
-                         'aid'=>(int)$aid
+                         'aid'=>(int)$key
                      );
                  }
              }
-         }
-         $data['goods_attr']=$attr;
+         }        
+         $data['goods_attr']=$attr;       
+       
          	  if (D('GoodsRelation')->insert($data)) {
 			$this->success('添加成功', U('index'));
 		} else {

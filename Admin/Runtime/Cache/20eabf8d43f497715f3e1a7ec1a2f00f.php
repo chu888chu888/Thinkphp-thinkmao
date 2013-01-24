@@ -33,7 +33,7 @@
                 </ul>
                 <ul>
                     <li class="main">商品管理</li>
-                    <li><a href="__WEB__/Code/index">商品列表</a></li>
+                    <li><a href="<?php echo U('ListGoods/index');?>">商品列表</a></li>
                     <li><a href="<?php echo U('AddGood/index');?>">添加商品</a></li>
                     <li><a href="<?php echo U('Brands/index');?>">商品品牌</a></li>
                     <li><a href="<?php echo U('Goods/cate');?>">商品分类</a></li>

@@ -9,7 +9,7 @@ class BrandsAction extends CommonAction {
       $db = M('category');
       $category = $db->select();
       $category = recursion($category);
-      $this->assign('category',$category);     
+      $this->assign('category',$category); 
       $this->display();
   }
   public function add_brand(){
