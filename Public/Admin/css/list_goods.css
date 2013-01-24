@@ -11,3 +11,30 @@
 .mod{
     width: 15%;
 }
+#gsbu{
+    width: 200px;
+    float: right;     
+}
+.add{
+    height:15px;
+    padding: 3px 0px;
+    margin-bottom: -2px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.adde{
+    height:15px;
+    padding: 3px 0px;
+    margin-bottom: -2px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.ldel{
+    font-weight: bold;
+    color:red;
+    cursor: pointer;
+}
+#gnum{
+    width: 22%;
+    text-align: left;
+}

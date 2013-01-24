@@ -20,15 +20,23 @@
                             规格
                         </td>
                     </foreach>
-                         <td >
+                        
+                        <td>
+                            货号
+                        </td>
+                    <td>
+                        是否设为套餐
+                    </td>
+                     <td >
                             库存
                         </td>
                 </tr>
             </thead>
-        <tbody id="tbody">           
-               <tr id="tmplate">
+        <tbody id="tbody">
+            <foreach name="data" item="t" key='krows'>
+               <tr class="tmplate">
                    <td class="good_id">{$gid}</td>
-                  <foreach name='attr_all' item="k">
+                  <foreach name='attr_all' item="k" key='kcomcol'>
                    <td>
                        {$k.attr_name}
                    </td>
@@ -36,21 +44,32 @@
                       <select name="{$gid}[{$k.attr_id}][]">
                           <option value="all">选择规格值</option>
                           <foreach name='k.value' item="n" key='key'>
-                              <option value="{$key}">{$n}</option>
+                              <if condition="$t['attr'][$kcomcol]['1'] eq $key">
+                                  <option value="{$key}" selected="selected">{$n}</option>
+                              <else/>
+                                 <option value="{$key}">{$n}</option>                              
+                              </if>
                            </foreach>
                       </select>
                    </td>
-                      </foreach>
-                   <td id="gnum">
-                       <input type="text" name="{$gid}[number][]" />&nbsp;&nbsp;&nbsp;{$goods_mes.0.unit}&nbsp;&nbsp;&nbsp;
+                  </foreach>
+                     <td>
+                       <input type="text" name="{$gid}[num][]"/>
                    </td>
-                  
+                   <td>
+                      是：<input type="radio" name="{$gid}[series]" value="1"/>
+                       否：<input type="radio" name="{$gid}[series]" value="0"/>
+                   </td>
+                   <td id="gnum">
+                       <input type="text" name="{$gid}[number][]" value="{$t.inventory}"/>&nbsp;&nbsp;&nbsp;{$goods_mes.0.unit}&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
+                   </td>
+                 
                </tr>       
-           
+            </foreach>
          </tbody>
         </table>  
          <div id="gsbu">
-             <input type="buttom" value="添加" class="gsubmit add"/>
+             <input type="buttom" value="添加" class="gsubmit adde"/>
              <input type="submit" value="确定" class="gsubmit"/>
          </div>
         </form>

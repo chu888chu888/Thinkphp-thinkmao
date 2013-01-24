@@ -23,28 +23,29 @@
                         </td>
                 </tr>
             </thead>
-        <tbody id="tbody">           
-               <tr id="tmplate">
+        <tbody id="tbody">
+            <?php if(is_array($data)): foreach($data as $krows=>$t): ?><tr class="tmplate">
                    <td class="good_id"><?php echo ($gid); ?></td>
-                  <?php if(is_array($attr_all)): foreach($attr_all as $key=>$k): ?><td>
+                  <?php if(is_array($attr_all)): foreach($attr_all as $kcomcol=>$k): ?><td>
                        <?php echo ($k["attr_name"]); ?>
                    </td>
                    <td>
                       <select name="<?php echo ($gid); ?>[<?php echo ($k["attr_id"]); ?>][]">
                           <option value="all">选择规格值</option>
-                          <?php if(is_array($k["value"])): foreach($k["value"] as $key=>$n): ?><option value="<?php echo ($key); ?>"><?php echo ($n); ?></option><?php endforeach; endif; ?>
+                          <?php if(is_array($k["value"])): foreach($k["value"] as $key=>$n): if($t['attr'][$kcomcol]['1'] == $key): ?><option value="<?php echo ($key); ?>" selected="selected"><?php echo ($n); ?></option>
+                              <?php else: ?>
+                                 <option value="<?php echo ($key); ?>"><?php echo ($n); ?></option><?php endif; endforeach; endif; ?>
                       </select>
                    </td><?php endforeach; endif; ?>
                    <td id="gnum">
-                       <input type="text" name="<?php echo ($gid); ?>[number][]" />&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;
+                       <input type="text" name="<?php echo ($gid); ?>[number][]" value="<?php echo ($t["inventory"]); ?>"/>&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
                    </td>
                   
-               </tr>       
-           
+               </tr><?php endforeach; endif; ?>
          </tbody>
         </table>  
          <div id="gsbu">
-             <input type="buttom" value="添加" class="gsubmit add"/>
+             <input type="buttom" value="添加" class="gsubmit adde"/>
              <input type="submit" value="确定" class="gsubmit"/>
          </div>
         </form>

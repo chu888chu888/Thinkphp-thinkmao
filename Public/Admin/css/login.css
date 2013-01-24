@@ -1,5 +1,5 @@
 body{
-    background-color:#fff;
+    background-color:#eee;
 }
 .login{
     height:300px;
@@ -19,7 +19,7 @@ body{
     padding-top: 20px;
 }
 .lfont{
-    color:#fff;
+    color:#f1f1f1;
     font-weight: bold;
 }
 input{
@@ -33,4 +33,5 @@ input{
     background-color:red;
     font-weight: bolder;
 }
+
 
