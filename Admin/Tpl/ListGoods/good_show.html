@@ -20,6 +20,12 @@
                             规格
                         </td>
                     </foreach>
+                       <td>
+                            货号
+                        </td>
+                    <td>
+                        是否设为套餐
+                    </td>
                          <td >
                             库存
                         </td>
@@ -30,10 +36,10 @@
                    <td class="good_id">{$gid}</td>
                   <foreach name='attr_all' item="k">
                    <td>
-                       {$k.attr_name}
+                       {$k.name}
                    </td>
                    <td>
-                      <select name="{$gid}[{$k.attr_id}][]">
+                      <select name="{$gid}[{$k.id}][]">
                           <option value="all">选择规格值</option>
                           <foreach name='k.value' item="n" key='key'>
                               <option value="{$key}">{$n}</option>
@@ -41,6 +47,13 @@
                       </select>
                    </td>
                       </foreach>
+                    <td>
+                         <input type="text" name="{$gid}[num][]"/>
+                   </td>
+                   <td>                                           
+                           <input type="button" class="series0 zb"/>
+                           <input type="hidden" name="{$gid}[series][]" class='zzd'/>
+                   </td>  
                    <td id="gnum">
                        <input type="text" name="{$gid}[number][]" />&nbsp;&nbsp;&nbsp;{$goods_mes.0.unit}&nbsp;&nbsp;&nbsp;
                    </td>

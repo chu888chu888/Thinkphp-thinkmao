@@ -18,6 +18,12 @@
                     <?php if(is_array($attr_all)): foreach($attr_all as $key=>$m): ?><td colspan="2">
                             规格
                         </td><?php endforeach; endif; ?>
+                       <td>
+                            货号
+                        </td>
+                    <td>
+                        是否设为套餐
+                    </td>
                          <td >
                             库存
                         </td>
@@ -27,14 +33,21 @@
                <tr id="tmplate">
                    <td class="good_id"><?php echo ($gid); ?></td>
                   <?php if(is_array($attr_all)): foreach($attr_all as $key=>$k): ?><td>
-                       <?php echo ($k["attr_name"]); ?>
+                       <?php echo ($k["name"]); ?>
                    </td>
                    <td>
-                      <select name="<?php echo ($gid); ?>[<?php echo ($k["attr_id"]); ?>][]">
+                      <select name="<?php echo ($gid); ?>[<?php echo ($k["id"]); ?>][]">
                           <option value="all">选择规格值</option>
                           <?php if(is_array($k["value"])): foreach($k["value"] as $key=>$n): ?><option value="<?php echo ($key); ?>"><?php echo ($n); ?></option><?php endforeach; endif; ?>
                       </select>
                    </td><?php endforeach; endif; ?>
+                    <td>
+                         <input type="text" name="<?php echo ($gid); ?>[num][]"/>
+                   </td>
+                   <td>                                           
+                           <input type="button" class="series0 zb"/>
+                           <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd'/>
+                   </td>  
                    <td id="gnum">
                        <input type="text" name="<?php echo ($gid); ?>[number][]" />&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;
                    </td>

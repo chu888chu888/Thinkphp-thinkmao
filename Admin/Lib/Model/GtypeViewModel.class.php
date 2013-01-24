@@ -3,7 +3,7 @@ Class GtypeViewModel extends ViewModel {
              Protected $tableName = 'good_type';
 	Protected $viewFields = array(
 		'goods_type' => array(
-			'_type' => 'LEFT',
+			'id','name','_type' => 'LEFT',
 			),
 		'type_attr' => array(
                                         'id'=>'attr_id',

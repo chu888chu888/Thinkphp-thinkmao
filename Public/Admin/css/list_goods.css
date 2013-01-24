@@ -38,3 +38,16 @@
     width: 22%;
     text-align: left;
 }
+.series1{
+    height:20px;
+    border: 0px;
+    background-color:red;
+}
+.series0{
+    height:20px;
+    border: 0px;
+    background-color:blue;
+}
+input{
+    width:80px;
+}

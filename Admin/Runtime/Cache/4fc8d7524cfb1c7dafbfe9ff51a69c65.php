@@ -18,7 +18,14 @@
                     <?php if(is_array($attr_all)): foreach($attr_all as $key=>$m): ?><td colspan="2">
                             规格
                         </td><?php endforeach; endif; ?>
-                         <td >
+                        
+                        <td>
+                            货号
+                        </td>
+                    <td>
+                        是否设为套餐
+                    </td>
+                     <td >
                             库存
                         </td>
                 </tr>
@@ -27,20 +34,29 @@
             <?php if(is_array($data)): foreach($data as $krows=>$t): ?><tr class="tmplate">
                    <td class="good_id"><?php echo ($gid); ?></td>
                   <?php if(is_array($attr_all)): foreach($attr_all as $kcomcol=>$k): ?><td>
-                       <?php echo ($k["attr_name"]); ?>
+                       <?php echo ($k["name"]); ?>
                    </td>
                    <td>
-                      <select name="<?php echo ($gid); ?>[<?php echo ($k["attr_id"]); ?>][]">
+                      <select name="<?php echo ($gid); ?>[<?php echo ($k["id"]); ?>][]">
                           <option value="all">选择规格值</option>
                           <?php if(is_array($k["value"])): foreach($k["value"] as $key=>$n): if($t['attr'][$kcomcol]['1'] == $key): ?><option value="<?php echo ($key); ?>" selected="selected"><?php echo ($n); ?></option>
                               <?php else: ?>
                                  <option value="<?php echo ($key); ?>"><?php echo ($n); ?></option><?php endif; endforeach; endif; ?>
                       </select>
                    </td><?php endforeach; endif; ?>
+                     <td>
+                         <input type="text" name="<?php echo ($gid); ?>[num][]" value="<?php echo ($t["number"]); ?>"/>
+                   </td>
+                   <td>
+                       <?php if($t[series]): ?><input type="button" name="<?php echo ($gid); ?>[series][]" class="series1"/>
+                       <?php else: ?>                         
+                           <input type="button" name="<?php echo ($gid); ?>[series][]" class="series0"/><?php endif; ?>
+                       
+                   </td>                  
                    <td id="gnum">
                        <input type="text" name="<?php echo ($gid); ?>[number][]" value="<?php echo ($t["inventory"]); ?>"/>&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
                    </td>
-                  
+                 
                </tr><?php endforeach; endif; ?>
          </tbody>
         </table>  

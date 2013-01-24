@@ -7,22 +7,25 @@
          $this->display();
      }
      /**
-      * 格式化数据
+      * 
       * 将商品的规格分配到模版中
       */
      private function gs(){
-         $gid = $_REQUEST['id'];
+         $gid = $_GET['id'];
          $goods = M('goods');         
          $goods_mes = $goods->where(array('id'=>$gid))->select();
          $this->assign("goods_mes", $goods_mes);
+         
+         
          $good_attr = M('goods_attr');
-         $attr = $good_attr->where(array('gid'=>$gid))->select();
-         $type = D('GtypeView');
-         $type_all = $type->select();       
+         $attr = $good_attr->where(array('gid'=>$gid))->group('aid')->field('aid')->select();
+        
+         $type = M('type_attr');
+         $type_all = $type->select();  
          $gt_all =array();
          foreach ($type_all as $value) {
-             foreach ($attr as $k => $v) {
-                 if($v['id']==$value['attr_id'] && $value['type']){
+             foreach ($attr as $v) {
+                 if($v['aid']==$value['id'] && $value['type']!=0 ){
                      $value['gid']=$gid;
                      $value['value']=  explode('|', $value['value']);
                      $gt_all[]=$value;
@@ -30,7 +33,6 @@
              }
              
          }
-        
          $this->assign('gid',$gid);
          $this->assign('attr_all',$gt_all);
      }
@@ -47,17 +49,17 @@
       */
      public function put_number(){
          $data =$_POST;
-             
+           
          /**
           * $key为商品的id
           * $value为id的属性库存集和
           */
          foreach ($data as $key => $value) {
              $gid = $key;
-             $arr_all = $this->arr($value,$gid);
+             $arr_all = $this->arr($value,$gid);           
                foreach ($arr_all as $value) {
-             $db = M('goods_list');
-             $res = $db->data($value)->add();
+             $db = M('goods_list');             
+             $res = $db->data($value)->add();         
              if(!$res){
                  $this->error('操作失败',U('index'));
              }
@@ -73,8 +75,7 @@
       * @param type $gid
       * @return type 格式化后的数组
       */
-     private function arr ($arr,$gid){
-       
+     private function arr ($arr,$gid){        
          $arr1 = array();
          foreach ($arr as $key => $value) {
              if(is_numeric($key)){
@@ -95,7 +96,7 @@
              }
              $arre['inventory'] = $arr['number'][$i];
              $arre['number']=$arr['num'][$i];
-             $arre['series']=$arr['series'];
+             $arre['series']=$arr['series'][$i];
              $arre['attr']= $str;
              $arre['attr']=  rtrim($arre['attr'],'|');
              $arre['gid']=$gid;

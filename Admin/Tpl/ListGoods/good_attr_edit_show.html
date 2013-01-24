@@ -38,10 +38,10 @@
                    <td class="good_id">{$gid}</td>
                   <foreach name='attr_all' item="k" key='kcomcol'>
                    <td>
-                       {$k.attr_name}
+                       {$k.name}
                    </td>
                    <td>
-                      <select name="{$gid}[{$k.attr_id}][]">
+                      <select name="{$gid}[{$k.id}][]">
                           <option value="all">选择规格值</option>
                           <foreach name='k.value' item="n" key='key'>
                               <if condition="$t['attr'][$kcomcol]['1'] eq $key">
@@ -54,12 +54,16 @@
                    </td>
                   </foreach>
                      <td>
-                       <input type="text" name="{$gid}[num][]"/>
+                         <input type="text" name="{$gid}[num][]" value="{$t.number}"/>
                    </td>
                    <td>
-                      是：<input type="radio" name="{$gid}[series]" value="1"/>
-                       否：<input type="radio" name="{$gid}[series]" value="0"/>
-                   </td>
+                       <if condition="$t[series]">                         
+                           <input type="button" name="{$gid}[series][]" class="series1"/>
+                       <else/>                         
+                           <input type="button" name="{$gid}[series][]" class="series0"/>
+                       </if>
+                       
+                   </td>                  
                    <td id="gnum">
                        <input type="text" name="{$gid}[number][]" value="{$t.inventory}"/>&nbsp;&nbsp;&nbsp;{$goods_mes.0.unit}&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
                    </td>
