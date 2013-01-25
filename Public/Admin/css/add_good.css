@@ -29,4 +29,8 @@
 .more:hover{
     color:blue;
 }
-
+#textarea{
+    height:100px;
+    width: 300px;
+    border-color: #009A61;
+}

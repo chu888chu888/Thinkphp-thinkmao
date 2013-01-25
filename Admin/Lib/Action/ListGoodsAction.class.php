@@ -125,19 +125,19 @@
       * 插入更改的数据
       */
      
-     public function attr_modify(){
-         foreach ($_POST as $gid => $arrs) {
+     public function attr_modify(){        
+         foreach ($_POST as $gid => $arrs) {      
              $db = M('goods_list');
              $data = $db->where(array("gid"=>$gid))->select();
              if(count($data)){
-                 $res = $db->where(array("gid"=>$gid))->delete();
-                 if($res){                     
-                     $arr = $this->arr($arrs,$gid);
+                 $res = $db->where(array("gid"=>$gid))->delete();              
+                 if($res){                    
+                     $arr = $this->arr($arrs,$gid);                                       
                      $this->put_data_in($arr,$gid);
-                 }else{
-                     $this->error('操作失败',U("good_attr_edit_show?id=$gid"));
+                 }else{                 
+                     $this->error('操作失败1111111111111',U("good_attr_edit_show?id=$gid"));
                  }
-             }else{
+             }else{                 
                   $arr = $this->arr($arrs,$gid);
                   $this->put_data_in($arr,$gid);
              }
@@ -147,13 +147,12 @@
      private function put_data_in($arr,$gid){
          $db = M('goods_list');
           foreach ($arr as $mes) {
-                         $ress = $db->data($mes)->add();
-                         if($ress){
-                             $this->error('操作成功',U("good_attr_edit_show?id=$gid"));
-                         }else{
+                         $ress = $db->data($mes)->add();                        
+                         if(!$ress){                          
                              $this->error('操作失败',U("good_attr_edit_show?id=$gid"));
                          }
                      }
+           $this->success('操作成功',U("good_attr_edit_show?id=$gid"));
      }
      
      

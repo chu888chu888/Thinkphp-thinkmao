@@ -112,7 +112,20 @@ and open the template in the editor.
                         </label>
                     </td>
                 </tr>
-
+                
+                
+                  <tr>
+                    <td class="ahead">
+                        品牌简介
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <textarea name="descript" id="textarea">
+                           
+                       </textarea>
+                    </td>
+                </tr>
 
 
 
