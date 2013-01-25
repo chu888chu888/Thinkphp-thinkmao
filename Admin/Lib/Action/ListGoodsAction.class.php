@@ -70,10 +70,10 @@
      }
      
      /**
-      * 
+      * 格式化成可插入数据表的数据
       * @param type $arr
       * @param type $gid
-      * @return type 格式化后的数组
+      * @return type  $arr
       */
      private function arr ($arr,$gid){        
          $arr1 = array();
@@ -118,16 +118,43 @@
                  $data[$key]['attr'][$k]=  explode(',', $v);
              }
          }
-//         p($data);
-//         exit();       
          $this->assign('data',$data);
          $this->display();
      }
+     /**
+      * 插入更改的数据
+      */
      
+     public function attr_modify(){
+         foreach ($_POST as $gid => $arrs) {
+             $db = M('goods_list');
+             $data = $db->where(array("gid"=>$gid))->select();
+             if(count($data)){
+                 $res = $db->where(array("gid"=>$gid))->delete();
+                 if($res){                     
+                     $arr = $this->arr($arrs,$gid);
+                     $this->put_data_in($arr,$gid);
+                 }else{
+                     $this->error('操作失败',U("good_attr_edit_show?id=$gid"));
+                 }
+             }else{
+                  $arr = $this->arr($arrs,$gid);
+                  $this->put_data_in($arr,$gid);
+             }
+         }
+     }
      
-     
-     
-     
+     private function put_data_in($arr,$gid){
+         $db = M('goods_list');
+          foreach ($arr as $mes) {
+                         $ress = $db->data($mes)->add();
+                         if($ress){
+                             $this->error('操作成功',U("good_attr_edit_show?id=$gid"));
+                         }else{
+                             $this->error('操作失败',U("good_attr_edit_show?id=$gid"));
+                         }
+                     }
+     }
      
      
      

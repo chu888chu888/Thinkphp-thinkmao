@@ -10,7 +10,7 @@
     <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
  <body>
-     <form action="<?php echo U('put_number');?>" method="post">
+     <form action="<?php echo U('attr_modify');?>" method="post">
         <table class="channel_list">
             <thead>
                 <tr>
@@ -48,9 +48,11 @@
                          <input type="text" name="<?php echo ($gid); ?>[num][]" value="<?php echo ($t["number"]); ?>"/>
                    </td>
                    <td>
-                       <?php if($t[series]): ?><input type="button" name="<?php echo ($gid); ?>[series][]" class="series1"/>
+                       <?php if($t[series]): ?><input type="button" class="series1 zb"/>
+                           <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd' value="<?php echo ($t["series"]); ?>"/>
                        <?php else: ?>                         
-                           <input type="button" name="<?php echo ($gid); ?>[series][]" class="series0"/><?php endif; ?>
+                           <input type="button" class="series0 zb"/>
+                           <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd' value="<?php echo ($t["series"]); ?>"/><?php endif; ?>
                        
                    </td>                  
                    <td id="gnum">

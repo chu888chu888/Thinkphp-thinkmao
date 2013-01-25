@@ -10,7 +10,7 @@
     <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
  <body>
-     <form action="{:U('put_number')}" method="post">
+     <form action="{:U('attr_modify')}" method="post">
         <table class="channel_list">
             <thead>
                 <tr>
@@ -58,9 +58,11 @@
                    </td>
                    <td>
                        <if condition="$t[series]">                         
-                           <input type="button" name="{$gid}[series][]" class="series1"/>
+                           <input type="button" class="series1 zb"/>
+                           <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
                        <else/>                         
-                           <input type="button" name="{$gid}[series][]" class="series0"/>
+                           <input type="button" class="series0 zb"/>
+                           <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
                        </if>
                        
                    </td>                  

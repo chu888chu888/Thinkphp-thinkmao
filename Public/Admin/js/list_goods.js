@@ -1,14 +1,15 @@
 $(function(){
-    $('.zb').live('click',function(){
-        
-        if($(this).attr("class")=='series0'){
-            $(this).attr("class","series1");
+    $('.zb').live('click',function(){ 
+        var time = new Date();
+        var times = time.getTime()+Math.round(Math.random()*1000);       
+        if($(this).attr("class")=='series0 zb'){
+            $(this).attr("class","series1 zb");
             var num = $(this).index();
-            $(".zzd").eq(num).attr("value",num+1);
+            $(".zzd").eq(num).attr("value",times);
         }else{
-            $(this).attr("class","series1");
+            $(this).attr("class","series0 zb");
             var num = $(this).index();
-            $(".zzd").eq(num).attr("value",num+1);
+            $(".zzd").eq(num).attr("value",0);
         }
     })
    
