@@ -75,7 +75,7 @@ class AddGoodAction extends CommonAction  {
      /**
       * 插入商品数据
       */
-     public function put_good(){
+     public function put_good(){        
          $cid_arr = $_POST['cid'];
          $cid_str = '';
          foreach ($cid_arr as $key => $value) {

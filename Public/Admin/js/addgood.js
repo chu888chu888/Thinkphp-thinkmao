@@ -39,9 +39,20 @@ $(function(){
                 var tr_attr='';
                 var tr_spec='';
                 for(var i=0;i<attr.length;i++){                    
-                    if(attr[i].value==0){
+                    if(attr[i].type==0){
+                        if(attr[i].value==0){
                         var valstr = "<input type='text' name='attr["+attr[i].id+"]'/>";
                         tr_attr += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px" colspan="3">'+valstr+'</td></tr>';
+                        }else{
+                        var name1 = "attr["+attr[i].id+"]";                        
+                        var attrv = attr[i].value.split('|');
+                        var option = '';
+                        for(var m=0;m<attrv.length;m++){
+                            option +='<option value='+attrv[m]+'>'+attrv[m]+'</option>';
+                        }
+                        var valstr = "<select name="+name1+" ><option value='0'>请选择</option>"+option+"</select>";                       
+                        tr_attr += '<tr class="tfont"><td  style="width:50px">'+attr[i].name+':</td><td style="width:40px" colspan="3">'+valstr+'</td></tr>';
+                        }
                     }else{
                         var name1 = "spec["+attr[i].id+"][value][]";
                         var name2 = "spec["+attr[i].id+"][price][]";
