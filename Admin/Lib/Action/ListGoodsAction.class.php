@@ -135,7 +135,7 @@
                      $arr = $this->arr($arrs,$gid);                                       
                      $this->put_data_in($arr,$gid);
                  }else{                 
-                     $this->error('操作失败1111111111111',U("good_attr_edit_show?id=$gid"));
+                     $this->error('操作失败',U("good_attr_edit_show?id=$gid"));
                  }
              }else{                 
                   $arr = $this->arr($arrs,$gid);
@@ -154,12 +154,33 @@
                      }
            $this->success('操作成功',U("good_attr_edit_show?id=$gid"));
      }
-     
-     
-     
-     
-     
-     
-     
+     public function good_del(){       
+         $id = $_GET['id'];
+         $imglist = M('goods');
+         $datalist = $imglist->where(array('id'=>$id))->find();     
+         unlink($_SERVER['DOCUMENT_ROOT'].$datalist['pic']);
+         $img = M('goods_intro');
+         $data = $img->where(array('id'=>$id))->find();
+         foreach ($data as $key => $value) {            
+             switch ($key) {
+                 case 'mini':                    
+                     unlink($_SERVER['DOCUMENT_ROOT'].$value);
+                 case 'medium':
+                     unlink($_SERVER['DOCUMENT_ROOT'].$value);
+                 case 'max':
+                    unlink($_SERVER['DOCUMENT_ROOT'].$value);
+             }
+         }        
+         $db = D('GoodsRelation');
+         $res = $db->relation(true)->delete($id);
+         if($res){
+             $this->success('删除成功',U('index'));
+         }else{
+             $this->error('删除失败',U('index'));
+         }
+         
+         
+     }
+
  }
 ?>

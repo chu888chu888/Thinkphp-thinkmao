@@ -12,7 +12,7 @@ return array(
             'DB_PREFIX'=>'hd_',
             'TOKEN_ON'=>false,
             'APP_AUTOLOAD_PATH' => '@.TagLib',
-	'TAGLIB_BUILD_IN' => 'Cx,Pic',
+	'TAGLIB_BUILD_IN' => 'Cx,List',
 	'TMPL_ACTION_SUCCESS' => './Public/Template/msg.html',
 	'TMPL_ACTION_ERROR' => './Public/Template/msg.html',
             

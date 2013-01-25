@@ -36,7 +36,7 @@
                    <td class="mod">
                        <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>">查看</a>
                        <a href="<?php echo U('good_attr_edit_show');?>?id=<?php echo ($n["id"]); ?>">修改</a>
-                       <a href="">删除</a>
+                       <a href="<?php echo U('good_del');?>?id=<?php echo ($n["id"]); ?>">删除</a>
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>
