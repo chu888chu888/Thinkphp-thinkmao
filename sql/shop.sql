@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 01 月 25 日 20:32
+-- 生成日期: 2013 年 01 月 27 日 02:39
 -- 服务器版本: 5.5.29
 -- PHP 版本: 5.4.10
 
@@ -88,19 +88,53 @@ CREATE TABLE IF NOT EXISTS `hd_category` (
   `tid` int(10) unsigned NOT NULL COMMENT '所属类型ID',
   PRIMARY KEY (`id`),
   KEY `tid` (`tid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品分类' AUTO_INCREMENT=20 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品分类' AUTO_INCREMENT=54 ;
 
 --
 -- 转存表中的数据 `hd_category`
 --
 
 INSERT INTO `hd_category` (`id`, `name`, `pid`, `tid`) VALUES
+(22, '化妆品', 0, 9),
+(21, '珠宝饰品/手表眼镜', 0, 11),
+(20, '箱/鞋包', 0, 10),
 (19, '精致内衣', 14, 8),
 (18, '时尚家居', 14, 8),
 (17, '精品男装', 14, 8),
 (16, '服饰配件', 14, 0),
 (15, '品牌女装', 14, 0),
-(14, '服装/内衣/配件', 0, 8);
+(14, '服装/内衣/配件', 0, 8),
+(23, '户外运动', 0, 13),
+(24, '手机数码', 0, 14),
+(25, '家用电器', 0, 15),
+(26, '家具建材', 0, 16),
+(27, '家纺/居家', 0, 17),
+(28, '母婴玩具', 0, 18),
+(29, '食品', 0, 19),
+(30, '医药保健', 0, 20),
+(31, '汽车配件', 0, 21),
+(32, '图书音箱', 0, 22),
+(33, '文化娱乐', 0, 23),
+(34, '羽绒服', 15, 8),
+(35, '毛衣裙', 15, 8),
+(36, '毛呢外套', 15, 8),
+(37, '毛衣', 15, 8),
+(38, '真皮皮衣', 15, 8),
+(39, '外套', 15, 8),
+(40, '休闲裤', 15, 8),
+(41, '牛仔裤', 15, 8),
+(42, '皮草', 15, 8),
+(43, '针织衫', 15, 8),
+(44, '棉衣服装', 15, 8),
+(45, '衬衫', 15, 8),
+(46, 'T恤', 15, 8),
+(47, '卫衣', 15, 8),
+(48, '婚纱/礼服/旗袍', 15, 8),
+(49, '短外套', 15, 8),
+(50, '风衣', 15, 8),
+(51, '半身裙', 15, 8),
+(52, '小西装', 15, 8),
+(53, '中老年服装', 15, 8);
 
 -- --------------------------------------------------------
 
@@ -148,14 +182,14 @@ CREATE TABLE IF NOT EXISTS `hd_goods` (
   KEY `bid` (`bid`),
   KEY `tid` (`tid`),
   KEY `aid` (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品信息' AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品信息' AUTO_INCREMENT=11 ;
 
 --
 -- 转存表中的数据 `hd_goods`
 --
 
 INSERT INTO `hd_goods` (`id`, `name`, `unit`, `number`, `price`, `pic`, `click`, `recommend`, `hot`, `time`, `cid`, `bid`, `tid`, `aid`, `mprice`) VALUES
-(4, 'aaa', 'aa', '324234', 3243.00, '/thinkmao/Uploads/img_list/201301/51027ac6d1644.jpg', 3421, 1, 1, 1359117013, 15, 17, 8, 1, '13423');
+(10, '【优】【爆】Ochirly欧时力新女秋装长袖羊毛呢外套1115340700', '件', '1115340700133', 449.00, '/thinkmao/Uploads/img_list/201301/510290ad9a59d.jpg', 3421, 1, 1, 1359122607, 15, 17, 8, 1, '1390.00');
 
 -- --------------------------------------------------------
 
@@ -172,41 +206,45 @@ CREATE TABLE IF NOT EXISTS `hd_goods_attr` (
   PRIMARY KEY (`id`),
   KEY `aid` (`aid`),
   KEY `gid` (`gid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品属性值' AUTO_INCREMENT=48 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品属性值' AUTO_INCREMENT=121 ;
 
 --
 -- 转存表中的数据 `hd_goods_attr`
 --
 
 INSERT INTO `hd_goods_attr` (`id`, `value`, `price`, `gid`, `aid`) VALUES
-(30, '长款(80cm<衣长≤100cm)', NULL, 4, 22),
-(29, '加厚', NULL, 4, 21),
-(28, 'wqwq', NULL, 4, 12),
-(27, '宽松型', NULL, 4, 13),
-(26, '英伦', NULL, 4, 14),
-(25, 'sds', NULL, 4, 15),
-(24, 'tuan', NULL, 4, 16),
-(23, 'ciazhi', NULL, 4, 17),
-(22, '2101', NULL, 4, 18),
-(21, '记忆/仿记忆面料', NULL, 4, 19),
-(20, 'orchily', NULL, 4, 20),
-(31, '通勤', NULL, 4, 23),
-(32, '毛袖', NULL, 4, 24),
-(33, 'wq', NULL, 4, 25),
-(34, 'qwq', NULL, 4, 26),
-(35, '紫色', NULL, 4, 27),
-(36, 'qwqwqw', NULL, 4, 28),
-(37, '短袖', NULL, 4, 29),
-(38, '纽扣', NULL, 4, 30),
-(39, 'wqwqw', NULL, 4, 31),
-(40, '1200-1500', NULL, 4, 32),
-(41, '中码', NULL, 4, 33),
-(42, 'wqwq', NULL, 4, 34),
-(43, 'XXXL', 213.00, 4, 37),
-(44, 'XL', 890.00, 4, 37),
-(45, 'X', 565.00, 4, 37),
-(46, '粉红', 32.00, 4, 38),
-(47, '蓝色', 67.00, 4, 38);
+(109, '500-800', NULL, 10, 32),
+(108, ' 51%-70%', NULL, 10, 31),
+(107, '纽扣', NULL, 10, 30),
+(106, '长袖', NULL, 10, 29),
+(105, '1115340700133', NULL, 10, 28),
+(104, '白色', NULL, 10, 27),
+(103, '仿呢料', NULL, 10, 26),
+(102, '休闲', NULL, 10, 25),
+(101, '常规袖', NULL, 10, 24),
+(100, '街头', NULL, 10, 23),
+(99, '常规款(50cm<衣长≤65cm)', NULL, 10, 22),
+(98, '加厚', NULL, 10, 21),
+(97, '实拍', NULL, 10, 12),
+(96, '修身型', NULL, 10, 13),
+(95, '常规', NULL, 10, 14),
+(94, '立领', NULL, 10, 15),
+(93, '花纹', NULL, 10, 16),
+(92, '涤纶', NULL, 10, 17),
+(91, '2012', NULL, 10, 18),
+(90, '记忆/仿记忆面料', NULL, 10, 19),
+(89, 'Ochirly/欧时力', NULL, 10, 20),
+(110, '中码', NULL, 10, 33),
+(111, 'Ochirly/欧时力', NULL, 10, 34),
+(112, 'X', 10.00, 10, 37),
+(113, 'XXXL', 40.00, 10, 37),
+(114, 'XXL', 30.00, 10, 37),
+(115, 'XL', 20.00, 10, 37),
+(116, '粉红', 20.00, 10, 38),
+(117, '白色', 20.00, 10, 38),
+(118, '灰色', 78.00, 10, 38),
+(119, '红色', 56.00, 10, 38),
+(120, '灰色', 40.00, 10, 38);
 
 -- --------------------------------------------------------
 
@@ -224,14 +262,14 @@ CREATE TABLE IF NOT EXISTS `hd_goods_intro` (
   `gid` int(10) unsigned NOT NULL COMMENT '所属商品ID',
   PRIMARY KEY (`id`),
   KEY `gid` (`gid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品介绍' AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品介绍' AUTO_INCREMENT=11 ;
 
 --
 -- 转存表中的数据 `hd_goods_intro`
 --
 
 INSERT INTO `hd_goods_intro` (`id`, `mini`, `medium`, `max`, `intro`, `service`, `gid`) VALUES
-(4, '/thinkmao/Uploads/img_list/201301/mini51027ac27fc3f.jpg', '/thinkmao/Uploads/img_list/201301/max51027ac27fc3f.jpg', '/thinkmao/Uploads/img_list/201301/51027ac27fc3f.jpg', '<p>3423432</p>', '<p>21321321</p>', 4);
+(10, '/thinkmao/Uploads/img_list/201301/mini510290a50f146.jpg|/thinkmao/Uploads/img_list/201301/mini510290a15f589.jpg|/thinkmao/Uploads/img_list/201301/mini5102909d4845f.jpg', '/thinkmao/Uploads/img_list/201301/max510290a50f146.jpg|/thinkmao/Uploads/img_list/201301/max510290a15f589.jpg|/thinkmao/Uploads/img_list/201301/max5102909d4845f.jpg', '/thinkmao/Uploads/img_list/201301/510290a50f146.jpg|/thinkmao/Uploads/img_list/201301/510290a15f589.jpg|/thinkmao/Uploads/img_list/201301/5102909d4845f.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/64971359122206.jpg" /><br /></p>', '', 10);
 
 -- --------------------------------------------------------
 
@@ -248,7 +286,16 @@ CREATE TABLE IF NOT EXISTS `hd_goods_list` (
   `series` int(20) NOT NULL DEFAULT '0' COMMENT '套餐',
   PRIMARY KEY (`id`),
   KEY `gid` (`gid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品列表(不同货品的库存、货号)' AUTO_INCREMENT=64 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品列表(不同货品的库存、货号)' AUTO_INCREMENT=67 ;
+
+--
+-- 转存表中的数据 `hd_goods_list`
+--
+
+INSERT INTO `hd_goods_list` (`id`, `inventory`, `attr`, `gid`, `number`, `series`) VALUES
+(66, 788, '0,1|1,3', 10, '5657', 0),
+(65, 32, '0,2|1,2', 10, '564', 0),
+(64, 231, '0,0|1,2', 10, '2132', 2147483647);
 
 -- --------------------------------------------------------
 
@@ -260,16 +307,29 @@ CREATE TABLE IF NOT EXISTS `hd_goods_type` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` char(15) NOT NULL DEFAULT '' COMMENT '类型名称',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品类型' AUTO_INCREMENT=11 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品类型' AUTO_INCREMENT=24 ;
 
 --
 -- 转存表中的数据 `hd_goods_type`
 --
 
 INSERT INTO `hd_goods_type` (`id`, `name`) VALUES
+(11, '黄金'),
 (10, '靴子'),
 (9, '腰带'),
-(8, '服装');
+(8, '服装'),
+(12, '化妆品'),
+(13, '运动鞋'),
+(14, '手机'),
+(15, '电器'),
+(16, '家具'),
+(17, '家纺/饰品'),
+(18, '奶粉'),
+(19, '食品'),
+(20, '医药'),
+(21, '汽车'),
+(22, '图书'),
+(23, '消费卷');
 
 -- --------------------------------------------------------
 
@@ -323,7 +383,7 @@ CREATE TABLE IF NOT EXISTS `hd_type_attr` (
   `tid` int(10) unsigned NOT NULL COMMENT '所属类型ID',
   PRIMARY KEY (`id`),
   KEY `tid` (`tid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='类型属性' AUTO_INCREMENT=79 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='类型属性' AUTO_INCREMENT=107 ;
 
 --
 -- 转存表中的数据 `hd_type_attr`
@@ -396,7 +456,35 @@ INSERT INTO `hd_type_attr` (`id`, `name`, `value`, `type`, `tid`) VALUES
 (75, '尺码', '大码|中码|小码', 0, 10),
 (76, '价格区间', '100-200|200-500|500-800|800-1000|1000-1500|1500+', 0, 10),
 (77, '消费人群', '青年|老年|小孩|中年', 0, 10),
-(78, '尺码', '大号码|小号码|中号码', 1, 10);
+(78, '尺码', '大号码|小号码|中号码', 1, 10),
+(79, '货号', '0', 0, 11),
+(80, '是否镶嵌', '是|否', 0, 11),
+(81, '贵重珠宝款式', '0', 0, 11),
+(82, '品牌', '0', 0, 11),
+(83, '图案/形状', '0', 0, 11),
+(84, '售后', '0', 0, 11),
+(85, '贵金属成色', '0', 0, 11),
+(86, '化妆品规格', '0', 0, 12),
+(87, '适合肤质', '0', 0, 12),
+(88, '品牌', '0', 0, 12),
+(89, '化妆品特性', '0', 0, 12),
+(90, '面部护理套装', '0', 0, 12),
+(91, '颜色分类', '0', 0, 13),
+(92, '尺码', '30|31|32|33|34|35|36|37|38|39|40|41|42', 1, 13),
+(93, '颜色分类', '黄色|白色|蓝色|棕色', 1, 13),
+(94, '上市年份', '0', 0, 13),
+(95, '是否现货', '是|否', 0, 13),
+(96, '运动鞋外底材料', '0', 0, 13),
+(97, '价格区间', '100-200|200-300|300-1000', 0, 13),
+(98, '货号', '0', 0, 13),
+(99, '吊牌价', '0', 0, 13),
+(100, '鞋帮款式', '0', 0, 13),
+(101, '运动鞋功能', '0', 0, 13),
+(102, '帆布鞋闭合方式', '0', 0, 13),
+(103, '品牌', '0', 0, 13),
+(104, '运动鞋性别', '男|女|通用', 0, 13),
+(105, '鞋面材料', '0', 0, 13),
+(106, '系列', '0', 0, 13);
 
 -- --------------------------------------------------------
 
