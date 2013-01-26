@@ -38,7 +38,7 @@ and open the template in the editor.
              <tr>
                <td>
                    <select name="tid">
-                       <option>
+                       <option value="<?php echo ($cate["tid"]); ?>">
                            选择类型
                        </option>
                        <?php if(is_array($data)): foreach($data as $key=>$n): ?><option value="<?php echo ($n["id"]); ?>">
@@ -47,10 +47,7 @@ and open the template in the editor.
                    </select>
              </td>
             </tr>
-            
-            
-       
-            
+     
             <tr>
                 <td align="right">
                  <input type="submit" value="确定" class="gsubmit"/> 

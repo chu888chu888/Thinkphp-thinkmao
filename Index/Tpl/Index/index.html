@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+</head>
+<body>
+<cate3 cid="top">
+    <a  ss="{}" href="{$field['url']}" style="height:30px;line-height: 30px;display:block">
+    {$field['name']} </a>
+     <div>
+                 <ul>
+            <cate3 cid="$field['id']">
+                <li ss="{}">
+                    <a href="{$field['url']}">
+                        {$field['name']}
+                    </a>
+                    <ul>
+                          <cate3 cid="$field['id']">
+                          <li ss="{}">
+                          <a href="{$field['url']}">
+                            {$field['name']}
+                    </a>
+
+                </li>
+            </cate3>
+                    </ul>
+                </li>
+            </cate3>
+        </ul>
+    </div>
+</cate3>
+
+    <brand cid="16" row="20">
+        <h3 ss="{}">
+            <a href="{$field['url']}">{$field['name']}</a>
+        </h3>
+    </brand>
+
+</body>
+</html>
