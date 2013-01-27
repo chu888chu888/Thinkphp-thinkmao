@@ -54,24 +54,33 @@
             <ul>
                 <specvalue aid="$field['attr_id']" gid="10">
                     <li ss='{}'>
-                        {$field['value']}:{$field['attr_price']}
+                     {$field['value']}:{$field['attr_price']}
                     </li>
                 </specvalue>
             </ul>
         </specname>
 
+        <inven gid="10">
+            <h3 ss="{}"> {$field['attr_com']}</h3>
+        </inven>
 
-
-
-
-
-
-
-
-
-
-
-
+        <goods gid="10">
+            <h3 ss="{}"> {$field['name']}</h3>
+        </goods>
+        <imgs gid="10" type="mini" row="2">
+            <div ss="{}">
+                <img src="{$field}"/>
+            </div>
+        </imgs>
+        <chgoods cid="15" type="hot" >
+            <h3 ss="{}">
+                <imgs gid="$field" type="max" row="2">
+            <div ss="{}">
+                <img src="{$field}"/>
+            </div>
+                </imgs>
+            </h3>
+        </chgoods>
 
     </body>
 </html>

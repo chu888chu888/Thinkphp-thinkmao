@@ -42,22 +42,21 @@
         <?php $good_mes_all = get_goods_mes(10);$specs = $good_mes_all["specs"];$specsx = get_spec_name($specs);foreach($specsx as $k=>$field){if($k<20){ ?><h3 ss="{}"> <?php echo ($field['attr_name']); ?></h3>
             <ul>
                 <?php $good_mes_all = get_goods_mes(10);$specs = $good_mes_all["specs"][$field['attr_id']];foreach($specs as $k=>$field){if($k<40){ ?><li ss='{}'>
-                        <?php echo ($field['value']); ?>:<?php echo ($field['attr_price']); ?>
+                     <?php echo ($field['value']); ?>:<?php echo ($field['attr_price']); ?>
                     </li><?php } } ?>
             </ul><?php } } ?>
 
+        <?php $good_mes_all = get_goods_mes(10);$inven = $good_mes_all["inven"];foreach($inven as $k=>$field){?><h3 ss="{}"> <?php echo ($field['attr_com']); ?></h3><?php } ?>
 
-
-
-
-
-
-
-
-
-
-
-
+        <?php $db = M("goods");$data = $db->where(array("id"=>10))->select();foreach($data as $k=>$field){?><h3 ss="{}"> <?php echo ($field['name']); ?></h3><?php } ?>
+        <?php $good_mes_all = get_goods_mes(10);$mini = $good_mes_all["mini"];$medium = $good_mes_all["medium"];$max = $good_mes_all["max"];$img["mini"]=$mini;$img["medium"]=$medium;$img["max"]=$max;foreach($img["mini"] as $key=>$field){if($key<2){?><div ss="{}">
+                <img src="<?php echo ($field); ?>"/>
+            </div><?php } } ?>
+        <?php $cids = check_cate_hot_goods(15,"hot");foreach($cids as $k=>$field){if($k<10){ ?><h3 ss="{}">
+                <?php $good_mes_all = get_goods_mes($field);$mini = $good_mes_all["mini"];$medium = $good_mes_all["medium"];$max = $good_mes_all["max"];$img["mini"]=$mini;$img["medium"]=$medium;$img["max"]=$max;foreach($img["max"] as $key=>$field){if($key<2){?><div ss="{}">
+                <img src="<?php echo ($field); ?>"/>
+            </div><?php } } ?>
+            </h3><?php } } ?>
 
     </body>
 </html>
