@@ -2010,3 +2010,1006 @@
 [ 2013-01-27T02:32:44+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
 [ 2013-01-27T02:32:44+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.001252s ]
 [ 2013-01-27T02:32:44+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.002654s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000189s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000422s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000132s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000198s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001549s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.001114s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000839s ]
+[ 2013-01-27T12:41:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.attr_id WHERE ( goods.id = 10 )  [ RunTime:0.000515s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000183s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001466s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000955s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000784s ]
+[ 2013-01-27T12:41:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.attr_id WHERE ( goods.id = 10 )  [ RunTime:0.000220s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000201s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000430s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000169s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000254s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000648s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000403s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000350s ]
+[ 2013-01-27T12:42:51+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.attr_id WHERE ( goods.id = 10 )  [ RunTime:0.000201s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000403s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000635s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000154s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000237s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001949s ]
+[ 2013-01-27T12:43:12+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT * FROM `hd_goods` WHERE ( `gid` = 10 )  [ RunTime:0.000161s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000165s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000414s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001544s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT * FROM `hd_goods` WHERE ( `gid` = 10 )  [ RunTime:0.000303s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000410s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001529s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT * FROM `hd_goods` WHERE ( `gid` = 10 )  [ RunTime:0.000282s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000070s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000181s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000671s ]
+[ 2013-01-27T12:43:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT * FROM `hd_goods` WHERE ( `gid` = 10 )  [ RunTime:0.000126s ]
+[ 2013-01-27T12:45:36+08:00 ] /thinkmao/Index.php/Index/test | ERR: (ThinkException) Model:relation您所请求的方法不存在！
+[ 2013-01-27T12:45:37+08:00 ] /thinkmao/Index.php/Index/test | ERR: (ThinkException) Model:relation您所请求的方法不存在！
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000168s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000407s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001706s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000439s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000332s ]
+[ 2013-01-27T12:46:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.attr_id WHERE ( goods.id = 10 )  [ RunTime:0.000184s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000061s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000160s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000662s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000444s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000361s ]
+[ 2013-01-27T12:46:47+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.attr_id WHERE ( goods.id = 10 )  [ RunTime:0.000215s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000219s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000447s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000159s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000241s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001469s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000924s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000821s ]
+[ 2013-01-27T12:47:48+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id WHERE ( goods.id = 10 )  [ RunTime:0.000470s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000178s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000097s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000653s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000400s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000365s ]
+[ 2013-01-27T12:47:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.gid LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id WHERE ( goods.id = 10 )  [ RunTime:0.000186s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000161s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000776s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000428s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000345s ]
+[ 2013-01-27T12:50:06+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id WHERE ( goods.id = 10 )  [ RunTime:0.000530s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000162s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000243s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000624s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000379s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000356s ]
+[ 2013-01-27T12:50:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id WHERE ( goods.id = 10 )  [ RunTime:0.000548s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000394s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001705s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.001027s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000345s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000334s ]
+[ 2013-01-27T14:13:14+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id WHERE ( goods.id = 10 )  [ RunTime:0.000538s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000175s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000392s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001331s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000401s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000318s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000352s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000429s ]
+[ 2013-01-27T14:36:42+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000748s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000391s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000236s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000688s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000393s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000362s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000374s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000369s ]
+[ 2013-01-27T14:37:27+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000671s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000177s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000378s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001565s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000924s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000318s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000334s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000326s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000679s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000163s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000385s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001527s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000944s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000678s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000337s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000352s ]
+[ 2013-01-27T14:40:57+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000680s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000162s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000391s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001540s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000401s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000318s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000320s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000380s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000682s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000383s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001471s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.001035s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000863s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000898s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000917s ]
+[ 2013-01-27T14:40:58+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000697s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000181s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000411s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000674s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000419s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000356s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000372s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000375s ]
+[ 2013-01-27T14:40:59+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000663s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000222s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000440s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000165s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000251s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000618s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000393s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000329s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000318s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000360s ]
+[ 2013-01-27T14:47:00+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000871s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000072s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000159s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000618s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000406s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000351s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000331s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000373s ]
+[ 2013-01-27T14:48:13+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000655s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000106s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000079s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000123s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000929s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000600s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000478s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000336s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000345s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000713s ]
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:13:01+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 75 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000170s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001496s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000946s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000821s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000848s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000838s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000659s ]
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:32+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000097s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001466s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.001768s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000876s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000847s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000783s ]
+[ 2013-01-27T15:14:50+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.001383s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000151s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000630s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000394s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000386s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000332s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000383s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000661s ]
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:33+08:00 ] /thinkmao/Index.php/Index/test | NOTIC: [8] Undefined index: attr_id common.php 第 71 行.
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000196s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000390s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001493s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000919s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000370s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000333s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000361s ]
+[ 2013-01-27T15:15:49+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000618s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000173s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000414s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001669s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000970s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000686s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000361s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000386s ]
+[ 2013-01-27T15:16:31+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000611s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000071s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000153s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001505s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000915s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000802s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000843s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000970s ]
+[ 2013-01-27T15:16:54+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000666s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000173s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000367s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000163s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000243s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001765s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000987s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000379s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.001663s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000482s ]
+[ 2013-01-27T15:27:08+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000723s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000173s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000387s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000163s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000244s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001806s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000988s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000356s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000350s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000337s ]
+[ 2013-01-27T15:27:56+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000624s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000062s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000163s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001775s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000930s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000863s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000861s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000854s ]
+[ 2013-01-27T15:42:33+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.value AS attr_value,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000695s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000076s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000191s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000045s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000462s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.017716s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000382s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000317s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000245s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000252s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000255s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000307s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000180s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000154s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000198s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000143s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.000114s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000119s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000112s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000168s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000132s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000172s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000418s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000256s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000175s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000223s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000825s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 16 )  [ RunTime:0.000353s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (16)  [ RunTime:0.000467s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001675s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.001076s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000659s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000826s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.001225s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: attr_name f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: value f9c22b8b40e560036663a0ce7ed378ae.php 第 32 行.
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.055558s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.055630s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000340s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000158s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000085s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000238s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.001043s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.056390s ]
+[ 2013-01-27T15:53:08+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.056531s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000179s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000410s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000124s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000215s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000464s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000159s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000111s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000078s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000088s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000096s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000081s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000078s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000127s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000104s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.002339s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000228s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000101s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000093s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000076s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000090s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000089s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000090s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000090s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000089s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000458s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 16 )  [ RunTime:0.000154s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (16)  [ RunTime:0.000250s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000705s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000455s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000342s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000414s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000746s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.026625s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.026684s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000174s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000054s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000035s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000083s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000435s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.002449s ]
+[ 2013-01-27T15:54:38+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.002559s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000180s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000404s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000120s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000211s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000501s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000179s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000114s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000097s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000093s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000100s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000095s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000094s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000094s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000107s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000098s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000086s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000095s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000091s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000090s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000158s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000646s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000205s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000096s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000453s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 16 )  [ RunTime:0.000155s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (16)  [ RunTime:0.000147s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000702s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000445s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000350s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000389s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000679s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.021072s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.021130s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000191s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000063s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000034s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000085s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000457s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.001216s ]
+[ 2013-01-27T15:55:09+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.001317s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000216s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000465s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.002819s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000400s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000508s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000392s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000375s ]
+[ 2013-01-27T16:13:36+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000661s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000176s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000055s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000762s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000454s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000354s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000382s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000402s ]
+[ 2013-01-27T16:19:55+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000762s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000164s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000386s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000145s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000225s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000617s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000410s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000352s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000341s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000394s ]
+[ 2013-01-27T16:20:07+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.001235s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000281s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000479s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000119s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000250s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000443s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000142s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000145s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000157s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000501s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000566s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000120s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000093s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000092s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000077s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000165s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000255s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.000271s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000117s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000078s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000092s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000089s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000080s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000080s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000116s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000350s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000121s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000441s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 16 )  [ RunTime:0.000306s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (16)  [ RunTime:0.000164s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000649s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000334s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000272s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000284s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000744s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000568s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000543s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000665s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.032218s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.032281s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000199s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000081s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000043s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000123s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000550s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.007645s ]
+[ 2013-01-27T16:32:18+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.007740s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000177s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000146s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001630s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000455s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000373s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000320s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000357s ]
+[ 2013-01-27T16:32:53+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000631s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000181s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000413s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000122s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000209s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000518s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000231s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000121s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000098s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000082s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000103s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000096s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000093s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000089s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000091s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000107s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000099s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.000095s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000090s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000105s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000091s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000090s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000082s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000095s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000089s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000089s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000089s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000443s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 16 )  [ RunTime:0.000160s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (16)  [ RunTime:0.000149s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000680s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000422s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000365s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000413s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000740s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000749s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000697s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000703s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.025642s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.025701s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000171s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000062s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000086s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000434s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.001125s ]
+[ 2013-01-27T16:32:56+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.001183s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000067s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000164s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000037s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [8] Undefined index: cate TagLib.class.php 第 122 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_category` [ RunTime:0.000513s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 0 )  [ RunTime:0.000185s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '22' )  [ RunTime:0.000099s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '21' )  [ RunTime:0.000097s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '20' )  [ RunTime:0.000086s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '14' )  [ RunTime:0.000085s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '19' )  [ RunTime:0.000095s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '18' )  [ RunTime:0.000094s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '17' )  [ RunTime:0.000094s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '16' )  [ RunTime:0.000092s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 17 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '15' )  [ RunTime:0.000111s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '23' )  [ RunTime:0.000113s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '24' )  [ RunTime:0.000102s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '25' )  [ RunTime:0.000094s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '26' )  [ RunTime:0.000095s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '27' )  [ RunTime:0.000098s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '28' )  [ RunTime:0.000091s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '29' )  [ RunTime:0.000096s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '30' )  [ RunTime:0.000092s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '31' )  [ RunTime:0.000093s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '32' )  [ RunTime:0.000096s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = '33' )  [ RunTime:0.000091s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | NOTIC: [2] Invalid argument supplied for foreach() f9c22b8b40e560036663a0ce7ed378ae.php 第 12 行.
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000435s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_category` WHERE ( `pid` = 15 )  [ RunTime:0.000168s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT * FROM `hd_brand` WHERE cid in (15,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53)  [ RunTime:0.000232s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.003177s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000524s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000408s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000407s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000703s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000895s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000762s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000738s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run ParseTemplate Behavior [ RunTime:0.026604s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.026643s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run ContentReplace Behavior [ RunTime:0.000200s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000096s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000467s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.001815s ]
+[ 2013-01-27T16:34:05+08:00 ] /thinkmao/Index.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.001927s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000176s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000374s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.001460s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000424s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000428s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000348s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000337s ]
+[ 2013-01-27T16:40:17+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.id AS attrid,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000639s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000063s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000162s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000047s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000617s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000434s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000328s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000332s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000375s ]
+[ 2013-01-27T16:41:29+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.id AS attrid,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000660s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --START--
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run CheckRoute Behavior [ RunTime:0.000238s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ route_check ] --END-- [ RunTime:0.000435s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --START--
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000152s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000232s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods` [ RunTime:0.000647s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_attr` [ RunTime:0.000410s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_type_attr` [ RunTime:0.000331s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_brand` [ RunTime:0.000345s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SHOW COLUMNS FROM `hd_goods_intro` [ RunTime:0.000428s ]
+[ 2013-01-27T16:42:39+08:00 ] /thinkmao/Index.php/Index/test | SQL: SELECT goods.id AS gid,goods.name AS gname,goods.unit AS unit,goods.number AS number,goods.price AS price,goods.pic AS pic,goods.click AS click,goods.recommend AS recommend,goods.hot AS hot,goods.time AS time,goods.cid AS cid,goods.bid AS bid,goods.tid AS tid,goods.mprice AS mprice,goods_attr.id AS attrid,goods_attr.value AS value,goods_attr.price AS attr_price,type_attr.id AS attr_id,type_attr.name AS attr_name,type_attr.type AS type,brand.name AS brand_name,brand.logo AS logo,brand.hot AS hot_brand,goods_intro.mini AS mini,goods_intro.medium AS medium,goods_intro.max AS max,goods_intro.intro AS intro,goods_intro.service AS service FROM hd_goods goods LEFT JOIN hd_goods_attr goods_attr ON goods_attr.gid =goods.id LEFT JOIN hd_type_attr type_attr ON goods_attr.aid = type_attr.id  JOIN hd_brand brand ON goods.bid = brand.id  JOIN hd_goods_intro goods_intro ON goods.id = goods_intro.gid WHERE ( goods.id = 10 )  [ RunTime:0.000949s ]

@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title></title>
     <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />   
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" />
     <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
@@ -14,13 +14,13 @@
         <table class="channel_list">
             <thead>
                 <tr>
-                    <td>ID</td>                   
+                    <td>ID</td>
                     <foreach name='attr_all' item='m'>
                         <td colspan="2">
                             规格
                         </td>
                     </foreach>
-                        
+
                         <td>
                             货号
                         </td>
@@ -47,7 +47,7 @@
                               <if condition="$t['attr'][$kcomcol]['1'] eq $key">
                                   <option value="{$key}" selected="selected">{$n}</option>
                               <else/>
-                                 <option value="{$key}">{$n}</option>                              
+                                 <option value="{$key}">{$n}</option>
                               </if>
                            </foreach>
                       </select>
@@ -57,23 +57,25 @@
                          <input type="text" name="{$gid}[num][]" value="{$t.number}"/>
                    </td>
                    <td>
-                       <if condition="$t[series]">                         
-                           <input type="button" class="series1 zb"/>
+                       <if condition="$t[series]">
+                           <input type="button" class="series1 zb" value="{$t.price}"/>
                            <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
-                       <else/>                         
+                           <input type="hidden" name="{$gid}[price][]" class="zzdprice" value="{$t.price}"/>
+                       <else/>
                            <input type="button" class="series0 zb"/>
                            <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
+                           <input type="hidden" name="{$gid}[price][]" class="zzdprice" value="{$t.price}"/>
                        </if>
-                       
-                   </td>                  
+
+                   </td>
                    <td id="gnum">
                        <input type="text" name="{$gid}[number][]" value="{$t.inventory}"/>&nbsp;&nbsp;&nbsp;{$goods_mes.0.unit}&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
                    </td>
-                 
-               </tr>       
+
+               </tr>
             </foreach>
          </tbody>
-        </table>  
+        </table>
          <div id="gsbu">
              <input type="buttom" value="添加" class="gsubmit adde"/>
              <input type="submit" value="确定" class="gsubmit"/>

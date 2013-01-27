@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title></title>
     <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />   
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" />
     <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
@@ -14,7 +14,7 @@
         <table class="channel_list">
             <thead>
                 <tr>
-                    <td>ID</td>                   
+                    <td>ID</td>
                     <?php if(is_array($attr_all)): foreach($attr_all as $key=>$m): ?><td colspan="2">
                             规格
                         </td><?php endforeach; endif; ?>
@@ -29,7 +29,7 @@
                         </td>
                 </tr>
             </thead>
-        <tbody id="tbody">           
+        <tbody id="tbody">
                <tr id="tmplate">
                    <td class="good_id"><?php echo ($gid); ?></td>
                   <?php if(is_array($attr_all)): foreach($attr_all as $key=>$k): ?><td>
@@ -44,18 +44,19 @@
                     <td>
                          <input type="text" name="<?php echo ($gid); ?>[num][]"/>
                    </td>
-                   <td>                                           
+                   <td>
                            <input type="button" class="series0 zb"/>
                            <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd'/>
-                   </td>  
+                           <input type="hidden" name="<?php echo ($gid); ?>[price][]" class="zzdprice"/>
+                   </td>
                    <td id="gnum">
                        <input type="text" name="<?php echo ($gid); ?>[number][]" />&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;
                    </td>
-                  
-               </tr>       
-           
+
+               </tr>
+
          </tbody>
-        </table>  
+        </table>
          <div id="gsbu">
              <input type="buttom" value="添加" class="gsubmit add"/>
              <input type="submit" value="确定" class="gsubmit"/>

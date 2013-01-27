@@ -12,9 +12,8 @@ class IndexAction extends Action {
        echo $_GET['bid'];
    }
    public function test(){
-       $all_cid = check_all_cate(15);
-       $cids = implode(",",$all_cid);
-       $str_cid = "(".$cids.")";
-       p($str_cid);
+       p(get_goods_mes(10));
+//       $arr =  get_goods_mes(10);
+//       p(get_spec_name($arr['specs']));
    }
 }

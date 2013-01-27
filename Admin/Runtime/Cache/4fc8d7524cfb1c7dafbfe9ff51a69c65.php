@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
     <title></title>
     <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />   
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" />
     <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
@@ -14,11 +14,11 @@
         <table class="channel_list">
             <thead>
                 <tr>
-                    <td>ID</td>                   
+                    <td>ID</td>
                     <?php if(is_array($attr_all)): foreach($attr_all as $key=>$m): ?><td colspan="2">
                             规格
                         </td><?php endforeach; endif; ?>
-                        
+
                         <td>
                             货号
                         </td>
@@ -48,20 +48,22 @@
                          <input type="text" name="<?php echo ($gid); ?>[num][]" value="<?php echo ($t["number"]); ?>"/>
                    </td>
                    <td>
-                       <?php if($t[series]): ?><input type="button" class="series1 zb"/>
+                       <?php if($t[series]): ?><input type="button" class="series1 zb" value="<?php echo ($t["price"]); ?>"/>
                            <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd' value="<?php echo ($t["series"]); ?>"/>
-                       <?php else: ?>                         
+                           <input type="hidden" name="<?php echo ($gid); ?>[price][]" class="zzdprice" value="<?php echo ($t["price"]); ?>"/>
+                       <?php else: ?>
                            <input type="button" class="series0 zb"/>
-                           <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd' value="<?php echo ($t["series"]); ?>"/><?php endif; ?>
-                       
-                   </td>                  
+                           <input type="hidden" name="<?php echo ($gid); ?>[series][]" class='zzd' value="<?php echo ($t["series"]); ?>"/>
+                           <input type="hidden" name="<?php echo ($gid); ?>[price][]" class="zzdprice" value="<?php echo ($t["price"]); ?>"/><?php endif; ?>
+
+                   </td>
                    <td id="gnum">
                        <input type="text" name="<?php echo ($gid); ?>[number][]" value="<?php echo ($t["inventory"]); ?>"/>&nbsp;&nbsp;&nbsp;<?php echo ($goods_mes["0"]["unit"]); ?>&nbsp;&nbsp;&nbsp;<span class="ldel">del-</span>
                    </td>
-                 
+
                </tr><?php endforeach; endif; ?>
          </tbody>
-        </table>  
+        </table>
          <div id="gsbu">
              <input type="buttom" value="添加" class="gsubmit adde"/>
              <input type="submit" value="确定" class="gsubmit"/>
