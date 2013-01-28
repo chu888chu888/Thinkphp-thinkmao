@@ -13,6 +13,7 @@ Class TagLibList extends TagLib {
                'inven'=>array('attr'=>'gid','close'=>1,"level"=>1),
                'goods'=>array('attr'=>'gid','close'=>1),
                'imgs'=>array('attr'=>'gid,type,row','close'=>1),
+               'gellery'=>array('attr'=>'gid,type,row','close'=>1),
                'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
 
 );
@@ -67,6 +68,32 @@ Class TagLibList extends TagLib {
            $str.='$img["medium"]=$medium;';
            $str.='$img["max"]=$max;';
            $str.='foreach($img["'.$type.'"] as $key=>$field){';
+           $str.='if($key<'.$row.'){?>';
+           $str.=  $content;
+           $str.='<?php } ?>';
+           $str.='<?php } ?>';
+           return $str;
+
+    }
+
+
+
+    public function _gellery($attr,$content){
+          $tag = $this->parseXmlAttr($attr,'gellery');
+                if(!$tag['gid'] && !$_GET['gid']){
+                return;
+              }
+           $gid = empty($tag['gid']) ? $_GET['gid'] : $tag['gid'];
+           $type = empty($tag['type']) ? 'mini' : $tag['type'];
+           $row = empty($tag['row'])? 10 : $tag['row'];
+           $str='';
+           $str.='<?php ';
+           $str.='$good_mes_all = get_goods_mes('.$gid.');';
+           $str.='$mini = $good_mes_all["mini"];';
+           $str.='$medium = $good_mes_all["medium"];';
+           $str.='$max = $good_mes_all["max"];';
+           $str.='$imgs = format_gellery($mini,$medium,$max);';
+           $str.='foreach($imgs as $key=>$field){';
            $str.='if($key<'.$row.'){?>';
            $str.=  $content;
            $str.='<?php } ?>';
@@ -163,10 +190,8 @@ Class TagLibList extends TagLib {
                $str.='<?php ';
                $str.='$good_mes_all = get_goods_mes('.$gid.');';
                $str.='$specs = $good_mes_all["specs"]['.$aid.'];';
-               $str.='foreach($specs as $k=>$field){';
-               $str.= 'if($k<'.$rows.'){ ?>';
+               $str.='foreach($specs as $k=>$field){?>';
                $str.=  $content;
-               $str.='<?php } ?>';
                $str.='<?php } ?>';
                return $str;
 

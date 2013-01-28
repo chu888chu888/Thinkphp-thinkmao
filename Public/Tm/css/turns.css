@@ -1,0 +1,59 @@
+.out{
+  height:420px;
+  min-width:1000px;
+  overflow:hidden;
+  position:relative;
+  z-index: -1;
+  }
+ 
+
+.box{
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+
+  }
+ .box li{
+    float:left;
+    position:relative;
+    width:1600px;
+    height:420px;
+ }
+ .box li img{
+    position:absolute;
+    left:0px;
+ }
+ .btn{
+   position:absolute;
+   width:100%;
+   top:330px;
+   left:330px;
+   height: 30px;
+ }
+ .btn span{
+    display:inline-block;
+    width:15px;
+    height:15px; 
+    margin:40px 5px !important;
+    float: left;   
+    font-size: 40px;
+    color: #B5B5B5;
+ }
+  .btn .select{
+  color:#C80002;
+ }
+ .right{
+   width:30px;
+   height:30px;
+   position:absolute;
+   top:147px;
+   right:0;
+   text-align:center;
+   line-height:30px;
+   font-weight:bold;
+   margin-right:30px;
+   font-size:26px;
+   cursor:pointer;
+   display:none;
+ }

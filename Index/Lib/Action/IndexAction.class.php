@@ -2,8 +2,11 @@
 // 本类由系统自动生成，仅供测试用途
 class IndexAction extends Action {
    public function index(){
-       header("Content-type: text/html; charset=utf-8");
-       $this->display();
+              $this ->display("../Public/top");
+              $this ->display("../Public/guid");
+              $this ->display("../Public/turns");
+              $this->display("../Public/goods");
+              $this->display("../Public/end");
    }
    public function cate(){
       echo $_GET['id'];
@@ -34,7 +37,6 @@ class IndexAction extends Action {
 //       }
 //   }
 
-
 //
 //       $cids = check_cate_hot_goods(15,"hot");foreach($cids as $k=>$field){if($k<10){
 //
@@ -55,9 +57,44 @@ class IndexAction extends Action {
 //       p(get_all_cate_hg('15'));
 //         p(format_goods_cid());
 //        p(check_cate_hot_goods(14));
-       p(get_goods_mes(12));
+//       p(get_goods_mes(12));
+//       p($_SERVER);
+//        $good_mes_all = get_goods_mes(10);
+//        $specs = $good_mes_all["specs"];
+//        p($specs);
+//        $specsx = get_spec_name($specs);
+//        p($specsx);
+//        p(get_goods_mes(10));
+//       $good_mes_all = get_goods_mes(11);
+//       p($good_mes_all['specs']['37']);
+//       $specs = $good_mes_all["specs"][$field['attr_id']];
+//       p($specs);
+//       foreach($specs as $k=>$field){if($k<40){
+//
+//
+//
+//
+//       }
+                                $good_mes_all = get_goods_mes(11);
+                                $specs = $good_mes_all["specs"];
+                                $specsx = get_spec_name($specs);
+                                foreach($specsx as $k=>$field){
+                                    if($k<20){
+                                                 echo ($field['attr_name']);
+
+                                              $good_mes_all = get_goods_mes(11);
+                                              $specs = $good_mes_all["specs"][$field['attr_id']];
+//                                              p($specs[$field['attr_id']]);
+//                                              p($specs);
+//                                              $specs = $specs[$field['attr_id']];
+                                              foreach($specs as $k=>$field){
+                                                  p($field);
+//                                                  p($field);
+//                                                   echo ($field['value']);
+                                                  }
+                                    }
+                                    }
 
 
    }
-
-   }
+}

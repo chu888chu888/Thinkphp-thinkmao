@@ -1,5 +1,24 @@
 <?php
 /**
+ * 格式化相册
+ * @param type $arr1
+ * @param type $arr2
+ * @param type $arr3
+ * @return type
+ */
+function format_gellery($arr1,$arr2,$arr3){
+     $num = count($arr1);
+     $arrs = array();
+     for($i=0;$i<$num;$i++){
+         $arr =array();
+         $arr['min']=$arr1[$i];
+         $arr['mid']=$arr2[$i];
+         $arr['max']=$arr3[$i];
+         $arrs[]=$arr;
+     }
+     return $arrs;
+}
+/**
  * 返回某个栏目下所有子栏目以及本身的所有热卖或推荐商品的id
  * @param type $cid
  * @param type $type
@@ -21,6 +40,7 @@
  }
  /**
   * 格式化栏目与商品
+  * 将商品的cid字符串格式化为数组
   */
  function format_goods_cid(){
      $db=M('goods');
@@ -182,7 +202,11 @@ function format_inven($arr){
       foreach ($arr as $key => $value) {
           $arr =array();
           $arr['attr_id']=$key;
-          $arr['attr_name']=$value[0]['attr_name'];
+          foreach ($value as $v) {
+                 $arr['attr_name']=$v['attr_name'];
+                 break;
+          }
+
           $arrs[]=$arr;
      }
        return $arrs;

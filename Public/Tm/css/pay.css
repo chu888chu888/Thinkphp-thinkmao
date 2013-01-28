@@ -1,0 +1,232 @@
+.pays_by{
+    width:100%;  
+    text-align: center;
+}
+
+.pays_mid{
+    width:950px;
+    margin: 0 auto;
+    text-align: left;
+    height:auto;
+}
+.true{
+    height:20px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    font: bold 15px/20px arial;
+}
+.true span{
+    display:inline-block;
+    height: 20px;
+    line-height: 20px;
+}
+.true_left{
+    float:left;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+.true_right{
+    float: right;
+    width:100px;
+    text-align: right;
+}
+.address{
+    width:950px;
+    height:100px;
+}
+.address li{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E4E4E4;
+    color: #666666;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    height: 75px;
+    margin-right: 8px;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    width: 210px;
+}
+.address li:hover{
+    border-color: #FEE581;
+    color: #666666;
+}
+.address li p span{
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    height:30px;
+    line-height:30px;
+}
+.address li p{
+    margin-bottom: 10px;
+}
+.shen{
+    font-size: 15px;   
+}
+.city{
+     font-weight: bold;
+     font-size: 15px;
+}
+.phone{
+    color:#999;
+}
+.address .select_address{
+    background-color: #FFF5CC;
+    border-color: #FEE581;
+    color: #666666;
+}
+.new_address{
+    margin-top: 20px;
+}
+.for_true{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.tb table{
+    table-layout: fixed;
+    width: 100%;
+    font-size:inherit;
+    color:#404040;
+}
+tbody tr{
+    color:#999999;
+}
+tbody tr th{
+    border-left: 2px solid #FFFFFF;
+    color: #999999;
+    font-weight: normal;
+    line-height: 31px;
+    padding: 3px 0 0;
+    text-align: center;
+    vertical-align: bottom;
+}
+.s-title{
+    text-align: left;
+    width: 360px;
+}
+.s-price{
+    text-align: center;
+    width: 80px
+}
+.s-agio{
+    width: 180px;
+}
+.s-ship{
+    width:160px;
+}
+.t_head th{
+    border-bottom: 3px solid #B2D1FF;
+}
+.tm_png{
+    float: left;
+}
+.s-title a{
+    color: #333333;
+    float: left;
+    font-size: 14px;
+    max-width: 310px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 5px;
+}
+.s-title span{
+        background:url("../img/wang.gif");
+        background-position: -80px 0;
+        height: 20px;       
+        width: 20px;
+        display: inline-block;
+        float: left;
+}
+.info_g div{
+    float: left;
+}
+.good_st{
+     float: left;
+    padding: 0 10px;
+    width: 50px;
+    overflow: hidden;
+    height:60px;
+}
+.good_st img{
+    border: 1px solid #E9E9E9;
+}
+.good_title{
+    display: block;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:260px;
+    color:#2652A5;
+    margin-bottom: 20px;
+}
+.good_info{
+    margin-left: 10px;
+}
+.good_info span em{
+    color:#000;
+}
+.center_td {
+    text-align: center;
+}
+.select_good{
+    border: 1px solid #7F9DB9;
+}
+.c_num a{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #eee;
+    display:inline-block;
+}
+.c_num span{
+    display: inline-block;
+    width: 10px;
+    color: #666666;
+    display: inline-block;
+    padding: 1px 3px;
+    text-align: right;
+    border: 1px solid #98B2D5;
+}
+.total_price{
+    width: 100%;
+    height: 109px !important;
+    background-color: #F2F6FF;
+    border-top: 1px solid #B4D0FF;
+    margin-top: 10px;   
+}
+.tp_g{
+    width: 200px;
+    height: 60px;
+    padding-bottom: 12px;
+    padding-top: 32px;
+    padding-bottom: 5px;
+    float: right;
+}
+#J_TotalTitle{
+    
+}
+#J_Total {
+    background: url("../img/T1_4GqXhlaXXXXXXXX-15-21.png") no-repeat scroll 0 6px transparent;
+    padding-left: 20px;
+     color: #CC0000;
+    font-family: tahoma;
+    font-size: 26px;
+    font-weight: bold;
+}
+.put_pr{
+    width: 163px;
+    height: 60px;
+    margin-top: 32px;
+    float: right;
+}
+.mo{
+    width: auto;
+    border: 1px solid #666666;
+    margin-top: 200px;
+}

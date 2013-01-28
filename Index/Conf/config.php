@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-            'SHOW_PAGE_TRACE' =>true,
+            'SHOW_PAGE_TRACE' =>false,
             'LOAD_EXT_CONFIG' => 'db',
             'LOAD_EXT_FILE'=>'function',
             'DB_TYPE'=>'mysql',
