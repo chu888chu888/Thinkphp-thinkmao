@@ -167,6 +167,28 @@ function format_inven($arr){
       return $farr;
 }
 /**
+ * 获取总的库存数目
+ * @param type $gid
+ */
+function get_all_number($gid){
+     $db = M("goods_list");
+     $data = $db->where(array("gid"=>$gid))->field('id,inventory,attr')->select();
+     $arrs = array();
+     foreach($data as $k=>$v){
+         $arr = array();
+         $arr['inven']=$v['inventory'];
+         $arr['attr']=  explode('|', $v['attr']);
+         $arr['attr']= explode(',', $arr['attr'][0]);
+         $arr['attr']=$arr['attr'][1];
+         $arrs[$arr['attr']]=$arr['inven'];
+     }
+     $num=0;
+     foreach ($arrs as $value) {
+          $num+=$value;
+     }
+     return $num;
+}
+/**
  * 格式化规格的信息
  * @param type $arr
  * @return type

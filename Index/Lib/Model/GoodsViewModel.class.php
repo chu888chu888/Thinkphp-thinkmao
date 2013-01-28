@@ -2,6 +2,7 @@
 Class GoodsViewModel extends ViewModel {
 	Protected $viewFields = array(
 		'goods' => array(
+                                         'sell_num',
 			'id'=>'gid',
                                         'name'=>'gname',
                                         'unit',

@@ -2,7 +2,12 @@
 <link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/base.css" />
 <script src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.js"></script>
 <script src="{$Think.const.__ROOT__}/Public/Tm/js/goods.js"></script>
-<script src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.jqzoom-core.js"></script>
+<script src="{$Think.const.__ROOT__}/Public/Tm/js/show.js"></script>
+<script type="text/javascript">
+    var url = "{:U('ajaxx')}";
+    var login_url = "{:U('check_login')}";
+    var login ="{:U('Login/index')}";
+</script>
 <div class='tgg'>
     <div>
         <h2>
@@ -35,166 +40,192 @@
     <div class="good_simple_mid">
         <div class="gsm_show">
             <div class="gsm_left">
-                <div>
-                    <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_141905.jpg" alt="" />
-                </div>
-                <ul>
-                    <li class="gsm_ul_1">
-                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T1xVYSXkNpXXa4zfs__075950.jpg_60x60.jpg" alt="" /></a></div>
-                    </li>
-                    <li>
-                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T27v4xXgROXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
-                    </li>
-                    <li>
-                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2gOeJXiBbXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
-                    </li>
-                    <li>
-                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T29CeZXgdXXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
-                    </li>
-                    <li>
-                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2dSuYXoNaXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
-                    </li>
-                </ul>
+                <!--                <div>
+                                    <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_141905.jpg" alt="" />
+                                </div>
+                                <ul>
+                                    <li class="gsm_ul_1">
+                                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T1xVYSXkNpXXa4zfs__075950.jpg_60x60.jpg" alt="" /></a></div>
+                                    </li>
+                                    <li>
+                                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T27v4xXgROXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
+                                    </li>
+                                    <li>
+                                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2gOeJXiBbXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
+                                    </li>
+                                    <li>
+                                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T29CeZXgdXXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
+                                    </li>
+                                    <li>
+                                        <div><a href=""><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2dSuYXoNaXXXXXXXX_!!915353266.jpg_60x60.jpg" alt="" /></a></div>
+                                    </li>
+                                </ul>
+                -->
+
+
+
+
+                                <link rel="stylesheet" href="__PUBLIC__/Cloudzoom/cloud-zoom.css" />
+                                <script type="text/javascript" src='__PUBLIC__/Cloudzoom/cloud-zoom.1.0.2.min.js'></script>
+                                <div id="goods-pic">
+                                                        <div class='img-medium cloud-zoom' rel='smoothMove:5' href='{$gdata.max.0}' style="">
+                                                                <img src="{$gdata.medium.0}" style="border: 1px solid #CDCDCD;width:460px;height:460px"/>
+                                        </div>
+                                        <div class='img-mini'>
+                                                <span class='left'></span>
+                                                <ul id='pic-ul' class="gsm_ul_1" style="margin-left: -12px;">
+                                                        <for start='0' end='count($gdata["mini"])'>
+                                                                          <li>
+                                                                                                              <img src="{$gdata.mini.$i}" width='57' height='57' style="border:1px solid #eee"/>
+                                                                        <input type="hidden" value='{$gdata.medium.$i}'/>
+                                                                        <input type="hidden" value='{$gdata.max.$i}'/>
+                                                                </li>
+                                                        </for>
+                                                </ul>
+                                                <span class='right'></span>
+                                        </div>
+                                </div>
+
+
+
+
+
+
             </div>
             <div class="gsm_right">
                 <h3>
-                        <goods >
-                            <a ss="{}">
+                    <goods >
+                        <a ss="{}">
                             {$field.name}
-                            </a>
-                        </goods>
-                    </h3>
+                        </a>
+                    </goods>
+                </h3>
                 <p> <span class="gsm_type">价格</span>
-                         <goods >
-                             <del ss="{}">{$field.mprice}</del>
-                         </goods>
-                    <span>元<span></p>
-                            <p> <span class="gsm_type">促销</span> <span class="limit_time">限时促销</span>
-                                <goods >
-                             <span class="gsm_p" ss="{}">{$field.price}</span>
-                         </goods>
+                <goods >
+                    <del ss="{}" style="font-size: 20px;">{$field.mprice}</del>
+                </goods>
+                <span>元<span></p>
+                        <p> <span class="gsm_type">促销</span> <span class="limit_time">限时促销</span>
+                        <goods >
+                            <span class="gsm_p" ss="{}">{$field.price}</span>
+                        </goods>
 
-                                <span class="yuan">元</span><span class="yuan more">更多促销</span> </p>
-                            <div style="clear: left"></div>
-                            <p> <span class="gsm_type">配送</span> <span class="place">至北京</span><span class="send_price">快递: 0.00 EMS: 20.00</span> </p>
-                            <p> <span class="gsm_type">月销量</span><span class="small_price">13698</span><span class="yuan">&nbsp;件</span></p>
-                            <div style="clear: left"></div>
-                            <p> <span class="gsm_type">评价</span> <span class="gsm_grand"></span><span class="total_grand">4.7分</span><span class="total_grand">(<a href="">累计评价</a>)</span> </p>
-                            <div style="clear: left"></div>
-                            <div class="gsm_info">
-                                <specname >
-                                      <div>
-                                                <span ss="{}">{$field['attr_name']}</span>
-                                    <ul class="size">
-                                              <specvalue aid="$field['attr_id']">
-                                                  <li ss='{}'>
-                                                  {$field['value']}
-                                                   </li>
-                                              </specvalue>
-                                    </ul>
-                                      </div>
-                                    <div style="clear: left"></div>
-                                </specname>
-<!--                                <div>
-                                    <span>尺码</span>
-                                    <ul class="size">
-
-                                        <li>
-                                            S
-
-                                        </li>
-                                        <li>
-                                            M
-
-                                        </li>
-                                        <li>
-                                            L
-
-                                        </li>
-                                        <li>
-                                            XL
-
-                                        </li>
-                                        <li>
-                                            XXL
-
-                                        </li>
-
-                                    </ul>
-                                </div>
-                                <div style="clear: left"></div>
+                        <span class="yuan">元</span><span class="yuan more">更多促销</span> </p>
+                        <div style="clear: left"></div>
+                        <p> <span class="gsm_type">配送</span> <span class="place">至北京</span><span class="send_price">快递: 0.00 EMS: 20.00</span> </p>
+                        <p> <span class="gsm_type">月销量</span><span class="small_price">{$gdata.sell_num}</span><span class="yuan">&nbsp;件</span></p>
+                        <div style="clear: left"></div>
+                        <p> <span class="gsm_type">评价</span> <span class="gsm_grand"></span><span class="total_grand">4.7分</span><span class="total_grand">(<a href="">累计评价</a>)</span> </p>
+                        <div style="clear: left"></div>
+                        <div class="gsm_info">
+                            <specname >
                                 <div>
-                                    <span>颜色分类</span>
-                                    <ul>
-                                        <li class="s_p"><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2sfpvXoRNXXXXXXXX_!!915353266.jpg_30x30.jpg" alt="" /></li>
-                                        <li class="s_p"><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2guaGXolbXXXXXXXX_!!915353266.jpg_30x30.jpg" alt="" /></li>
-                                        <li class="s_p"><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2gnKWXdVXXXXXXXXX_!!915353266.jpg_30x30.jpg" alt="" /></li>
-                                        <li class="s_p"><img src="{$Think.const.__ROOT__}/Public/Tm/img/T2RuWQXoxaXXXXXXXX_!!915353266.jpg_30x30.jpg" alt="" /></li>
+                                    <span ss="{}">{$field['attr_name']}</span>
+                                    <ul class="size">
+                                        <specvalue aid="$field['attr_id']">
+                                            <li ss='{}'>
+                                                {$field['value']}
+                                            </li>
+                                            <input type="hidden" value=" {$field['attrid']}" name="spec"/>
+                                        </specvalue>
                                     </ul>
-                                </div>-->
-                                <div style="clear: left"></div>
-                                <div>
-                                    <span>数量</span>
-                                    <dl class="num_good">
-                                        <input type="" value='1'/>
-                                        <div class="num_buttom">
-                                            <div class="up"></div>
-                                            <div class="down"></div>
-                                        </div>
-                                    </dl>
-                                    <span class="kc">件(库存1349件)</span>
                                 </div>
                                 <div style="clear: left"></div>
-                                <div class="gm_good">
-                                    <a href="" class="pay"></a>
-                                    <a href="" class="go_car"></a>
-                                </div>
-                                <div style="clear:both"></div>
-                                <img class="pay_other" src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_170340.jpg" alt="" />
+                            </specname>
+
+
+
+
+
+
+                            <div>
+                                <span>数量</span>
+                                <dl class="num_good">
+                                    <input type="text" value='1' id="num"/>
+                                    <div class="num_buttom">
+                                        <div id="up" class="up"></div>
+                                        <div id="down" class="down"></div>
+                                    </div>
+                                </dl>
+                                <span class="kc">件(库存{$num}{$gdata.unit})</span>
                             </div>
-                            </div>
-                            </div>
+
+                            <div style="clear: left"></div>
 
 
 
 
-        <div class="good_last">
-                                <div class="gleft">
-
-                                </div>
-                                <div class="gright">
-                                    <ul class="glist">
-                                        <li>商品详情</li>
-                                        <li>累计评价（num）</li>
-                                        <li>月成交记录</li>
-                                        <li>服务质量</li>
-                                        <li>看了又看</li>
-                                        <li class="li_last">售后服务</li>
+                              <div>
+                                    <span ss="{}">总价</span>
+                                    <ul class="size" >
+                                            <li ss='{}' id="total_price">
+                                                {$gdata.price}
+                                            </li>
+                                            <span id="dan">元</span>
                                     </ul>
-                                    <div style="clear: both"></div>
-                                    <div id="box1">
-                                        <div class="cl">
-                                            <div class="c1_con">
-                                                天猫商家承诺：您付款之后，如果商家延迟发货，可以获得商品价格30%（不大于500元）的赔付金，详见
-                                            </div>
-                                        </div>
-                                        <div class="attr">
-                                            <ul>
+                                </div>
+                                <div style="clear: left"></div>
+                                <input type="hidden" value="{$gdata.gid}" id="gid"/>
 
-                                                {foreach from=$attr item=val }
-                                                <li>
-                                                    {$val.name}:{$val.value}
+
+
+
+
+
+
+                            <div class="gm_good">
+                                <a class="pay"></a>
+                                <a  class="go_car"></a>
+                            </div>
+                            <div style="clear:both"></div>
+                            <img class="pay_other" src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_170340.jpg" alt="" />
+                        </div>
+                        </div>
+                        </div>
+
+
+
+
+                        <div class="good_last">
+                            <div class="gleft">
+
+                            </div>
+                            <div class="gright">
+                                <ul class="glist">
+                                    <li id="goods_mes">商品详情</li>
+                                    <li>累计评价（num）</li>
+                                    <li>月成交记录</li>
+                                    <li>服务质量</li>
+                                    <li>看了又看</li>
+                                    <li class="li_last" id="buyend">售后服务</li>
+                                </ul>
+                                <div style="clear: both"></div>
+                                <div id="box1">
+                                    <div class="cl">
+                                        <div class="c1_con">
+                                            天猫商家承诺：您付款之后，如果商家延迟发货，可以获得商品价格30%（不大于500元）的赔付金，详见
+                                        </div>
+                                    </div>
+                                    <div class="attr">
+                                        <ul>
+
+                                            <attr >
+                                                <li ss="{}">
+                                                    {$field.attr_name}&nbsp;&nbsp;:&nbsp;&nbsp;{$field.value}
                                                 </li>
-                                                {/foreach}
+                                            </attr>
 
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            {$goods.goods_desc}
-                                        </div>
+                                        </ul>
+                                    </div>
+                                    <div id="intro">
+                                        {$gdata.intro}
+                                    </div>
+                                    <div id="service">
+                                        {$gdata.service}
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
 
 
@@ -209,5 +240,5 @@
 
 
 
-                            </div>
-                            </div>
+                        </div>
+                        </div>

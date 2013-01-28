@@ -15,8 +15,30 @@ Class TagLibList extends TagLib {
                'imgs'=>array('attr'=>'gid,type,row','close'=>1),
                'gellery'=>array('attr'=>'gid,type,row','close'=>1),
                'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
+               'allgood'=>array('attr'=>'gid','close'=>1),
 
 );
+    /**
+     * 获得商品的所有的信息
+     * @param type $attr
+     * @param type $content
+     * @return string
+     */
+     public function _allgood($attr,$content){
+         $tag = $this->parseXmlAttr($attr,'allgood');
+         if(!$tag['gid'] && !$_GET['gid']){
+                return;
+         }
+           $gid = empty($tag['gid']) ? $_GET['gid'] : $tag['gid'];
+           $str='';
+           $str.='<?php ';
+           $str.='$good_mes_all = get_goods_mes('.$gid.');';
+           $str.='foreach($good_mes_all as $k=>$field){?>';
+           $str.=  $content;
+           $str.='<?php } ?>';
+           return $str;
+
+    }
     /**
      * 返回某个栏目下的热卖，推荐商品id
      * @param type $attr

@@ -19,15 +19,26 @@
 
          $good_attr = M('goods_attr');
          $attr = $good_attr->where(array('gid'=>$gid))->group('aid')->field('aid')->select();
+         $data =$good_attr->where(array('gid'=>$gid))->select();
 
          $type = M('type_attr');
          $type_all = $type->select();
+
          $gt_all =array();
          foreach ($type_all as $value) {
              foreach ($attr as $v) {
                  if($v['aid']==$value['id'] && $value['type']!=0 ){
                      $value['gid']=$gid;
-                     $value['value']=  explode('|', $value['value']);
+//                     $value['value']=  explode('|', $value['value']);
+                     $tmp =array();
+                    foreach ($data as $val){
+                           if($value['id']==$val['aid']){
+                               $tmp[$val['id']]=$val['value'];
+//                               echo $val['id']."<br/>";
+//                               echo $val['value']."<br/>";
+                           }
+                    }
+                    $value['value']=$tmp;
                      $gt_all[]=$value;
                  }
              }
@@ -35,6 +46,7 @@
          }
          $this->assign('gid',$gid);
          $this->assign('attr_all',$gt_all);
+//         p($gt_all);
      }
 
      /**
@@ -78,10 +90,9 @@
          $arr1 = array();
          foreach ($arr as $key => $value) {
              if(is_numeric($key)){
-                 $arr1[]=$value;
+                 $arr1[$key]=$value;
              }
          }
-
          foreach ($arr1 as $k2 => $v2) {
              $num = count($v2);
              break;
@@ -148,7 +159,7 @@
      private function put_data_in($arr,$gid){
          $db = M('goods_list');
           foreach ($arr as $mes) {
-                        
+
                          $ress = $db->data($mes)->add();
                          if(!$ress){
                              $this->error('操作失败',U("good_attr_edit_show?id=$gid"));

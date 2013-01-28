@@ -1,19 +1,14 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/login.css" />
-        <script src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.js"></script>
-        <script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/login.js"></script>
-        <script type="text/javascript">
-            var url = "{:U{'login'}}";
-        </script>
+        <link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/login.css" />
     </head>
     <body>
         <div id="header">
                 <div id="header-inner">
                     <div class="logo">
-                         <a  href="#"><img src="{$Think.const.__ROOT__}/Public/Tm/img/login_logo.png"></a>
+                         <a  href="#"><img src="<?php echo (__ROOT__); ?>/Public/Tm/img/login_logo.png"></a>
 
                     </div>
                 </div>
@@ -21,7 +16,7 @@
         <div class="mid_con">
             <div class="mid">
                 <div class="mid_tu">
-                    <img src="{$Think.const.__ROOT__}/Public/Tm/img/T1bAn9XjtgXXaVA1UH-435-276.jpg" alt="" />
+                    <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/T1bAn9XjtgXXaVA1UH-435-276.jpg" alt="" />
                 </div>
                 <div class="login">
 
@@ -32,18 +27,18 @@
                                   淘宝会员
                                   </span>
                               </div>
-                             <form class="form">
+                             <form action="" method="post" class="form">
                                  <table class="table">
                                      <tr>
                                          <td class="filed">账户名</td>
                                          <td class="put_in">
-                                             <input type="text" id="uname" class="input" />
+                                             <input type="text" name="uname" class="input" />
                                          </td>
                                      </tr>
                                      <tr >
                                          <td class="filed">密&nbsp;&nbsp;&nbsp;码</td>
                                          <td class="put_in">
-                                             <input type="password" id="password" class="input" />
+                                             <input type="password" name="password" class="input" />
                                          </td>
                                      </tr>
                                  </table>
@@ -52,18 +47,18 @@
                                       <label for="checkbox" class="cb co">十天内免登陆</label>
                                  </div>
                                  <div class="submit">
-                                        <button type="button" id="button"></button>
+                                        <button type="submit"></button>
                                  </div>
                                  <div class="bottom">
                                          <a href="">
-                                             <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-07_191110.jpg" alt="" />
+                                             <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/2013-01-07_191110.jpg" alt="" />
                                          </a>
                                      <a href="">使用手机号码免费登陆&nbsp;&nbsp;</a>
                                         <a href="#">|&nbsp;&nbsp;免费注册</a>
                                  </div>
                              </form>
                              <div class="last">
-                                 <img src="{$Think.const.__ROOT__}/Public/Tm/img/layer-tmall.png" alt="" />
+                                 <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/layer-tmall.png" alt="" />
                              </div>
                          </div>
 

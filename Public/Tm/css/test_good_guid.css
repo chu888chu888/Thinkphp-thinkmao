@@ -73,7 +73,7 @@
 }
 .gsm_show{
     width: 100%;
-    height:576px;
+    height:auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -83,18 +83,13 @@
     float: left;
 }
 .gsm_right{
-     height:535px;
+     height:auto;
     width:442px !important;
     width: 462px;
     margin-left: 20px;
     float: left;
 }
-.gsm_left div{
-    border: 1px solid #CDCDCD;
-/*    width: 460px !important;
-    height: 460px !important;*/
 
-}
 .gsm_left ul{
     height: 67px !important;
     height:73px;
@@ -241,9 +236,10 @@
 }
 .gsm_info{
     width:462px !important;
-    height:217px !important;
+    /*height:217px !important;*/
     width:490px;
-    height:239px;
+    height:auto;
+    /*height:239px;*/
     padding: 10px 8px;
     border: 1px solid #F7F5F3;
     margin-top: 10px;
@@ -339,7 +335,7 @@
     color: #878787;
 }
 .gm_good{
-    margin-top: 25px;
+    margin-top: 0px;
 }
 .gm_good a{
     height: 37px;
@@ -460,4 +456,23 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #666;
+}
+.glist li{
+   cursor: pointer;
+}
+#total_price{
+    color:#CC0000;
+    font-size:20px;
+    font-weight: bold;
+    border: 0px;
+    line-height: 20px;
+}
+#service{
+    display: none;
+}
+#dan{
+    color:#999;
+    display: inline-block;
+   line-height: 10px;
+   margin-top: px;
 }
