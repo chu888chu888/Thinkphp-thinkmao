@@ -49,11 +49,13 @@ class IndexAction extends Action {
 //       }
 //       p(check_all_cate("14"));
 
-       $daat = check_cate_hot_goods('14');
+//       $daat = check_cate_hot_goods('14');
 //       echo $daat;
-          p($daat);
+//          p($daat);
 //       p(get_all_cate_hg('15'));
-
+//         p(format_goods_cid());
+//        p(check_cate_hot_goods(14));
+       p(get_goods_mes(12));
 
 
    }

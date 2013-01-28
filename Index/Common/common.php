@@ -20,13 +20,35 @@
       return $allarr;
  }
  /**
+  * 格式化栏目与商品
+  */
+ function format_goods_cid(){
+     $db=M('goods');
+     $data = $db->field('id,cid')->select();
+     $arr =array();
+     foreach ($data as $k=>$v) {
+
+           $arr[$v['id']]=  explode('|', $v['cid']);
+
+     }
+     return$arr;
+ }
+ /**
   * 获得该栏目下的热卖商品
   * @param type $cid
   */
  function get_all_cate_hg($cid,$type='hot'){
+     $all_id = format_goods_cid();
+     $gids =array();
+     foreach ($all_id as $k => $v){
+              if(in_array($cid, $v)){
+                 $gids[]=$k;
+              }
+     }
+     $gidsstr = implode(',', $gids);
      $arr =array();
      $db=M('goods');
-     $data = $db->where(array('cid'=>$cid,$type=>1))->field('id')->select();
+     $data = $db->where('id in ('.$gidsstr.') and '.$type.' = 1')->field('id')->select();
      return $data;
  }
        /**
@@ -64,7 +86,7 @@
          $data = array();
          foreach($arr[0] as $k=>$v){
              if($k!= 'attr_price' && $k!='attr_id' && $k!='attr_name' && $k!='value' && $k!='type' && $k!='attrid' && $k!='in_id' && $k!='inventory' && $k!='attr_com' && $k!='in_number' && $k!='series' && $k!='in_price'){
-                 if($k == 'mini' || $k=='medium' || $k=='max'){
+                 if($k == 'mini' || $k=='medium' || $k=='max' || $k=='cid'){
                      $data[$k]=  explode('|', $v);
                  }else{
                      $data[$k]=$v;

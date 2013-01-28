@@ -1,7 +1,7 @@
 <?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-        <title></title>   
+        <title></title>
         <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
         <link rel="stylesheet" href="__PUBLIC__/Admin/css/Agood.css" />
         <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
@@ -21,7 +21,7 @@
             <li>其他信息</li>
             <li>商品属性</li>
             <li>商品相册</li>
-            <li>售后服务</li> 
+            <li>售后服务</li>
         </ul>
         <form action="<?php echo U('put_good');?>" method="post" class="form">
             <div class="innerbox">
@@ -44,21 +44,16 @@
                             <input type="text" name="number" />
                         </td>
                     </tr>
-                    <tr>
+                    <tr id="clone">
                         <td class="tname">商品分类:</td>
-                        <td>                            
+                        <td>
                             <select name="cid[]" id="cate">
                                 <option value="">选择分类</option>
                                 <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" tid="<?php echo ($v["tid"]); ?>" pid='<?php echo ($v["pid"]); ?>'>
                                         <?php echo ($v["html"]); echo ($v["name"]); ?>
                                     </option><?php endforeach; endif; ?>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="tname"> 拓展分类:</td>
-                        <td>
-                            <input type="button"  value="添加分类" class="button"/>
+                            <input type="button"  value="more+" class="button addtype"/>
                         </td>
                     </tr>
                     <tr>
@@ -107,45 +102,45 @@
                         </td>
                     </tr>
                 </table>
-            </div>     
+            </div>
 
             <div class="innerbox">
                 <table class="tb ed">
                     <tr>
-                        <td style="width:200px;">商品的点击次数:</td>                  
+                        <td style="width:200px;">商品的点击次数:</td>
                         <td align="left">
                             <input type="text" name="click" style="width: 60px"/>&nbsp;&nbsp;&nbsp;次
                         </td>
                     </tr>
                     <tr>
-                        <td style="width:200px;">是否为推荐商品：</td>                  
+                        <td style="width:200px;">是否为推荐商品：</td>
                         <td align="left">
                             <label>
                                 <span>是</span>
                                 <input type="radio" name="recommend" value="1"/>
-                            </label>	
+                            </label>
                             <label>
                                 <span>否</span>
                                 <input type="radio" name="recommend" value="0" />
-                            </label>	
+                            </label>
                         </td>
                     </tr>
                     <tr>
-                        <td style="width:200px;">是否为热卖商品：</td>                   
+                        <td style="width:200px;">是否为热卖商品：</td>
                         <td align="left">
                                <label>
                                 <span>是</span>
                                 <input type="radio" name="hot" value="1"/>
-                            </label>	
+                            </label>
                             <label>
                                 <span>否</span>
                                 <input type="radio" name="hot" value="0" />
-                            </label>	
+                            </label>
                         </td>
                     </tr>
                 </table>
-            </div>    
-            
+            </div>
+
             <div class="innerbox">
                 <table class="tb" id="attr">
                     <tr>
@@ -156,14 +151,14 @@
                             <?php if(is_array($goods_type)): foreach($goods_type as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
                         </td>
-                    </tr>                   
+                    </tr>
                 </table>
-            </div>    
-            
+            </div>
+
              <div class="innerbox">
                  <table class="tb" style="width:80%">
                     <tr>
-                        <td class="tfont" width="100px;">商品图册:</td>                        
+                        <td class="tfont" width="100px;">商品图册:</td>
                     </tr>
                      <tr>
                           <td>
@@ -203,7 +198,7 @@
                         </td>
                      </tr>
                       <tr>
-                        <td class="tfont" width="100px;">列表页展示图:</td>                        
+                        <td class="tfont" width="100px;">列表页展示图:</td>
                     </tr>
                      <tr>
                           <td>
@@ -223,9 +218,9 @@
                         </td>
                      </tr>
                 </table>
-            </div>    
-           
-            
+            </div>
+
+
              <div class="innerbox">
                 <table class="tb ed">
                     <tr>
@@ -245,7 +240,7 @@
                         </td>
                     </tr>
                 </table>
-            </div>  
+            </div>
 
 
 

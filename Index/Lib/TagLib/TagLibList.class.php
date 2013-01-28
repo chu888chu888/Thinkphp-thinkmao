@@ -16,6 +16,12 @@ Class TagLibList extends TagLib {
                'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
 
 );
+    /**
+     * 返回某个栏目下的热卖，推荐商品id
+     * @param type $attr
+     * @param type $content
+     * @return string
+     */
     public function _chgoods($attr,$content){
            $tag = $this->parseXmlAttr($attr,'imgs');
                 if(!$tag['cid'] && !$_GET['cid']){
