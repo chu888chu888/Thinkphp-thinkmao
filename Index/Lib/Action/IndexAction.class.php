@@ -9,6 +9,7 @@ class IndexAction extends Action {
               $this->display("../Public/end");
    }
    public function test(){
-    p(get_all_cid_select(15));
+//    p(get_all_cid_select(15));
+       p(get_all_cid_select(10));
    }
 }

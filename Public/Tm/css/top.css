@@ -12,7 +12,7 @@
 }
 .main_top{
 	height:30px;
-	width: 1190px;	
+	width: 1190px;
 }
 .main_mid{
 	height:63px;
@@ -20,10 +20,10 @@
 }
 .main_top span{
 	float: right;
-	display:block;	
+	display:block;
 	height: 30px;
 	line-height: 30px;
-	width: auto ;	
+	width: auto ;
 	height: 30px;
 	overflow: hidden;
 	color:#FFD0C0;
@@ -39,7 +39,7 @@
     display:inline-block;
     float: left;
 }
-.main_top_s1 span span{	
+.main_top_s1 span span{
     margin-left:-10px;
     display:inline-block;
 }
@@ -68,13 +68,13 @@
 	height: 28px;
 }
 .search button{
-    background-color: #462824;    
+    background-color: #462824;
     border: 0 none;
     color: #FFFFFF;
     cursor: pointer;
     float: right;
     font-size: 14px;
-    height: 30px;   
+    height: 30px;
     line-height: 30px;
     overflow: hidden;
     width: 80px;
@@ -83,19 +83,19 @@
 	float: left;
 	margin-top: -10px;
 }
-#mq {  
+#mq {
     border: 1px solid #7F6B60;
     border-radius: 2px 0 0 2px;
     color: #000000;
     font-weight: 900;
-    height: 20px;   
-    line-height: 20px;   
-    padding: 4px 3px 4px 5px;   
-    width: 510px;    
-    float: right;  
+    height: 30px;
+    line-height: 20px;
+    padding: 4px 3px 4px 5px;
+    width: 510px;
+    float: right;
 }
 .gu_main{
-	background: url(../img/guid.gif") repeat-x scroll 0 0 #8E0000;
+    background: url("../img/guid.gif") repeat-x scroll 0 0 #8E0000;
     font-size: 14px;
     height: 30px;
     width: 1190px;
@@ -107,7 +107,7 @@
 	height:30px;
 	text-align: center;
 	background-color: #8F0100;
-    position: relative;   
+    position: relative;
 }
 .gu_main div{
 	float: left;
@@ -125,18 +125,18 @@
 #guid{
 	background-color: #A21C1D;
 	width: 210px !important;
-	width: 240px;	
+	width: 240px;
 }
 #guid a{
 	text-decoration: none;
 	color: #fff;
 	font-weight: bolder;
 	display: inline-block;
-	height: 30px;	
+	height: 30px;
 	line-height: 30px;
 	float: left;
 	font-family: 'Lucida Grande','微软雅黑';
-    font-size: 14px;   
+    font-size: 14px;
 }
 #guid div{
 	display: inline-block;
@@ -163,20 +163,20 @@
 }
 #guid_box{
 	padding-left: 0px;
-	padding-right: 0px;	
+	padding-right: 0px;
 	position: absolute;
 	width: 240px;
 	height: auto;
-	top:0px;	
+	top:0px;
 	left: 0px;
 	z-index:2;
   }
 
 #guid_box .list{
 	width: 240px;
-    border-left: 1px solid #E6E6E6;    
-    padding: 8px 0;   
-    height: 60px;    
+    border-left: 1px solid #E6E6E6;
+    padding: 8px 0;
+    height: 60px;
     display: block;
     position: relative;
 }
@@ -184,7 +184,7 @@
 	text-decoration:underline;
 }
 .a2 {
-	background-image: url(../img/T1bNnYXa4jXXcsI4sD-189-145.png);	
+	background-image: url(../img/T1bNnYXa4jXXcsI4sD-189-145.png);
 	background-position: 0px 0px;
 }
 .a3 {
@@ -265,7 +265,7 @@
     font-size: 12px;
     height: 17px;
     line-height: 17px;
-    padding: 0 10px 0 5px;    
+    padding: 0 10px 0 5px;
     white-space: nowrap;
     color: #000;
     font-weight: bolder;
@@ -277,12 +277,12 @@
     overflow: hidden;
     width: 240px;
 }
-.list_con{	
+.list_con{
     margin-top: 20px !important;
     margin-top: 10px;
     display: block;
 }
-.list_con1{	
+.list_con1{
     /*margin-top: 2px;*/
 }
 .list p a{
@@ -300,12 +300,12 @@
 	height: auto;
 	width: 1190px;
 	text-align: left;
-	margin: 0 auto;	
+	margin: 0 auto;
 }
-.goods{	
-    height: 300px;   
+.goods{
+    height: 300px;
     width: 940px;
-    margin-left:10px;    
+    margin-left:10px;
 }
 .like{
 	font-family: 'Lucida Grande','微软雅黑';
@@ -313,13 +313,13 @@
     font-weight: normal;
     height: 45px;
     line-height: 45px;
-    text-align: left;    
+    text-align: left;
 }
 .goods1{
     border-left: 1px solid #E6E6E6;
     border-top: 1px solid #E6E6E6;
     height: 432px !important;
-    height: 430px;   
+    height: 430px;
     width:auto;
 }
 .cols{
@@ -358,7 +358,7 @@
 	height: auto;
 	top:0px;
 	left: 240px;
-	display: none;	
+	display: none;
 	z-index:3;
 }
 #guid_box .list .getout ul{
@@ -371,7 +371,7 @@
 	overflow: hidden;
 }
 #guid_box .list .getout ul li h3{
-	height: 34px;	
+	height: 34px;
 	border-bottom: 2px solid rgb(0, 0, 0);
 	font-family: 'Lucida Grande','微软雅黑';
 	margin-bottom: 6px;
@@ -381,7 +381,7 @@
   font-size: 15px;
   color: #000;
   text-decoration: none;
-  font-weight: bolder; 
+  font-weight: bolder;
 }
 #guid_box .list .getout ul li p{
     padding-bottom: 5px;

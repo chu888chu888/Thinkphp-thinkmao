@@ -47,7 +47,7 @@ function format_gellery($arr1,$arr2,$arr3){
  * @param type $type
  * @return type
  */
- function check_cate_hot_goods($cid,$type='hot'){
+ function check_cate_hot_goods($cid,$type=0){
       $cid_arr =check_all_cate($cid);
       $allarr = array();
       foreach ($cid_arr as $v) {
@@ -80,7 +80,7 @@ function format_gellery($arr1,$arr2,$arr3){
   * 获得该栏目下的热卖商品
   * @param type $cid
   */
- function get_all_cate_hg($cid,$type='hot'){
+ function get_all_cate_hg($cid,$type){
      $all_id = format_goods_cid();
      $gids =array();
      foreach ($all_id as $k => $v){
@@ -91,7 +91,11 @@ function format_gellery($arr1,$arr2,$arr3){
      $gidsstr = implode(',', $gids);
      $arr =array();
      $db=M('goods');
+     if($type){
      $data = $db->where('id in ('.$gidsstr.') and '.$type.' = 1')->field('id')->select();
+     }else{
+     $data = $db->where('id in ('.$gidsstr.')')->field('id')->select();
+     }
      return $data;
  }
        /**

@@ -2,8 +2,10 @@
 <link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/base.css" />
 <script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/index.js"></script>
+<script type="text/javascript">
+    var img_url = "<?php echo (__ROOT__); ?>/Public/Tm/img";
+</script>
 <meta content="text/html;charset=utf-8"  http-equiv="Content-Type">
-
 <div class="gui">
     <div class="gu_main">
 

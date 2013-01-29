@@ -32,7 +32,7 @@ Class TagLibList extends TagLib {
                 return;
          }
            $rows = empty($tag['row'])? 5 : $tag['row'];
-           $gid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
+           $cid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
            $str='';
            $str.='<?php ';
            $str.='$all = get_all_cid_select('.$cid.');';
@@ -54,13 +54,13 @@ Class TagLibList extends TagLib {
             if(!$tag['value']){
                 return;
          }
-         $value = $tag['value'];
+           $value = $tag['value'];
            $rows = empty($tag['row'])? 10 : $tag['row'];
            $str='';
            $str.='<?php ';
-           $str.='foreach($value as $k=>$attr){';
+           $str.='foreach('.$value.' as $k=>$attr){';
            $str.='if($k<'.$rows.'){?>';
-           $str.='<?php $url = U("brand",array(\'aid\'=>$field[\'id\'],\'num\'=>$k));?>';
+           $str.='<?php $url = U("select",array(\'aid\'=>$field[\'id\'],\'num\'=>$k));?>';
            $str.=  $content;
            $str.='<?php } ?>';
            $str.='<?php } ?>';
@@ -81,7 +81,10 @@ Class TagLibList extends TagLib {
            $str='';
            $str.='<?php ';
            $str.='$good_mes_all = get_goods_mes('.$gid.');';
-           $str.='foreach($good_mes_all as $k=>$field){?>';
+           $str.='$mes[1] = $good_mes_all;';
+           $str.='foreach($mes as $k=>$field){?>';
+           $str.='<?php $url = U("Good/index",array(\'gid\'=>$field[\'id\']));?>';
+           $str.='<?php $bidurl = U("Brand/index",array(\'bid\'=>$field[\'bid\']));?>';
            $str.=  $content;
            $str.='<?php } ?>';
            return $str;
@@ -99,13 +102,14 @@ Class TagLibList extends TagLib {
                 return;
               }
            $rows = empty($tag['row'])? 10 : $tag['row'];
-           $type = empty($tag['type'])? "hot" : $tag['type'];
+           $type = empty($tag['type'])? 0 : $tag['type'];
            $cid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
            $str.='';
            $str.='<?php ';
            $str.='$cids = check_cate_hot_goods('.$cid.',"'.$type.'");';
-           $str.='foreach($cids as $k=>$field){';
+           $str.='foreach($cids as $k=>$hotgid){';
            $str.= 'if($k<'.$rows.'){ ?>';
+           $str.='<?php $url = U("Good/index",array(\'gid\'=>$hotgid));?>';
            $str.=  $content;
            $str.='<?php } ?>';
            $str.='<?php } ?>';
@@ -139,7 +143,8 @@ Class TagLibList extends TagLib {
            $str.='$img["max"]=$max;';
            $str.='foreach($img["'.$type.'"] as $key=>$field){';
            $str.='if($key<'.$row.'){?>';
-           $str.=  $content;
+           $str.='<?php $num="$key";?>';
+           $str.=$content;
            $str.='<?php } ?>';
            $str.='<?php } ?>';
            return $str;
@@ -189,6 +194,7 @@ Class TagLibList extends TagLib {
            $str.='$db = M("goods");';
            $str.='$data = $db->where(array("id"=>'.$gid.'))->select();';
            $str.='foreach($data as $k=>$field){?>';
+           $str.='<?php $url = U("Good/index",array(\'gid\'=>$field[\'id\']));?>';
            $str.= $content;
            $str.= '<?php } ?>';
            return $str;
