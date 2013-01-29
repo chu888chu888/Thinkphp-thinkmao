@@ -8,13 +8,7 @@ class IndexAction extends Action {
               $this->display("../Public/goods");
               $this->display("../Public/end");
    }
-   public function cate(){
-      echo $_GET['id'];
-   }
-   public function brand(){
-       echo $_GET['bid'];
-   }
    public function test(){
-     echo md5(111111);
+    p(get_all_cid_select(15));
    }
 }

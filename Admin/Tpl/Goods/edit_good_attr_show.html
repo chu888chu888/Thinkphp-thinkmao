@@ -26,7 +26,7 @@ and open the template in the editor.
              <tr>
                <td>
                    <input type="hidden" name="id" value="{$id}"/>
-               <input type="text" name="name" class="put"/>
+                  <input type="text" name="name" class="put"/>
              </td>
             </tr>
              <tr>
@@ -44,12 +44,26 @@ and open the template in the editor.
                         <span class="ega">规格：</span>
                        <input type="radio" name="type" value="1" class="ega" style="margin-top: 10px;"/>
                    </label>
-               
+
              </td>
             </tr>
-            
-            
-            
+
+
+             <tr>
+                <td class="ahead">
+                  是否设为筛选属性
+                </td>
+            </tr>
+             <tr>
+               <td>
+                   <p id="gsel" style=" height:20px;width:40px;dispaly:block;background-color:blue"></p>
+                   <input type="hidden" name="gselect"  value="0"/>
+             </td>
+            </tr>
+
+
+
+
              <tr>
                 <td class="ahead">
                 录入的方式：
@@ -64,22 +78,22 @@ and open the template in the editor.
                     <label>
                         <span  class="ega">自动选择:</span>
                        <input type="radio" class="select_type ega" name="puttype"  value="1" style="margin-top: 10px;"/>
-                   </label>               
+                   </label>
              </td>
             </tr>
-            
-            
+
+
             <tr>
                 <td>
                     <textarea style="height:80px;width:300px;border: 2px solid #009A61" name="select" class="sel">
-                        
+
                     </textarea>
                 </td>
             </tr>
- 
+
             <tr>
                 <td align="right">
-               <input type="submit" value="确定" class="gsubmit"/> 
+               <input type="submit" value="确定" class="gsubmit"/>
                 </td>
             </tr>
             </table>

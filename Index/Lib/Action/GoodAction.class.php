@@ -1,7 +1,10 @@
 <?php
   class GoodAction extends Action{
       public function index(){
-          $gid = $_REQUEST['gid'];
+            if(empty($_GET['gid'])){
+              redirect(U('Index/index'));
+          }else{
+          $gid = $_GET['gid'];
           $num = get_all_number($gid);
           $data = get_goods_mes($gid);
 //          $data = $db->where(array('id'=>$gid))->find();
@@ -9,6 +12,7 @@
           $this->assign("num",$num);
           $this->display("../Public/top");
           $this->display("../Public/test_good_guid");
+      }
       }
       /**
        * 异步改变价格
@@ -37,6 +41,7 @@
               $arr['attr']=$attr;
               $id = $_SESSION[id];
               $arr['id']=$id;
+
               $_SESSION["cart"][$id][]=serialize($arr);
           }
               echo json_encode($price);

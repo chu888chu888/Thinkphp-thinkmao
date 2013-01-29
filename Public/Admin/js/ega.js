@@ -11,4 +11,21 @@ $(function(){
             }
         }
 )
+    $("#gsel").click(function(){
+           if($(this).next().val()==0){
+               $(this).next().val(1);
+               $(this).css("background-color","red");
+           }else{
+               $(this).next().val(0);
+               $(this).css("background-color","blue");
+           }
+
+    })
+
+
+
+
+
+
+
 })

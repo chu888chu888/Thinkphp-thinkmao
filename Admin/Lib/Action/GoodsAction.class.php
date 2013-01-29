@@ -1,6 +1,6 @@
 <?php
    class GoodsAction extends CommonAction{
-      
+
        /**
         * 商品类型
         */
@@ -46,12 +46,12 @@
                $this->success('删除成功',U('good_type'));
            }else{
                $this->error('删除失败',U('edit_good_type_show?id=$_POST["id"]'));
-           }           
+           }
        }
-       
-       
-       
-       
+
+
+
+
        /**
         * 商品属性
         */
@@ -61,12 +61,12 @@
            $this->assign("id",$id);
            $this->display();
        }
-       public function  edit_good_attr(){          
+       public function  edit_good_attr(){
            if(!$_POST['puttype']){
                $_POST['select']=0;
            }
            $tid= $_POST['id'];
-            $value = $_POST['select'];          
+            $value = $_POST['select'];
            $value1 = trim($value);
 //           $arr = explode("|", $value1);
             $arr=array(
@@ -74,14 +74,14 @@
                 'value'=>$value1,
                 'type'=>$_POST['type'],
                 'tid'=>$tid,
-            );           
+            );
             $db = M('type_attr');
             $res = $db->data($arr)->add();
             if($res){
                $this->success('添加成功',U('good_type'));///--------------------------------------------------------------
            }else{
                $this->error('添加失败',U('edit_good_attr_show?id=$_POST["id"]'));
-           }          
+           }
        }
        public function good_attr_list(){
            $id = $_GET['id'];
@@ -92,19 +92,19 @@
                if($value['value']=='0'){
                    $data[$key]['value']='手工录入';
                }
-           }          
+           }
            $this->assign("data", $data);
            $this->display();
        }
        public function edit_type_attr_show(){
-           
+
        }
        public function del_type_attr(){
-           
+
        }
-       
-       
-       
+
+
+
        /**
         * 栏目
         */
@@ -112,7 +112,7 @@
                           $category = M('category')->select();
 		$cate = recursion($category);
                           $this->assign('cate', $cate);
-		$this->display();                    
+		$this->display();
        }
        public function add_top_cate_show(){
            $pid = $_REQUEST['pid'];
@@ -129,7 +129,7 @@
                $this->success('添加成功',U('cate'));///--------------------------------------------------------------
                }else{
                $this->error('添加失败',U('add_top_cate_show?id=$_POST["pid"]'));
-             }          
+             }
        }
        public function del_cate(){
            $db = M('category');
@@ -142,28 +142,36 @@
                $this->success('删除成功',U('cate'));///--------------------------------------------------------------
                }else{
                $this->error('删除失败',U('cate'));
-             }          
+             }
            }
        }
        public function mod_cate_c(){
-            $db = M('category');          
-           $res = $db->data($_POST)->save();         
+            $db = M('category');
+           $res = $db->data($_POST)->save();
             if($res){
                $this->success('更改成功',U('cate'));///--------------------------------------------------------------
                }else{
                $this->error('更改失败或未修改',U('cate'));
-             }          
+             }
        }
        public function mod_cate(){
-           $db = M('goods_type');
-           $data = $db->select();
+           $dbs = M('goods_type');
+           $data = $dbs->select();
            $this->assign('data',$data);
            $db = M('category');
+           $cateall = $db->where("id != ".$_GET['id'])->select();
+           $cateall = recursion($cateall);
+           $this->assign("cateall",$cateall);
            $cate = $db->where(array('id' =>$_GET['id']))->find();
+           $tid = $cate['tid'];
+           $mes =$dbs->where(array('id' =>$tid))->find();
+           $this->assign("mes", $mes);
+           $pcate = $db->where(array('id' =>$cate['pid']))->find();
+           $this->assign("pcate", $pcate);
            $this->assign("cate",$cate);
            $this->display();
        }
-       
+
    }
 
 ?>

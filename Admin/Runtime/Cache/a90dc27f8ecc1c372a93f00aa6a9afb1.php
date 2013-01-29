@@ -28,8 +28,8 @@ and open the template in the editor.
                <input type="hidden" name="id" value="<?php echo ($cate["id"]); ?>"/>
              </td>
             </tr>
-            
-            
+
+
              <tr>
                 <td class="ahead">
                 请选择分类的类型
@@ -38,8 +38,8 @@ and open the template in the editor.
              <tr>
                <td>
                    <select name="tid">
-                       <option value="<?php echo ($cate["tid"]); ?>">
-                           选择类型
+                       <option value="<?php echo ($mes["id"]); ?>">
+                           <?php echo ($mes["name"]); ?>
                        </option>
                        <?php if(is_array($data)): foreach($data as $key=>$n): ?><option value="<?php echo ($n["id"]); ?>">
                             <?php echo ($n["name"]); ?>
@@ -47,10 +47,26 @@ and open the template in the editor.
                    </select>
              </td>
             </tr>
-     
+            <tr>
+                <td class="ahead">
+                 选择父级别栏目
+                </td>
+            </tr>
+               <tr>
+               <td>
+                   <select name="pid">
+                       <option value="<?php echo ($pcate["id"]); ?>">
+                           <?php echo ($pcate["name"]); ?>
+                       </option>
+                       <?php if(is_array($cateall)): foreach($cateall as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>">
+                            <?php echo ($v["html"]); echo ($v["name"]); ?>
+                            </option><?php endforeach; endif; ?>
+                   </select>
+             </td>
+            </tr>
             <tr>
                 <td align="right">
-                 <input type="submit" value="确定" class="gsubmit"/> 
+                 <input type="submit" value="确定" class="gsubmit"/>
                 </td>
             </tr>
             </table>

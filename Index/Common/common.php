@@ -1,5 +1,28 @@
 <?php
 /**
+ * 获取莫栏目下的所有的类型的筛选属性
+ * @param type $cid
+ */
+function get_all_cid_select($cid){
+    $cid_arr =  check_all_cate($cid);
+    $cid_str = implode(',', $cid_arr);
+     $db = M("category");
+     $all_data = $db->where('id in ('.$cid_str.')')->field('tid')->select();
+     $tid_arr = array();
+     foreach ($all_data as $value) {
+          if(!in_array($value['tid'], $tid_arr) && $value['tid']!=0){
+              $tid_arr[]=$value['tid'];
+          }
+     }
+     $tid_str = implode(',', $tid_arr);
+     $db2 = M('type_attr');
+     $data = $db2->where('tid in ('.$tid_str.') and gselect = "1"')->select();
+     foreach ($data as $key=>$value) {
+                 $data[$key]['value']=  explode('|', $value['value']);
+     }
+     return $data;
+}
+/**
  * 格式化相册
  * @param type $arr1
  * @param type $arr2
@@ -81,7 +104,7 @@ function format_gellery($arr1,$arr2,$arr3){
        $data = $db ->where(array('pid'=>$cid))->select();
        if(count($data)){
        foreach($data as $v){
-               $arr[] = $v['id'];
+           check_all_cate($v['id']);
           }
           return $arr;
        }else{

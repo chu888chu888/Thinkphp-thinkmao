@@ -28,8 +28,8 @@ and open the template in the editor.
                <input type="hidden" name="id" value="{$cate.id}"/>
              </td>
             </tr>
-            
-            
+
+
              <tr>
                 <td class="ahead">
                 请选择分类的类型
@@ -38,8 +38,8 @@ and open the template in the editor.
              <tr>
                <td>
                    <select name="tid">
-                       <option value="{$cate.tid}">
-                           选择类型
+                       <option value="{$mes.id}">
+                           {$mes.name}
                        </option>
                        <foreach name='data' item='n'>
                            <option value="{$n.id}">
@@ -49,10 +49,28 @@ and open the template in the editor.
                    </select>
              </td>
             </tr>
-     
+            <tr>
+                <td class="ahead">
+                 选择父级别栏目
+                </td>
+            </tr>
+               <tr>
+               <td>
+                   <select name="pid">
+                       <option value="{$pcate.id}">
+                           {$pcate.name}
+                       </option>
+                       <foreach name='cateall' item='v'>
+                           <option value="{$v.id}">
+                            {$v.html}{$v.name}
+                            </option>
+                       </foreach>
+                   </select>
+             </td>
+            </tr>
             <tr>
                 <td align="right">
-                 <input type="submit" value="确定" class="gsubmit"/> 
+                 <input type="submit" value="确定" class="gsubmit"/>
                 </td>
             </tr>
             </table>

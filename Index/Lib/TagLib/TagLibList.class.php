@@ -16,8 +16,56 @@ Class TagLibList extends TagLib {
                'gellery'=>array('attr'=>'gid,type,row','close'=>1),
                'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
                'allgood'=>array('attr'=>'gid','close'=>1),
+               'select'=>array('attr'=>'cid,row','close'=>1),
+               'selval'=>array('attr'=>'value,row','close'=>1),
 
 );
+    /**
+     * 遍历出筛选属性名
+     * @param type $attr
+     * @param type $content
+     * @return string
+     */
+    public function _select($attr,$content){
+          $tag = $this->parseXmlAttr($attr,'select');
+            if(!$tag['cid'] && !$_GET['cid']){
+                return;
+         }
+           $rows = empty($tag['row'])? 5 : $tag['row'];
+           $gid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
+           $str='';
+           $str.='<?php ';
+           $str.='$all = get_all_cid_select('.$cid.');';
+           $str.='foreach($all as $k=>$field){';
+           $str.='if($k<'.$rows.'){?>';
+           $str.=  $content;
+           $str.='<?php } ?>';
+           $str.='<?php } ?>';
+           return $str;
+    }
+     /**
+     * 遍历出筛选属性值
+     * @param type $attr
+     * @param type $content
+     * @return string
+     */
+    public function _selval($attr,$content){
+          $tag = $this->parseXmlAttr($attr,'select');
+            if(!$tag['value']){
+                return;
+         }
+         $value = $tag['value'];
+           $rows = empty($tag['row'])? 10 : $tag['row'];
+           $str='';
+           $str.='<?php ';
+           $str.='foreach($value as $k=>$attr){';
+           $str.='if($k<'.$rows.'){?>';
+           $str.='<?php $url = U("brand",array(\'aid\'=>$field[\'id\'],\'num\'=>$k));?>';
+           $str.=  $content;
+           $str.='<?php } ?>';
+           $str.='<?php } ?>';
+           return $str;
+    }
     /**
      * 获得商品的所有的信息
      * @param type $attr
@@ -50,7 +98,7 @@ Class TagLibList extends TagLib {
                 if(!$tag['cid'] && !$_GET['cid']){
                 return;
               }
-           $rows = empty($tag['rows'])? 10 : $tag['rows'];
+           $rows = empty($tag['row'])? 10 : $tag['row'];
            $type = empty($tag['type'])? "hot" : $tag['type'];
            $cid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
            $str.='';
@@ -179,7 +227,7 @@ Class TagLibList extends TagLib {
                 return;
          }
          $gid = empty($tag['gid']) ? $_GET['gid'] : $tag['gid'];
-         $rows = empty($tag['rows'])? 20 : $tag['rows'];
+         $rows = empty($tag['row'])? 20 : $tag['row'];
                $str='';
                $str.='<?php ';
                $str.='$good_mes_all = get_goods_mes('.$gid.');';
@@ -207,7 +255,7 @@ Class TagLibList extends TagLib {
                 return;
          }
          $gid = empty($tag['gid']) ? $_GET['gid'] : $tag['gid'];
-         $rows = empty($tag['rows'])? 40 : $tag['rows'];
+         $rows = empty($tag['row'])? 40 : $tag['row'];
                $aid = $tag['aid'];
                $str.='<?php ';
                $str.='$good_mes_all = get_goods_mes('.$gid.');';
@@ -230,7 +278,7 @@ Class TagLibList extends TagLib {
                 return;
          }
            $gid = empty($tag['gid']) ? $_GET['gid'] : $tag['gid'];
-               $rows = empty($tag['rows'])? 200 : $tag['rows'];
+               $rows = empty($tag['row'])? 200 : $tag['row'];
                $str='';
                $str.='<?php ';
                $str.='$good_mes_all = get_goods_mes('.$gid.');';
@@ -251,15 +299,14 @@ Class TagLibList extends TagLib {
      */
      public function _brand($attr,$content){
             $tag = $this->parseXmlAttr($attr,'brand');
-            if(!$tag['cid']){
+            if(!$tag['cid'] && !$_GET['cid']){
                 return;
             }
-            $rows = empty($tag['rows'])? 10 : $tag['rows'];
+            $rows = empty($tag['row'])? 20 : $tag['row'];
             if(empty($tag['type'])){
                 $type = 0;
             }
-
-            $cid = $tag['cid'];
+            $cid = empty($tag['cid'])?$_GET['cid']:$tag['cid'];
             $str  = '';
             $str .= '<?php ';
             $str .='$db=M("brand");';
@@ -313,7 +360,10 @@ Class TagLibList extends TagLib {
       */
      private  function common_cate($attr,$content,$name){
          $tag    = $this->parseXmlAttr($attr,$name);
-         $id = empty($tag['cid'])? 'top' : $tag['cid'];
+         if(!$tag['cid'] && !$_GET['cid']){
+                return;
+            }
+         $id = empty($tag['cid'])? $_GET['cid'] : $tag['cid'];
          $str = '';
          $str .= '<?php ';
          $str .= '$db = M("category");';
@@ -323,7 +373,7 @@ Class TagLibList extends TagLib {
              $str .='$data = $db->where(array("pid"=>'.$id.'))->select();?>';
          }
          $str.='<?php foreach($data as $field){?>';
-         $str.='<?php $field["url"]=U("cate",array(\'id\'=>$field[\'id\']));?>';
+         $str.='<?php $field["url"]=U("List/index",array(\'cid\'=>$field[\'id\']));?>';
          $str.=$content;
          $str.='<?php }; ?>';
          return $str;

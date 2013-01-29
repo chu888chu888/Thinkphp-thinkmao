@@ -26,70 +26,45 @@
                 </div>
                 <div class="cp_right">
                     <ul>
-                        <li>
-                            <a href="#">Ochirly/欧时力</a>
-                        </li>
-                        <li>
-                            <a href="#">ONLY</a>
-                        </li>
-                        <li>
-                            <a href="#">秋水伊人</a>
-                        </li>
-                        <li>
-                            <a href="#">Vero Moda</a>
-                        </li>
-                        <li>
-                            <a href="#">Etam/艾格</a>
-                        </li>
-                        <li>
-                            <a href="#">PEACEBIRD/太平鸟</a>
-                        </li>
-                        <li>
-                            <a href="#">Uniqlo/优衣库</a>
-                        </li>
-                        <li>
-                            <a href="#">裂帛</a>
-                        </li>
-                        <li>
-                            <a href="#">OSA</a>
-                        </li>
-                        <li>
-                            <a href="#">INMAN/茵曼</a>
-                        </li>
-                        <li>
-                            <a href="#">Basic House/百家好</a>
-                        </li>
-                        <li>
-                            <a href="#">淑女屋</a>
-                        </li>
-                        <li>
-                            <a href="#">Eifini/伊芙丽</a>
-                        </li>
-                        <li>
-                            <a href="#">Goelia/歌莉娅</a>
-                        </li>
-                        <li>
-                            <a href="#">ESPRIT/埃斯普利特</a>
-                        </li>
-                        <li>
-                            <a href="#">江南布衣</a>
-                        </li>
-                        <li>
-                            <a href="#">Jeanswest/真维斯</a>
-                        </li>
-                        <li>
-                            <a href="#">COCOON/可可尼</a>
-                        </li>
-                        <li>
-                            <a href="#">雅鹿</a>
-                        </li>
-                        <li>
-                            <a href="#">Giordano/佐丹奴</a>
-                        </li>
+                        <brand  rows="20">
+                            <li ss="{}">
+                            <a href="{$field.url}">{$field.name}</a>
+                            </li>
+                        </brand>
                     </ul>
                 </div>
             </div>
 
+
+            <cate2 >
+                <div class='pc_boy'>
+                <div class='pc_boy1'>
+                    <span class='pc_boy1_tu'></span>
+                    <span class='pc_boy1_font' ss="{}">{$field.name}</span>
+                </div>
+                <div class='pc_boy_con'>
+                    <ul>
+
+                        <cate2 cid="$field['id']">
+                              <li ss="{}">
+                               <a href="{$field.url}">
+                               {$field.name}
+                                <span>(50458)</span>
+                              </a>
+                            </li>
+                        </cate2>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            </cate2>
+
+
+
+
+<!--
             <div class='pc_boy'>
                 <div class='pc_boy1'>
                     <span class='pc_boy1_tu'></span>
@@ -330,7 +305,7 @@
 
                     </ul>
                 </div>
-            </div>
+            </div>-->
             <div class="pc_boy">
                 <div  class="pc_boy1">
                     <span class='pc_boy1_font'>风格</span>

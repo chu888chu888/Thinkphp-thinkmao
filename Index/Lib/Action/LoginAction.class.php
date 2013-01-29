@@ -5,7 +5,6 @@
           $this->display("../Public/endgoods");
       }
       public function login(){
-       
           $uname = $_POST['uname'];
           $pwd = md5($_POST['password']);
           $db = m('user');

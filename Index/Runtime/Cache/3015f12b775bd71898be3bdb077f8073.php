@@ -26,70 +26,37 @@
                 </div>
                 <div class="cp_right">
                     <ul>
-                        <li>
-                            <a href="#">Ochirly/欧时力</a>
-                        </li>
-                        <li>
-                            <a href="#">ONLY</a>
-                        </li>
-                        <li>
-                            <a href="#">秋水伊人</a>
-                        </li>
-                        <li>
-                            <a href="#">Vero Moda</a>
-                        </li>
-                        <li>
-                            <a href="#">Etam/艾格</a>
-                        </li>
-                        <li>
-                            <a href="#">PEACEBIRD/太平鸟</a>
-                        </li>
-                        <li>
-                            <a href="#">Uniqlo/优衣库</a>
-                        </li>
-                        <li>
-                            <a href="#">裂帛</a>
-                        </li>
-                        <li>
-                            <a href="#">OSA</a>
-                        </li>
-                        <li>
-                            <a href="#">INMAN/茵曼</a>
-                        </li>
-                        <li>
-                            <a href="#">Basic House/百家好</a>
-                        </li>
-                        <li>
-                            <a href="#">淑女屋</a>
-                        </li>
-                        <li>
-                            <a href="#">Eifini/伊芙丽</a>
-                        </li>
-                        <li>
-                            <a href="#">Goelia/歌莉娅</a>
-                        </li>
-                        <li>
-                            <a href="#">ESPRIT/埃斯普利特</a>
-                        </li>
-                        <li>
-                            <a href="#">江南布衣</a>
-                        </li>
-                        <li>
-                            <a href="#">Jeanswest/真维斯</a>
-                        </li>
-                        <li>
-                            <a href="#">COCOON/可可尼</a>
-                        </li>
-                        <li>
-                            <a href="#">雅鹿</a>
-                        </li>
-                        <li>
-                            <a href="#">Giordano/佐丹奴</a>
-                        </li>
+                        <?php $db=M("brand");$all_cid = check_all_cate(15);$cids = implode(",",$all_cid);$data = $db->where("cid in ($cids)")->select();foreach($data as $k=>$field){if($k<20){ $field["url"]=U("brand",array('bid'=>$field['id']));?><li ss="{}">
+                            <a href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a>
+                            </li><?php } } ?>
                     </ul>
                 </div>
             </div>
 
+
+            <?php $db = M("category");$data = $db->where(array("pid"=>15))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><div class='pc_boy'>
+                <div class='pc_boy1'>
+                    <span class='pc_boy1_tu'></span>
+                    <span class='pc_boy1_font' ss="{}"><?php echo ($field["name"]); ?></span>
+                </div>
+                <div class='pc_boy_con'>
+                    <ul>
+
+                        <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li ss="{}">
+                               <a href="<?php echo ($field["url"]); ?>">
+                               <?php echo ($field["name"]); ?>
+                                <span>(50458)</span>
+                              </a>
+                            </li><?php }; ?>
+
+                    </ul>
+                </div>
+            </div><?php }; ?>
+
+
+
+
+<!--
             <div class='pc_boy'>
                 <div class='pc_boy1'>
                     <span class='pc_boy1_tu'></span>
@@ -330,7 +297,7 @@
 
                     </ul>
                 </div>
-            </div>
+            </div>-->
             <div class="pc_boy">
                 <div  class="pc_boy1">
                     <span class='pc_boy1_font'>风格</span>
