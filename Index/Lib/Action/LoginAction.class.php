@@ -5,14 +5,15 @@
           $this->display("../Public/endgoods");
       }
       public function login(){
-          $uid = $_POST['uname'];
+       
+          $uname = $_POST['uname'];
           $pwd = md5($_POST['password']);
           $db = m('user');
-          $data = $db->where(array('id'=>$uid))->find();
+          $data = $db->where(array('username'=>$uname))->find();
           if(count($data)){
               if($data['password']==$pwd){
                     @session_start();
-                    $_SESSION['id']=$uid;
+                    $_SESSION['id']=$data['id'];
                     echo 1;
               }else{
                   echo 0;

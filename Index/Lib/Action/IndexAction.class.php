@@ -15,8 +15,6 @@ class IndexAction extends Action {
        echo $_GET['bid'];
    }
    public function test(){
-      p(get_all_number(10));
-
-
+     echo md5(111111);
    }
 }

@@ -34,6 +34,9 @@ if(cart == true){
         url:url,
         data:obj,
         success:function(res){
+            if(cart == true){
+                alert("增加一件商品");
+            }
            $("#total_price").text(res);
         }
     })

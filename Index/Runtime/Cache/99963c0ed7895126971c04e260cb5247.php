@@ -92,13 +92,15 @@
             </div>
             <div class="gsm_right">
                 <h3>
-                    
+                    <?php $db = M("goods");$data = $db->where(array("id"=>11))->select();foreach($data as $k=>$field){?><a ss="{}">
+                            <?php echo ($field["name"]); ?>
+                        </a><?php } ?>
                 </h3>
                 <p> <span class="gsm_type">价格</span>
-                
+                <?php $db = M("goods");$data = $db->where(array("id"=>11))->select();foreach($data as $k=>$field){?><del ss="{}" style="font-size: 20px;"><?php echo ($field["mprice"]); ?></del><?php } ?>
                 <span>元<span></p>
                         <p> <span class="gsm_type">促销</span> <span class="limit_time">限时促销</span>
-                        
+                        <?php $db = M("goods");$data = $db->where(array("id"=>11))->select();foreach($data as $k=>$field){?><span class="gsm_p" ss="{}"><?php echo ($field["price"]); ?></span><?php } ?>
 
                         <span class="yuan">元</span><span class="yuan more">更多促销</span> </p>
                         <div style="clear: left"></div>
@@ -108,7 +110,16 @@
                         <p> <span class="gsm_type">评价</span> <span class="gsm_grand"></span><span class="total_grand">4.7分</span><span class="total_grand">(<a href="">累计评价</a>)</span> </p>
                         <div style="clear: left"></div>
                         <div class="gsm_info">
-                            
+                            <?php $good_mes_all = get_goods_mes(11);$specs = $good_mes_all["specs"];$specsx = get_spec_name($specs);foreach($specsx as $k=>$field){if($k<20){ ?><div>
+                                    <span ss="{}"><?php echo ($field['attr_name']); ?></span>
+                                    <ul class="size">
+                                        <?php $good_mes_all = get_goods_mes(11);$specs = $good_mes_all["specs"][$field['attr_id']];foreach($specs as $k=>$field){?><li ss='{}'>
+                                                <?php echo ($field['value']); ?>
+                                            </li>
+                                            <input type="hidden" value=" <?php echo ($field['attrid']); ?>" name="spec"/><?php } ?>
+                                    </ul>
+                                </div>
+                                <div style="clear: left"></div><?php } } ?>
 
 
 
@@ -186,7 +197,9 @@
                                     <div class="attr">
                                         <ul>
 
-                                            
+                                            <?php $good_mes_all = get_goods_mes(11);$attrs = $good_mes_all["attrs"];foreach($attrs as $k=>$field){if($k<200){ ?><li ss="{}">
+                                                    <?php echo ($field["attr_name"]); ?>&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo ($field["value"]); ?>
+                                                </li><?php } } ?>
 
                                         </ul>
                                     </div>

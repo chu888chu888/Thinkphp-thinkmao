@@ -3,6 +3,11 @@
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/login.css" />
+        <script src="<?php echo (__ROOT__); ?>/Public/Tm/js/jquery.js"></script>
+        <script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/login.js"></script>
+        <script type="text/javascript">
+            var url = "<?php echo U('login');?>";
+        </script>
     </head>
     <body>
         <div id="header">
@@ -27,27 +32,27 @@
                                   淘宝会员
                                   </span>
                               </div>
-                             <form action="" method="post" class="form">
+                             <form class="form">
                                  <table class="table">
                                      <tr>
                                          <td class="filed">账户名</td>
                                          <td class="put_in">
-                                             <input type="text" name="uname" class="input" />
+                                             <input type="text" id="uname" class="input" />
                                          </td>
                                      </tr>
                                      <tr >
                                          <td class="filed">密&nbsp;&nbsp;&nbsp;码</td>
                                          <td class="put_in">
-                                             <input type="password" name="password" class="input" />
+                                             <input type="password" id="password" class="input" />
                                          </td>
                                      </tr>
                                  </table>
                                  <div class="checkbox">
                                      <input type="checkbox" value="" id="checkbox" class="cb" name="checkbox" />
-                                      <label for="checkbox" class="cb co">十天内免登陆</label>
+                                      <label for="checkbox" class="cb co" style="line-height: 10px;">十天内免登陆</label>
                                  </div>
                                  <div class="submit">
-                                        <button type="submit"></button>
+                                        <button type="button" id="button"></button>
                                  </div>
                                  <div class="bottom">
                                          <a href="">

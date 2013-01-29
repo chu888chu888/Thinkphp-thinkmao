@@ -30,16 +30,17 @@
                     }
               }
           }
-          if($_POST['cart']){
+          if($_POST['cart']==1){
               @session_start();
               $arr['gid']=$gid;
               $arr['num']=$num;
               $arr['attr']=$attr;
               $id = $_SESSION[id];
-              $_SESSION[$id][]=$arr;
-          }else{
-              echo json_encode($price);
+              $arr['id']=$id;
+              $_SESSION["cart"][$id][]=serialize($arr);
           }
+              echo json_encode($price);
+
 
       }
 
