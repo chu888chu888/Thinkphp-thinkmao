@@ -100,7 +100,7 @@
                             <span class="mini-cart-line"></span>
                             <s></s>
                             购物车
-                            <span class="mc-count mc-pt3">1</span>
+                            <span class="mc-count mc-pt3">{$goods_number}</span>
                             件
                         </a>
                         <b class="leftline"></b>
@@ -217,18 +217,18 @@
                     <div id="J_StatusBar" data-total="50" data-limit="45">
                         购物车状态：
                         <div class="bar">
-                            <div title="正常宝贝:1件" style="width: 2px; display: block;" class="normal" data-title="正常宝贝"></div>
+                            <div title="正常宝贝:{$goods_number}{$mes.unit}" style="width: 2px; display: block;" class="normal" data-title="正常宝贝"></div>
                             <div style="display: none;" class="disable" data-title="临时失效宝贝"></div>
                             <div style="display: none;" class="invalid" data-title="永久失效宝贝"></div>
                         </div>
                         <span class="num">
-                            <span class="J_TotalNum">1</span>
+                            <span class="J_TotalNum">{$goods_number}</span>
                             /50
                         </span>
                     </div>
                     <div class="rgt">
                         <span>
-                            商品总价(不含运费)： <em class="m-total-fee">637.94</em>
+                            商品总价(不含运费)： <em class="m-total-fee">{$p_all}</em>
                             元
                         </span>
                         <span>
@@ -278,6 +278,9 @@
                             <td colspan="7"></td>
                         </tr>
                     </tbody>
+
+                    <foreach name="mes" item="v">
+
                     <tbody id="bundle_72518613_0" class="m-bundle">
                         <tr id="order_22978694017" class="m-order m-selected">
                             <td class="m-col-chk">
@@ -285,32 +288,29 @@
                             <td class="m-col-title">
                                 <div class="m-col-img">
                                     <a href="#">
-                                        <img class="m-order-img" src="{$Think.const.__ROOT__}/Public/Tm/img/T2gnKWXdVXXXXXXXXX_915353266.jpg" height="50"></a>
+                                        <img class="m-order-img" src="{$v.pic}" height="50"></a>
                                 </div>
                                 <div class="m-col-meta">
                                     <p class="m-title-p">
-                                        <a class="m-title" href="#">玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825</a>
+                                        <a class="m-title" href="{:U('Good/index')}?gid={$v.gid}">{$v.gname}</a>
                                     </p>
-
+                                    <foreach name="v['all_prve']" item="m">
                                     <span class="m-sku-item">
-                                        颜色分类： <em>红色3天内发货 M5天内发货</em>
+                                        {$m.aname}： <em> {$m.value}</em>
                                     </span>
-                                    <span class="m-sku-item">
-                                        尺码：
-                                        <em>S</em>
-                                    </span>
+                                    </foreach>
                                 </div>
                             </td>
                             <td class="m-col-price">
-                                <em class="m-price-origin">854.00</em>
-                                <em class="m-price-now">637.94</em>
-                                <em class="m-price-save">省216.06</em>
+                                <em class="m-price-origin">{$v.mprice}</em>
+                                <em class="m-price-now">{$v.price}</em>
+                                <em class="m-price-save">省{$v.lprice}</em>
                             </td>
                             <td class="m-col-amount">
                                 <div class="m-amount">
-                                    <a href="#">+</a>
-                                    <input value="1" class="m-text" type="text">
-                                    <a href="#">-</a>
+                                    <a href="{:U('add')}?gid={$v.gid}" style="margin-top: 3px;">+</a>
+                                    <input value="{$v.num}" class="m-text" type="text" style="line-height: 0px;height:20px;">
+                                    <a href="{:U('less')}?gid={$v.gid}" style="margin-top: 3px;">-</a>
                                 </div>
                             </td>
                             <td class="m-col-agio">
@@ -322,17 +322,33 @@
                                 </div>
                             </td>
                             <td class="m-col-total">
-                                <em class="m-sum">637.94</em>
+                                <em class="m-sum">{$v.all_price}</em>
                             </td>
                             <td rowspan="1" class="m-col-operate">
                                 <p>
                                     <a title="移至收藏夹" data-job="fav" class="m-fav" href="#">收藏</a>
                                 </p>
                                 <p>
-                                    <a title="删除" data-job="del" class="m-del" href="#">删除</a>
+                                    <a title="删除" data-job="del" class="m-del" href="{:U('del')}?gid={$v.gid}">删除</a>
                                 </p>
                             </td>
                         </tr>
+
+
+
+                         </foreach>
+
+
+
+
+
+
+
+
+
+
+
+
                     </tbody>
                 </table>
             </div>
@@ -353,7 +369,7 @@
                     <div class="rgt">
                         <span class="m-fee-box">
                             商品总价(不含运费)：
-                            <em class="m-total-fee">637.94</em>
+                            <em class="m-total-fee">{$p_all}</em>
                             元
                         </span>
                         <span class="m-use-cod">

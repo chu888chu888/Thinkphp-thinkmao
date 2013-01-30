@@ -43,9 +43,13 @@
               $arr['id']=$id;
 
               $_SESSION["cart"][$id][]=serialize($arr);
-          }
-              echo json_encode($price);
 
+          }
+          if($_POST['flag']){
+               echo json_encode(U('Cart/index'));
+          }else{
+              echo json_encode($price);
+          }
 
       }
 

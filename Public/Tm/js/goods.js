@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-function changePrice(cart){
+function changePrice(cart,flag){
     var str='';
     var num =$("#num").val();
     var id = $("#gid").val();
@@ -18,14 +18,16 @@ if(cart == true){
         id:id,
         attr:str,
         num:num,
-        cart:1
+        cart:1,
+        flag:flag
     };
 }else{
       var obj={
         id:id,
         attr:str,
         num:num,
-        cart:0
+        cart:0,
+        flag:flag
     };
 }
 
@@ -34,10 +36,15 @@ if(cart == true){
         url:url,
         data:obj,
         success:function(res){
-            if(cart == true){
+            if(cart == true && flag==0){
                 alert("增加一件商品");
-            }
+                $("#total_price").text(res);
+            }else if(cart == true && flag==1){
+                eval("var url = "+res);
+                location.href=url;
+            }else{
            $("#total_price").text(res);
+            }
         }
     })
 
@@ -46,13 +53,12 @@ if(cart == true){
 
 $(function(){
 
-
     $('.go_car').click(function(){
         $.ajax({
             url:login_url,
             success:function(mes){
                    if(mes==1){
-                         changePrice(true);
+                         changePrice(true,0);
                    }else{
                        alert('请登陆！');
                        location.href=login;
@@ -62,7 +68,19 @@ $(function(){
     })
 
 
-
+    $(".pay").click(function(){
+           $.ajax({
+            url:login_url,
+            success:function(mes){
+                   if(mes==1){
+                         changePrice(true,1);
+                   }else{
+                       alert('请登陆！');
+                       location.href=login;
+                   }
+            }
+        })
+    })
 
 
 
@@ -99,20 +117,20 @@ $(function(){
         $(this).parent().children('li').css("border","1px solid #E2E1E3").attr("as",'false');;
         $(this).css("border","2px solid #BB1C19").attr("as",'true');
 
-        changePrice(false);
+        changePrice(false,0);
     })
 
     $("#up").click(function(){
         var number = $("#num").val();
         $("#num").val(parseInt(number)+1);
-        changePrice(false);
+        changePrice(false,0);
     })
     $("#down").click(function(){
         var number = $("#num").val();
         if(number>1){
             $("#num").val(parseInt(number)-1);
         }
-        changePrice(false);
+        changePrice(false,0);
     })
 
 })
