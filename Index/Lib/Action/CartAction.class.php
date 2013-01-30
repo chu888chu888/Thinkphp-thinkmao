@@ -101,7 +101,19 @@ class CartAction extends Action {
 
 
   function test(){
-     p(get_goods_mes(15));
+
+                                            $good_mes_all = get_goods_mes(18);
+                                            $attrs = $good_mes_all["attrs"];
+                                            foreach($attrs as $k=>$field){
+
+
+
+
+                                        echo ($field["attr_name"]);
+                                        echo ($field["value"]);
+                                            
+                                            }
+
   }
 
 

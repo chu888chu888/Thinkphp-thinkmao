@@ -289,10 +289,10 @@ Class TagLibList extends TagLib {
                $str.='<?php ';
                $str.='$good_mes_all = get_goods_mes('.$gid.');';
                $str.='$attrs = $good_mes_all["attrs"];';
-               $str.='foreach($attrs as $k=>$field){';
-               $str.= 'if($k<'.$rows.'){ ?>';
+               $str.='foreach($attrs as $k=>$field){?>';
+
                $str.=  $content;
-               $str.='<?php } ?>';
+
                $str.='<?php } ?>';
                return $str;
     }

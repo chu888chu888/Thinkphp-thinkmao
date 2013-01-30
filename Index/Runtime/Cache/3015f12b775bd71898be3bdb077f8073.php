@@ -157,7 +157,7 @@
 
         <div class='lg_goods'>
 
-            <?php $cids = check_cate_hot_goods(15,"0");foreach($cids as $k=>$hotgid){if($k<10){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
+            <?php $cids = check_cate_hot_goods(15,"0");foreach($cids as $k=>$hotgid){if($k<30){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
                      <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:220px;width:220px;overflow:hidden"/>
                         </a><?php } ?>
