@@ -1,10 +1,10 @@
-<link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/base.css" />
-<link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/pay.css" />
-<script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.js"></script>
-<script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/order.js"></script>
+<?php if (!defined('THINK_PATH')) exit();?><link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/base.css" />
+<link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/pay.css" />
+<script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/jquery.js"></script>
+<script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/order.js"></script>
 <div class="pays_by">
     <div class="pays_mid">
-        <img src="{$Think.const.__ROOT__}/Public/Tm/img/pay1.jpg" alt="" />
+        <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/pay1.jpg" alt="" />
         <p class="true">
             <span class="true_left">确认收货地址 </span>
             <span class="true_right">
@@ -12,16 +12,12 @@
             </span>
         </p>
         <ul class="address">
-            <foreach name="address" item="v" key="key">
-                <if condition="$key eq 0">
-                    <li class="select_address">
-                <else/>
-                    <li>
-                </if>
-                 <p><span class="shen">{$v.nation}</span><span class='city'>{$v.city}</span><span>{$v.consignee}</span><span>收</span></p>
-                <p><span>{$v.city}</span><span>{$v.address}</span><span class="phone">{$v.mobile}</span></p>
-            </li>
-            </foreach>
+            <?php if(is_array($address)): foreach($address as $key=>$v): if($key == 0): ?><li class="select_address">
+                <?php else: ?>
+                    <li><?php endif; ?>
+                 <p><span class="shen"><?php echo ($v["nation"]); ?></span><span class='city'><?php echo ($v["city"]); ?></span><span><?php echo ($v["consignee"]); ?></span><span>收</span></p>
+                <p><span><?php echo ($v["city"]); ?></span><span><?php echo ($v["address"]); ?></span><span class="phone"><?php echo ($v["mobile"]); ?></span></p>
+            </li><?php endforeach; endif; ?>
             <li class="select_address">
 
 <!--            <li>
@@ -35,10 +31,10 @@
         </ul>
         <div style="clear: both"></div>
         <div class="new_address">
-            <img src="{$Think.const.__ROOT__}/Public/Tm/img/new_address.jpg" alt=""  id="add_address"/>
+            <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/new_address.jpg" alt=""  id="add_address"/>
         </div>
         <div id="address">
-            <form action="{:U('add_address')}" id="add_form" method="post">
+            <form action="<?php echo U('add_address');?>" id="add_form" method="post">
                       <table class="pay_atble">
                           <tr>
                               <td class="pt_left">省份:</td>
@@ -87,7 +83,7 @@
                     <tr class="t_head">
                         <th class="s-title">
                             <em class="tm_png">
-                                <img src="{$Think.const.__ROOT__}/Public/Tm/img/T1F9jSXlXjXXb.cabb-23-18.png" alt="" />
+                                <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/T1F9jSXlXjXXb.cabb-23-18.png" alt="" />
                             </em>
                             <a>店铺：店铺名</a>
                             <span></span>
@@ -112,54 +108,41 @@
 
 
 
-                    <foreach name="mes" item="v">
-
-
-
-                    <tr>
+                    <?php if(is_array($mes)): foreach($mes as $key=>$v): ?><tr>
                         <td class="info_g">
                             <div class="good_st">
-                                <img src="{$v.pic}" alt="" class="pay_img"/>
+                                <img src="<?php echo ($v["pic"]); ?>" alt="" class="pay_img"/>
                             </div>
                             <div class="good_info">
-                                <a class="good_title" href="{:U('Good/index')}?gid={$v.gid}">{$v.gname}</a>
+                                <a class="good_title" href="<?php echo U('Good/index');?>?gid=<?php echo ($v["gid"]); ?>"><?php echo ($v["gname"]); ?></a>
 
-                                <foreach name="v['all_prve']" item="m">
-                                    <span>
-                                    {$m.aname}： <em>{$m.value}</em>
-                                </span>
-                                </foreach>
+                                <?php if(is_array($v['all_prve'])): foreach($v['all_prve'] as $key=>$m): ?><span>
+                                    <?php echo ($m["aname"]); ?>： <em><?php echo ($m["value"]); ?></em>
+                                </span><?php endforeach; endif; ?>
 
 
                             </div>
                         </td>
                         <td class="center_td">
-                            <em>{$v.price}</em>
+                            <em><?php echo ($v["price"]); ?></em>
                         </td>
                         <td class="center_td c_num">
-                            <a href="{:U('add')}?gid={$v.gid}" >+</a>
-                            <span>{$v.num}</span>
-                            <a href="{:U('less')}?gid={$v.gid}">-</a>
+                            <a href="<?php echo U('add');?>?gid=<?php echo ($v["gid"]); ?>" >+</a>
+                            <span><?php echo ($v["num"]); ?></span>
+                            <a href="<?php echo U('less');?>?gid=<?php echo ($v["gid"]); ?>">-</a>
                         </td>
                         <td class="center_td">
-                            <select class="select_good">
-                                <option selected="" value="0">省{$v.lprice}元:限时促销</option>
-                                <option >省{$v.lprice}元:限时疯...</option>
-                            </select>
+                            
 
                         </td>
                         <td class="center_td">
-                            <em >{$v.all_price}</em>
+                            <em ><?php echo ($v["all_price"]); ?></em>
                         </td>
                         <td class="center_td">
-                            <select class="select_good">
-                                <option selected="" value="0">快递：免运费</option>
-                                <option >EMS：免运费</option>
-                            </select>
+                            
                         </td>
 
-                    </tr>
-                    </foreach>
+                    </tr><?php endforeach; endif; ?>
 
 
 
@@ -168,7 +151,7 @@
             <div class="total_price">
                 <div class="tp_g">
                     <span id="J_TotalTitle">实付款：</span>
-                    <strong id="J_Total">{$p_all}</strong>
+                    <strong id="J_Total"><?php echo ($p_all); ?></strong>
                     <br>
                     <span>可获得天猫积分：</span>
                     <em id="J_TotalPoints">318</em>
@@ -176,7 +159,7 @@
                 </div>
             </div>
             <div class="put_pr">
-                <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_214228.jpg" alt="" />
+                <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/2013-01-05_214228.jpg" alt="" />
             </div>
         </div>
 

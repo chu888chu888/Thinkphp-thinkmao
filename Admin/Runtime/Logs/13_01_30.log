@@ -15691,3 +15691,42 @@
 [ 2013-01-30T21:52:11+08:00 ] /thinkmao/Admin.php/ListGoods/index | INFO: Tag[ view_end ] --START--
 [ 2013-01-30T21:52:11+08:00 ] /thinkmao/Admin.php/ListGoods/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000045s ]
 [ 2013-01-30T21:52:11+08:00 ] /thinkmao/Admin.php/ListGoods/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000077s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ app_begin ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000080s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000195s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_template ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run LocationTemplate Behavior [ RunTime:0.000059s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_template ] --END-- [ RunTime:0.000124s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_parse ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run ParseTemplate Behavior [ RunTime:0.144227s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_parse ] --END-- [ RunTime:0.144315s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_filter ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run ContentReplace Behavior [ RunTime:0.000232s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run TokenBuild Behavior [ RunTime:0.000101s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000044s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run ShowRuntime Behavior [ RunTime:0.000098s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000589s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_end ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Run ShowPageTrace Behavior [ RunTime:0.000054s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php | INFO: Tag[ view_end ] --END-- [ RunTime:0.000091s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000158s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000334s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000119s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000183s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000091s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000161s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.003736s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003858s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000216s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000130s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000064s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000154s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000762s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000083s ]
+[ 2013-01-30T23:21:59+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000144s ]

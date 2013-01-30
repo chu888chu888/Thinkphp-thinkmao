@@ -1,5 +1,9 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 .pays_by{
-    width:100%;  
+    width:100%;
     text-align: center;
 }
 
@@ -65,7 +69,7 @@
     margin-bottom: 10px;
 }
 .shen{
-    font-size: 15px;   
+    font-size: 15px;
 }
 .city{
      font-weight: bold;
@@ -138,7 +142,7 @@ tbody tr th{
 .s-title span{
         background:url("../img/wang.gif");
         background-position: -80px 0;
-        height: 20px;       
+        height: 20px;
         width: 20px;
         display: inline-block;
         float: left;
@@ -198,7 +202,7 @@ tbody tr th{
     height: 109px !important;
     background-color: #F2F6FF;
     border-top: 1px solid #B4D0FF;
-    margin-top: 10px;   
+    margin-top: 10px;
 }
 .tp_g{
     width: 200px;
@@ -209,7 +213,7 @@ tbody tr th{
     float: right;
 }
 #J_TotalTitle{
-    
+
 }
 #J_Total {
     background: url("../img/T1_4GqXhlaXXXXXXXX-15-21.png") no-repeat scroll 0 6px transparent;
@@ -229,4 +233,41 @@ tbody tr th{
     width: auto;
     border: 1px solid #666666;
     margin-top: 200px;
+}
+.pay_img{
+    height:60px;
+    width:60px;
+}
+.pt_left{
+    text-align:right;
+    width:150px;
+    padding-right: 20px;
+}
+.pay_atble{
+    border: 4px solid #D1D1D1;
+    border-collapse:collapse;
+    width:600px;
+    height:200px;
+    margin: 10px auto;
+}
+.pay_atble tr td{
+    border: 1px solid #E1E1E1;
+}
+.pt_right{
+    padding-left:20px;
+}
+#address_put{
+    height:20px;
+    width:60px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#address{
+    display:none;
+}
+#add_form{
+    height:auto;
+    width: 100%;
+    text-align: center;
 }
