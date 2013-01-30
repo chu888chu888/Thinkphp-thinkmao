@@ -243,6 +243,9 @@ function get_all_number($gid){
   function get_goods_mes($gid){
        $db = D('GoodsView');
        $date = $db->where(array("gid"=>$gid))->select();
+//        $date = $db->where(array("gid"=>15))->select();
+//       p($date);
+//              exit();
        $mes = format_goods($date);
        return $mes;
   }

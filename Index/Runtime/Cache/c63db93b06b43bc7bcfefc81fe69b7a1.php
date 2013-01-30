@@ -22,7 +22,7 @@
                 </p>
                 <ul class="quick-menu">
                     <li class="home">
-                        <a href="#">淘宝网首页</a>
+                        <a href="<?php echo U('Index/index');?>">天猫首页</a>
                     </li>
 
                     <li class="menu-item">

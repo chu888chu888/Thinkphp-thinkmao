@@ -50,7 +50,7 @@
                     <ul>
 
                         <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li ss="{}">
-                               <a href="<?php echo ($field["url"]); ?>">
+                                  <a href="<?php echo ($field["url"]); ?>" class="chcate">
                                <?php echo ($field["name"]); ?>
                                 <span>(50458)</span>
                               </a>

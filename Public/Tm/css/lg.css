@@ -33,7 +33,7 @@
 .lg_guid_center span a{
 	color:#fff;
 	font-weight: bolder;
-        display:inline-block;       
+        display:inline-block;
 }
 .lg_guid_center span span{
 	display: inline-block;
@@ -84,7 +84,7 @@
 .cp_left span{
 	color:#806F66;
 	display: block;
-	text-align: left; 
+	text-align: left;
 }
 .cp_right{
 	float:left;
@@ -109,11 +109,11 @@
 .pc_boy{
 	height: auto;
 	width: 100%;
-	border-bottom: 1px dotted #D1CCC7;	
+	border-bottom: 1px dotted #D1CCC7;
 	text-align: left;
 	overflow: hidden;
 	color: #806F66;
-	background-color:#F7F5F5; 
+	background-color:#F7F5F5;
 }
 .pc_boy div{
 	float: left;
@@ -129,11 +129,11 @@
 	padding-top:10px;
 	padding-bottom: 10px;
 	padding-left: 13px;
-	width: 105px !important;	
-	width: 118px;	
+	width: 105px !important;
+	width: 118px;
 	background-color: #F7F5F5;
 	float: left;
-	height: auto;	
+	height: auto;
 }
 .pc_boy1_tu{
 	background: url("../img/T1tL21XfBbXXckL6Z0-130-130.png");
@@ -149,7 +149,7 @@
 	margin-left: 10px;
 }
 .pc_boy_con{
-	padding-top:10px;	
+	padding-top:10px;
 	padding-left: 30px;
 	background-color: #fff;
 	width: 1040px !important;
@@ -228,7 +228,7 @@
     float:left;
 }
 .ppl4 label span{
-    display: inline-block;  
+    display: inline-block;
     width:auto;
     height:20px;
     margin-top: 2px;
@@ -269,9 +269,9 @@
     height:auto;
     text-align: left;
 }
-.lg_good{   
+.lg_good{
     width:230px;
-    height:415px;   
+    height:415px;
    margin: 0px 1px 0px 7px;
    position: relative;
    z-index: 1;
@@ -338,7 +338,7 @@ lg_small_goods{
     color: #A7A7A7;
 }
 .lg_good .goods_con a{
-    display: inline;    
+    display: inline;
 }
 .good_num em{
     color: #C49173;
@@ -372,7 +372,7 @@ lg_small_goods{
     color: #999999;
     font-family: 宋体,Helvetica,sans-serif;
     font-size: 14px;
-    font-weight: bold;   
+    font-weight: bold;
     background-color: #eee;
 }
 .good_hot{
@@ -383,7 +383,7 @@ lg_small_goods{
     height:304px;
     overflow: hidden;
 }
-.good_hot h3{   
+.good_hot h3{
     font-weight: bolder;
     height: 12px;
     line-height: 12px;
@@ -446,14 +446,17 @@ lg_small_goods{
     border: 0px;
 }
 .search_good div span{
-background: url("../img/btn-search-l.png") no-repeat scroll 0 0 #684E41;    
+background: url("../img/btn-search-l.png") no-repeat scroll 0 0 #684E41;
     color: #FFFFFF;
-    cursor: pointer;   
+    cursor: pointer;
     height: 26px;
-    line-height: 26px;  
+    line-height: 26px;
     overflow: hidden;
     text-align: center;
     width: 88px;
     display: block;
     float: left;
+}
+.chcate:hover{
+    color:#B20000;
 }

@@ -189,8 +189,8 @@
 	uploadOptions.disHeight = 180;
 	uploadOptions.formData = {
 		<?php echo C('VAR_SESSION_ID');?> : '<?php echo session_id();?>',
-		width : '250,80',
-		height : '280,90',
+		width : '460,80',
+		height : '460,90',
 		path : './Uploads/img_list/'
 	};
 	$('#img').uploadify(uploadOptions);

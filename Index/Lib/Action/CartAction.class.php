@@ -101,7 +101,7 @@ class CartAction extends Action {
 
 
   function test(){
-      p($_SESSION);
+     p(get_goods_mes(15));
   }
 
 

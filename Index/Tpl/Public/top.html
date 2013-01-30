@@ -8,7 +8,7 @@
 		 		   <span>我的淘宝</span>
 		 		   <span>淘宝网</span>
 		 		   <span><img src="{$Think.const.__ROOT__}/Public/Tm/img/heart.jpg"><span>我关注的品牌</span></span>
-		 		   <span><img src="{$Think.const.__ROOT__}/Public/Tm/img/car.jpg"><span>购物车</span></span>
+                                   <span><img src="{$Think.const.__ROOT__}/Public/Tm/img/car.jpg"><span><a href="{:U('Cart/index')}" id="cart">购物车</a></span></span>
 		 		   <span>收藏夹</span>
 		 		   <span>网站导航</span>
 		 		   <span><img src="{$Think.const.__ROOT__}/Public/Tm/img/phone.jpg"><span>手机版</span></span>
@@ -24,8 +24,8 @@
 		 </div>
 
 
-         <div class="main_mid">
-         	 <img src="{$Think.const.__ROOT__}/Public/Tm/img/index_logo.jpg">
+              <div class="main_mid">
+                  <a href="{:U('Index/index')}"><img src="{$Think.const.__ROOT__}/Public/Tm/img/index_logo.jpg"></a>
          	 <div class="search">
          	    <button type="submit">
 				  搜索
