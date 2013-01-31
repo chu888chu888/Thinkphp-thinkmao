@@ -2,6 +2,10 @@
 <link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/pay.css" />
 <script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/jquery.js"></script>
 <script type="text/javascript" src="<?php echo (__ROOT__); ?>/Public/Tm/js/order.js"></script>
+<script type="text/javascript">
+    var put_url = "<?php echo U('put_order');?>";
+    var index = "<?php echo U('Index/index');?>";
+</script>
 <div class="pays_by">
     <div class="pays_mid">
         <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/pay1.jpg" alt="" />
@@ -15,19 +19,11 @@
             <?php if(is_array($address)): foreach($address as $key=>$v): if($key == 0): ?><li class="select_address">
                 <?php else: ?>
                     <li><?php endif; ?>
+                <input type="hidden" name="oid" value="<?php echo ($v["id"]); ?>" />
                  <p><span class="shen"><?php echo ($v["nation"]); ?></span><span class='city'><?php echo ($v["city"]); ?></span><span><?php echo ($v["consignee"]); ?></span><span>收</span></p>
-                <p><span><?php echo ($v["city"]); ?></span><span><?php echo ($v["address"]); ?></span><span class="phone"><?php echo ($v["mobile"]); ?></span></p>
+                <p><span><?php echo ($v["city"]); ?></span><span><?php echo ($v["mmes"]); ?></span><span class="phone"><?php echo ($v["mobile"]); ?></span></p>
             </li><?php endforeach; endif; ?>
-            <li class="select_address">
 
-<!--            <li>
-                <p><span class="shen">省份</span><span class='city'>城市</span><span>(用户名)</span><span>收</span></p>
-                <p><span>城市地区</span><span>具体地址</span><span class="phone">电话号码</span></p>
-            </li>
-            <li>
-                <p><span class="shen">省份</span><span class='city'>城市</span><span>(用户名)</span><span>收</span></p>
-                <p><span>城市地区</span><span>具体地址</span><span class="phone">电话号码</span></p>
-            </li>-->
         </ul>
         <div style="clear: both"></div>
         <div class="new_address">
@@ -108,7 +104,8 @@
 
 
 
-                    <?php if(is_array($mes)): foreach($mes as $key=>$v): ?><tr>
+                    <?php if(is_array($mes)): foreach($mes as $key=>$v): ?><input type="hidden" value="<?php echo ($v["id"]); ?>" name="oid" />
+                    <tr>
                         <td class="info_g">
                             <div class="good_st">
                                 <img src="<?php echo ($v["pic"]); ?>" alt="" class="pay_img"/>
@@ -119,8 +116,6 @@
                                 <?php if(is_array($v['all_prve'])): foreach($v['all_prve'] as $key=>$m): ?><span>
                                     <?php echo ($m["aname"]); ?>： <em><?php echo ($m["value"]); ?></em>
                                 </span><?php endforeach; endif; ?>
-
-
                             </div>
                         </td>
                         <td class="center_td">
@@ -159,7 +154,7 @@
                 </div>
             </div>
             <div class="put_pr">
-                <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/2013-01-05_214228.jpg" alt="" />
+                <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/2013-01-05_214228.jpg" alt="" id="put_order"/>
             </div>
         </div>
 

@@ -2,6 +2,10 @@
 <link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/pay.css" />
 <script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.js"></script>
 <script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/order.js"></script>
+<script type="text/javascript">
+    var put_url = "{:U('put_order')}";
+    var index = "{:U('Index/index')}";
+</script>
 <div class="pays_by">
     <div class="pays_mid">
         <img src="{$Think.const.__ROOT__}/Public/Tm/img/pay1.jpg" alt="" />
@@ -18,20 +22,12 @@
                 <else/>
                     <li>
                 </if>
+                <input type="hidden" name="oid" value="{$v.id}" />
                  <p><span class="shen">{$v.nation}</span><span class='city'>{$v.city}</span><span>{$v.consignee}</span><span>收</span></p>
-                <p><span>{$v.city}</span><span>{$v.address}</span><span class="phone">{$v.mobile}</span></p>
+                <p><span>{$v.city}</span><span>{$v.mmes}</span><span class="phone">{$v.mobile}</span></p>
             </li>
             </foreach>
-            <li class="select_address">
 
-<!--            <li>
-                <p><span class="shen">省份</span><span class='city'>城市</span><span>(用户名)</span><span>收</span></p>
-                <p><span>城市地区</span><span>具体地址</span><span class="phone">电话号码</span></p>
-            </li>
-            <li>
-                <p><span class="shen">省份</span><span class='city'>城市</span><span>(用户名)</span><span>收</span></p>
-                <p><span>城市地区</span><span>具体地址</span><span class="phone">电话号码</span></p>
-            </li>-->
         </ul>
         <div style="clear: both"></div>
         <div class="new_address">
@@ -113,9 +109,7 @@
 
 
                     <foreach name="mes" item="v">
-
-
-
+                        <input type="hidden" value="{$v.id}" name="oid" />
                     <tr>
                         <td class="info_g">
                             <div class="good_st">
@@ -129,8 +123,6 @@
                                     {$m.aname}： <em>{$m.value}</em>
                                 </span>
                                 </foreach>
-
-
                             </div>
                         </td>
                         <td class="center_td">
@@ -176,7 +168,7 @@
                 </div>
             </div>
             <div class="put_pr">
-                <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_214228.jpg" alt="" />
+                <img src="{$Think.const.__ROOT__}/Public/Tm/img/2013-01-05_214228.jpg" alt="" id="put_order"/>
             </div>
         </div>
 

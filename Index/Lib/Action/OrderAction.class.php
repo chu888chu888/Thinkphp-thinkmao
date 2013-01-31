@@ -143,27 +143,59 @@
       }
       }
   }
-
+/**
+ * 获得用户地址信息
+ */
   public function address(){
-     if(is_null($_SESSION['uid'])){
+     if(empty($_SESSION['uid'])){
           redirect(U('Login/index'));
       }else{
            $uid = $_SESSION['uid'];
            $db = M('order');
            $data_arr = $db->where(array("uid"=>$uid))->select();
-             p($data_arr);
            foreach ($data_arr as $key=>$v){
-                 
-                  $data_arr[$key]['address']=unserialize($v['address']);
-
+                  $arr=unserialize($v['address']);
+                  $data_arr[$key]['nation']=$arr['nation'];
+                  $data_arr[$key]['city']=$arr['city'];
+                  $data_arr[$key]['mmes']=$arr['mmes'];
            }
-           p($data_arr);
+
            $this->assign("address",$data_arr);
       }
 
   }
 
-
+   public function put_order(){
+       $oid = $_POST['oid'];
+       $uid = $_SESSION['id'];
+              $good_arr = $_SESSION['cart'][$uid];
+              $g_arr = array();
+              foreach ($good_arr as $value) {
+                    $arr = unserialize($value);
+                    $data = $this->format_goods_cart($arr);
+                    $g_arr[]=$data;
+              }
+         $quantity = count($g_arr);
+         $subtotal = $this->get_total();
+         $str = '';
+         foreach ($g_arr as $value) {
+              $str.=$value['gid']+'|';
+         }
+        $gid = rtrim($str, '|');
+        $data = array(
+            "oid"=>$oid,
+            "quantity"=>$quantity,
+            "subtotal"=>$subtotal,
+            "gid"=>$gid
+        );
+        $db=M('order_list');
+        $res = $db->data($data)->add();
+        if($res){
+            echo 1;
+        }else{
+            echo 0;
+        }
+   }
 
 
   }
