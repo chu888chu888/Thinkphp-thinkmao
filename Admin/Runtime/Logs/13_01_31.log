@@ -2310,3 +2310,1562 @@
 [ 2013-01-31T12:18:02+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
 [ 2013-01-31T12:18:02+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000232s ]
 [ 2013-01-31T12:18:02+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000529s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000402s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000167s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000311s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ParseTemplate Behavior [ RunTime:0.095354s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.095496s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ContentReplace Behavior [ RunTime:0.000259s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run TokenBuild Behavior [ RunTime:0.000191s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000187s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000940s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:11:02+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000178s ]
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000171s ]
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:11:03+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run CheckRoute Behavior [ RunTime:0.000152s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000370s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000118s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000206s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006084s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006165s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ContentReplace Behavior [ RunTime:0.000085s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run TokenBuild Behavior [ RunTime:0.000052s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000302s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:11:16+08:00 ] /thinkmao/Admin.php/Login/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ route_check ] --END-- [ RunTime:0.000179s ]
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:11:17+08:00 ] /thinkmao/Admin.php/Login/code | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000153s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000396s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000107s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000193s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.048714s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.048841s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000309s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000077s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000188s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000943s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000180s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000170s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-31T14:11:26+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.027534s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.027648s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000200s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000147s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000181s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000854s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:11:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000178s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000176s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000539s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000179s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000371s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000086s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000121s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.015546s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.015600s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000139s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000073s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000090s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000445s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:11:29+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000099s ]
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000158s ]
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000359s ]
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-31T14:11:57+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001274s ]
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000170s ]
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000373s ]
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-31T14:12:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000571s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000166s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000454s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008587s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008670s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000125s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000363s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000089s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000081s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000125s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000103s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.002063s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002130s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000111s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000078s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000042s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000203s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.002197s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000084s ]
+[ 2013-01-31T14:12:18+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000128s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000371s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000194s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000276s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001520s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000361s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000796s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000110s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004251s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004292s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000133s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:12:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000171s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000400s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000552s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000129s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000366s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000080s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000112s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003971s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004158s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000113s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000353s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:12:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000172s ]
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-31T14:14:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000614s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000403s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000106s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000197s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006451s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006528s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000114s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000050s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000321s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000378s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000162s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000242s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000044s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000077s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001433s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001483s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000081s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000314s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:14:55+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000157s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000976s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000193s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000255s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000531s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000141s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000383s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000085s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004141s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004187s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000118s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000071s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000363s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:14:58+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000321s ]
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:15:07+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000612s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000372s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000242s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000188s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.005376s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005460s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000146s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000052s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000357s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000058s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000176s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000089s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000041s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001541s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001592s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000320s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:16:05+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000173s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000561s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000140s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000419s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000122s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004408s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004455s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000137s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000049s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000355s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:16:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000191s ]
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000071s ]
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000101s ]
+[ 2013-01-31T14:16:12+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000521s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000367s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000147s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000186s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007848s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007929s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000124s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000050s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000350s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:17:49+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000058s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000175s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001510s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001561s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000080s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000313s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:17:50+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000366s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000232s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000558s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000130s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000359s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000085s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000118s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003695s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003740s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000125s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000025s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000345s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:17:52+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000431s ]
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000051s ]
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000076s ]
+[ 2013-01-31T14:18:09+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000491s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000377s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000179s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000261s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000103s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007397s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007474s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000109s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000311s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:18:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000068s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000206s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000069s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001490s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001539s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000072s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000302s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:18:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000194s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000415s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000561s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000124s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000366s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003860s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003904s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000343s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:18:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000363s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000192s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.011318s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.011447s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000226s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000049s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000458s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000035s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000058s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000180s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001407s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001455s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000078s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000330s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000366s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000235s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000118s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000205s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004091s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004164s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000125s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000363s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:23:10+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000152s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000369s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000152s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000239s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.006016s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006117s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000135s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000068s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:23:11+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000158s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000411s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001223s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000313s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.001349s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000084s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000115s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003940s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003995s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000138s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000073s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000388s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000041s ]
+[ 2013-01-31T14:23:14+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000083s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000199s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000109s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000526s ]
+[ 2013-01-31T14:23:24+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: UPDATE `hd_order_list` SET `remark`='yuasas                 ' WHERE ( `id` = '2' ) [ RunTime:0.000217s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000369s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000116s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000203s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004528s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004614s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000158s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000063s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000075s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000412s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000044s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000174s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000070s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001484s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001533s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000075s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000045s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000320s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:23:27+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001218s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000326s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000878s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000170s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000261s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003981s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004042s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000101s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000086s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000354s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:23:28+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000387s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000104s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003420s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003495s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000110s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000312s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000061s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000083s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000210s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000092s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000130s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000051s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000092s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.002050s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002123s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000128s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000042s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000098s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000464s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:24:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000097s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000173s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000231s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001301s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000308s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000895s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000163s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000254s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008035s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008103s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000106s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000051s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000314s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000035s ]
+[ 2013-01-31T14:24:42+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000059s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000153s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000362s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000249s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001188s ]
+[ 2013-01-31T14:25:16+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: UPDATE `hd_order_list` SET `remark`='订单备注                                  ' WHERE ( `id` = '2' ) [ RunTime:0.000399s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000393s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000228s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000186s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008557s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008639s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000126s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000049s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000026s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000071s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000346s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000363s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000256s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.004416s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004503s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000091s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000325s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:28:13+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000058s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000170s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000087s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000538s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000177s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000362s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000084s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006176s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006224s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000114s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000356s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000037s ]
+[ 2013-01-31T14:28:15+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000063s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000157s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000212s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000299s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000103s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000188s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003361s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003431s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000109s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000343s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000173s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000035s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000061s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001510s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001568s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000073s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000038s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000088s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000407s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000052s ]
+[ 2013-01-31T14:28:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000088s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000191s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000419s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001573s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000332s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000959s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000309s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000438s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004983s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005049s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000114s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000084s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000380s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:28:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000081s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run CheckRoute Behavior [ RunTime:0.000077s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ route_check ] --END-- [ RunTime:0.000170s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000551s ]
+[ 2013-01-31T14:29:20+08:00 ] /thinkmao/Admin.php/Order/mod_remark | SQL: UPDATE `hd_order_list` SET `remark`='   备注一                                                                    ' WHERE ( `id` = '2' ) [ RunTime:0.000224s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000152s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000253s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000103s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000202s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.010021s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.010152s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000317s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000146s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000104s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000189s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000982s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000107s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000187s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000190s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000403s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.003654s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.003775s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000196s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000145s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000078s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000183s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000843s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000103s ]
+[ 2013-01-31T14:30:47+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000180s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000156s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000383s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000151s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000232s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000577s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000264s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000433s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000090s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000122s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007218s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007266s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000110s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000367s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:30:49+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000182s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000575s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000156s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000383s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000086s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004274s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004319s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000110s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000091s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000367s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:30:56+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000080s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000203s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000648s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000165s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000394s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000123s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004120s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004164s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000344s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:30:59+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000173s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000087s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000711s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000162s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000361s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000121s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006253s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006301s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000115s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000354s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:31:01+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000065s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000170s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000584s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000149s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000366s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000086s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000121s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004092s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004136s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000102s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000090s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000359s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:31:03+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000155s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000082s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000537s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000150s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000507s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000104s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000134s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004391s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004434s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000118s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000062s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000049s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000064s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000375s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000038s ]
+[ 2013-01-31T14:31:27+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000075s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000128s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000260s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000075s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000105s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000050s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004730s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004791s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000144s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000079s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000028s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000064s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000395s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000044s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000074s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000169s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.002047s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.002100s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000097s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000331s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000038s ]
+[ 2013-01-31T14:32:02+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000182s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000547s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000151s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000387s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000096s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000132s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008817s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008866s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000128s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000052s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000032s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000071s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000361s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:32:04+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000157s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000227s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000503s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000158s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000355s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000081s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000112s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004140s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004186s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000114s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000050s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000327s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:33:19+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000181s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000087s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000585s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000156s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000384s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000084s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000119s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004171s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004217s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000111s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000075s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000364s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:33:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000416s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000230s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000103s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000189s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007114s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007188s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000124s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000074s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000380s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000155s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000071s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001423s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001471s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000083s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000317s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:38:58+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000204s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000284s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001657s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000181s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000378s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000078s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000109s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004534s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004580s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000272s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000064s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000525s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:39:00+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000074s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000185s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000080s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000115s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000543s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000174s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000380s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000092s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000128s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004871s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004914s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000138s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000055s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000074s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000377s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000043s ]
+[ 2013-01-31T14:39:07+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000154s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000366s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000213s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000303s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.004390s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000395s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000425s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000087s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000123s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.008550s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008599s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000139s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000059s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000382s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:39:11+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000066s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000169s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000602s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000154s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000395s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000086s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000119s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.006256s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.006303s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000139s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:39:13+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000066s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000117s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000397s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000048s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000073s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000036s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000063s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.003175s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005355s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000202s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000062s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000072s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000454s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000042s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000072s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000194s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000085s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000036s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000063s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001443s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001493s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000073s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000048s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000029s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000290s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:41:32+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000068s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000374s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001253s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000437s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000984s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000162s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000253s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.005573s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.005643s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000121s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000046s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000060s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000362s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000033s ]
+[ 2013-01-31T14:41:33+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000057s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run CheckRoute Behavior [ RunTime:0.000152s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000365s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000148s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000226s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000106s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000196s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007425s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.007512s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ContentReplace Behavior [ RunTime:0.000142s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000381s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000034s ]
+[ 2013-01-31T14:42:16+08:00 ] /thinkmao/Admin.php/Index/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000062s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run CheckRoute Behavior [ RunTime:0.000069s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ route_check ] --END-- [ RunTime:0.000178s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000086s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run LocationTemplate Behavior [ RunTime:0.000061s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_template ] --END-- [ RunTime:0.000094s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ParseTemplate Behavior [ RunTime:0.001440s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_parse ] --END-- [ RunTime:0.001489s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ContentReplace Behavior [ RunTime:0.000083s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run TokenBuild Behavior [ RunTime:0.000051s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000027s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowRuntime Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000290s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:42:17+08:00 ] /thinkmao/Admin.php/Index/welcome | INFO: Tag[ view_end ] --END-- [ RunTime:0.000084s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000155s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000364s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000149s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000229s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001100s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000156s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.002573s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000091s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000126s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004240s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004286s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000100s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000050s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000031s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000329s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000040s ]
+[ 2013-01-31T14:42:18+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000067s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000172s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000056s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000087s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.000559s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000166s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000395s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000085s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000120s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.004185s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.004230s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000106s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000058s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000030s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000344s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:42:21+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run CheckRoute Behavior [ RunTime:0.000157s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ route_check ] --END-- [ RunTime:0.000376s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ReadHtmlCache Behavior [ RunTime:0.000150s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ app_begin ] --END-- [ RunTime:0.000262s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order_list` [ RunTime:0.001281s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SELECT * FROM `hd_order_list`  [ RunTime:0.000326s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | SQL: SHOW COLUMNS FROM `hd_order` [ RunTime:0.000884s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run LocationTemplate Behavior [ RunTime:0.000176s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_template ] --END-- [ RunTime:0.000267s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | NOTIC: [8] Use of undefined constant mod_remark - assumed 'mod_remark' e4c4ef3b34f19af1320786caba9e39c3.php 第 11 行.
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ParseTemplate Behavior [ RunTime:0.007976s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_parse ] --END-- [ RunTime:0.008038s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ContentReplace Behavior [ RunTime:0.000105s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run TokenBuild Behavior [ RunTime:0.000057s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run WriteHtmlCache Behavior [ RunTime:0.000053s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowRuntime Behavior [ RunTime:0.000070s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_filter ] --END-- [ RunTime:0.000369s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --START--
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Run ShowPageTrace Behavior [ RunTime:0.000039s ]
+[ 2013-01-31T14:42:24+08:00 ] /thinkmao/Admin.php/Order/index | INFO: Tag[ view_end ] --END-- [ RunTime:0.000067s ]

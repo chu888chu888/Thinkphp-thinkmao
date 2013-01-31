@@ -28,10 +28,15 @@
                <tr>
                    <td>{$n.id}</td>
                    <td >{$n.quantity}</td>
-                   <td>{$n.subtotal}</td>
+                   <td>{$n.subtotal}
+                         <input type="hidden" value="{$n.id}" />
+                   </td>
                    <td class="remark">
-                       {$n.remark}
-                       <input type="hidden" value="{$n.id}" />
+               <if condition="$n['remark']">
+                          {$n.remark}
+                   <else/>
+                     请输入备注
+               </if>
                    </td>
                    <td>{$n.status}</td>
                    <td class="mod">

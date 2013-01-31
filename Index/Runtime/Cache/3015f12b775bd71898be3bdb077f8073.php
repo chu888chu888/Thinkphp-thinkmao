@@ -33,7 +33,7 @@
                 </div>
                 <div class="cp_right">
                     <ul>
-                        <?php $db=M("brand");$all_cid = check_all_cate(15);$cids = implode(",",$all_cid);$data = $db->where("cid in ($cids)")->select();foreach($data as $k=>$field){if($k<20){ $field["url"]=U("brand",array('bid'=>$field['id']));?><li ss="{}">
+                        <?php $db=M("brand");$all_cid = check_all_cate(35);$cids = implode(",",$all_cid);$data = $db->where("cid in ($cids)")->select();foreach($data as $k=>$field){if($k<20){ $field["url"]=U("brand",array('bid'=>$field['id']));?><li ss="{}">
                             <a href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a>
                             </li><?php } } ?>
                     </ul>
@@ -41,7 +41,7 @@
             </div>
 
 
-            <?php $db = M("category");$data = $db->where(array("pid"=>15))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><div class='pc_boy'>
+            <?php $db = M("category");$data = $db->where(array("pid"=>35))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><div class='pc_boy'>
                 <div class='pc_boy1'>
                     <span class='pc_boy1_tu'></span>
                     <span class='pc_boy1_font' ss="{}"><?php echo ($field["name"]); ?></span>
@@ -65,7 +65,7 @@
 
 
 
-          <?php $all = get_all_cid_select(15);foreach($all as $k=>$field){if($k<5){?><div class="pc_boy">
+          <?php $all = get_all_cid_select(35);foreach($all as $k=>$field){if($k<5){?><div class="pc_boy">
 
                 <div  class="pc_boy1">
                     <span class='pc_boy1_font' ss="{}"><?php echo ($field["name"]); ?></span>
@@ -157,7 +157,7 @@
 
         <div class='lg_goods'>
 
-            <?php $cids = check_cate_hot_goods(15,"0");foreach($cids as $k=>$hotgid){if($k<30){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
+            <?php $cids = check_cate_hot_goods(35,"0");foreach($cids as $k=>$hotgid){if($k<30){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
                      <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:220px;width:220px;overflow:hidden"/>
                         </a><?php } ?>
@@ -204,7 +204,7 @@
            <div class="good_hot">
                <h3>商家热卖: </h3>
 
-               <?php $cids = check_cate_hot_goods(15,"hot");foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
+               <?php $cids = check_cate_hot_goods(35,"hot");foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
                    <div>
                         <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:160px;width:160px;overflow:hidden"/>

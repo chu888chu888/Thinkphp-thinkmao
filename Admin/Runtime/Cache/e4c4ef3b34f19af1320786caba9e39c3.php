@@ -27,10 +27,13 @@
         <?php if(is_array($mes)): foreach($mes as $key=>$n): ?><tr>
                    <td><?php echo ($n["id"]); ?></td>
                    <td ><?php echo ($n["quantity"]); ?></td>
-                   <td><?php echo ($n["subtotal"]); ?></td>
+                   <td><?php echo ($n["subtotal"]); ?>
+                         <input type="hidden" value="<?php echo ($n["id"]); ?>" />
+                   </td>
                    <td class="remark">
-                       <?php echo ($n["remark"]); ?>
-                       <input type="hidden" value="<?php echo ($n["id"]); ?>" />
+               <?php if($n['remark']): echo ($n["remark"]); ?>
+                   <?php else: ?>
+                     请输入备注<?php endif; ?>
                    </td>
                    <td><?php echo ($n["status"]); ?></td>
                    <td class="mod">

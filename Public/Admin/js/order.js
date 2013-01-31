@@ -1,6 +1,6 @@
 $(function(){
     $(".remark").click(function(){
-        if($(this).children('input').attr('class')!='iput'){
+        if($(this).children('input').length==0){
         $mes = $(this).text();
         $(this).text('');
         var obj =$("<input/>");
@@ -10,7 +10,7 @@ $(function(){
         }
     })
     $(".iput").live("blur",function(){
-                  var id = $(this).next().val();
+                  var id = $(this).parent().prev().children('input').val();
                   var mes = $(this).val();
                   $(this).parent('td').text(mes);
                   $(this).empty();

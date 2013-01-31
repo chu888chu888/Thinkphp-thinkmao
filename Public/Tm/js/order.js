@@ -1,6 +1,6 @@
 $(function(){
     $("#add_address").click(function(){
-        $("#address").css("display","block");
+       $("#address").toggle();
     })
     $(".address li").click(function(){
         $(".address li").attr("class","");

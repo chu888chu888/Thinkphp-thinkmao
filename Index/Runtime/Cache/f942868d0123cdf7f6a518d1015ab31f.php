@@ -16,7 +16,7 @@
             </span>
         </p>
         <ul class="address">
-            <?php if(is_array($address)): foreach($address as $key=>$v): if($key == 0): ?><li class="select_address">
+            <?php if(is_array($aad)): foreach($aad as $key=>$v): if($key == 0): ?><li class="select_address">
                 <?php else: ?>
                     <li><?php endif; ?>
                 <input type="hidden" name="oid" value="<?php echo ($v["id"]); ?>" />

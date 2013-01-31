@@ -46,7 +46,7 @@
 
           }
           if($_POST['flag']){
-               echo json_encode(U('Cart/index'));
+               echo json_encode(U('Order/index'));
           }else{
               echo json_encode($price);
           }

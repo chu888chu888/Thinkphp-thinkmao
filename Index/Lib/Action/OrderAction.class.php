@@ -3,6 +3,15 @@
       public function index(){
               $this->address();
               $uid = $_SESSION['id'];
+              $db2 = M("order");
+              $da = $db2->where(array("uid"=>$uid))->select();
+              foreach ($da as $key=>$v){
+                  $arr=unserialize($v['address']);
+                  $da[$key]['nation']=$arr['nation'];
+                  $da[$key]['city']=$arr['city'];
+                  $da[$key]['mmes']=$arr['mmes'];
+           }
+              $this->assign('aad', $da);
               $good_arr = $_SESSION['cart'][$uid];
               $g_arr = array();
               foreach ($good_arr as $value) {
@@ -119,7 +128,7 @@
   }
 
   public function add_address(){
-      if(is_null($_SESSION['uid'])){
+      if(is_null($_SESSION['id'])){
           redirect(U('Login/index'));
       }else{
        $arr=array(
@@ -128,10 +137,7 @@
              "mmes"=>$_POST['mmes'],
       );
       $_POST['address'] = serialize($arr);
-      $_POST['time']=time();
-      $_POST['status']=1;
-      $_POST['total']=$this->get_total();
-      $_POST['uid']=$_SESSION['uid'];
+      $_POST['uid']=$_SESSION['id'];
       $db = M("order");
       $res = $db->data($_POST)->add();
       if($res){
@@ -147,7 +153,7 @@
  * 获得用户地址信息
  */
   public function address(){
-     if(empty($_SESSION['uid'])){
+     if(empty($_SESSION['id'])){
           redirect(U('Login/index'));
       }else{
            $uid = $_SESSION['uid'];
@@ -186,12 +192,16 @@
             "oid"=>$oid,
             "quantity"=>$quantity,
             "subtotal"=>$subtotal,
-            "gid"=>$gid
+            "gid"=>$gid,
+            "time"=>time(),
+            "status"=>1,
+            "uid"=>$uid,
         );
         $db=M('order_list');
         $res = $db->data($data)->add();
         if($res){
             echo 1;
+            unset($_SESSION['cart'][$uid]);
         }else{
             echo 0;
         }
