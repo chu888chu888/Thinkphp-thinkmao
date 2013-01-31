@@ -4,6 +4,7 @@
           if(empty($_GET['cid'])){
               redirect(U('Index/index'));
           }else{
+          $_SESSION['cid']=$_GET['cid'];
           $c_arr = $this->cates($_GET['cid']);
           $c_arr = array_reverse($c_arr,true);
           $this->assign("c_arr", $c_arr);
@@ -31,9 +32,7 @@
               return $arr;
 
       }
-      public function select(){
-          p($_GET);
-      }
+
       public function get_middle(){
           $gid = $_POST['gid'];
           $num = $_POST['num'];

@@ -194,7 +194,7 @@
             "subtotal"=>$subtotal,
             "gid"=>$gid,
             "time"=>time(),
-            "status"=>1,
+            "status"=>2,
             "uid"=>$uid,
         );
         $db=M('order_list');

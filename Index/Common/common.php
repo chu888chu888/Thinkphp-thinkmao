@@ -1,5 +1,83 @@
 <?php
 /**
+ * 得到某个栏目下所有商品品牌id数组
+ * @param type $cid
+ * @return type 品牌id数组
+ */
+function cate_good_brand($cid){
+    $arrs =array();
+    $db =M("goods");
+          $arrgood = check_cate_hot_goods($cid);
+          foreach ($arrgood as $v) {
+                $data = $db->where(array("id"=>$v))->field("bid")->find();
+                if(!in_array($data['bid'],$arrs)){
+                    $arrs[]=$data['bid'];
+                }
+          }
+  return $arrs;
+
+}
+
+/**
+ * 得到栏目下的品牌
+ * @param type $arr  栏目数组
+ */
+  function cate_brand($arr){
+      $db = M("brand");
+      $data = $db->field("id,cid")->select();
+      $brand_arr = array();
+      foreach ($data as $value) {
+             $brand_arr[$value['id']]=  explode("|", $value['cid']);
+      }
+      $barr = array();
+      foreach ($brand_arr as $k => $v) {
+          foreach ($arr as $value) {
+                 if(in_array($value, $v) && !in_array($k, $barr)){
+                     $barr[] = $k;
+                 }
+          }
+      }
+      return $barr;
+  }
+/**
+ * 查找孙子级栏目
+ * @param type $cid
+ * @return type
+ */
+function next_cate($cid){
+     $db = M('category');
+     $data = $db ->where(array('pid'=>$cid))->field("id")->select();
+     $arr = array();
+     foreach ($data as $v) {
+           $arr[] = $v['id'];
+     }
+     $arrs = array();
+     foreach ($arr as $value) {
+         $data = $db ->where(array('pid'=>$value))->field("id,name")->select();
+         foreach ($data as $v) {
+            $mes['id'] = $v['id'];
+            $mes['name'] = $v['name'];
+           $arrs[] = $mes;
+        }
+     }
+    return $arrs;
+}
+
+
+
+
+
+/**
+ * 拆分品牌名称
+ * @param type $str
+ * @return type
+ */
+function slice_brand($str){
+        $arr = explode("/", $str);
+        return $arr[0];
+}
+
+/**
  * 获取莫栏目下的所有的类型的筛选属性
  * @param type $cid
  */

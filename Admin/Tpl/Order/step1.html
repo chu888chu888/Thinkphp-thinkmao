@@ -1,10 +1,52 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <title></title>
-</head>
-<body>
-    
-</body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+        <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
+         <script type="text/javascript" src="__PUBLIC__/Admin/js/order.js"></script>
+         <script type="text/javascript">
+             var mod = "{:U(mod_remark)}";
+         </script>
+    </head>
+    <body>
+        <table class="channel_list">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>商品数量</td>
+                    <td>价钱总计</td>
+                    <td>订单备注</td>
+                    <td>订单状态</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+        <tbody>
+        <foreach name='mes' item="n">
+               <tr>
+                   <td>{$n.id}</td>
+                   <td >{$n.quantity}</td>
+                   <td>{$n.subtotal}
+                         <input type="hidden" value="{$n.id}" />
+                   </td>
+                   <td class="remark">
+               <if condition="$n['remark']">
+                          {$n.remark}
+                   <else/>
+                     请输入备注
+               </if>
+                   </td>
+                   <td>{$n.status}</td>
+                   <td class="mod">
+                       <a href="{:U('mod_order')}?id={$n.id}">修改订单</a>
+                       <a href="{:U('del_order')}?id={$n.id}">删除订单</a>
+                       <a href="{:U('pass')}?id={$n.id}&status=3">更改状态</a>
+                   </td>
+               </tr>
+        </foreach>
+         </tbody>
+        </table>
+    </body>
 </html>

@@ -34,3 +34,13 @@
     width: 300px;
     border-color: #009A61;
 }
+.add_cate{
+    font-weight: bolder;
+    color:blue;
+    cursor:pointer;
+}
+.cate_del{
+    font-weight: bolder;
+    color:red;
+    cursor:pointer;
+}

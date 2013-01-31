@@ -20,7 +20,7 @@
                     <td>价钱总计</td>
                     <td>订单备注</td>
                     <td>订单状态</td>
-                    <td>操作</td>
+
                 </tr>
             </thead>
         <tbody>
@@ -39,11 +39,7 @@
                </if>
                    </td>
                    <td>{$n.status}</td>
-                   <td class="mod">
-                       <a href="{:U('mod_order')}?id={$n.id}">修改订单</a>
-                       <a href="{:U('del_order')}?id={$n.id}">删除订单</a>
-                       <a href="{:U('pass')}?id={$n.id}">审核通过</a>
-                   </td>
+               
                </tr>
         </foreach>
          </tbody>

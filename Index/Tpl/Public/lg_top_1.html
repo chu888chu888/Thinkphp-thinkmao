@@ -1,0 +1,272 @@
+<link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/lg.css" />
+<link rel="stylesheet" href="{$Think.const.__ROOT__}/Public/Tm/css/base.css" />
+<script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/jquery.js">
+</script>
+<script type="text/javascript" src="{$Think.const.__ROOT__}/Public/Tm/js/gellery.js">
+</script>
+<script type="text/javascript">
+    var gellery_url = "{:U('get_middle')}";
+</script>
+<div class="lg_guid">
+    <div class="lg_guid_center">
+        <span class="lg_left">
+            <a href="#">首页</a>
+            >
+            <foreach name="c_arr" item="v" key="k">
+            <a href="{:U('index',array('cid'=>$k))}">{$v}</a>
+            >
+            </foreach>
+            <form action="">
+                <input type="text">
+                <input type="submit" value='搜索'></form>
+            <span>共  446720 件相关商品</span>
+        </span>
+        <span class="go_tm">
+            <a href="#">去天猫首页</a>
+        </span>
+    </div>
+</div>
+<div class="ppl">
+    <div class='ppl_cen'>
+        <div class="pc_top">
+            <div class='pc_top1'>
+                <div class='cp_left'>
+                    <span>品牌</span>
+                </div>
+                <div class="cp_right">
+                    <ul>
+                        <gbrand  rows="20" cid="$cid">
+                            <li ss="{}">
+                            <a href="{$field.url}">{$field.name}</a>
+                            </li>
+                        </gbrand>
+                    </ul>
+                </div>
+            </div>
+
+
+            <cate2 cid="$cid">
+                <div class='pc_boy'>
+                <div class='pc_boy1'>
+                    <span class='pc_boy1_tu'></span>
+                    <span class='pc_boy1_font' ss="{}">{$field.name}</span>
+                </div>
+                <div class='pc_boy_con'>
+                    <ul>
+
+                        <cate2 cid="$field['id']">
+                              <li ss="{}">
+                                  <a href="{$field.url}" class="chcate">
+                               {$field.name}
+                                <span>(50458)</span>
+                              </a>
+                            </li>
+                        </cate2>
+
+                    </ul>
+                </div>
+            </div>
+
+
+            </cate2>
+
+
+
+
+
+
+          <select cid="$cid">
+            <div class="pc_boy">
+
+                <div  class="pc_boy1">
+                    <span class='pc_boy1_font' ss="{}">{$field.name}</span>
+                </div>
+                <div class="pc_boy_con">
+                    <ul >
+                        <selval value="$field['value']">
+                              <li ss="{}">
+                            <a href = "{$url}">{$attr}</a>
+                              </li>
+                        </selval>
+
+                    </ul>
+
+                </div>
+            </div>
+       </select>
+
+            <div class='pc_bottom'></div>
+        </div>
+        <div class='ppl_bottom'>
+            <div>更多选项</div>
+        </div>
+        <div class="ppl_mid">
+            <div class="ppl1">
+                <span>发货地</span>
+                <span></span>
+            </div>
+            <div class="ppl2">
+                <span>默认排序</span>
+                <span></span>
+                <span>销售</span>
+                <span></span>
+                <span>价格</span>
+                <span></span>
+                <span>价格</span>
+                <span></span>
+            </div>
+            <div class="ppl3">
+                <span>¥</span>
+                <span>-</span>
+                <span>¥</span>
+            </div>
+            <div class="ppl4">
+                <label>
+                    <input type="checkbox" >
+                    <span>包邮</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>折扣</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>细节实拍</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>旺旺在线</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>搭配减价</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>满就减</span>
+                </label>
+                <label>
+                    <input type="checkbox" >
+                    <span>货到付款</span>
+                </label>
+            </div>
+            <div class="ppl5">
+                <span>店铺</span>
+                <span></span>
+                <span>大图</span>
+                <span></span>
+                <span>列表</span>
+                <span></span>
+            </div>
+            <div class="ppl6">
+                <div>
+                    <span>&lt;</span>
+                </div>
+                <div>
+                    <span>&gt;</span>
+                </div>
+            </div>
+            <div class="ppl7">1/100</div>
+        </div>
+
+        <div class='lg_goods'>
+
+            <segoods row="30" gids="$gid_str">
+                 <div class="lg_good">
+                     <goods gid="$hotgid">
+                          <a ss="{}" href="{$url}">
+                    <img src="{$field.pic}" style="height:220px;width:220px;overflow:hidden"/>
+                        </a>
+                     </goods>
+
+
+                <div class="lg_small_goods">
+                    <div class="lg_sg">
+                        <p>
+                            <imgs gid="$hotgid" type="mini">
+                                    <b ss="{}"><img  src="{$field}" style="width:30px;height:30px" class="min" num="{$num}" gid="{$hotgid}"> <i></i></b>
+                            </imgs>
+                         </p>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                    <p class="price goods_con">
+                            <goods gid="$hotgid">
+                                <em ss="{}" title="{$field.price}">
+                                  ¥{$field.price}
+                            </goods>
+
+                        </em>
+                                <goods gid="$hotgid">
+                                <del ss="{}">¥{$field.mprice}</del>
+                                 </goods>
+                    </p>
+                    <p class="goods_con">
+                        <goods gid="$hotgid">
+                        <a ss="{}" href="{$url}" class="good_color" >{$field.name}</a>
+                        </goods>
+                    </p>
+                    <p class="goods_con good_num">
+                        月销量:
+                         <goods gid="$hotgid">
+                        <em ss="{}">{$field.sell_num}件</em>                        |
+                        <a href='#'>累计评价:{$field.click}次</a>
+                        </goods>
+                    </p>
+                    <div class="goods_con shop">
+                        <allgood gid="$hotgid">
+                        <a ss="{}" href="{$bidurl}" class="" >{$field.brand_name}旗舰店</a>
+                        </allgood>
+                        <span class="wang" >
+                            <a href="" >
+                                <span></span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+
+            </segoods>
+
+
+           <div style="clear:both"></div>
+           <div class="page_good">
+               page
+           </div>
+           <div class="good_hot">
+               <h3>商家热卖: </h3>
+
+               <chgoods row="6" type="hot" cid="$cid">
+                   <div>
+                   <div>
+                        <goods gid="$hotgid">
+                          <a ss="{}" href="{$url}">
+                    <img src="{$field.pic}" style="height:160px;width:160px;overflow:hidden"/>
+                        </a>
+                     </goods>
+                             <goods gid="$hotgid">
+                               <p ss="{}" class="good_hot_price">¥{$field.price}</p>
+                            </goods>
+
+
+                       <p>
+                           <goods gid="$hotgid">
+                        <a ss="{}" href="{$url}" >{$field.name}</a>
+                        </goods>
+                       </p>
+                   </div>
+               </div>
+
+               </chgoods>
+
+
+           </div>
+           <div class="search_good">
+               <div>
+                   <div></div>
+                   <span>搜索</span>
+               </div>
+           </div>
+        </div>
+
+    </div>
+

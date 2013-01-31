@@ -16,9 +16,10 @@
                     <a>所有商品分类</a>
                     <div>
                         <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/gui1.jpg">
-                        <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/gui2.jpg"></div>
+                        <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/gui2.jpg">
+                    </div>
                 </div>
-                <div class="list" >
+                <div class="list">
                     <div class="getout">
                         <ul>
                             <li>
@@ -26,48 +27,13 @@
                                     <a href="<?php echo U('List/index');?>?cid=15">品牌女装</a>
                                 </h3>
                                 <p>
-                                    <a href="#">羽绒服</a>
-                                    <a href="#">毛衣</a>
-                                    <a href="#">棉衣棉服</a>
-                                    <a href="#">毛呢外套</a>
-                                    <a href="#">打底裤</a>
-                                    <a href="#">休闲裤</a>
-                                    <a href="#">连衣裙</a>
-                                    <a href="#">牛仔裤</a>
-                                    <a href="#">中老年服装</a>
-                                    <a href="#">针织衫</a>
-                                    <a href="#">T恤</a>
-                                    <a href="#">卫衣</a>
-                                    <a href="#">半身裙</a>
-                                    <a href="#">皮草</a>
-                                    <a href="#">婚纱/礼服/旗袍</a>
-                                    <a href="#">真皮皮衣</a>
-                                    <a href="#">衬衫</a>
-                                    <a href="#">风衣</a>
-                                    <a href="#">婚纱</a>
+                            <?php $data = next_cate(15); foreach($data as $k=>$field){ if($k<21){ $field["url"]=U("List/index",array('cid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php }; } ?>
+
                                 </p>
                                 <h4>品牌:</h4>
                                 <p>
-                                    <a href="#">波司登</a>
-                                    <a href="#">ochirly</a>
-                                    <a href="#">韩都衣舍</a>
-                                    <a href="#">裂帛</a>
-                                    <a href="#">优衣库</a>
-                                    <a href="#">only</a>
-                                    <a href="#">秋水伊人</a>
-                                    <a href="#">哥弟</a>
-                                    <a href="#">粉红大布娃娃</a>
-                                    <a href="#">三彩</a>
-                                    <a href="#">歌莉娅</a>
-                                    <a href="#">茵曼</a>
-                                    <a href="#">艾莱依</a>
-                                    <a href="#">衣香丽影</a>
-                                    <a href="#">江南布衣</a>
-                                    <a href="#">纳纹</a>
-                                    <a href="#">播</a>
-                                    <a href="#">香影</a>
-                                    <a href="#">雅鹿</a>
-                                    <a href="#">OSA</a>
+                                      <?php $db=M("brand");$all_cid = check_all_cate(15);$add_bid = cate_brand($all_cid);$bids = implode(",",$add_bid);$data = $db->where("id in ($bids)")->select();foreach($data as $k=>$field){if($k<14){ $field["url"]=U("Select/index",array('bid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php } } ?>
+
                                 </p>
                             </li>
                             <li>
@@ -75,20 +41,11 @@
                                     <a href="<?php echo U('List/index');?>?cid=16">服饰配件</a>
                                 </h3>
                                 <p>
-                                    <a href="#">女士丝巾/围巾/披肩</a>
-                                    <a href="#">男士皮带</a>
-                                    <a href="#">女士腰带</a>
-                                    <a href="#">毛线</a>
-                                    <a href="#">手套</a>
-                                    <a href="#">帽子</a>
-                                    <a href="#">男士围巾</a>
-                                    <a href="#">领带/领结</a>
+                                   <?php $data = next_cate(16); foreach($data as $k=>$field){ if($k<15){ $field["url"]=U("List/index",array('cid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php }; } ?>
                                 </p>
                                 <h4>品牌:</h4>
                                 <p>
-                                    <a href="#">七匹狼</a>
-                                    <a href="#">Rayli</a>
-                                    <a href="#">CARTELO</a>
+                                     <?php $db=M("brand");$all_cid = check_all_cate(16);$add_bid = cate_brand($all_cid);$bids = implode(",",$add_bid);$data = $db->where("id in ($bids)")->select();foreach($data as $k=>$field){if($k<3){ $field["url"]=U("Select/index",array('bid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php } } ?>
 
                                 </p>
                             </li>
@@ -99,47 +56,11 @@
                                     <a href="<?php echo U('List/index');?>?cid=17">精品男装</a>
                                 </h3>
                                 <p>
-                                    <a href="#">羽绒服</a>
-                                    <a href="#">毛衣</a>
-                                    <a href="#">棉衣</a>
-                                    <a href="#">皮衣</a>
-                                    <a href="#">牛仔裤</a>
-                                    <a href="#">呢大衣</a>
-                                    <a href="#">风衣</a>
-                                    <a href="#">夹克</a>
-                                    <a href="#">羊绒衫</a>
-                                    <a href="#">休闲裤</a>
-                                    <a href="#">卫衣</a>
-                                    <a href="#">马甲/背心</a>
-                                    <a href="#">衬衫</a>
-                                    <a href="#">t恤</a>
-                                    <a href="#">针织衫</a>
-                                    <a href="#">皮裤</a>
-                                    <a href="#">西服</a>
-                                    <a href="#">西裤</a>
-                                    <a href="#">西服套装</a>
-                                    <a href="#">中老年服装</a>
+                                   <?php $data = next_cate(17); foreach($data as $k=>$field){ if($k<25){ $field["url"]=U("List/index",array('cid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php }; } ?>
                                 </p>
                                 <h4>品牌:</h4>
                                 <p>
-                                    <a href="#">七匹狼</a>
-                                    <a href="#">JACKJONES</a>
-                                    <a href="#">太平鸟</a>
-                                    <a href="#">GXG</a>
-                                    <a href="#">恒源祥</a>
-                                    <a href="#">劲霸</a>
-                                    <a href="#">马克华菲</a>
-                                    <a href="#">九牧王</a>
-                                    <a href="#">利郎</a>
-                                    <a href="#">LEE</a>
-                                    <a href="#">柒牌</a>
-                                    <a href="#">LEVI'S</a>
-                                    <a href="#">SELECTED</a>
-                                    <a href="#">杉杉</a>
-                                    <a href="#">雅戈尔</a>
-                                    <a href="#">DICKIES</a>
-                                    <a href="#">诺帝卡</a>
-                                    <a href="#">报喜鸟</a>
+                                   <?php $db=M("brand");$all_cid = check_all_cate(17);$add_bid = cate_brand($all_cid);$bids = implode(",",$add_bid);$data = $db->where("id in ($bids)")->select();foreach($data as $k=>$field){if($k<14){ $field["url"]=U("Select/index",array('bid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php } } ?>
                                 </p>
                             </li>
                             <li>
@@ -147,25 +68,11 @@
                                     <a href="<?php echo U('List/index');?>?cid=18">时尚家居</a>
                                 </h3>
                                 <p>
-                                    <a href="#">睡衣套装</a>
-                                    <a href="#">夹棉家居服</a>
-                                    <a href="#">珊瑚绒家居服</a>
-                                    <a href="#">情侣套装</a>
-                                    <a href="#">卡通睡衣</a>
-                                    <a href="#">睡袍</a>
-                                    <a href="#">睡裙</a>
-                                    <a href="#">睡裤</a>
+                                    <?php $data = next_cate(18); foreach($data as $k=>$field){ if($k<10){ $field["url"]=U("List/index",array('cid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php }; } ?>
                                 </p>
                                 <h4>品牌:</h4>
                                 <p>
-                                    <a href="#">芬腾</a>
-                                    <a href="#">安之伴</a>
-                                    <a href="#">派邦奴</a>
-                                    <a href="#">秋鹿</a>
-                                    <a href="#">睦隆世家</a>
-                                    <a href="#">雪俐</a>
-                                    <a href="#">爱帝</a>
-                                    <a href="#">美梦</a>
+                                   <?php $db=M("brand");$all_cid = check_all_cate(18);$add_bid = cate_brand($all_cid);$bids = implode(",",$add_bid);$data = $db->where("id in ($bids)")->select();foreach($data as $k=>$field){if($k<8){ $field["url"]=U("Select/index",array('bid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php } } ?>
                                 </p>
                             </li>
                         </ul>
@@ -175,37 +82,11 @@
                                     <a href="<?php echo U('List/index');?>?cid=19">精致内衣</a>
                                 </h3>
                                 <p>
-                                    <a href="#">保暖套装</a>
-                                    <a href="#">保暖上衣</a>
-                                    <a href="#">精品文胸</a>
-                                    <a href="#">塑身衣</a>
-                                    <a href="#">女式内裤</a>
-                                    <a href="#">文胸套装</a>
-                                    <a href="#">中筒袜</a>
-                                    <a href="#">连裤袜</a>
-                                    <a href="#">男式内裤</a>
-                                    <a href="#">保暖裤</a>
-                                    <a href="#">聚拢文胸</a>
-                                    <a href="#">美腿袜</a>
+                                   <?php $data = next_cate(19); foreach($data as $k=>$field){ if($k<12){ $field["url"]=U("List/index",array('cid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php }; } ?>
                                 </p>
                                 <h4>品牌:</h4>
                                 <p>
-                                    <a href="#">七匹狼</a>
-                                    <a href="#">浪莎</a>
-                                    <a href="#">波司登</a>
-                                    <a href="#">南极人</a>
-                                    <a href="#">恒源祥</a>
-                                    <a href="#">北极绒</a>
-                                    <a href="#">爱慕</a>
-                                    <a href="#">曼妮芬</a>
-                                    <a href="#">歌瑞尔</a>
-                                    <a href="#">古今</a>
-                                    <a href="#">猫人</a>
-                                    <a href="#">安莉芳</a>
-                                    <a href="#">夏娃之秀</a>
-                                    <a href="#">黛安芬</a>
-                                    <a href="#">金三塔</a>
-
+                                    <?php $db=M("brand");$all_cid = check_all_cate(19);$add_bid = cate_brand($all_cid);$bids = implode(",",$add_bid);$data = $db->where("id in ($bids)")->select();foreach($data as $k=>$field){if($k<15){ $field["url"]=U("Select/index",array('bid'=>$field['id'])); $field["name"]=slice_brand($field["name"]);?><a ss="{}" href="<?php echo ($field["url"]); ?>"><?php echo ($field["name"]); ?></a><?php } } ?>
                                 </p>
                             </li>
                             <div>

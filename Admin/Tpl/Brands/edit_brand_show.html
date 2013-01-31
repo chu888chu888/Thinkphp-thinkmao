@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Common/css/base.css"/>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/Admin/css/add_good.css"/>
+        <script src="__PUBLIC__/Common/js/jquery-1.8.3.js">
+
+        </script>
+        <script type="text/javascript" src="__PUBLIC__/Admin/js/brand.js">
+
+        </script>
+    </head>
+    <body>
+        <div class="ititle">
+            商品品牌添加
+        </div>
+        <form action="{:U('edit_brand')}" method="post" class="agform">
+            <input type="hidden" value="{$id}" name="id"/>
+            <table>
+                <tr>
+                    <td class="ahead">
+                        品牌的名称
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="name" class="put" value="{$mes.name}"/>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="ahead">
+                        更改品牌LOGO
+                    </td>
+                </tr>
+                <tr style="border: none;height:auto">
+                    <td>
+                         <upload name='logo' display='110,60' limit='1' path='./Uploads/brand'/>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="ahead">
+                        品牌所属分类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="add_cate">more+</span>
+                    </td>
+                </tr>
+                <foreach name="mes.cid" item="m" key="k">
+                    <if condition="$k eq 0">
+                <tr id="tmplate">
+                    <td>
+                        <select name="cid[]">
+                            <option value="">请选择</option>
+                            <foreach name='category' item='v'>
+                                <if condition="$m eq $v['id']">
+                                    <option value="{$v.id}" selected="selected">{$v.html}{$v.name}</option>
+                                <else/>
+                                <option value="{$v.id}">{$v.html}{$v.name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <span></span>
+                    </td>
+                </tr>
+                  <else/>
+                   <tr id="tmplate">
+                    <td>
+                        <select name="cid[]">
+                            <option value="">请选择</option>
+                            <foreach name='category' item='v'>
+                                <if condition="$m eq $v['id']">
+                                    <option value="{$v.id}" selected="selected">{$v.html}{$v.name}</option>
+                                <else/>
+                                    <option value="{$v.id}">{$v.html}{$v.name}</option>
+                                </if>
+                            </foreach>
+                        </select>
+                        <span class="cate_del">del-</span>
+                    </td>
+                </tr>
+                    </if>
+                </foreach>
+
+
+
+
+
+
+                 <tr>
+                    <td class="ahead">
+                        是否为热卖品牌
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <span>是:</span>
+                            <if condition="$mes.hot eq 1">
+                                <input type="radio" name="hot" value="1" checked="checked"/>
+                        <else/>
+                         <input type="radio" name="hot" value="1"/>
+                            </if>
+                        </label>
+                         <label>
+                             <span>否:</span>
+                              <if condition="$mes['hot'] eq 0">
+                         <input type="radio" name="hot" value="0" checked="checked"/>
+                           <else/>
+                            <input type="radio" name="hot" value="0"/>
+                              </if>
+                        </label>
+                    </td>
+                </tr>
+
+
+                  <tr>
+                    <td class="ahead">
+                        品牌简介
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       <textarea name="descript" id="textarea">
+                              {$mes.descript}
+                       </textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <input type="submit" value="确定" class="gsubmit"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

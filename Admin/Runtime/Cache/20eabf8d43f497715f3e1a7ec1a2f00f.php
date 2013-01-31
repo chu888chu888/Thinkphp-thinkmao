@@ -42,7 +42,7 @@
                  <ul>
                     <li class="main">订单管理</li>
                     <li><a href="<?php echo U('Order/index');?>">订单列表</a></li>
-                    <li><a href="<?php echo U('Order/step1');?>">待审核订单</a></li>
+                    <li><a href="<?php echo U('Order/step1');?>">待付款订单</a></li>
                     <li><a href="<?php echo U('Order/step2');?>">待发货订单</a></li>
                     <li><a href="<?php echo U('Order/step3');?>">已完成订单</a></li>
                 </ul>

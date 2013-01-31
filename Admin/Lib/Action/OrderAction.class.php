@@ -3,8 +3,6 @@
       public function index(){
           $db = M("OrderList");
           $data = $db->select();
-          $db1 = M("Order");
-
           $this->assign("mes", $data);
           $this->display();
       }
@@ -21,13 +19,32 @@
       }
       public function pass(){
            $id = $_GET['id'];
+           $status = $_GET['status'];
            $db=M('order_list');
            $data = array(
                "id"=>$id,
-               "status"=>2,
+               "status"=>$status,
            );
            $db->data($data)->save();
            redirect(U('index'));
+      }
+      public function step1(){
+          $db = M("OrderList");
+          $data = $db->where(array("status"=>2))->select();
+          $this->assign("mes", $data);
+          $this->display();
+      }
+      public function step2(){
+          $db = M("OrderList");
+          $data = $db->where(array("status"=>3))->select();
+          $this->assign("mes", $data);
+          $this->display();
+      }
+      public function step3(){
+          $db = M("OrderList");
+          $data = $db->where(array("status"=>4))->select();
+          $this->assign("mes", $data);
+          $this->display();
       }
 
   }

@@ -7,6 +7,7 @@ Class TagLibList extends TagLib {
                'cate2'=>array('attr'=>'cd,row','close'=>1,"level"=>2),
                'cate3'=>array('attr'=>'cid,row','close'=>1,"level"=>3),
                'brand'=>array('attr'=>'cid,row,type','close'=>1,"level"=>1),
+               'gbrand'=>array('attr'=>'cid,row,type','close'=>1,"level"=>1),
                'attr'=>array('attr'=>'gid,row','close'=>1,"level"=>1),
                'specname'=>array('attr'=>'gid,row','close'=>1,"level"=>1),
                'specvalue'=>array('attr'=>'aid,row,gid','close'=>1,"level"=>1),
@@ -15,11 +16,41 @@ Class TagLibList extends TagLib {
                'imgs'=>array('attr'=>'gid,type,row','close'=>1),
                'gellery'=>array('attr'=>'gid,type,row','close'=>1),
                'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
+               'segoods'=>array('attr'=>'gids,type,row','close'=>1),
                'allgood'=>array('attr'=>'gid','close'=>1),
                'select'=>array('attr'=>'cid,row','close'=>1),
                'selval'=>array('attr'=>'value,row','close'=>1),
+               'ncate'=>array('attr'=>'cid,row','close'=>1),
 
 );
+    /**
+     * 获得孙子级别栏目
+     * @param type $attr
+     * @param type $content
+     * @return string
+     */
+    public function _ncate($attr,$content){
+         $tag    = $this->parseXmlAttr($attr,'ncate');
+         if(!$tag['cid'] && !$_GET['cid']){
+                return;
+            }
+         $id = empty($tag['cid'])? $_GET['cid'] : $tag['cid'];
+         $row = empty($tag['row'])? 30 : $tag['row'];
+         $str = '';
+         $str .='<?php ';
+         $str .='$data = next_cate('.$id.');?>';
+         $str.='<?php foreach($data as $k=>$field){?>';
+          $str.='<?php if($k<'.$row.'){?>';
+         $str.='<?php $field["url"]=U("List/index",array(\'cid\'=>$field[\'id\']));?>';
+         $str .='<?php $field["name"]=slice_brand($field["name"]);?>';
+         $str.=$content;
+         $str.='<?php }; ?>';
+          $str.='<?php } ?>';
+         return $str;
+    }
+
+
+
     /**
      * 遍历出筛选属性名
      * @param type $attr
@@ -60,7 +91,7 @@ Class TagLibList extends TagLib {
            $str.='<?php ';
            $str.='foreach('.$value.' as $k=>$attr){';
            $str.='if($k<'.$rows.'){?>';
-           $str.='<?php $url = U("select",array(\'aid\'=>$field[\'id\'],\'num\'=>$k));?>';
+           $str.='<?php $url = U("Select/index",array(\'aid\'=>$field[\'id\'],\'num\'=>$k));?>';
            $str.=  $content;
            $str.='<?php } ?>';
            $str.='<?php } ?>';
@@ -90,6 +121,30 @@ Class TagLibList extends TagLib {
            return $str;
 
     }
+
+
+    public function _segoods($attr,$content){
+        $tag = $this->parseXmlAttr($attr,'segoods');
+                if(!$tag['gids']){
+                return;
+              }
+           $rows = empty($tag['row'])? 10 : $tag['row'];
+           $type = empty($tag['type'])? 0 : $tag['type'];
+           $gids = $tag['gids'];
+           $str.='';
+           $str.='<?php ';
+           $str.='$cids =explode(",",'.$gids.') ;';
+           $str.='shuffle($cids);';
+           $str.='foreach($cids as $k=>$hotgid){';
+           $str.= 'if($k<'.$rows.'){ ?>';
+           $str.='<?php $url = U("Good/index",array(\'gid\'=>$hotgid));?>';
+           $str.=  $content;
+           $str.='<?php } ?>';
+           $str.='<?php } ?>';
+           return $str;
+
+    }
+
     /**
      * 返回某个栏目下的热卖，推荐商品id
      * @param type $attr
@@ -97,7 +152,7 @@ Class TagLibList extends TagLib {
      * @return string
      */
     public function _chgoods($attr,$content){
-           $tag = $this->parseXmlAttr($attr,'imgs');
+           $tag = $this->parseXmlAttr($attr,'chgoods');
                 if(!$tag['cid'] && !$_GET['cid']){
                 return;
               }
@@ -107,6 +162,7 @@ Class TagLibList extends TagLib {
            $str.='';
            $str.='<?php ';
            $str.='$cids = check_cate_hot_goods('.$cid.',"'.$type.'");';
+           $str.='shuffle($cids);';
            $str.='foreach($cids as $k=>$hotgid){';
            $str.= 'if($k<'.$rows.'){ ?>';
            $str.='<?php $url = U("Good/index",array(\'gid\'=>$hotgid));?>';
@@ -296,6 +352,49 @@ Class TagLibList extends TagLib {
                $str.='<?php } ?>';
                return $str;
     }
+
+    /**
+     * 读取栏目下所有的品牌
+     * 获取该栏目下的热卖品牌
+     * 通过商品关联
+     * @param type $attr
+     * @param type $content
+     * @return type
+     */
+
+    public function _gbrand($attr,$content){
+           $tag = $this->parseXmlAttr($attr,'gbrand');
+            if(!$tag['cid'] && !$_GET['cid']){
+                return;
+            }
+            $rows = empty($tag['row'])? 20 : $tag['row'];
+            if(empty($tag['type'])){
+                $type = 0;
+            }
+            $cid = empty($tag['cid'])?$_GET['cid']:$tag['cid'];
+            $str  = '';
+            $str .= '<?php ';
+            $str .='$db=M("brand");';
+            $str .='$all_bid = cate_good_brand('.$cid.');';
+            $str .= '$bids =  implode(",",$all_bid);';
+            if($type == 1){
+            $str .= '$data = $db->where("id in ($bids) and hot = 1")->select();';
+            }else{
+            $str .= '$data = $db->where("id in ($bids)")->select();';
+            }
+            $str .= 'foreach($data as $k=>$field){';
+            $str .= 'if($k<'.$rows.'){ ?>';
+            $str .='<?php $field["url"]=U("Select/index",array(\'bid\'=>$field[\'id\']));?>';
+            $str .='<?php $field["name"]=slice_brand($field["name"]);?>';
+            $str .=  $content;
+            $str .= '<?php } ?>';
+            $str .= '<?php } ?>';
+            return $str;
+
+    }
+
+
+
     /**
      * 读取栏目下所有的品牌
      * 获取该栏目下的热卖品牌
@@ -317,15 +416,17 @@ Class TagLibList extends TagLib {
             $str .= '<?php ';
             $str .='$db=M("brand");';
             $str .='$all_cid = check_all_cate('.$cid.');';
-            $str .= '$cids =  implode(",",$all_cid);';
+            $str .= '$add_bid = cate_brand($all_cid);';
+            $str .= '$bids =  implode(",",$add_bid);';
             if($type == 1){
-            $str .= '$data = $db->where("cid in ($cids) and hot = 1")->select();';
+            $str .= '$data = $db->where("id in ($bids) and hot = 1")->select();';
             }else{
-            $str .= '$data = $db->where("cid in ($cids)")->select();';
+            $str .= '$data = $db->where("id in ($bids)")->select();';
             }
             $str .= 'foreach($data as $k=>$field){';
             $str .= 'if($k<'.$rows.'){ ?>';
-            $str .='<?php $field["url"]=U("brand",array(\'bid\'=>$field[\'id\']));?>';
+            $str .='<?php $field["url"]=U("Select/index",array(\'bid\'=>$field[\'id\']));?>';
+            $str .='<?php $field["name"]=slice_brand($field["name"]);?>';
             $str .=  $content;
             $str .= '<?php } ?>';
             $str .= '<?php } ?>';
