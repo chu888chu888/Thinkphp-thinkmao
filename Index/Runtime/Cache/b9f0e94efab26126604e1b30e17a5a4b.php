@@ -10,7 +10,7 @@
 <div class="lg_guid">
     <div class="lg_guid_center">
         <span class="lg_left">
-            <a href="#">首页</a>
+            <a href="<?php echo U('Index/index');?>">首页</a>
             >
             <?php if(is_array($c_arr)): foreach($c_arr as $k=>$v): ?><a href="<?php echo U('index',array('cid'=>$k));?>"><?php echo ($v); ?></a>
             ><?php endforeach; endif; ?>

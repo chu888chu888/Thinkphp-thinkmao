@@ -102,8 +102,8 @@ class CartAction extends Action {
 
   function test(){
 
-             cate_good_brand(51);
-
+             $aa = check_cate_hot_goods(51);
+             p($aa);
 
 
   }

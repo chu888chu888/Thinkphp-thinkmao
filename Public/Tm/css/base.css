@@ -1,7 +1,8 @@
 *{
 	margin: 0px;
 	padding: 0px;
-	font: 12px/1.5 'Lucida Grande',tahoma,arial,宋体;
+	font-family: 'Lucida Grande','微软雅黑';
+              font-size:12px;
 	list-style:none;border:0;
 }
 img{

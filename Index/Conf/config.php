@@ -13,9 +13,17 @@ return array(
             'DB_PREFIX'=>'hd_',
             'TOKEN_ON'=>false,
             'APP_AUTOLOAD_PATH' => '@.TagLib',
-	'TAGLIB_BUILD_IN' => 'Cx,List',
-	'TMPL_ACTION_SUCCESS' => './Public/Template/msg.html',
+            'TAGLIB_BUILD_IN' => 'Cx,List',
+            'TMPL_ACTION_SUCCESS' => './Public/Template/msg.html',
 	'TMPL_ACTION_ERROR' => './Public/Template/msg.html',
+             'DATA_CACHE_TYPE' => 'Memcache',
+             'MEMCACHE_HOST'   =>  'tcp://127.0.0.1:11211',
+             'DATA_CACHE_TIME' => '3600',
+             'TMPL_CACHE_ON'=>true,
+             'TMPL_CACHE_ON'   => true,
+             'ACTION_CACHE_ON'  => true,
+             'HTML_CACHE_ON'   => true,
+
 
 
 );

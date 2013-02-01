@@ -47,15 +47,15 @@ Class GoodsViewModel extends ViewModel {
                                    'service',
                                     '_on' => 'goods.id = goods_intro.gid',
                            ),
-                          'goods_list'=>array(
-                                  'id'=>'in_id',
-                                  'inventory',
-                                  'attr'=>'attr_com',
-                                  'number'=>'in_number',
-                                  'series'=>'series',
-                                  'price'=>'in_price',
-                                   '_on' => 'goods.id = goods_list.gid',
-                          )
+//                          'goods_list'=>array(
+//                                  'id'=>'in_id',
+//                                  'inventory',
+//                                  'attr'=>'attr_com',
+//                                  'number'=>'in_number',
+//                                  'series'=>'series',
+//                                  'price'=>'in_price',
+//                                   '_on' => 'goods.id = goods_list.gid',
+//                          )
 
 		);
 }
