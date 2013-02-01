@@ -15,7 +15,7 @@ Class TagLibList extends TagLib {
                'goods'=>array('attr'=>'gid','close'=>1),
                'imgs'=>array('attr'=>'gid,type,row','close'=>1),
                'gellery'=>array('attr'=>'gid,type,row','close'=>1),
-               'chgoods'=>array('attr'=>'cid,type,row','close'=>1),
+               'chgoods'=>array('attr'=>'cid,type,row,num','close'=>1),
                'segoods'=>array('attr'=>'gids,type,row','close'=>1),
                'allgood'=>array('attr'=>'gid','close'=>1),
                'select'=>array('attr'=>'cid,row','close'=>1),
@@ -159,10 +159,21 @@ Class TagLibList extends TagLib {
            $rows = empty($tag['row'])? 10 : $tag['row'];
            $type = empty($tag['type'])? 0 : $tag['type'];
            $cid = empty($tag['cid']) ? $_GET['cid'] : $tag['cid'];
+           $p = isset($_GET['p']) ? $_GET['p'] : 1;
+           $num = empty($tag['num'])? 10 : $tag['num'];
+           $less = ($p-1)*$num;
+           $more = $p*$num;
            $str.='';
            $str.='<?php ';
            $str.='$cids = check_cate_hot_goods('.$cid.',"'.$type.'");';
-           $str.='shuffle($cids);';
+           $str.='$arr = array();';
+            $str.='foreach($cids as $ks=>$vs){';
+              $str.='if($ks>'.$less.' && $ks<='.$more.'){';
+               $str.='$arr[] = $vs;';
+                 $str.='}';
+                  $str.='}';
+               $str.='$cids=$arr;';
+//           $str.='shuffle($cids);';
            $str.='foreach($cids as $k=>$hotgid){';
            $str.= 'if($k<'.$rows.'){ ?>';
            $str.='<?php $url = U("Good/index",array(\'gid\'=>$hotgid));?>';

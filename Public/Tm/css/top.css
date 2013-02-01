@@ -114,17 +114,23 @@
 	padding-left:15px;
 	padding-right: 15px;
 	width: auto;
-	color: #fff;
 	height: 30px;
 	line-height: 30px;
-	font-size: 14px;
+}
+.gu_main div a{
+             color: #fff;
+	font-size: 12px;
+             cursor: pointer;
+}
+.index{
+    background-color:#6A0000;
 }
 .gu_main .tm_job{
 	float: right;
 }
 #guid{
 	background-color: #A21C1D;
-	width: 210px !important;
+	width: 211px !important;
 	width: 240px;
 }
 #guid a{
@@ -424,4 +430,8 @@
     color:#FFD0C0;
     height:30px;
     line-height: 30px;
+}
+#guid_box{
+    -webkit-box-shadow:5px 2px 5px #e2e2e2;
+    -moz-box-shadow:5px 0px 5px #e2e2e2;
 }

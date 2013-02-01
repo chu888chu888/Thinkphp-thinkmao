@@ -15,12 +15,13 @@
             <?php if(is_array($c_arr)): foreach($c_arr as $k=>$v): ?><a href="<?php echo U('index',array('cid'=>$k));?>"><?php echo ($v); ?></a>
             ><?php endforeach; endif; ?>
             <form action="">
-                <input type="text">
-                <input type="submit" value='搜索'></form>
+                <input type="text" class="search_input"/>
+                <input type="submit" class="sersub" value="">
+            </form>
             <span>共  446720 件相关商品</span>
         </span>
         <span class="go_tm">
-            <a href="#">去天猫首页</a>
+            <a href="<?php echo U('Index/index');?>">去天猫首页</a>
         </span>
     </div>
 </div>
@@ -222,7 +223,9 @@
            </div>
            <div class="search_good">
                <div>
-                   <div></div>
+                   <div>
+                         <input type="text" class="last_search"/>
+                   </div>
                    <span>搜索</span>
                </div>
            </div>

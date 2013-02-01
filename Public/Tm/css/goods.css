@@ -1,10 +1,10 @@
 .cols div{
 	border-bottom: 1px solid #E6E6E6;
-} 
+}
 .g1_1,.g5_1,.g2_2{
 	height: 287px !important;
 	height: 286px;
-	
+
 }
 .g1_2,.g2_1,.g3_1,.g3_2,.g3_3,.g4_1,.g4_2,.g4_3,.g5_2{
 	height: 143px;
@@ -19,7 +19,7 @@
 .cols div p{
 	height: 18px;
     line-height: 18px;
-    overflow: hidden;    
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     color: #9A9696;
@@ -61,35 +61,35 @@
 }
 .f1 .f1_head span{
 	background-position: 10px -4px;
-	 background: url("../img/ff.png") no-repeat scroll 0 0 transparent;	
+	 background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
 }
-.f1 .f2_head span{	
+.f1 .f2_head span{
 	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
 	background-position: 10px -33px;}
 .f1 .f3_head span{
 	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
-	background-position: 10px -62px;		
+	background-position: 10px -62px;
 }
 .f1 .f4_head span{
 	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
-	background-position: 10px -92px;	
+	background-position: 10px -92px;
 }
 .f1 .f5_head span{
-	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;	
-	background-position: 10px -120px;	
+	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
+	background-position: 10px -120px;
 }
 .f1 .f6_head span{
-	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;	
-	background-position: 10px -148px;	
+	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
+	background-position: 10px -148px;
 }
 .f1 .f7_head span{
-	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;	
-	background-position: 10px -177px;	
+	background: url("../img/ff.png") no-repeat scroll 0 0 transparent;
+	background-position: 10px -177px;
 }
 
 .f1 .f_head ul,.f1 .f_head ul li,.f1 .f_head ul li a{
     list-style: none;
-    text-decoration: none;    
+    text-decoration: none;
 }
 .f1 .f_head ul li a{
 	border-right: 1px solid #DFDFDF;
@@ -166,3 +166,4 @@
 .f1 .f_head ul li .goods_top_right{
 	border-right: none;
 }
+

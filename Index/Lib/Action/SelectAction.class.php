@@ -13,7 +13,7 @@
                            $gid_arr[]=$v['id'];
                        }
                  }
-             }else if(!empty($_GET['aid']) && !empty($_GET['num'])){
+             }else if(!empty($_GET['aid']) && isset($_GET['num'])){
                  $cid = $_SESSION['cid'];
                  $aid = $_GET['aid'];
                  $num = $_GET['num'];

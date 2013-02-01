@@ -3825,14 +3825,14 @@
                 </div>
             </div>
         </div>
-        <div>首页</div>
-        <div>品牌街</div>
-        <div>品牌特卖</div>
-        <div>天猫原创</div>
-        <div>天猫预售</div>
-        <div>电器城</div>
-        <div>医药馆</div>
-        <div>百事淘宝</div>
+        <div class="index"><a href="<?php echo U('Index/index');?>">首页</a></div>
+        <div><a>品牌街</a></div>
+        <div><a>品牌特卖</a></div>
+        <div><a>天猫原创</a></div>
+        <div><a>天猫预售</a></div>
+        <div><a>电器城</a></div>
+        <div><a>医药馆</a></div>
+        <div><a>百事淘宝</a></div>
         <div class="tm_job">天猫俱乐部</div>
     </div>
 </div>

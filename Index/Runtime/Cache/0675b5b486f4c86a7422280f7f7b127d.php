@@ -74,10 +74,12 @@
 	             		<p>满399元减30元</p>
              		</div>
              	</div>
-             	<div class="cols_right"></div>
+             	<div class="cols_right">
+                    <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/bigband.png" alt="" style="display: block;margin-top: -37px;margin-left: -5px;"/>
+                </div>
              </div>
              <div class="adv">
-             	<img src="<?php echo (__ROOT__); ?>/Public/Tm/img/adv1.jpg" alt="">
+             	<img src="<?php echo (__ROOT__); ?>/Public/Tm/img/adv1.jpg" alt="" >
              </div>
 <!-- ----------------------------------------------------------------------------------- -->
              <div class="f1">

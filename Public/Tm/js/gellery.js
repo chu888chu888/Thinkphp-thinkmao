@@ -17,4 +17,14 @@ $(function(){
             }
         })
     })
+
+    $(".search_input").focus(function(){
+        $(this).css("background-position","0 -132px")
+    })
+    $(".search_input").blur(function(){
+        $(this).css("background-position","0 -154px")
+    })
+
+
+
 })

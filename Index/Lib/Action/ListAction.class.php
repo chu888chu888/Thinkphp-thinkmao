@@ -8,6 +8,21 @@
           $c_arr = $this->cates($_GET['cid']);
           $c_arr = array_reverse($c_arr,true);
           $this->assign("c_arr", $c_arr);
+
+
+
+          import("ORG.Util.Page");
+          $cids = check_cate_hot_goods($_GET['cid']);
+          $count = count($cids);
+          $page = new Page($count,10);
+          $page->setConfig('header', '件商品');
+          $page->setConfig('theme', '<ul class="uls"><li class="uppage">%upPage%</li><li class="aa">%linkPage%</li> <li class="totals">共%totalPage%页</li>  </ul>');
+          $show =$page->show();
+          $this->assign("page",$show);
+
+
+
+
           $this->display("../Public/top");
           $this ->display("../Public/lg_top");
           $this ->display("../Public/endgoods");

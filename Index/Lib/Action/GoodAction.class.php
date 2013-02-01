@@ -7,6 +7,12 @@
           $gid = $_GET['gid'];
           $num = get_all_number($gid);
           $data = get_goods_mes($gid);
+//           if (S('num')) {
+//              $num = S('num');
+//          } else {
+//              $num = get_all_number($gid);
+//              S('num', $num, 3600);
+//          }
 //          $data = $db->where(array('id'=>$gid))->find();
           $this->assign('gdata', $data);
           $this->assign("num",$num);

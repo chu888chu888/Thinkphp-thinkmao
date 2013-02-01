@@ -102,8 +102,19 @@ class CartAction extends Action {
 
   function test(){
 
-             $aa = check_cate_hot_goods(51);
-             p($aa);
+//             $aa = check_cate_hot_goods(51);
+//             p($aa);
+      $aas = M("goods_attr");
+      $dt = $aas->where(array("id"=>545))->find();
+      p($dt['value']);
+
+      $db = M("type_attr");
+      $da = $db->where(array("id"=>22))->find();
+      $aa = explode("|", $da['value']);
+      p($aa['0']);
+      if($dt['value']==$aa['0']){
+          echo 123;
+      }
 
 
   }

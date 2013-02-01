@@ -9,26 +9,24 @@
 	height: 30px;
 	margin: 0 auto;
 	text-align: left;
-	width: 1166px !important;
+	width: 1196px !important;
 	width: 1190px;
-	padding-left:24px;
+	padding-left:0px;
 	line-height: 29px;
-        overflow: hidden;
+             overflow: hidden;
 }
 .lg_guid_center span{
 	line-height: 29px;
 	display: inline-block;
 	color: #A91D00;
-        height: 30px;
-        *float: left;
-}
-.lg_guid_center .lg_left *{
-    /**float: left;*/
+             height: 30px;
+            *float: left;
 }
 .lg_guid_center span form{
 	display: inline-block;
 	height: 16px;
-        width: 187px;
+             width: 190px;
+             position: relative;
 }
 .lg_guid_center span a{
 	color:#fff;
@@ -373,7 +371,7 @@ lg_small_goods{
     font-family: 宋体,Helvetica,sans-serif;
     font-size: 14px;
     font-weight: bold;
-    background-color: #eee;
+    /*background-color: #eee;*/
 }
 .good_hot{
     width:1180px !important;
@@ -459,4 +457,78 @@ background: url("../img/btn-search-l.png") no-repeat scroll 0 0 #684E41;
 }
 .chcate:hover{
     color:#B20000;
+}
+.search_input{
+    background: url("../img/search.png") no-repeat;
+    float: left;
+    position: relative;
+   background-position: 0 -154px;
+   _background-position: 0 -132px;
+   border: none;
+  width: 163px;
+   height: 20px;
+   line-height: 21px;
+  color: #666;
+   padding: 0 2px 0 12px;
+  margin-right: 15px;
+  top: 3px;
+  display: inline-block;
+}
+.sersub{
+    background: url("../img/search.png") no-repeat;
+    cursor: pointer;
+    background-position: -15px -47px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 8px;
+    left:140px;
+    float: left;
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+   -ms-border-radius: 0 2px 2px 0;
+   -o-border-radius: 0 2px 2px 0;
+   border-radius: 0 2px 2px 0;
+}
+.last_search{
+    width: 430px;
+}
+.uls li{
+    border:1px solid #eee;
+    height:40px;
+    width:50px;
+    float: left;
+}
+/*.uls li a,.uls li span{
+    border:1px solid #eee;
+    padding: 10px;
+    float: left;
+    height:40px;
+    width:50px;
+}*/
+/*.uls li a{
+    color:blue;
+}
+*/
+.totals{
+    background-color: #f1f1f1;
+     line-height: 40px;
+    text-align:center;
+}
+
+.uls .aa{
+    width:100px;
+}
+.uls .aa span,.uls .aa a{
+    display: block;
+    float: left;
+    width: 50px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+}
+.uppage{
+    line-height: 40px;
+    text-align:center;
 }
