@@ -532,3 +532,7 @@ background: url("../img/btn-search-l.png") no-repeat scroll 0 0 #684E41;
     line-height: 40px;
     text-align:center;
 }
+.uls{
+    float: right;
+    margin-right: 10px;
+}

@@ -13,7 +13,7 @@
             <a href="{:U('Index/index')}">首页</a>
             >
             <foreach name="c_arr" item="v" key="k">
-            <a href="{:U('index',array('cid'=>$k))}">{$v}</a>
+            <a href="{:U('List/index',array('cid'=>$k))}">{$v}</a>
             >
             </foreach>
             <form action="">
@@ -231,7 +231,7 @@
 
            <div style="clear:both"></div>
            <div class="page_good">
-               page
+               {$page}
            </div>
            <div class="good_hot">
                <h3>商家热卖: </h3>

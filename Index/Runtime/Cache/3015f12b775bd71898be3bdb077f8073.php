@@ -158,7 +158,7 @@
 
         <div class='lg_goods'>
 
-            <?php $cids = check_cate_hot_goods(15,"0");$arr = array();foreach($cids as $ks=>$vs){if($ks>10 && $ks<=20){$arr[] = $vs;}}$cids=$arr;foreach($cids as $k=>$hotgid){if($k<30){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
+            <?php $cids = check_cate_hot_goods(15,"0");$arr = array();foreach($cids as $ks=>$vs){if($ks>0 && $ks<=10){$arr[] = $vs;}}$cids=$arr;foreach($cids as $k=>$hotgid){if($k<30){ $url = U("Good/index",array('gid'=>$hotgid));?><div class="lg_good">
                      <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:220px;width:220px;overflow:hidden"/>
                         </a><?php } ?>
@@ -205,7 +205,7 @@
            <div class="good_hot">
                <h3>商家热卖: </h3>
 
-               <?php $cids = check_cate_hot_goods(15,"hot");$arr = array();foreach($cids as $ks=>$vs){if($ks>10 && $ks<=20){$arr[] = $vs;}}$cids=$arr;foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
+               <?php $cids = check_cate_hot_goods(15,"hot");$arr = array();foreach($cids as $ks=>$vs){if($ks>0 && $ks<=10){$arr[] = $vs;}}$cids=$arr;foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
                    <div>
                         <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:160px;width:160px;overflow:hidden"/>

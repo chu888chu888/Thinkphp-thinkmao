@@ -11,6 +11,16 @@
 
 
 
+
+//          import("ORG.Util.Splitword");
+//          $ws = new SplitWord();
+//          $sentens = '大号红色羽绒衣服';
+//          $findstr = $ws->SplitRMM($sentens);
+//          $arr = explode(" ",$findstr);
+//           p($arr);
+
+
+
           import("ORG.Util.Page");
           $cids = check_cate_hot_goods($_GET['cid']);
           $count = count($cids);

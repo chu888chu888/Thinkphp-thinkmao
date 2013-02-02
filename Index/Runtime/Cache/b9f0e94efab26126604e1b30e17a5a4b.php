@@ -12,7 +12,7 @@
         <span class="lg_left">
             <a href="<?php echo U('Index/index');?>">首页</a>
             >
-            <?php if(is_array($c_arr)): foreach($c_arr as $k=>$v): ?><a href="<?php echo U('index',array('cid'=>$k));?>"><?php echo ($v); ?></a>
+            <?php if(is_array($c_arr)): foreach($c_arr as $k=>$v): ?><a href="<?php echo U('List/index',array('cid'=>$k));?>"><?php echo ($v); ?></a>
             ><?php endforeach; endif; ?>
             <form action="">
                 <input type="text" class="search_input"/>
@@ -200,12 +200,12 @@
 
            <div style="clear:both"></div>
            <div class="page_good">
-               page
+               <?php echo ($page); ?>
            </div>
            <div class="good_hot">
                <h3>商家热卖: </h3>
 
-               <?php $cids = check_cate_hot_goods($cid,"hot");shuffle($cids);foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
+               <?php $cids = check_cate_hot_goods($cid,"hot");$arr = array();foreach($cids as $ks=>$vs){if($ks>0 && $ks<=10){$arr[] = $vs;}}$cids=$arr;foreach($cids as $k=>$hotgid){if($k<6){ $url = U("Good/index",array('gid'=>$hotgid));?><div>
                    <div>
                         <?php $db = M("goods");$data = $db->where(array("id"=>$hotgid))->select();foreach($data as $k=>$field){ $url = U("Good/index",array('gid'=>$field['id']));?><a ss="{}" href="<?php echo ($url); ?>">
                     <img src="<?php echo ($field["pic"]); ?>" style="height:160px;width:160px;overflow:hidden"/>
