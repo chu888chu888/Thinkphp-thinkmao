@@ -25,7 +25,7 @@
 
 
               <div class="main_mid">
-                  <a href="<?php echo U('Index/index');?>"><img src="<?php echo (__ROOT__); ?>/Public/Tm/img/index_logo.jpg"></a>
+                  <a href="<?php echo U('Index/index');?>"><img src="<?php echo (__ROOT__); ?>/Public/Tm/img/logo.png"></a>
          	 <div class="search">
          	    <button type="submit">
 				  搜索

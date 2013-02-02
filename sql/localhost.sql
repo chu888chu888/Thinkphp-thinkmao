@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2013 年 01 月 30 日 22:34
+-- 生成日期: 2013 年 02 月 02 日 15:25
 -- 服务器版本: 5.5.29
--- PHP 版本: 5.4.10
+-- PHP 版本: 5.4.11
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -54,65 +54,66 @@ CREATE TABLE IF NOT EXISTS `hd_brand` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(45) NOT NULL DEFAULT '' COMMENT '品牌名称',
   `logo` varchar(100) NOT NULL DEFAULT '' COMMENT '品牌LOGO',
-  `cid` int(10) unsigned NOT NULL COMMENT '所属栏目ID',
+  `cid` varchar(40) NOT NULL COMMENT '所属栏目ID',
   `hot` enum('0','1') DEFAULT '0',
   `descript` text,
   PRIMARY KEY (`id`),
   KEY `cid` (`cid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品品牌' AUTO_INCREMENT=63 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品品牌' AUTO_INCREMENT=64 ;
 
 --
 -- 转存表中的数据 `hd_brand`
 --
 
 INSERT INTO `hd_brand` (`id`, `name`, `logo`, `cid`, `hot`, `descript`) VALUES
-(16, '波司登', '/thinkmao/Uploads/brand/201301/51024e2bcf5ca.jpg', 15, '1', '   波司登以轻、薄、美使原来的厚、重、肿的羽绒服形象焕然一新，带动了整个羽绒服行业向时装化、休闲化的发展               \r\n                       '),
-(17, 'Ochirly', '/thinkmao/Uploads/brand/201301/51024eca720e9.jpg', 15, '1', '     Ochirly 以奢华设计灵感，完美融合欧洲魅力与时尚艺术，优雅摩登，无尽灵感。  \r\n                       '),
-(18, 'ONLY', '/thinkmao/Uploads/brand/201301/51024f0642e78.jpg', 15, '1', 'ONLY产品个性突出，适合参加聚会和社交，让大胆而独立的都市女孩通过服饰表现特立独行的自我。      '),
-(19, 'Uniqlo', '/thinkmao/Uploads/brand/201301/51024f6c49fdc.jpg', 15, '1', ' 为了让所有的人都能穿上高品质的、简约自然的、易于搭配的休闲服装而努力的著名国际休闲品牌。                          \r\n                       '),
-(20, '韩都衣舍', '/thinkmao/Uploads/brand/201301/51024f96e2b7e.jpg', 15, '1', '韩都衣舍秉承韩风快时尚这一理念，将韩国的时尚元素引入国内,为中国的顾客提供最时尚的韩国风格服饰'),
-(21, 'Uniqlo', '/thinkmao/Uploads/brand/201301/51024fe7bd26b.jpg', 15, '1', ' 为了让所有的人都能穿上高品质的、简约自然的、易于搭配的休闲服装而努力的著名国际休闲品牌。                          \r\n                       '),
-(22, '裂帛', '/thinkmao/Uploads/brand/201301/5102502fb4305.jpg', 15, '1', '裂帛，中国知名设计师品牌，主营狂喜、神秘、流浪、异域、民族，打造原创女装服饰新时尚。                 '),
-(23, '秋水伊人', '/thinkmao/Uploads/brand/201301/510250712a4a8.jpg', 15, '1', '  秋水伊人品通过设计师优雅、浪漫的设计表达手法，充分演绎都市淑女时尚经典又精致优雅的着衣风格。                         \r\n                       '),
-(24, 'Cartelo', '/thinkmao/Uploads/brand/201301/510250c8c8d21.jpg', 16, '1', '       卡帝乐鳄鱼是最早进入中国的世界知名品牌之一；公司拥有55年悠久历史；曾连续三年保持了T恤衫全国销量第一。                    \r\n                       '),
-(25, 'Septwolves', '/thinkmao/Uploads/brand/201301/51025161e8846.jpg', 16, '1', '七匹狼狼文化的理念是勇敢，忠诚，沟通，力量，团队，不屈，自信。追逐人生，男人不止一面。'),
-(26, 'INMAN/茵曼', '/thinkmao/Uploads/brand/201301/5107656d6ce2c.png', 36, '1', ' 茵曼-棉麻艺术家，素雅而简洁、个性而不张扬。倡导自然、写意、清新的现代都市生活方式。     '),
-(27, 'Meters Bonwe/美特斯邦威', '/thinkmao/Uploads/brand/201301/510765fc8a9d7.png', 15, '1', '16~25岁活力时尚的年轻人群,倡导青春和个性的时尚品牌形象,带给广大消费者富有活力的休闲品牌!'),
-(28, 'Goelia/歌莉娅', '/thinkmao/Uploads/brand/201301/5107663c216b4.jpg', 39, '1', '歌莉娅，自1995年诞生以来，在持续超过10年的环球之旅中，发现、探索、采撷，将潮流与各地文化融合。          '),
-(29, 'Basic House/百家好', '/thinkmao/Uploads/brand/201301/510766d0e351e.jpg', 37, '1', '以“NOT BIG,BUT GOOD”为品牌座右铭，成为广大中国消费者钟爱的服装品牌。      '),
-(30, 'PEACEBIRD/太平鸟', '/thinkmao/Uploads/brand/201301/510767134ca28.jpg', 40, '1', '太平鸟PEACEBIRD时装追求理性、简约、休闲、时尚的设计理念，倡导时尚理念，引导时尚生活品质。'),
-(31, 'Eifini/伊芙丽', '/thinkmao/Uploads/brand/201301/510767506a948.jpg', 15, '1', '   法式优雅、自信、自然是eifini一直倡导的品牌灵魂，并以此来诠释现代女性时尚自主、精致优雅的形象。               \r\n                       '),
-(32, 'OSA', '/thinkmao/Uploads/brand/201301/510767eaab4f1.png', 15, '1', 'O.SA是专注时尚的女装品牌，坚持做白领的时尚家。             '),
-(33, 'Jack Jones/杰克琼斯', '/thinkmao/Uploads/brand/201301/5108b4cff0f65.png', 17, '1', 'Jack Jones的设计迎合了国际大都市男士的生活品位，他们喜欢一种独特、轮廓鲜明而朴实的风格。               \r\n                       '),
-(34, 'Wanlima/万里马', '/thinkmao/Uploads/brand/201301/5108bfc978214.jpg', 16, '1', '万里马始于1989年，知名高端皮具品牌，以其卓越品质而享誉世界，他象征自由、时尚、自信的生活方式。'),
-(35, '浪莎', '/thinkmao/Uploads/brand/201301/5108c053a3af1.png', 16, '1', '浪莎是中国驰名商标、中国名牌产品、产品质量国家免检；性感，品质是打造理念！'),
-(36, 'K-boxing/劲霸', '/thinkmao/Uploads/brand/201301/5108cafa4d27f.png', 74, '1', '劲霸"专注茄克，忠于男人"，演绎睿智、激情的品牌内涵，融入经典时尚的领先设计元素，让每一个你更有型             '),
-(37, 'Septwolves/七匹狼', '/thinkmao/Uploads/brand/201301/5108cb41201f2.jpg', 69, '1', '七匹狼狼文化的理念是勇敢，忠诚，沟通，力量，团队，不屈，自信。追逐人生，男人不止一面。       '),
-(38, '太品鸟', '/thinkmao/Uploads/brand/201301/5108cbc1ad55e.jpg', 17, '1', '太平鸟PEACEBIRD时装追求理性、简约、休闲、时尚的设计理念，倡导时尚理念，引导时尚生活品质。    '),
-(39, 'Qipai/柒牌', '/thinkmao/Uploads/brand/201301/5108cbfee8cef.png', 17, '1', '柒牌是以时尚中华为产品主线，追求国际化和生活化，彰显高雅，自信的男装品牌              '),
-(40, 'Firs/杉杉', '/thinkmao/Uploads/brand/201301/5108cc4654ad2.jpg', 17, '1', '中国驰名服装品牌“杉杉”，产品以“品质、品味”塑造男士气派，杉杉西服以及衬衫更是中外驰名。                        \r\n                       '),
-(41, 'Lilanz/利郎', '/thinkmao/Uploads/brand/201301/5108cc830219b.png', 17, '1', '“首倡“商务休闲”男装概念,以简约而不简单”为设计哲学。'),
-(42, 'Lilanz/利郎', '/thinkmao/Uploads/brand/201301/5108cccbd6aa3.png', 17, '1', '“首倡“商务休闲”男装概念,以简约而不简单”为设计哲学。'),
-(43, 'Levi’s/李维斯', '/thinkmao/Uploads/brand/201301/5108cd38ed801.png', 17, '1', '牛仔裤行业的世界第一品牌，以其个性潮流的设计风格延续到手表配饰，为Levis迷带来更多潮流选择。        \r\n                       '),
-(44, '芬腾', '/thinkmao/Uploads/brand/201301/5108cd8c02413.png', 18, '1', '                           \r\n                       '),
-(45, '雪俐', '/thinkmao/Uploads/brand/201301/5108cde3746b5.png', 18, '1', '                           \r\n                       '),
-(46, '安之伴', '/thinkmao/Uploads/brand/201301/5108ce544c38e.png', 18, '1', '                           \r\n                       '),
-(47, '睦隆世家', '/thinkmao/Uploads/brand/201301/5108ce92a20a0.png', 18, '1', '                           \r\n                       '),
-(48, '秋鹿', '/thinkmao/Uploads/brand/201301/5108cf297e4d3.png', 18, '1', '                           \r\n                       '),
-(49, 'Sweet Dream/美梦', '/thinkmao/Uploads/brand/201301/5108cf5ea8509.png', 18, '1', '                           \r\n                       '),
-(50, '南极人', '/thinkmao/Uploads/brand/201301/5108cfa0b7962.png', 19, '1', '                           \r\n                       '),
-(51, '北极绒', '/thinkmao/Uploads/brand/201301/5108d003cca1f.png', 18, '1', '                           \r\n                       '),
-(52, '爱慕', '/thinkmao/Uploads/brand/201301/5108d035d09e1.png', 19, '1', '                           \r\n                       '),
-(53, '古今', '/thinkmao/Uploads/brand/201301/5108d077e36f0.jpg', 19, '1', '                           \r\n                       '),
-(54, '七匹狼', '/thinkmao/Uploads/brand/201301/5108d0f8a3c0c.png', 19, '1', '                           \r\n                       '),
-(55, 'Gainreel/歌瑞尔', '/thinkmao/Uploads/brand/201301/5108d13266cbc.png', 19, '1', '                           \r\n                       '),
-(56, '曼妮芬', '/thinkmao/Uploads/brand/201301/5108d1bb2407b.png', 19, '1', '                           \r\n                       '),
-(57, '猫人', '/thinkmao/Uploads/brand/201301/5108d22d5b3b2.png', 19, '1', '                           \r\n                       '),
-(58, '夏娃之秀', '/thinkmao/Uploads/brand/201301/5108d2a59e271.png', 19, '1', '                           \r\n                       '),
-(59, '安莉芳', '/thinkmao/Uploads/brand/201301/5108d311e6968.png', 19, '1', '                           \r\n                       '),
-(60, '挺美', '/thinkmao/Uploads/brand/201301/5108d35332172.jpg', 19, '1', '                           \r\n                       '),
-(61, '俞兆林', '/thinkmao/Uploads/brand/201301/5108d38e9a2ad.png', 14, '1', '                           \r\n                       '),
-(62, '纤丝鸟', '/thinkmao/Uploads/brand/201301/5108d3e1f2069.jpg', 19, '1', '                           \r\n                       ');
+(16, '波司登', '/thinkmao/Uploads/brand/201301/51024e2bcf5ca.jpg', '41|38|85|77|40|69', '1', '                                 波司登以轻、薄、美使原来的厚、重、肿的羽绒服形象焕然一新，带动了整个羽绒服行业向时装化、休闲化的发展               \r\n                                              '),
+(17, 'Ochirly', '/thinkmao/Uploads/brand/201301/51024eca720e9.jpg', '47|49|45|37|54|51|59|34|35|42', '1', '                                   Ochirly 以奢华设计灵感，完美融合欧洲魅力与时尚艺术，优雅摩登，无尽灵感。  \r\n                                              '),
+(18, 'ONLY', '/thinkmao/Uploads/brand/201301/51024f0642e78.jpg', '51|59|36|37|50|46|44', '1', '                              ONLY产品个性突出，适合参加聚会和社交，让大胆而独立的都市女孩通过服饰表现特立独行的自我。                             '),
+(19, 'Uniqlo', '/thinkmao/Uploads/brand/201301/51024f6c49fdc.jpg', '15', '1', ' 为了让所有的人都能穿上高品质的、简约自然的、易于搭配的休闲服装而努力的著名国际休闲品牌。                          \r\n                       '),
+(20, '韩都衣舍', '/thinkmao/Uploads/brand/201301/51024f96e2b7e.jpg', '15', '1', '韩都衣舍秉承韩风快时尚这一理念，将韩国的时尚元素引入国内,为中国的顾客提供最时尚的韩国风格服饰'),
+(21, 'Uniqlo', '/thinkmao/Uploads/brand/201301/51024fe7bd26b.jpg', '15', '1', ' 为了让所有的人都能穿上高品质的、简约自然的、易于搭配的休闲服装而努力的著名国际休闲品牌。                          \r\n                       '),
+(22, '裂帛', '/thinkmao/Uploads/brand/201301/5102502fb4305.jpg', '35|37|59|43|39|45|51', '1', '                              裂帛，中国知名设计师品牌，主营狂喜、神秘、流浪、异域、民族，打造原创女装服饰新时尚。                                        '),
+(23, '秋水伊人', '/thinkmao/Uploads/brand/201301/510250712a4a8.jpg', '35|38|45|43|15|49|59|36|42', '1', '                                                              秋水伊人品通过设计师优雅、浪漫的设计表达手法，充分演绎都市淑女时尚经典又精致优雅的着衣风格。                         \r\n                                                                     '),
+(24, 'Cartelo', '/thinkmao/Uploads/brand/201301/510250c8c8d21.jpg', '16', '1', '       卡帝乐鳄鱼是最早进入中国的世界知名品牌之一；公司拥有55年悠久历史；曾连续三年保持了T恤衫全国销量第一。                    \r\n                       '),
+(25, 'Septwolves', '/thinkmao/Uploads/brand/201301/51025161e8846.jpg', '16', '1', '七匹狼狼文化的理念是勇敢，忠诚，沟通，力量，团队，不屈，自信。追逐人生，男人不止一面。'),
+(26, 'INMAN/茵曼', '/thinkmao/Uploads/brand/201301/5107656d6ce2c.png', '38|60|49|46|59', '1', '                               茵曼-棉麻艺术家，素雅而简洁、个性而不张扬。倡导自然、写意、清新的现代都市生活方式。                            '),
+(27, 'Meters Bonwe/美特斯邦威', '/thinkmao/Uploads/brand/201301/510765fc8a9d7.png', '15', '1', '16~25岁活力时尚的年轻人群,倡导青春和个性的时尚品牌形象,带给广大消费者富有活力的休闲品牌!'),
+(28, 'Goelia/歌莉娅', '/thinkmao/Uploads/brand/201301/5107663c216b4.jpg', '47|51|39', '1', '                              歌莉娅，自1995年诞生以来，在持续超过10年的环球之旅中，发现、探索、采撷，将潮流与各地文化融合。                                 '),
+(29, 'Basic House/百家好', '/thinkmao/Uploads/brand/201301/510766d0e351e.jpg', '37', '1', '以“NOT BIG,BUT GOOD”为品牌座右铭，成为广大中国消费者钟爱的服装品牌。      '),
+(30, 'PEACEBIRD/太平鸟', '/thinkmao/Uploads/brand/201301/510767134ca28.jpg', '40', '1', '太平鸟PEACEBIRD时装追求理性、简约、休闲、时尚的设计理念，倡导时尚理念，引导时尚生活品质。'),
+(31, 'Eifini/伊芙丽', '/thinkmao/Uploads/brand/201301/510767506a948.jpg', '51|59|34|46|42|52|104|43|93|50', '1', '                                 法式优雅、自信、自然是eifini一直倡导的品牌灵魂，并以此来诠释现代女性时尚自主、精致优雅的形象。               \r\n                                              '),
+(32, 'OSA', '/thinkmao/Uploads/brand/201301/510767eaab4f1.png', '15', '1', 'O.SA是专注时尚的女装品牌，坚持做白领的时尚家。             '),
+(33, 'Jack Jones/杰克琼斯', '/thinkmao/Uploads/brand/201301/5108b4cff0f65.png', '17', '1', 'Jack Jones的设计迎合了国际大都市男士的生活品位，他们喜欢一种独特、轮廓鲜明而朴实的风格。               \r\n                       '),
+(34, 'Wanlima/万里马', '/thinkmao/Uploads/brand/201301/5108bfc978214.jpg', '16', '1', '万里马始于1989年，知名高端皮具品牌，以其卓越品质而享誉世界，他象征自由、时尚、自信的生活方式。'),
+(35, '浪莎', '/thinkmao/Uploads/brand/201301/5108c053a3af1.png', '16', '1', '浪莎是中国驰名商标、中国名牌产品、产品质量国家免检；性感，品质是打造理念！'),
+(36, 'K-boxing/劲霸', '/thinkmao/Uploads/brand/201301/5108cafa4d27f.png', '74', '1', '劲霸"专注茄克，忠于男人"，演绎睿智、激情的品牌内涵，融入经典时尚的领先设计元素，让每一个你更有型             '),
+(37, 'Septwolves/七匹狼', '/thinkmao/Uploads/brand/201301/5108cb41201f2.jpg', '69', '1', '七匹狼狼文化的理念是勇敢，忠诚，沟通，力量，团队，不屈，自信。追逐人生，男人不止一面。       '),
+(38, '太品鸟', '/thinkmao/Uploads/brand/201301/5108cbc1ad55e.jpg', '17', '1', '太平鸟PEACEBIRD时装追求理性、简约、休闲、时尚的设计理念，倡导时尚理念，引导时尚生活品质。    '),
+(39, 'Qipai/柒牌', '/thinkmao/Uploads/brand/201301/5108cbfee8cef.png', '17', '1', '柒牌是以时尚中华为产品主线，追求国际化和生活化，彰显高雅，自信的男装品牌              '),
+(40, 'Firs/杉杉', '/thinkmao/Uploads/brand/201301/5108cc4654ad2.jpg', '17', '1', '中国驰名服装品牌“杉杉”，产品以“品质、品味”塑造男士气派，杉杉西服以及衬衫更是中外驰名。                        \r\n                       '),
+(41, 'Lilanz/利郎', '/thinkmao/Uploads/brand/201301/5108cc830219b.png', '17', '1', '“首倡“商务休闲”男装概念,以简约而不简单”为设计哲学。'),
+(42, 'Lilanz/利郎', '/thinkmao/Uploads/brand/201301/5108cccbd6aa3.png', '17', '1', '“首倡“商务休闲”男装概念,以简约而不简单”为设计哲学。'),
+(43, 'Levi’s/李维斯', '/thinkmao/Uploads/brand/201301/5108cd38ed801.png', '17', '1', '牛仔裤行业的世界第一品牌，以其个性潮流的设计风格延续到手表配饰，为Levis迷带来更多潮流选择。        \r\n                       '),
+(44, '芬腾', '/thinkmao/Uploads/brand/201301/5108cd8c02413.png', '18', '1', '                           \r\n                       '),
+(45, '雪俐', '/thinkmao/Uploads/brand/201301/5108cde3746b5.png', '18', '1', '                           \r\n                       '),
+(46, '安之伴', '/thinkmao/Uploads/brand/201301/5108ce544c38e.png', '18', '1', '                           \r\n                       '),
+(47, '睦隆世家', '/thinkmao/Uploads/brand/201301/5108ce92a20a0.png', '18', '1', '                           \r\n                       '),
+(48, '秋鹿', '/thinkmao/Uploads/brand/201301/5108cf297e4d3.png', '18', '1', '                           \r\n                       '),
+(49, 'Sweet Dream/美梦', '/thinkmao/Uploads/brand/201301/5108cf5ea8509.png', '18', '1', '                           \r\n                       '),
+(50, '南极人', '/thinkmao/Uploads/brand/201301/5108cfa0b7962.png', '19', '1', '                           \r\n                       '),
+(51, '北极绒', '/thinkmao/Uploads/brand/201301/5108d003cca1f.png', '18', '1', '                           \r\n                       '),
+(52, '爱慕', '/thinkmao/Uploads/brand/201301/5108d035d09e1.png', '19', '1', '                           \r\n                       '),
+(53, '古今', '/thinkmao/Uploads/brand/201301/5108d077e36f0.jpg', '19', '1', '                           \r\n                       '),
+(54, '七匹狼', '/thinkmao/Uploads/brand/201301/5108d0f8a3c0c.png', '19', '1', '                           \r\n                       '),
+(55, 'Gainreel/歌瑞尔', '/thinkmao/Uploads/brand/201301/5108d13266cbc.png', '19', '1', '                           \r\n                       '),
+(56, '曼妮芬', '/thinkmao/Uploads/brand/201301/5108d1bb2407b.png', '19', '1', '                           \r\n                       '),
+(57, '猫人', '/thinkmao/Uploads/brand/201301/5108d22d5b3b2.png', '78|69|37|34|51|19', '1', '                                                         \r\n                                              '),
+(58, '夏娃之秀', '/thinkmao/Uploads/brand/201301/5108d2a59e271.png', '19', '1', '                           \r\n                       '),
+(59, '安莉芳', '/thinkmao/Uploads/brand/201301/5108d311e6968.png', '19', '1', '                           \r\n                       '),
+(60, '挺美', '/thinkmao/Uploads/brand/201301/5108d35332172.jpg', '19', '1', '                           \r\n                       '),
+(61, '俞兆林', '/thinkmao/Uploads/brand/201301/5108d38e9a2ad.png', '14', '1', '                           \r\n                       '),
+(62, '纤丝鸟', '/thinkmao/Uploads/brand/201301/5108d3e1f2069.jpg', '19', '1', '                           \r\n                       '),
+(63, 'SOPHY/橡菲', '/thinkmao/Uploads/brand/201301/510a6fd08dbca.png', '38|36|15|39', '1', '橡菲着魔于创造完美皮衣，在制作工艺上不断突破，与国际同步，旨在打造最新潮流皮衣，让爱美女性梦想成真！');
 
 -- --------------------------------------------------------
 
@@ -301,7 +302,7 @@ CREATE TABLE IF NOT EXISTS `hd_goods` (
   KEY `bid` (`bid`),
   KEY `tid` (`tid`),
   KEY `aid` (`aid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品信息' AUTO_INCREMENT=25 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品信息' AUTO_INCREMENT=29 ;
 
 --
 -- 转存表中的数据 `hd_goods`
@@ -309,20 +310,24 @@ CREATE TABLE IF NOT EXISTS `hd_goods` (
 
 INSERT INTO `hd_goods` (`id`, `name`, `unit`, `number`, `price`, `pic`, `click`, `recommend`, `hot`, `time`, `cid`, `bid`, `tid`, `aid`, `mprice`, `sell_num`) VALUES
 (11, '【爆】Ochirly欧时力新女秋装圆领宽松长袖羊毛呢外套', '件', '3243243432', 499.00, '/thinkmao/Uploads/img_list/201301/5105e80d8eeb6.jpg', 34345, 1, 1, 1359341758, '15', 17, 8, 1, '1190', 232),
-(10, '【优】【爆】Ochirly女秋装长袖羊毛呢外套', '件', '1115340700133', 449.00, '/thinkmao/Uploads/img_list/201301/510290ad9a59d.jpg', 3421, 1, 1, 1359122607, '15', 17, 8, 1, '1390.00', 1203),
-(12, '秋水伊人2013 春装新款时尚淑女修身中袖镂空钩花大红连衣裙子女', '件', '32432432', 353.00, '/thinkmao/Uploads/img_list/201301/5105eb9ab68b4.jpg', 3432, 1, 0, 1359342513, '15|43|35', 23, 8, 1, '553.00', 432),
-(13, '秋水伊人2012秋冬装新品羊毛针织立体花装毛呢短外套', '件', '454221221223', 169.00, '/thinkmao/Uploads/img_list/201301/5105ee7c08b8e.jpg', 343, 1, 1, 1359343260, '15|36', 23, 8, 1, '458', 1243),
-(14, '2012秋冬装新款潮正品韩版超大毛领加厚皮草羽绒服外套女装中长款', '件', '32432433', 578.00, '/thinkmao/Uploads/img_list/201301/5108d874e73c6.jpg', 34532, 1, 1, 1359534560, '59|35|15', 17, 8, 1, '1160.00', 2133),
-(15, ' 尚古主义2012秋冬棉衣外套', '件', '3232', 4343.00, '/thinkmao/Uploads/img_list/201301/5108ded277bc6.jpg', 3232, 1, 1, 1359535939, '54|15|51', 20, 8, 1, '32344', 564),
-(16, '爆款 呢大衣 女 毛呢外套 冬装 韩版毛呢大衣 修身毛领呢子外套女', '件', '3243342', 323.00, '/thinkmao/Uploads/img_list/201301/5108f499801e1.jpg', 43, 1, 1, 1359541568, '59|34|15|7', 21, 8, 1, '4323', 0),
-(17, '玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825', '件', '45243214325', 433.00, '/thinkmao/Uploads/img_list/201301/5109125fb0b6c.jpg', 5434, 1, 1, 1359549777, '15|39|34|5', 31, 8, 1, '534', 0),
-(18, '顺丰包邮超大奢华毛领 修身 韩版 正品清仓 中长款羽绒服女008', '件', '354', 443.00, '/thinkmao/Uploads/img_list/201301/5109172ac896b.jpg', 4343, 1, 1, 1359550272, '34|51|15', 20, 8, 1, '532', 0),
-(19, '奕生缘2012新款正品獭兔大毛领修身白色清仓羽绒服中长款女潮大码', '件', '43253454', 434.00, '/thinkmao/Uploads/img_list/201301/510917f83e3e5.jpg', 7656, 1, 1, 1359550750, '55|15|59', 22, 8, 1, '643', 0),
-(20, ' 朗曼笛 2012冬装新款羽绒服女装正品清仓 反季大毛领中长款 潮', '件', '45245432', 4343.00, '/thinkmao/Uploads/img_list/201301/51091a5191b2d.jpg', 434, 1, 1, 1359551412, '59|15|44|3', 32, 8, 1, '5644', 0),
-(21, '潮一洋2012冬新款獭兔毛领甜美带帽中长款女修身羽绒服清仓', '件', '345345345', 4535.00, '/thinkmao/Uploads/img_list/201301/51091c40f13d3.jpg', 323, 1, 1, 1359551849, '15|35', 31, 8, 1, '43244', 0),
-(22, ' 莫卡娜正品2012冬装新品女装韩版OL狐狸超大毛领修身中长款羽绒服', '件', '324324', 432.00, '/thinkmao/Uploads/img_list/201301/51091ff441e06.jpg', 534, 1, 1, 1359552525, '43|36|51|3', 16, 8, 1, '4323', 0),
-(23, ' 2012羽绒服清仓女 新款正品蕾丝花边冬装 帽带兔毛韩版中长款修', '件', '34344', 1243.00, '/thinkmao/Uploads/img_list/201301/510921c810d36.jpg', 434, 1, 1, 1359553033, '42|15|34|3', 22, 8, 1, '2433', 0),
-(24, ' 北极绒正品冬装羽绒服女中长款加厚外套狐狸大毛领清仓包邮', '件', '3213', 433.00, '/thinkmao/Uploads/img_list/201301/510923ec8604c.jpg', 323, 1, 1, 1359553539, '54|34|15', 31, 8, 1, '3423', 0);
+(10, '【优】【爆】Ochirly女秋装长袖羊毛呢外套', '件', '1115340700133', 449.00, '/thinkmao/Uploads/img_list/201301/510290ad9a59d.jpg', 3421, 1, 1, 1359122607, '15', 18, 8, 1, '1390.00', 1203),
+(12, '秋水伊人2013 春装新款时尚淑女修身中袖镂空钩花大红连衣裙子女', '件', '32432432', 353.00, '/thinkmao/Uploads/img_list/201301/5105eb9ab68b4.jpg', 3432, 1, 0, 1359342513, '15|43|35', 20, 8, 1, '553.00', 432),
+(13, '秋水伊人2012秋冬装新品羊毛针织立体花装毛呢短外套', '件', '454221221223', 169.00, '/thinkmao/Uploads/img_list/201301/5105ee7c08b8e.jpg', 343, 1, 1, 1359343260, '15|36', 19, 8, 1, '458', 1243),
+(14, '2012秋冬装新款潮正品韩版超大毛领加厚皮草羽绒服外套女装中长款', '件', '32432433', 578.00, '/thinkmao/Uploads/img_list/201301/5108d874e73c6.jpg', 34532, 1, 1, 1359534560, '59|35|15', 21, 8, 1, '1160.00', 2133),
+(15, ' 尚古主义2012秋冬棉衣外套', '件', '3232', 4343.00, '/thinkmao/Uploads/img_list/201301/5108ded277bc6.jpg', 3232, 1, 1, 1359535939, '54|15|51', 22, 8, 1, '32344', 564),
+(16, '爆款 呢大衣 女 毛呢外套 冬装 韩版毛呢大衣 修身毛领呢子外套女', '件', '3243342', 323.00, '/thinkmao/Uploads/img_list/201301/5108f499801e1.jpg', 43, 1, 1, 1359541568, '59|34|15|7', 23, 8, 1, '4323', 678),
+(17, '玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825', '件', '45243214325', 433.00, '/thinkmao/Uploads/img_list/201301/5109125fb0b6c.jpg', 5434, 1, 1, 1359549777, '15|39|34|5', 24, 8, 1, '534', 356),
+(18, '顺丰包邮超大奢华毛领 修身 韩版 正品清仓 中长款羽绒服女008', '件', '354', 443.00, '/thinkmao/Uploads/img_list/201301/5109172ac896b.jpg', 4343, 1, 1, 1359550272, '34|51|15', 25, 8, 1, '532', 2456),
+(19, '奕生缘2012新款正品獭兔大毛领修身白色清仓羽绒服中长款女潮大码', '件', '43253454', 434.00, '/thinkmao/Uploads/img_list/201301/510917f83e3e5.jpg', 7656, 1, 1, 1359550750, '55|15|59', 26, 8, 1, '643', 54567),
+(20, ' 朗曼笛 2012冬装新款羽绒服女装正品清仓 反季大毛领中长款 潮', '件', '45245432', 4343.00, '/thinkmao/Uploads/img_list/201301/51091a5191b2d.jpg', 434, 1, 1, 1359551412, '59|15|44|3', 27, 8, 1, '5644', 7876),
+(21, '潮一洋2012冬新款獭兔毛领甜美带帽中长款女修身羽绒服清仓', '件', '345345345', 4535.00, '/thinkmao/Uploads/img_list/201301/51091c40f13d3.jpg', 323, 1, 1, 1359551849, '15|35', 28, 8, 1, '43244', 4367),
+(22, ' 莫卡娜正品2012冬装新品女装韩版OL狐狸超大毛领修身中长款羽绒服', '件', '324324', 432.00, '/thinkmao/Uploads/img_list/201301/51091ff441e06.jpg', 534, 1, 1, 1359552525, '43|36|51|3', 29, 8, 1, '4323', 2557),
+(23, ' 2012羽绒服清仓女 新款正品蕾丝花边冬装 帽带兔毛韩版中长款修', '件', '34344', 1243.00, '/thinkmao/Uploads/img_list/201301/510921c810d36.jpg', 434, 1, 1, 1359553033, '42|15|34|3', 30, 8, 1, '2433', 9786),
+(24, ' 北极绒正品冬装羽绒服女中长款加厚外套狐狸大毛领清仓包邮', '件', '3213', 433.00, '/thinkmao/Uploads/img_list/201301/510923ec8604c.jpg', 323, 1, 1, 1359553539, '54|34|15', 31, 8, 1, '3423', 2446),
+(25, '橡菲2012秋冬新品酷感双门襟拼贴PU皮衣女短款修身外套21G3732', '件', '234234324323', 323.00, '/thinkmao/Uploads/img_list/201302/510abaec6cf5b.jpg', 434, 1, 1, 1359657737, '15|39|50|5', 19, 8, 1, '456', 5345),
+(26, ' 2012秋冬新款潮品牌正品加厚超大毛领修身羽绒服外套女中长款清', '件', '4354353', 234.00, '/thinkmao/Uploads/img_list/201302/510b3f6f14e2d.jpg', 45, 1, 1, 1359691650, '59|51|39|4', 20, 8, 1, '5433', 2467),
+(27, 'Ochirly欧时力2012新女秋装纯棉波点条纹薄外套开衫1124033910', '件', '4535436', 564.00, '/thinkmao/Uploads/img_list/201302/510cb3479194c.jpg', 7676, 1, 1, 1359786872, '15|59', 20, 8, 1, '765', 0),
+(28, '韩都衣舍韩国2013春装新款女装纯色宽松带帽休闲套装EJ0955廵', '件', '435435435', 602.00, '/thinkmao/Uploads/img_list/201302/510cb90ab4e5d.jpg', 645, 1, 1, 1359788320, '15|34|51|5', 20, 8, 1, '502', 0);
 
 -- --------------------------------------------------------
 
@@ -339,7 +344,7 @@ CREATE TABLE IF NOT EXISTS `hd_goods_attr` (
   PRIMARY KEY (`id`),
   KEY `aid` (`aid`),
   KEY `gid` (`gid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品属性值' AUTO_INCREMENT=506 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品属性值' AUTO_INCREMENT=621 ;
 
 --
 -- 转存表中的数据 `hd_goods_attr`
@@ -762,7 +767,122 @@ INSERT INTO `hd_goods_attr` (`id`, `value`, `price`, `gid`, `aid`) VALUES
 (502, '白色', 54.00, 24, 38),
 (503, '粉红', 54.00, 24, 38),
 (504, '灰色', 343.00, 24, 38),
-(505, '蓝色', 23.00, 24, 38);
+(505, '蓝色', 23.00, 24, 38),
+(506, 'uniqlo', 0.00, 25, 20),
+(507, '涤丝纺', 0.00, 25, 19),
+(508, '2012', 0.00, 25, 18),
+(509, '皮', 0.00, 25, 17),
+(510, '黑皮', 0.00, 25, 16),
+(511, '无', 0.00, 25, 15),
+(512, '英伦', 0.00, 25, 14),
+(513, '直筒型', 0.00, 25, 13),
+(514, '实拍', 0.00, 25, 12),
+(515, '加厚', 0.00, 25, 21),
+(516, '短款(40cm<衣长≤50cm)', 0.00, 25, 22),
+(517, '甜美', 0.00, 25, 23),
+(518, '常规袖', 0.00, 25, 24),
+(519, '纽扣', 0.00, 25, 25),
+(520, '黑色', 0.00, 25, 27),
+(521, '2434324', 0.00, 25, 28),
+(522, '长袖', 0.00, 25, 29),
+(523, '拉链', 0.00, 25, 30),
+(524, '30%', 0.00, 25, 31),
+(525, '500-800', 0.00, 25, 32),
+(526, '中码', 0.00, 25, 33),
+(527, 'X', 34.00, 25, 37),
+(528, 'XL', 54.00, 25, 37),
+(529, 'XXL', 21.00, 25, 37),
+(530, 'XXXL', 54.00, 25, 37),
+(531, '白色', 64.00, 25, 38),
+(532, '灰色', 78.00, 25, 38),
+(533, '红色', 34.00, 25, 38),
+(534, '粉红', 43.00, 25, 38),
+(535, 'ordlsa', 0.00, 26, 20),
+(536, '涤丝纺', 0.00, 26, 19),
+(537, '2011', 0.00, 26, 18),
+(538, '面论', 0.00, 26, 17),
+(539, '纯色', 0.00, 26, 16),
+(540, '圆领', 0.00, 26, 15),
+(541, '英伦', 0.00, 26, 14),
+(542, '修身型', 0.00, 26, 13),
+(543, '实拍', 0.00, 26, 12),
+(544, '加厚', 0.00, 26, 21),
+(545, '短款(40cm<衣长≤50cm)', 0.00, 26, 22),
+(546, '甜美', 0.00, 26, 23),
+(547, '常规袖', 0.00, 26, 24),
+(548, '纽扣', 0.00, 26, 25),
+(549, '鸭绒', 0.00, 26, 26),
+(550, '蓝色', 0.00, 26, 27),
+(551, '长袖', 0.00, 26, 29),
+(552, '纽扣', 0.00, 26, 30),
+(553, '30%', 0.00, 26, 31),
+(554, '500-800', 0.00, 26, 32),
+(555, '中码', 0.00, 26, 33),
+(556, 'XL', 32.00, 26, 37),
+(557, 'X', 43.00, 26, 37),
+(558, 'XXXL', 65.00, 26, 37),
+(559, 'XXL', 12.00, 26, 37),
+(560, '红色', 54.00, 26, 38),
+(561, '白色', 75.00, 26, 38),
+(562, '粉红', 23.00, 26, 38),
+(563, '蓝色', 65.00, 26, 38),
+(564, '韩都衣舍', 0.00, 27, 20),
+(565, '蕾丝', 0.00, 27, 19),
+(566, '2012', 0.00, 27, 18),
+(567, '面论', 0.00, 27, 17),
+(568, '黄灵图', 0.00, 27, 16),
+(569, '沅陵', 0.00, 27, 15),
+(570, '英伦', 0.00, 27, 14),
+(571, '直筒型', 0.00, 27, 13),
+(572, '实拍', 0.00, 27, 12),
+(573, '超薄', 0.00, 27, 21),
+(574, '短款(40cm<衣长≤50cm)', 0.00, 27, 22),
+(575, '街头', 0.00, 27, 23),
+(576, '毛袖', 0.00, 27, 24),
+(577, '纽扣', 0.00, 27, 25),
+(578, '鸭绒', 0.00, 27, 26),
+(579, '黄色', 0.00, 27, 27),
+(580, '7263763332', 0.00, 27, 28),
+(581, '摆袖', 0.00, 27, 29),
+(582, '拉链', 0.00, 27, 30),
+(583, '78%', 0.00, 27, 31),
+(584, '800-1000', 0.00, 27, 32),
+(585, '大码', 0.00, 27, 33),
+(586, '韩都衣舍', 0.00, 27, 34),
+(587, 'X', 12.00, 27, 37),
+(588, 'XXL', 34.00, 27, 37),
+(589, 'XL', 56.00, 27, 37),
+(590, '蓝色', 76.00, 27, 38),
+(591, '粉红', 32.00, 27, 38),
+(592, '红色', 54.00, 27, 38),
+(593, '韩都衣舍', 0.00, 28, 20),
+(594, '涤丝纺', 0.00, 28, 19),
+(595, '2012', 0.00, 28, 18),
+(596, '棉纶', 0.00, 28, 17),
+(597, '纯色', 0.00, 28, 16),
+(598, '圆领', 0.00, 28, 15),
+(599, '英伦', 0.00, 28, 14),
+(600, '修身型', 0.00, 28, 13),
+(601, '实拍', 0.00, 28, 12),
+(602, '超薄', 0.00, 28, 21),
+(603, '常规款(50cm<衣长≤65cm)', 0.00, 28, 22),
+(604, '甜美', 0.00, 28, 23),
+(605, '毛袖', 0.00, 28, 24),
+(606, '纽扣', 0.00, 28, 25),
+(607, '鸭绒', 0.00, 28, 26),
+(608, '黄色', 0.00, 28, 27),
+(609, '53453344', 0.00, 28, 28),
+(610, '短袖', 0.00, 28, 29),
+(611, '拉链', 0.00, 28, 30),
+(612, '78%', 0.00, 28, 31),
+(613, '800-1000', 0.00, 28, 32),
+(614, '大码', 0.00, 28, 33),
+(615, 'XL', 21.00, 28, 37),
+(616, 'X', 33.00, 28, 37),
+(617, 'XXXL', 54.00, 28, 37),
+(618, '蓝色', 54.00, 28, 38),
+(619, '红色', 54.00, 28, 38),
+(620, '灰色', 653.00, 28, 38);
 
 -- --------------------------------------------------------
 
@@ -780,7 +900,7 @@ CREATE TABLE IF NOT EXISTS `hd_goods_intro` (
   `gid` int(10) unsigned NOT NULL COMMENT '所属商品ID',
   PRIMARY KEY (`id`),
   KEY `gid` (`gid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品介绍' AUTO_INCREMENT=25 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='商品介绍' AUTO_INCREMENT=29 ;
 
 --
 -- 转存表中的数据 `hd_goods_intro`
@@ -802,7 +922,12 @@ INSERT INTO `hd_goods_intro` (`id`, `mini`, `medium`, `max`, `intro`, `service`,
 (21, '/thinkmao/Uploads/img_list/201301/mini51091c79e99e5.jpg|/thinkmao/Uploads/img_list/201301/mini51091c67781a6.jpg|/thinkmao/Uploads/img_list/201301/mini51091c528736d.jpg|/thinkmao/Uploads/img_list/201301/mini51091c3d0bd88.jpg', '/thinkmao/Uploads/img_list/201301/max51091c79e99e5.jpg|/thinkmao/Uploads/img_list/201301/max51091c67781a6.jpg|/thinkmao/Uploads/img_list/201301/max51091c528736d.jpg|/thinkmao/Uploads/img_list/201301/max51091c3d0bd88.jpg', '/thinkmao/Uploads/img_list/201301/51091c79e99e5.jpg|/thinkmao/Uploads/img_list/201301/51091c67781a6.jpg|/thinkmao/Uploads/img_list/201301/51091c528736d.jpg|/thinkmao/Uploads/img_list/201301/51091c3d0bd88.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/29131359551702.jpg" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/57131359551709.jpg" border="0" /><img src="/thinkmao/Public/Ueditor/php/upload/79491359551722.jpg" border="0" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/38831359551729.jpg" class="selected" align="absmiddle" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/4041359551738.jpg" class="selected" align="absmiddle" /><br /></p><p><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201301/51091c8e6c881.png" title="玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825-tmall.com天猫.png" /><br /></p>', 21),
 (22, '/thinkmao/Uploads/img_list/201301/mini51091fad4a2cd.jpg|/thinkmao/Uploads/img_list/201301/mini51091f8ff27cb.jpg|/thinkmao/Uploads/img_list/201301/mini51091f8457c02.jpg', '/thinkmao/Uploads/img_list/201301/max51091fad4a2cd.jpg|/thinkmao/Uploads/img_list/201301/max51091f8ff27cb.jpg|/thinkmao/Uploads/img_list/201301/max51091f8457c02.jpg', '/thinkmao/Uploads/img_list/201301/51091fad4a2cd.jpg|/thinkmao/Uploads/img_list/201301/51091f8ff27cb.jpg|/thinkmao/Uploads/img_list/201301/51091f8457c02.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/41611359552305.jpg" align="absMiddle" /><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201301/5109200653835.png" title="玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825-tmall.com天猫.png" /><br /></p>', 22),
 (23, '/thinkmao/Uploads/img_list/201301/mini510921f03211d.jpg|/thinkmao/Uploads/img_list/201301/mini510921e8d3b7b.jpg|/thinkmao/Uploads/img_list/201301/mini510921e1765e7.jpg|/thinkmao/Uploads/img_list/201301/mini510921db30399.jpg', '/thinkmao/Uploads/img_list/201301/max510921f03211d.jpg|/thinkmao/Uploads/img_list/201301/max510921e8d3b7b.jpg|/thinkmao/Uploads/img_list/201301/max510921e1765e7.jpg|/thinkmao/Uploads/img_list/201301/max510921db30399.jpg', '/thinkmao/Uploads/img_list/201301/510921f03211d.jpg|/thinkmao/Uploads/img_list/201301/510921e8d3b7b.jpg|/thinkmao/Uploads/img_list/201301/510921e1765e7.jpg|/thinkmao/Uploads/img_list/201301/510921db30399.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/30681359552814.jpg" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/15881359552827.jpg" align="absMiddle" /><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201301/510922037d0d3.png" title="玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825-tmall.com天猫.png" /><br /></p>', 23),
-(24, '/thinkmao/Uploads/img_list/201301/mini510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/mini510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/mini510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/mini510923daaa10d.jpg', '/thinkmao/Uploads/img_list/201301/max510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/max510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/max510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/max510923daaa10d.jpg', '/thinkmao/Uploads/img_list/201301/510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/510923daaa10d.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/18031359553350.jpg" height="410" width="750" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/16811359553358.jpg" height="418" width="750" /><img src="/thinkmao/Public/Ueditor/php/upload/87611359553368.jpg" height="372" width="750" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/16731359553375.jpg" align="middle" /><img src="/thinkmao/Public/Ueditor/php/upload/72971359553383.jpg" align="middle" /><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201301/510923fcc5c85.png" title="玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825-tmall.com天猫.png" /><br /></p>', 24);
+(24, '/thinkmao/Uploads/img_list/201301/mini510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/mini510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/mini510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/mini510923daaa10d.jpg', '/thinkmao/Uploads/img_list/201301/max510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/max510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/max510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/max510923daaa10d.jpg', '/thinkmao/Uploads/img_list/201301/510923e716f49.jpg|/thinkmao/Uploads/img_list/201301/510923e20b75f.jpg|/thinkmao/Uploads/img_list/201301/510923de1860f.jpg|/thinkmao/Uploads/img_list/201301/510923daaa10d.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/18031359553350.jpg" height="410" width="750" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/16811359553358.jpg" height="418" width="750" /><img src="/thinkmao/Public/Ueditor/php/upload/87611359553368.jpg" height="372" width="750" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/16731359553375.jpg" align="middle" /><img src="/thinkmao/Public/Ueditor/php/upload/72971359553383.jpg" align="middle" /><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201301/510923fcc5c85.png" title="玥影 2012冬装新款 韩版时尚奢华貉子毛领中长款 羽绒服-Y120825-tmall.com天猫.png" /><br /></p>', 24),
+(25, '/thinkmao/Uploads/img_list/201302/mini510abae6c7579.jpg|/thinkmao/Uploads/img_list/201302/mini510abad739e05.jpg|/thinkmao/Uploads/img_list/201302/mini510abad278245.jpg|/thinkmao/Uploads/img_list/201302/mini510abacc16629.jpg', '/thinkmao/Uploads/img_list/201302/max510abae6c7579.jpg|/thinkmao/Uploads/img_list/201302/max510abad739e05.jpg|/thinkmao/Uploads/img_list/201302/max510abad278245.jpg|/thinkmao/Uploads/img_list/201302/max510abacc16629.jpg', '/thinkmao/Uploads/img_list/201302/510abae6c7579.jpg|/thinkmao/Uploads/img_list/201302/510abad739e05.jpg|/thinkmao/Uploads/img_list/201302/510abad278245.jpg|/thinkmao/Uploads/img_list/201302/510abacc16629.jpg', '<p><br /></p><p><img src="/thinkmao/Uploads/Editor/201302/510ab9aae9ea4.jpg" style="float:none;" title="T2zWKMXdtbXXXXXXXX_!!252363443 (1).jpg" /></p><p><img src="/thinkmao/Uploads/Editor/201302/510ab9abafdf2.jpg" style="float:none;" title="T2yqRyXXNOXXXXXXXX_!!252363443.jpg" /></p><p><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201302/510abaff0d207.png" title="service.png" /><br /></p>', 25),
+(26, '/thinkmao/Uploads/img_list/201302/mini510b3f6089e86.jpg|/thinkmao/Uploads/img_list/201302/mini510b3f5797446.jpg|/thinkmao/Uploads/img_list/201302/mini510b3f4b1487f.jpg', '/thinkmao/Uploads/img_list/201302/max510b3f6089e86.jpg|/thinkmao/Uploads/img_list/201302/max510b3f5797446.jpg|/thinkmao/Uploads/img_list/201302/max510b3f4b1487f.jpg', '/thinkmao/Uploads/img_list/201302/510b3f6089e86.jpg|/thinkmao/Uploads/img_list/201302/510b3f5797446.jpg|/thinkmao/Uploads/img_list/201302/510b3f4b1487f.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/97051359691444.jpg" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/43111359691413.jpg" /><br /></p><p><img style="margin:0px;float:none;" src="/thinkmao/Public/Ueditor/php/upload/34631359691390.jpg" align="absMiddle" /><br /></p><p><img style="margin:0px;width:750px;height:280px;float:none;" class="selected" src="/thinkmao/Public/Ueditor/php/upload/41631359691367.jpg" width="750" /><br /></p><p><img src="/thinkmao/Public/Ueditor/php/upload/35171359691373.jpg" align="absMiddle" /><br /></p><p><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201302/510b3f7d98418.png" title="service.png" /><br /></p>', 26),
+(27, '/thinkmao/Uploads/img_list/201302/mini510cb364a0d41.jpg|/thinkmao/Uploads/img_list/201302/mini510cb3530c6bb.jpg|/thinkmao/Uploads/img_list/201302/mini510cb34d9fe1d.jpg|/thinkmao/Uploads/img_list/201302/mini510cb340d1089.jpg', '/thinkmao/Uploads/img_list/201302/max510cb364a0d41.jpg|/thinkmao/Uploads/img_list/201302/max510cb3530c6bb.jpg|/thinkmao/Uploads/img_list/201302/max510cb34d9fe1d.jpg|/thinkmao/Uploads/img_list/201302/max510cb340d1089.jpg', '/thinkmao/Uploads/img_list/201302/510cb364a0d41.jpg|/thinkmao/Uploads/img_list/201302/510cb3530c6bb.jpg|/thinkmao/Uploads/img_list/201302/510cb34d9fe1d.jpg|/thinkmao/Uploads/img_list/201302/510cb340d1089.jpg', '<p><img src="/thinkmao/Public/Ueditor/php/upload/90681359786566.jpg" alt="模特展示图 - 正面" /><img src="/thinkmao/Public/Ueditor/php/upload/76411359786591.jpg" alt="模特示意图" /><br /></p><div style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;margin-bottom:10px;"><h3 style="margin:0px;padding:0px;height:24px;"><img src="/thinkmao/Public/Ueditor/php/upload/35091359786612.png" style="border:0px;vertical-align:top;" /></h3><div style="border-width:0px 1px 1px;border-right-style:solid;border-bottom-style:solid;border-left-style:solid;border-right-color:#db9347;border-bottom-color:#db9347;border-left-color:#db9347;padding:30px;"><p style="padding:0px 0px 0px 92px;line-height:30px;clear:both;margin-top:1.12em;margin-bottom:1.12em;"><em style="font-style:normal;display:block;float:left;width:102px;text-align:right;margin-left:-116px;">商品货号：</em>1124033910978</p><p style="padding:0px 0px 0px 92px;line-height:30px;clear:both;margin-top:1.12em;margin-bottom:1.12em;"><em style="font-style:normal;display:block;float:left;width:102px;text-align:right;margin-left:-116px;">商品原价：</em>599元</p><p style="padding:0px 0px 0px 92px;line-height:30px;clear:both;margin-top:1.12em;margin-bottom:1.12em;"><em style="font-style:normal;display:block;float:left;width:102px;text-align:right;margin-left:-116px;">产品面料：</em>面料1:棉100% 面料2:聚酯纤维65%聚酯溥膜纤维35% 绣花线:聚酯纤维100% 罗纹:棉82%锦纶18%</p><p style="padding:0px 0px 0px 92px;line-height:30px;clear:both;margin-top:1.12em;margin-bottom:1.12em;"><em style="font-style:normal;display:block;float:left;width:102px;text-align:right;margin-left:-116px;">纤维含量知识：</em>产品或产品的某一部分含有2种及以上的纤维时，除了许可不标注的纤维外，在标签上标明的每一种纤维含量允许偏差为5%，填充物的允许偏差为10%。</p><p style="padding:0px 0px 0px 92px;line-height:30px;clear:both;margin-top:1.12em;margin-bottom:1.12em;"><em style="display:block;float:left;width:92px;text-align:right;vertical-align:top;margin-left:-106px;">颜色：</em><img src="/thinkmao/Public/Ueditor/php/upload/89821359786622.jpg" width="110" height="165" style="border:0px;vertical-align:top;float:none;margin:0px 4px 0px 0px;padding:0px;" /></p></div></div><div style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;margin-bottom:10px;"></div><p><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201302/510cb37405fe8.png" title="service.png" /><br /></p>', 27);
+INSERT INTO `hd_goods_intro` (`id`, `mini`, `medium`, `max`, `intro`, `service`, `gid`) VALUES
+(28, '/thinkmao/Uploads/img_list/201302/mini510cb905527a0.jpg|/thinkmao/Uploads/img_list/201302/mini510cb8f4ee151.jpg|/thinkmao/Uploads/img_list/201302/mini510cb8efb7250.jpg', '/thinkmao/Uploads/img_list/201302/max510cb905527a0.jpg|/thinkmao/Uploads/img_list/201302/max510cb8f4ee151.jpg|/thinkmao/Uploads/img_list/201302/max510cb8efb7250.jpg', '/thinkmao/Uploads/img_list/201302/510cb905527a0.jpg|/thinkmao/Uploads/img_list/201302/510cb8f4ee151.jpg|/thinkmao/Uploads/img_list/201302/510cb8efb7250.jpg', '<div align="center" style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;"><table width="749" style="border-spacing:0px;border-color:black;margin:0px;font-family:宋体;color:#333333;font-size:12px;"><tbody><tr><td background="http://img02.taobaocdn.com/imgextra/i2/263817957/T2dUhPXfFaXXXXXXXX_!!263817957.jpg" colspan="2" height="29" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"> </td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">产品编码</td><td align="left" height="32" width="627" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td width="549" style="margin:0px;padding:0px;border-color:black;">EJ0955</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">产品颜色</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">灰色 黑色</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">产品尺码</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">S M L</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">产品面料</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">65%涤纶 35%棉</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">穿着季节</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">春、秋、冬三季都宜穿；春秋季单穿或做外套搭配T恤或背心穿着，冬天外可套羽绒服或棉衣。</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">洗涤说明</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">建议反面轻柔洗涤，不宜用热水清洗，悬挂晾干，分色洗涤，以免衣服染色。</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">设计亮点</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td style="margin:0px;padding:0px;border-color:black;">带帽开衫上衣，肩部的褶皱设计，袋鼠兜口袋，裤子的双层口袋，哈伦裤裤型，小脚裤口。</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">选款师推荐</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" height="40" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td height="55" width="610" style="margin:0px;padding:0px;border-color:black;">这款套装是春秋冬三季都适宜穿着的百搭套装，它纯色的设计大方自然，带帽的开衫上衣，可以自行搭配休闲风格的裤裤，肩部的褶皱设计，袋鼠兜口袋，金属质感的拉链，裤型独特，采用的双层口袋呈现出哈伦裤的宽松感觉，小脚的裤口显现迷人腿部曲线，兼具时尚气息又搭配随意的套装，值得每个MM拥有~</td></tr></tbody></table></td></tr><tr><td bgcolor="#f7f7f7" height="32" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">温馨提示</td><td align="left" height="32" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table align="center" border="0" cellpadding="0" cellspacing="0" width="620" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td height="25" width="611" style="margin:0px;padding:0px;border-color:black;">由于显示器与像素等因素可能会有些许的色差； 由于测量方法不同，可能会有1-3cm的允许范围内的色差</td></tr></tbody></table></td></tr></tbody></table></div><div align="center" style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;"><div align="center"><table width="749" style="border-spacing:0px;border-color:black;margin:30px 0px 0px;font-family:宋体;color:#333333;font-size:12px;"><tbody><tr><td background="http://img01.taobaocdn.com/imgextra/i1/263817957/T2y.dPXhNaXXXXXXXX_!!263817957.jpg" colspan="7" height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table border="0" cellpadding="0" cellspacing="0" height="26" width="260" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td align="middle" valign="bottom" style="margin:0px;padding:0px;border-color:black;"><span>单位:cm</span></td></tr></tbody></table></td></tr><tr><td height="30" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">上衣尺码</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">衣长</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">肩宽</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">胸围</td><td width="94" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">袖口围</td><td width="92" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">袖长</td><td height="28" width="102" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">下摆围</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">S</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">55</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">46</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">114</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">21</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">55</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">89</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">M</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">57</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">47</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">119</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">22</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">56</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">93</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">L</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">59</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">48</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">124</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">23</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">57</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">98</td></tr></tbody></table></div><div align="center"><table width="749" style="border-spacing:0px;border-color:black;margin:30px 0px 0px;font-family:宋体;color:#333333;font-size:12px;"><tbody><tr><td background="http://img01.taobaocdn.com/imgextra/i1/263817957/T2y.dPXhNaXXXXXXXX_!!263817957.jpg" colspan="7" height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"><table border="0" cellpadding="0" cellspacing="0" height="26" width="260" style="border-collapse:separate;border-spacing:0px;border-color:black;margin:0px;" class=" noBorderTable"><tbody><tr><td align="middle" valign="bottom" style="margin:0px;padding:0px;border-color:black;"><span>单位:cm</span></td></tr></tbody></table></td></tr><tr><td height="30" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">裤子尺码</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">腰围</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">臀围</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">大腿围</td><td width="94" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">裤口围</td><td width="92" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">裆高</td><td height="28" width="102" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">裤长</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">S</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">58</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">94</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">56</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">24</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">33.5</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">100</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">M</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">60</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">99</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">58</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">25</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">34.5</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">102</td></tr><tr><td height="28" width="120" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">L</td><td height="28" width="100" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">62</td><td height="28" width="105" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">102</td><td height="28" width="104" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">60</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">26</td><td style="margin:0px;padding:0px;border:1px solid #e6e6e6;">35.5</td><td height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">104</td></tr></tbody></table><table width="749" style="border-spacing:0px;border-color:black;margin:30px 0px 0px;font-family:宋体;color:#333333;font-size:12px;"><tbody><tr><td background="http://img03.taobaocdn.com/imgextra/i3/263817957/T2KUdPXhXaXXXXXXXX_!!263817957.jpg" colspan="5" height="28" style="margin:0px;padding:0px;border:1px solid #e6e6e6;"> </td></tr><tr><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">试穿人</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">身高cm/体重kg</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">三围cm</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">试穿尺码</td><td height="28" width="309" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">试穿感受</td></tr><tr><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">ELEN</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">155/47</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">80/68/80</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">S</td><td height="28" width="309" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">大小合适，上身效果很好</td></tr><tr><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">EVER</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">165/50</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">84/76/83</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">M</td><td height="28" width="309" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">穿上很合适，显身材</td></tr><tr><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">MARIE</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">167/58</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">88/80/85</td><td height="28" width="110" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">L</td><td height="28" width="309" style="margin:0px;padding:0px;border:1px solid #e6e6e6;">长度正好,显瘦</td></tr></tbody></table></div></div><div align="center" style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;"> </div><div align="center" style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;"> </div><div align="center" style="color:#404040;font-family:tahoma, arial, 宋体, sans-serif;font-size:14px;line-height:21px;background-color:#ffffff;"><img height="33" src="/thinkmao/Public/Ueditor/php/upload/31791359788108.jpg" width="750" style="border:0px;vertical-align:top;" /></div><p><br /></p>', '<p><img src="/thinkmao/Uploads/Editor/201302/510cb91bcd070.png" title="service.png" /><br /></p>', 28);
 
 -- --------------------------------------------------------
 
@@ -903,14 +1028,19 @@ CREATE TABLE IF NOT EXISTS `hd_order` (
   `consignee` varchar(45) DEFAULT NULL COMMENT '收货人',
   `mobile` varchar(15) DEFAULT NULL COMMENT '联系手机',
   `tel` varchar(15) DEFAULT NULL COMMENT '联系固话',
-  `address` varchar(45) DEFAULT NULL COMMENT '地址',
-  `total` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '总价',
-  `time` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '订单生成时间',
-  `status` enum('待审核','待付款','未发货','已发货','已完成') NOT NULL DEFAULT '待付款' COMMENT '订单状态',
-  `uid` int(10) unsigned NOT NULL COMMENT '所属用户ID',
-  PRIMARY KEY (`id`),
-  KEY `uid` (`uid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='订单' AUTO_INCREMENT=1 ;
+  `address` text COMMENT '地址',
+  `uid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='订单' AUTO_INCREMENT=9 ;
+
+--
+-- 转存表中的数据 `hd_order`
+--
+
+INSERT INTO `hd_order` (`id`, `consignee`, `mobile`, `tel`, `address`, `uid`) VALUES
+(5, 'mao', '15364157188', NULL, 'a:3:{s:6:"nation";s:6:"湖北";s:4:"city";s:6:"随州";s:4:"mmes";s:9:"青莲路";}', 1),
+(4, 'yuhaya', '1536273284', NULL, 'a:3:{s:6:"nation";s:6:"北京";s:4:"city";s:6:"北京";s:4:"mmes";s:9:"朝阳区";}', 1),
+(8, '张三', '1323232423', NULL, 'a:3:{s:6:"nation";s:6:"云南";s:4:"city";s:6:"昆明";s:4:"mmes";s:6:"财经";}', 1);
 
 -- --------------------------------------------------------
 
@@ -925,10 +1055,28 @@ CREATE TABLE IF NOT EXISTS `hd_order_list` (
   `remark` varchar(45) NOT NULL DEFAULT '' COMMENT '订单备注说明',
   `gid` int(10) unsigned NOT NULL COMMENT '商品ID',
   `oid` int(10) unsigned NOT NULL COMMENT '所属订单ID',
+  `time` varchar(20) DEFAULT NULL,
+  `status` enum('待审核','待付款','待发货','已发货','已完成') DEFAULT NULL,
+  `uid` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `gid` (`gid`),
   KEY `oid` (`oid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='订单商品列表' AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='订单商品列表' AUTO_INCREMENT=12 ;
+
+--
+-- 转存表中的数据 `hd_order_list`
+--
+
+INSERT INTO `hd_order_list` (`id`, `quantity`, `subtotal`, `remark`, `gid`, `oid`, `time`, `status`, `uid`) VALUES
+(2, 1, 1339.00, '   备注一                                       ', 23, 4, '1359612641', '待发货', 1),
+(3, 1, 4773.00, 'yuhaya                                   ', 21, 5, '1359613841', '待付款', 1),
+(6, 2, 5459.00, '', 2013, 4, '1359616969', '待发货', 1),
+(5, 1, 499.00, '', 10, 5, '1359616736', '已发货', 1),
+(7, 1, 675.00, '', 17, 5, '1359617041', '待付款', 1),
+(8, 1, 4449.00, '', 15, 4, '1359618811', '待付款', 1),
+(9, 1, 569.00, '', 10, 6, '1359618878', '待发货', 1),
+(10, 1, 30482.00, '', 19, 4, '1359785180', '待付款', 1),
+(11, 1, 934.00, '', 11, 5, '1359787744', '待发货', 1);
 
 -- --------------------------------------------------------
 
@@ -962,7 +1110,7 @@ INSERT INTO `hd_type_attr` (`id`, `name`, `value`, `type`, `tid`, `gselect`) VAL
 (13, '板型', '修身型|宽松型|直筒型', 0, 8, '1'),
 (12, '主图来源', '0', 0, 8, '0'),
 (21, '厚薄', '加厚|超薄', 0, 8, '0'),
-(22, '衣长', '短款(40cm<衣长≤50cm)|常规款(50cm<衣长≤65cm)|中长款(65cm<衣长≤80cm)|   长款(80cm<衣长≤100cm)', 0, 8, '1'),
+(22, '衣长', '短款(40cm<衣长≤50cm)|常规款(50cm<衣长≤65cm)|中长款(65cm<衣长≤80cm)|长款(80cm<衣长≤100cm)', 0, 8, '1'),
 (23, '风格', '甜美|通勤|原创设计|百搭|街头', 0, 8, '1'),
 (24, '袖型', '常规袖|毛袖|笼袖', 0, 8, '0'),
 (25, '流行元素/工艺', '0', 0, 8, '0'),

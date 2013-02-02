@@ -9,6 +9,7 @@ class CartAction extends Action {
                     $data = $this->format_goods_cart($arr);
                     $g_arr[]=$data;
               }
+
               $p_all = 0;
               foreach ($g_arr as $value) {
                   $p_all+=$value['all_price'];
@@ -52,6 +53,7 @@ class CartAction extends Action {
    public function add(){
          $gid = $_GET['gid'];
          $uid = $_SESSION['id'];
+
          foreach ($_SESSION['cart'][$uid] as $key => $value) {
                       $value=  unserialize($value);
                       if($value['gid']==$gid){
@@ -60,8 +62,10 @@ class CartAction extends Action {
                           }
                       }
                      $_SESSION['cart'][$uid][$key]=  serialize($value);
+//                     $_SESSION['cart'][$uid][$key]=  $value;
          }
-
+//          p($_SESSION);
+//          exit();
          redirect(U('index'));
 
    }

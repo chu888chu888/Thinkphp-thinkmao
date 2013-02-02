@@ -20,7 +20,7 @@
                     <td>价钱总计</td>
                     <td>订单备注</td>
                     <td>订单状态</td>
-
+                    <td>操作</td>
                 </tr>
             </thead>
         <tbody>
@@ -36,7 +36,11 @@
                      请输入备注<?php endif; ?>
                    </td>
                    <td><?php echo ($n["status"]); ?></td>
-               
+                   <td class="mod">
+                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>">修改订单</a>
+                       <a href="<?php echo U('del_order');?>?id=<?php echo ($n["id"]); ?>">删除订单</a>
+                       <a href="<?php echo U('pass');?>?id=<?php echo ($n["id"]); ?>&status=3">更改状态</a>
+                   </td>
                </tr><?php endforeach; endif; ?>
          </tbody>
         </table>
