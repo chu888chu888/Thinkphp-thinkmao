@@ -246,7 +246,7 @@ a:link, a:visited {
 
 .m-col-price em {
 	display: block;
-        font-size:12px; 
+        font-size:12px;
 }
 
 .m-price-origin {
@@ -792,7 +792,7 @@ a:link, a:visited {
 .cashier span {
 	float: left;
 }
-.m-go-box button{
+.m-go-box input{
         background-image: url("../img/T1DvggXo8gXXXHSOcF-330-500.png");
         width: 125px;
 	height: 35px;
@@ -1336,14 +1336,14 @@ a.ww-mobile {
     background: none;
     position:absolute;
     left:-70px;
-    
+
   }
 #site-nav .seller-center .menu-hd{ width:48px;}
   #site-nav .seller-center .menu-bd{ width: 94px; line-height:1.7;}
   #site-nav .seller-center .menu-bd-panel{padding: 8px 10px;}
   	#logo { padding-top: 26px; padding-bottom: 12px; }
 	#header .wrap-box { margin-top: -67px; }
-	
+
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
 	margin: 0;
 	padding: 0;
@@ -2279,7 +2279,7 @@ filter:progid:DXImageTransform.Microsoft.BasicImage(rotation = 2);
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1;	
+	z-index: -1;
 	width: 100%;
 	height: 100%;
 }

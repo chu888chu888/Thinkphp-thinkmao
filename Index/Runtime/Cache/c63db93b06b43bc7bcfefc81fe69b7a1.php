@@ -1,10 +1,10 @@
 <?php if (!defined('THINK_PATH')) exit();?>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <link href="<?php echo (__ROOT__); ?>/Public/Tm/img/T1Xwi6XfVXXXXXXXXX-16-16.png" rel="shortcut icon" type="image/x-icon">
+<link href="<?php echo (__ROOT__); ?>/Public/Tm/img/T1Xwi6XfVXXXXXXXXX-16-16.png" rel="shortcut icon" type="image/x-icon">
 
 <link rel="stylesheet" href="<?php echo (__ROOT__); ?>/Public/Tm/css/a.css" />
-    <body class="site-tb mode-def cartReady">
+<body class="site-tb mode-def cartReady">
 
     <div id="page">
 
@@ -149,13 +149,13 @@
                                 <ul>
                                     <li class="tsearch-tabs-active">
                                         <a target="_self" href="#">宝贝</a>
-                                        <s class="rc-tp-l"></s>
-                                        <s class="rc-tp-r"></s>
+                                    <s class="rc-tp-l"></s>
+                                    <s class="rc-tp-r"></s>
                                     </li>
                                     <li>
                                         <a target="_self" href="#">店铺</a>
-                                        <s class="rc-tp-l"></s>
-                                        <s class="rc-tp-r"></s>
+                                    <s class="rc-tp-l"></s>
+                                    <s class="rc-tp-r"></s>
                                     </li>
                                 </ul>
                             </div>
@@ -239,96 +239,96 @@
                 <div id="mcartlist">
                     <table class="m-trunk m-host-B" id="trunk_72518613">
                         <colgroup>
-                        <col class="m-col-chk">
-                        <col class="m-col-title">
-                        <col class="m-col-price">
-                        <col class="m-col-amount">
-                        <col class="m-col-agio">
-                        <col class="m-col-total">
-                        <col class="m-col-operate"></colgroup>
-                    <thead>
-                        <tr class="m-trunk-head">
-                            <th colspan="2">
-                                <div class="m-head-cont">
-                                    <div class="m-head-bd">
-                                        <div class="m-head-static">
-                                            <input class="m-chk m-chk-trunk" value="72518613" checked="checked" type="checkbox">
-                                            <a class="m-title" href="#">店铺：玥影旗舰店</a>
-                                            <span class="m-ww">
-                                                <span class="ww-light ww-small" >
-                                                    <a class="ww-inline ww-online" href="#">
-                                                        <span>旺旺在线</span>
-                                                    </a>
-                                                </span>
+                            <col class="m-col-chk">
+                            <col class="m-col-title">
+                            <col class="m-col-price">
+                            <col class="m-col-amount">
+                            <col class="m-col-agio">
+                            <col class="m-col-total">
+                            <col class="m-col-operate"></colgroup>
+                        <thead>
+                            <tr class="m-trunk-head">
+                                <th colspan="2">
+                        <div class="m-head-cont">
+                            <div class="m-head-bd">
+                                <div class="m-head-static">
+                                    <input class="m-chk m-chk-trunk" value="72518613" checked="checked" type="checkbox">
+                                    <a class="m-title" href="#">店铺：玥影旗舰店</a>
+                                    <span class="m-ww">
+                                        <span class="ww-light ww-small" >
+                                            <a class="ww-inline ww-online" href="#">
+                                                <span>旺旺在线</span>
+                                            </a>
+                                        </span>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        </th>
+                        <th>单价(元)</th>
+                        <th>数量</th>
+                        <th>优惠方式</th>
+                        <th>小计(元)</th>
+                        <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody class="m-split">
+                            <tr>
+                                <td colspan="7"></td>
+                            </tr>
+                        </tbody>
+
+                        <?php if(is_array($mes)): foreach($mes as $key=>$v): ?><tbody id="bundle_72518613_0" class="m-bundle">
+                                <tr id="order_22978694017" class="m-order m-selected">
+                                    <td class="m-col-chk">
+                                        <input class="m-chk" checked="checked" value="22978694017" type="checkbox"></td>
+                                    <td class="m-col-title">
+                                        <div class="m-col-img">
+                                            <a href="#">
+                                                <img class="m-order-img" src="<?php echo ($v["pic"]); ?>" height="50"></a>
+                                        </div>
+                                        <div class="m-col-meta">
+                                            <p class="m-title-p">
+                                                <a class="m-title" href="<?php echo U('Good/index');?>?gid=<?php echo ($v["gid"]); ?>"><?php echo ($v["gname"]); ?></a>
+                                            </p>
+                                            <?php if(is_array($v['all_prve'])): foreach($v['all_prve'] as $key=>$m): ?><span class="m-sku-item">
+                                                    <?php echo ($m["aname"]); ?>： <em> <?php echo ($m["value"]); ?></em>
+                                                </span><?php endforeach; endif; ?>
+                                        </div>
+                                    </td>
+                                    <td class="m-col-price">
+                                        <em class="m-price-origin"><?php echo ($v["mprice"]); ?></em>
+                                        <em class="m-price-now"><?php echo ($v["price"]); ?></em>
+                                        <em class="m-price-save">省<?php echo ($v["lprice"]); ?></em>
+                                    </td>
+                                    <td class="m-col-amount">
+                                        <div class="m-amount">
+                                            <a href="<?php echo U('add');?>?gid=<?php echo ($v["gid"]); ?>" style="margin-top: 3px;">+</a>
+                                            <input value="<?php echo ($v["num"]); ?>" class="m-text" type="text" style="line-height: 0px;height:20px;">
+                                            <a href="<?php echo U('less');?>?gid=<?php echo ($v["gid"]); ?>" style="margin-top: 3px;">-</a>
+                                        </div>
+                                    </td>
+                                    <td class="m-col-agio">
+                                        <div class="m-promo-list">
+                                            <span class="m-promo-item"> <ins class="m-promo-icon m-promo_other" ></ins>
+                                            </span>
+                                            <span class="m-promo-item"> <ins class="m-promo-icon m-promo_AAA1328703854" ></ins>
                                             </span>
                                         </div>
-
-                                    </div>
-                                </div>
-                            </th>
-                            <th>单价(元)</th>
-                            <th>数量</th>
-                            <th>优惠方式</th>
-                            <th>小计(元)</th>
-                            <th>操作</th>
-                        </tr>
-                    </thead>
-                    <tbody class="m-split">
-                        <tr>
-                            <td colspan="7"></td>
-                        </tr>
-                    </tbody>
-
-                    <?php if(is_array($mes)): foreach($mes as $key=>$v): ?><tbody id="bundle_72518613_0" class="m-bundle">
-                        <tr id="order_22978694017" class="m-order m-selected">
-                            <td class="m-col-chk">
-                                <input class="m-chk" checked="checked" value="22978694017" type="checkbox"></td>
-                            <td class="m-col-title">
-                                <div class="m-col-img">
-                                    <a href="#">
-                                        <img class="m-order-img" src="<?php echo ($v["pic"]); ?>" height="50"></a>
-                                </div>
-                                <div class="m-col-meta">
-                                    <p class="m-title-p">
-                                        <a class="m-title" href="<?php echo U('Good/index');?>?gid=<?php echo ($v["gid"]); ?>"><?php echo ($v["gname"]); ?></a>
-                                    </p>
-                                    <?php if(is_array($v['all_prve'])): foreach($v['all_prve'] as $key=>$m): ?><span class="m-sku-item">
-                                        <?php echo ($m["aname"]); ?>： <em> <?php echo ($m["value"]); ?></em>
-                                    </span><?php endforeach; endif; ?>
-                                </div>
-                            </td>
-                            <td class="m-col-price">
-                                <em class="m-price-origin"><?php echo ($v["mprice"]); ?></em>
-                                <em class="m-price-now"><?php echo ($v["price"]); ?></em>
-                                <em class="m-price-save">省<?php echo ($v["lprice"]); ?></em>
-                            </td>
-                            <td class="m-col-amount">
-                                <div class="m-amount">
-                                    <a href="<?php echo U('add');?>?gid=<?php echo ($v["gid"]); ?>" style="margin-top: 3px;">+</a>
-                                    <input value="<?php echo ($v["num"]); ?>" class="m-text" type="text" style="line-height: 0px;height:20px;">
-                                    <a href="<?php echo U('less');?>?gid=<?php echo ($v["gid"]); ?>" style="margin-top: 3px;">-</a>
-                                </div>
-                            </td>
-                            <td class="m-col-agio">
-                                <div class="m-promo-list">
-                                    <span class="m-promo-item"> <ins class="m-promo-icon m-promo_other" ></ins>
-                                    </span>
-                                    <span class="m-promo-item"> <ins class="m-promo-icon m-promo_AAA1328703854" ></ins>
-                                    </span>
-                                </div>
-                            </td>
-                            <td class="m-col-total">
-                                <em class="m-sum"><?php echo ($v["all_price"]); ?></em>
-                            </td>
-                            <td rowspan="1" class="m-col-operate">
-                                <p>
-                                    <a title="移至收藏夹" data-job="fav" class="m-fav" href="#">收藏</a>
-                                </p>
-                                <p>
-                                    <a title="删除" data-job="del" class="m-del" href="<?php echo U('del');?>?gid=<?php echo ($v["gid"]); ?>">删除</a>
-                                </p>
-                            </td>
-                        </tr><?php endforeach; endif; ?>
+                                    </td>
+                                    <td class="m-col-total">
+                                        <em class="m-sum"><?php echo ($v["all_price"]); ?></em>
+                                    </td>
+                                    <td rowspan="1" class="m-col-operate">
+                                        <p>
+                                            <a title="移至收藏夹" data-job="fav" class="m-fav" href="#">收藏</a>
+                                        </p>
+                                        <p>
+                                            <a title="删除" data-job="del" class="m-del" href="<?php echo U('del');?>?gid=<?php echo ($v["gid"]); ?>">删除</a>
+                                        </p>
+                                    </td>
+                                </tr><?php endforeach; endif; ?>
 
 
 
@@ -341,210 +341,213 @@
 
 
 
-                    </tbody>
-                </table>
-            </div>
-            <div style="height: 35px; padding: 5px 0px;">
-                <div id="cashier" class="cashier">
-                    <div class="lft">
-                        <span class="m-chk-box">
-                            <label>
-                                <input class="m-chk-all" checked="checked" type="checkbox">全选</label>
-                        </span>
-                        <span>
-                            <a class="m-batch-del"  href="#">批量删除</a>
-                        </span>
-                        <span>
-                            <a class="m-del-invalid" href="#">清除失效宝贝</a>
-                        </span>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="height: 35px; padding: 5px 0px;">
+                    <div id="cashier" class="cashier">
+                        <div class="lft">
+                            <span class="m-chk-box">
+                                <label>
+                                    <input class="m-chk-all" checked="checked" type="checkbox">全选</label>
+                            </span>
+                            <span>
+                                <a class="m-batch-del"  href="#">批量删除</a>
+                            </span>
+                            <span>
+                                <a class="m-del-invalid" href="#">清除失效宝贝</a>
+                            </span>
+                        </div>
+                        <div class="rgt">
+                            <span class="m-fee-box">
+                                商品总价(不含运费)：
+                                <em class="m-total-fee"><?php echo ($p_all); ?></em>
+                                元
+                            </span>
+                            <span class="m-use-cod">
+                                <ins></ins>
+                                <label>
+                                    <input id="J_FilterCod"  type="checkbox">使用货到付款</label>
+                            </span>
+                            <a href="<?php echo U('Order/index');?>" style="color:#fff;text-decoration: none">
+                                <span class="m-go-box">
+
+                                    <input type="button" value="结　算">
+
+
+
+                                    </input>
+
+                                </span>
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="rgt">
-                        <span class="m-fee-box">
-                            商品总价(不含运费)：
-                            <em class="m-total-fee"><?php echo ($p_all); ?></em>
-                            元
-                        </span>
-                        <span class="m-use-cod">
-                            <ins></ins>
-                            <label>
-                                <input id="J_FilterCod"  type="checkbox">使用货到付款</label>
-                        </span>
-                        <span class="m-go-box">
-
-                            <button type="button" >
-                                <a href="<?php echo U('Order/index');?>" style="color:#fff;text-decoration: none">
-                                结　算
-                                </a>
-                            </button>
-                        </span>
-                    </div>
-
                 </div>
             </div>
-        </div>
-        <div id="footer">
+            <div id="footer">
 
-            <div class="c2c_column clearfix">
-                <div  class="fp">
-                    <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/T1FqRVXo4.png"></div>
-                <dl class="ensure">
-                    <dt>
+                <div class="c2c_column clearfix">
+                    <div  class="fp">
+                        <img src="<?php echo (__ROOT__); ?>/Public/Tm/img/T1FqRVXo4.png"></div>
+                    <dl class="ensure">
+                        <dt>
                         <em>消费者保障</em>
-                    </dt>
-                    <dd>
-                        <ul>
-                            <li>
-                                <a href="#">保障范围</a>
-                            </li>
-                            <li>
-                                <a href="#">退货退款流程</a>
-                            </li>
-                            <li>
-                                <a href="#">消费警示</a>
-                            </li>
-                            <li>
-                                <a href="#">我要发起维权</a>
-                            </li>
-                            <li>
-                                <a href="#">更多特色服务</a>
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="newbie">
-                    <dt>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">保障范围</a>
+                                </li>
+                                <li>
+                                    <a href="#">退货退款流程</a>
+                                </li>
+                                <li>
+                                    <a href="#">消费警示</a>
+                                </li>
+                                <li>
+                                    <a href="#">我要发起维权</a>
+                                </li>
+                                <li>
+                                    <a href="#">更多特色服务</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="newbie">
+                        <dt>
                         <em>新手上路</em>
-                    </dt>
-                    <dd>
-                        <ul>
-                            <li>
-                                <a href="#">新手学堂</a>
-                            </li>
-                            <li>
-                                <a href="#">新手注册</a>
-                            </li>
-                            <li>
-                                <a href="#">新手体验专区</a>
-                            </li>
-                            <li>
-                                <a href="#">交易安全</a>
-                            </li>
-                            <li>
-                                <a href="#">24小时在线帮助</a>
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="payment">
-                    <dt>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">新手学堂</a>
+                                </li>
+                                <li>
+                                    <a href="#">新手注册</a>
+                                </li>
+                                <li>
+                                    <a href="#">新手体验专区</a>
+                                </li>
+                                <li>
+                                    <a href="#">交易安全</a>
+                                </li>
+                                <li>
+                                    <a href="#">24小时在线帮助</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="payment">
+                        <dt>
                         <em>付款方式</em>
-                    </dt>
-                    <dd>
-                        <ul>
-                            <li>
-                                <a href="#">信用卡快捷支付</a>
-                            </li>
-                            <li>
-                                <a href="#">储蓄卡快捷支付</a>
-                            </li>
-                            <li>
-                                <a href="#">支付宝余额</a>
-                            </li>
-                            <li>
-                                <a href="#">货到付款</a>
-                            </li>
-                            <li>
-                                <a href="#">新人支付</a>
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-                <dl class="recommend">
-                    <dt>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a href="#">信用卡快捷支付</a>
+                                </li>
+                                <li>
+                                    <a href="#">储蓄卡快捷支付</a>
+                                </li>
+                                <li>
+                                    <a href="#">支付宝余额</a>
+                                </li>
+                                <li>
+                                    <a href="#">货到付款</a>
+                                </li>
+                                <li>
+                                    <a href="#">新人支付</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="recommend">
+                        <dt>
                         <em>特色市场推荐</em>
-                    </dt>
-                    <dd>
-                        <ul>
-                            <li>
-                                <a  href="#">我要买</a>
+                        </dt>
+                        <dd>
+                            <ul>
+                                <li>
+                                    <a  href="#">我要买</a>
 
-                            </li>
-                            <li>
-                                <a href="#">店铺街</a>
+                                </li>
+                                <li>
+                                    <a href="#">店铺街</a>
 
-                            </li>
-                            <li>
-                                <a href="#">全球购</a>
+                                </li>
+                                <li>
+                                    <a href="#">全球购</a>
 
-                            </li>
-                            <li>
-                                <a href="#">女装市场</a>
+                                </li>
+                                <li>
+                                    <a href="#">女装市场</a>
 
-                            </li>
-                            <li>
-                                <a href="#">更多特色市场</a>
+                                </li>
+                                <li>
+                                    <a href="#">更多特色市场</a>
 
-                            </li>
-                        </ul>
-                    </dd>
-                </dl>
-            </div>
-            <!-- c2c_column end -->
-            <div class="g_foot">
-                <div class="g_foot-ali">
-                    <a href="#">阿里巴巴集团</a>
-                    <b>|</b>
-                    <a href="#">阿里巴巴网络：</a>
-                    <a href="#">国际站</a>
-                    <a href="#">中文站</a>
-                    <a href="#">全球速卖通</a>
-                    <b>|</b>
-                    <a href="#">淘宝网</a>
-                    <b>|</b>
-                    <a href="#">天猫</a>
-                    <b>|</b>
-                    <a href="#">一淘</a>
-                    <b>|</b>
-                    <a href="#">阿里云</a>
-                    <b>|</b>
-                    <a href="#">中国雅虎</a>
-                    <b>|</b>
-                    <a href="#">支付宝</a>
-                    <b>|</b>
-                    <a href="#">聚划算</a>
-                    <b>|</b>
-                    <span class="footer-more" id="J_FooterMore">
-                        <span class="footer-more-panel">
-                            <a href="#">阿里研究</a>
-                            <br>
-                            <a href="#">阿里会展</a>
-                            <br>
-                            <a href="#">嗨淘网</a>
-                            <br></span>
-                        <a href="#">
-                            更多
-                            <s class="arrow arrow-d"></s>
-                        </a>
-                    </span>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>
                 </div>
-                <div class="g_foot-nav">
-                    <a href="#">关于淘宝</a>
-                    <a href="#">合作伙伴</a>
-                    <a href="#">营销中心</a>
-                    <a href="#">联系客服</a>
-                    <a href="#">开放平台</a>
-                    <a href="#">诚征英才</a>
-                    <a href="#">联系我们</a>
-                    <a href="#">网站地图</a>
-                    <a href="#">法律声明</a>
-                    <span>&#169; 2013 Taobao.com 版权所有</span>
+                <!-- c2c_column end -->
+                <div class="g_foot">
+                    <div class="g_foot-ali">
+                        <a href="#">阿里巴巴集团</a>
+                        <b>|</b>
+                        <a href="#">阿里巴巴网络：</a>
+                        <a href="#">国际站</a>
+                        <a href="#">中文站</a>
+                        <a href="#">全球速卖通</a>
+                        <b>|</b>
+                        <a href="#">淘宝网</a>
+                        <b>|</b>
+                        <a href="#">天猫</a>
+                        <b>|</b>
+                        <a href="#">一淘</a>
+                        <b>|</b>
+                        <a href="#">阿里云</a>
+                        <b>|</b>
+                        <a href="#">中国雅虎</a>
+                        <b>|</b>
+                        <a href="#">支付宝</a>
+                        <b>|</b>
+                        <a href="#">聚划算</a>
+                        <b>|</b>
+                        <span class="footer-more" id="J_FooterMore">
+                            <span class="footer-more-panel">
+                                <a href="#">阿里研究</a>
+                                <br>
+                                <a href="#">阿里会展</a>
+                                <br>
+                                <a href="#">嗨淘网</a>
+                                <br></span>
+                            <a href="#">
+                                更多
+                                <s class="arrow arrow-d"></s>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="g_foot-nav">
+                        <a href="#">关于淘宝</a>
+                        <a href="#">合作伙伴</a>
+                        <a href="#">营销中心</a>
+                        <a href="#">联系客服</a>
+                        <a href="#">开放平台</a>
+                        <a href="#">诚征英才</a>
+                        <a href="#">联系我们</a>
+                        <a href="#">网站地图</a>
+                        <a href="#">法律声明</a>
+                        <span>&#169; 2013 Taobao.com 版权所有</span>
+                    </div>
+                    <span class="g_foot-toy"></span>
+                    <span class="g_foot-line"></span>
                 </div>
-                <span class="g_foot-toy"></span>
-                <span class="g_foot-line"></span>
+                <div id="server-num">tmallcart038092.cm3</div>
             </div>
-            <div id="server-num">tmallcart038092.cm3</div>
         </div>
-    </div>
 
-    </body>
-    </html>
+</body>
+</html>
