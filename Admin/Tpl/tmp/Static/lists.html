@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title></title>
+         <link rel="stylesheet" href="__PUBLIC__/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/css/static.css" />
+        <jquery/>
+        <jsconst/>
+       <script src="__PUBLIC__/js/static.js"></script>
+        
+        
+
+</head>
+<body>
+         <div class="ititle">
+            网站静态页面管理
+        </div>
+         <form action="">
+             <table id="ltb">
+                 <tr style="background-color:#009A61;color:#fff">
+                     <td align="center">栏目名</td>
+                    <td align="center">静态文件状态</td>
+                    <td align="center"> 生成静态文件</td>
+                    <td align="center"> 删除静态文件</td>
+                 </tr>
+                 <list from="$data" name="n">
+               <tr>
+                   <td align="center">{$n.c_title}</td>
+                   <td align="center">
+                       <if value="{$n.c_l_url}">
+                           已经生成
+                       <else/>
+                       <span style="color:red">未生成</span>
+                       </if>
+                   </td>
+                   <td align="center">
+                       <input type="checkbox" class="add" value="{$n.cid}"/>                  
+                   </td>
+                   <td align="center">
+                       <input type="checkbox" class="del" value="{$n.cid}" />                  
+                   </td>
+               </tr>            
+            </list>
+                 <tr>
+                     <td></td>
+                     <td></td>
+                     <td> <div class="option">
+                 <span class="add1">全选</span>
+                 &nbsp;&nbsp;&nbsp;
+                 <span class="add2">全不选</span>
+             </div></td>
+                     <td> <div class="option">
+                 <span class="del1">全选</span>
+                 &nbsp;&nbsp;&nbsp;
+                 <span class="del2">全不选</span>
+             </div></td>
+                 </tr>
+             </table>           
+         </form>
+    <div class="page">
+        {$page}
+    </div>
+    <div class="sub">
+          提交
+    </div>
+</body>
+</html>

@@ -17,7 +17,7 @@ $(window).resize(
        if(wid<970){
            wid=970;
        }
-       var widfor =  wid - 125;
+       var widfor =  wid - 135;
      $(".right").css("width",widfor+"px");
      $("#ou").css("width",wid+"px")
    }else{   

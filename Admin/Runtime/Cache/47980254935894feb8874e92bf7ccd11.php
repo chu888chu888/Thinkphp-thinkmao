@@ -1,8 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
     <head>
         <title></title>
@@ -16,44 +12,44 @@ and open the template in the editor.
         </script>
         <script type="text/javascript" src="__PUBLIC__/Admin/js/login.js">
         </script>
-       
+
     </head>
     <body>
+        <div class="welcome">
+            Welcome to AdminCenter
+        </div>
         <form action="<?php echo U('login');?>" method="post" class="login">
+            <div class="notice">
+                Please login with your Username and Password.
+            </div>
             <table>
                 <tr>
-                <label>
-                    <td class="lfont">
-                        管理员名:
-                    </td>
-                    <td>
+
+                    <td class="user">
                         <input type="text" name="username"/>
                     </td>
-                </label>
+
                 </tr>
-                <tr>                         
-                <label>
-                    <td class="lfont">
-                        管理员密码:
-                    </td>
-                    <td>
+                <tr>
+
+                    <td class="password">
                         <input type="password" name="password"/>
                     </td>
-                </label>
+
                 </tr>
+
                 <tr>
-                    <td class="lfont">
-                        输入验证码:
-                    </td>
                     <td>
-                        <input type="text" name="verify" style="width:50px;display:block;float: left"/>
-                        <img src="<?php echo U('code');?>" style="display:block;float: left;margin-left: 20px;" id="code"/>
+                        <span class="codetxt">验证码:</span>
+                        <input type="text" class="code" name="verify"/>
+                        <img src="<?php echo U('code');?>" class="codeimg" id="code"/>
                     </td>
                 </tr>
+                
                 <tr>
-                    <td colspan="2" align="right">
-                        <input type="submit" value="登陆" class="submit"/>
-                    </td>     
+                    <td colspan="2" align="left">
+                        <input type="submit" class="submit" value=""/>
+                    </td>
                 </tr>
             </table>
         </form>

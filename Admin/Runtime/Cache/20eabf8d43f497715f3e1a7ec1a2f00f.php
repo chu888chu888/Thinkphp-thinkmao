@@ -12,7 +12,7 @@
 
         <div class="head">
             <span class="theme">
-                cms
+                Admin
             </span>
             <ul class="t_guid">
                 <li><a href="__APP__/Channel">栏目列表</a></li>
@@ -38,7 +38,7 @@
                     <li><a href="<?php echo U('Order/step2');?>">待发货订单</a></li>
                     <li><a href="<?php echo U('Order/step3');?>">已完成订单</a></li>
                 </ul>
-               
+
             </div>
             <div class="right">
                 <iframe src="<?php echo U('Index/welcome');?>" name="iframe" scrolling="no">

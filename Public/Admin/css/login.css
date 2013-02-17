@@ -1,37 +1,116 @@
 body{
-    background-color:#eee;
+    background-color:#fff;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
+}
+*{
+    font-family: 'Karla', sans-serif;
 }
 .login{
-    height:300px;
-    width:500px;
-    background-color: #fff;
-    margin: 100px auto;
-    padding-top: 50px;
-    border: 10px solid #eee;
+    height:231px;
+    width:487px;
+    background-color: #F5F5F5;
+    margin: 50px auto;
+    padding: 19px;
+    border: 1px solid #eee;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+
 }
 .login table{
-    width:300px;
     height:auto;
-    margin:20px auto;
-    background-color: #0055FF;
-    height:200px;
+    margin:10px auto;
+    height:160px;
     padding-left: 20px;
-    padding-top: 20px;
 }
-.lfont{
-    color:#f1f1f1;
-    font-weight: bold;
+.login table tr{
+    width: 205px;
+    height:28px;
+    margin-bottom: 10px;
+    }
+.login table tr td{
+    width: 210px;
+    }
+.user{
+background: url("../img/user.png") no-repeat;
+}
+.password{
+background: url("../img/password.png") no-repeat;
 }
 input{
+
+    height:14px;
+    width: 150px;
+    margin-left: 35px;
     border: 0px;
 }
 .submit{
-    height:20px;
-    width:50px;
+    height:30px;
+    padding: 4px 10px;
+    width:200px;
     border:0px;
     color:#fff;
-    background-color:red;
     font-weight: bolder;
+    background:url("../img/login.png") no-repeat;
+    margin-left: 2px;
 }
+.welcome{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    color:#317EAC;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+.notice{
+    background-color: #edebe1;
+    color: #817b58;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #e0d9cb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+}
+.codetxt{
+    font-size: 12px;
+    float: left;
+    text-indent: 0.5em;
+    display: inline-block;
+    margin-top: 2px;
+}
+.code{
+    width:50px;
+    display:block;
+    float: left;
+    margin-left:0px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.codeimg{
+    display:block;
+    float: left;
+    margin-left: 20px;
+    height: 23px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top: -2px;
+}
+
 
 
