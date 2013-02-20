@@ -21,12 +21,22 @@ and open the template in the editor.
             </thead>
         <tbody>
         <?php if(is_array($cate)): foreach($cate as $key=>$n): ?><tr>
-                   <td><?php echo ($n["id"]); ?></td>
+                   <td ><?php echo ($n["id"]); ?></td>
                    <td class="c_title"><?php echo ($n["html"]); echo ($n["name"]); ?></td>
-                   <td class="mod">
-                       <a href="<?php echo U('add_top_cate_show');?>?pid=<?php echo ($n["id"]); ?>">增加子分类</a>
-                       <a href="<?php echo U('del_cate');?>?id=<?php echo ($n["id"]); ?>">删除该分类</a>
-                       <a href="<?php echo U('mod_cate');?>?id=<?php echo ($n["id"]); ?>">修改该分类</a>
+                   <td class="mod" style="width: 40%">
+                       <a href="<?php echo U('add_top_cate_show');?>?pid=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           AddChildren				
+                       </a>
+                       <a href="<?php echo U('mod_cate');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="<?php echo U('del_cate');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>
+                     
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>

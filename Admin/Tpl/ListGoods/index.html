@@ -24,20 +24,29 @@
                <tr>
                    <td class="good_id">{$n.id}</td>
                    <td class="c_title gname">{$n.name}</td>
-                   <td>
+                   <td class="list_td_img">
                        <img src="{$n.pic}" class="list_img"/>
                    </td>
-                   <td>
+                   <td class="number">
                        {$n.number}
                    </td>
-                   <td>
+                   <td class="td_price">
                        {$n.price}
                    </td>
                    
                    <td class="mod">
-                       <a href="{:U('good_show')}?id={$n.id}">查看</a>
-                       <a href="{:U('good_attr_edit_show')}?id={$n.id}">修改</a>
-                       <a href="{:U('good_del')}?id={$n.id}">删除</a>
+                       <a href="{:U('good_show')}?id={$n.id}" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View				
+                       </a>
+                       <a href="{:U('good_attr_edit_show')}?id={$n.id}" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="{:U('good_del')}?id={$n.id}" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>
                    </td>
                </tr>            
             </foreach>

@@ -1,6 +1,15 @@
 .channel_list{
     width:100%;
 }
+.list_td_img{
+    width: 10%;
+}
+.td_price{
+    width: 8%;
+}
+.good_id{
+    width:10%;
+}
 .channel_list tr td{
     text-align: center;
 }
@@ -8,34 +17,21 @@
     text-align: left;
 }
 .channel_list thead{
-    background-color: #009A61;
+    /*background-color: #009A61;*/
+    background-color: #41A1D9;
     color: #fff;
     font-weight: bolder;
 }
-.mod{
-    width:400px;
+.mod{    
+    width: 18%;
+}
 
-}
-.mod a{
-    color:#0F39D9;
-    font-size: 13px;
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 20px;
-}
 tbody tr td{
    border-bottom: 1px solid #ccc;
    padding: 5px;
 }
-.addtop{
-    display: inline-block;
-    height:25px;
-    width:100px;
-    line-height: 30px;
-    text-align: center;
-    color: #fff;
-    background-color: #009A61;
-    float: right;
+.addtop .icon-trash{
+    background-position:0 -95px;
 }
 .page *{
     display:inline-block;

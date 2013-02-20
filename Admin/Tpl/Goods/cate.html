@@ -22,12 +22,22 @@ and open the template in the editor.
         <tbody>
         <foreach name='cate' item="n">
                <tr>
-                   <td>{$n.id}</td>
+                   <td >{$n.id}</td>
                    <td class="c_title">{$n.html}{$n.name}</td>
-                   <td class="mod">
-                       <a href="{:U('add_top_cate_show')}?pid={$n.id}">增加子分类</a>
-                       <a href="{:U('del_cate')}?id={$n.id}">删除该分类</a>
-                       <a href="{:U('mod_cate')}?id={$n.id}">修改该分类</a>
+                   <td class="mod" style="width: 40%">
+                       <a href="{:U('add_top_cate_show')}?pid={$n.id}" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           AddChildren				
+                       </a>
+                       <a href="{:U('mod_cate')}?id={$n.id}" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="{:U('del_cate')}?id={$n.id}" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>
+                     
                    </td>
                </tr>            
         </foreach>

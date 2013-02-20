@@ -1,8 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
     <head>
         <title></title>
@@ -10,7 +6,10 @@ and open the template in the editor.
         <link type="text/css" rel="stylesheet" href="__PUBLIC__/Common/css/base.css"/>
         <link type="text/css" rel="stylesheet" href="__PUBLIC__/Admin/css/add_good.css"/>
         <script src="__PUBLIC__/Common/js/jquery-1.8.3.js">
-            
+
+        </script>
+        <script type="text/javascript" src="__PUBLIC__/Admin/js/brand.js">
+
         </script>
     </head>
     <body>
@@ -77,15 +76,16 @@ and open the template in the editor.
 
                 <tr>
                     <td class="ahead">
-                        品牌所属分类
+                        品牌所属分类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="add_cate">more+</span>
                     </td>
                 </tr>
-                <tr>
+                <tr id="tmplate">
                     <td>
-                        <select name="cid">
+                        <select name="cid[]">
                             <option value="">请选择</option>
                             <?php if(is_array($category)): foreach($category as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["html"]); echo ($v["name"]); ?></option><?php endforeach; endif; ?>
                         </select>
+                        <span></span>
                     </td>
                 </tr>
 
@@ -107,13 +107,13 @@ and open the template in the editor.
                         </label>
                          <label>
                              <span>否:</span>
-                             
+
                          <input type="radio" name="hot" value="0"/>
                         </label>
                     </td>
                 </tr>
-                
-                
+
+
                   <tr>
                     <td class="ahead">
                         品牌简介
@@ -122,7 +122,7 @@ and open the template in the editor.
                 <tr>
                     <td>
                        <textarea name="descript" id="textarea">
-                           
+
                        </textarea>
                     </td>
                 </tr>
@@ -135,7 +135,7 @@ and open the template in the editor.
 
                 <tr>
                     <td align="right">
-                        <input type="submit" value="确定" class="gsubmit"/> 
+                        <input type="submit" value="确定" class="gsubmit"/>
                     </td>
                 </tr>
             </table>

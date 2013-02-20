@@ -37,8 +37,14 @@
                    </td>
                    <td><?php echo ($n["status"]); ?></td>
                    <td class="mod">
-                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>">查看订单详细信息</a>
-                       <a href="<?php echo U('pass');?>?id=<?php echo ($n["id"]); ?>&status=4">更改状态</a>
+                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           查看信息	
+                       </a>
+                       <a href="<?php echo U('pass');?>?id=<?php echo ($n["id"]); ?>&status=4" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           更改状态
+                       </a>                      
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>

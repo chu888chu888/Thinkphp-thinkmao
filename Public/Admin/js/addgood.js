@@ -13,13 +13,15 @@ $(function(){
      *列表叶商品添加
      */
     $(".innerbox").eq(0).css("display","block");
-    $(".guid li").eq(0).css("background-color","#eee").css("color","red");
-    $(".guid li").click(function(){
-        $(".guid li").css("background-color","#009A61").css("color","#fff");
-        $(this).css("background-color","#eee").css("color","red");
+    $(".guid li").eq(0).css("background-color","#DB1F26").css("color","#fff");
+    $(".guid li").mouseenter(function(){
+        $(".guid li").css("background-color","#4CA3D7").css("color","#F5F5F5");
+        $(this).css("background-color","#DB1F26").css("color","#fff");
         var num = $(this).index();
-        $(".innerbox").css("display","none");
-        $(".innerbox").eq(num).css("display","block");
+//        $(".innerbox").css("display","none");
+//        $(".innerbox").eq(num).css("display","block");
+        $(".innerbox").hide("normal");
+        $(".innerbox").eq(num).show("normal");
     })
     /**
      *选择类型与属性关联

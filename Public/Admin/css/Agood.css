@@ -6,15 +6,14 @@
     overflow: hidden;
 }
 .guid li{
-     background-color: #009A61;
+     background-color: #4CA3D7;
      height:30px;
      line-height: 30px;
      margin-left: 5px;
      float: left;
      padding-left: 20px;
      padding-right: 20px;
-     color:#fff;
-     font-weight: bold;
+     color:#F5F5F5; 
      cursor: pointer;
 }
 .guid li:hover{

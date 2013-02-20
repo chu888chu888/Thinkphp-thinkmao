@@ -42,7 +42,7 @@ background: url("../img/user.png") no-repeat;
 background: url("../img/password.png") no-repeat;
 }
 input{
-
+    line-height: 14px;
     height:14px;
     width: 150px;
     margin-left: 35px;

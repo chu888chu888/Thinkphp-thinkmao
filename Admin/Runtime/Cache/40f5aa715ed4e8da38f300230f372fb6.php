@@ -23,11 +23,23 @@ and open the template in the editor.
         <?php if(is_array($good_type)): foreach($good_type as $key=>$n): ?><tr>
                    <td><?php echo ($n["id"]); ?></td>
                    <td class="c_title"><?php echo ($n["name"]); ?></td>
-                   <td class="mod">
-                       |&nbsp;<a href="<?php echo U('good_attr_list');?>?id=<?php echo ($n["id"]); ?>">属性列表</a>|
-                       <a href="<?php echo U('edit_good_attr_show');?>?id=<?php echo ($n["id"]); ?>">添加属性</a>|
-                       <a href="<?php echo U('edit_good_type_show');?>?id=<?php echo ($n["id"]); ?>">编辑类型</a>|
-                       <a href="<?php echo U('del_good_type');?>?id=<?php echo ($n["id"]); ?>">删除该类型</a>
+                   <td class="mod" style="width: 30%">
+                       <a href="<?php echo U('good_attr_list');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View				
+                       </a>
+                       <a href="<?php echo U('edit_good_attr_show');?>?id=<?php echo ($n["id"]); ?>" class="btn addtop btn-danger" >
+                <i class="icon-trash icon-white"></i>
+                Add</a>
+                       <a href="<?php echo U('edit_good_type_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="<?php echo U('del_good_type');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>                      
+                      
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>
@@ -35,6 +47,10 @@ and open the template in the editor.
         <div class="page">
             <?php echo ($page); ?>
         </div>
-        <h4><a href="<?php echo U('add_good_type_show');?>" class="addtop">添加商品类型</a></h4>
+        <h4>
+             <a href="<?php echo U('add_good_type_show');?>" class="btn addtop btn-danger" style="float: right">
+                <i class="icon-trash icon-white"></i>
+                添加商品类型</a>
+           </h4>
     </body>
 </html>

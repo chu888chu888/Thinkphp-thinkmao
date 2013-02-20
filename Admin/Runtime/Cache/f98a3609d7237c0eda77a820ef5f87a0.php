@@ -36,10 +36,19 @@
                      请输入备注<?php endif; ?>
                    </td>
                    <td><?php echo ($n["status"]); ?></td>
-                   <td class="mod">
-                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>">修改订单</a>
-                       <a href="<?php echo U('del_order');?>?id=<?php echo ($n["id"]); ?>">删除订单</a>
-                       <a href="<?php echo U('pass');?>?id=<?php echo ($n["id"]); ?>&status=3">更改状态</a>
+                   <td class="mod" style="width: 30%">
+                       <a href="<?php echo U('pass');?>?id=<?php echo ($n["id"]); ?>&status=3" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           更改状态				
+                       </a>
+                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           修改订单
+                       </a>
+                       <a href="<?php echo U('del_order');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            删除订单							
+                       </a>
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>

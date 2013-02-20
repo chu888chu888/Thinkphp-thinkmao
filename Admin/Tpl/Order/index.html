@@ -38,7 +38,22 @@
                      请输入备注
                </if>
                    </td>
-                   <td>{$n.status}</td>
+                   <td>
+                   <if condition="$n['status'] eq '待发货'">
+                        <a class="btn btn-success">                          
+                           待发货				
+                       </a>
+                       <elseif condition="$n['status'] eq '待付款'"/>
+                           <a class="btn btn-danger">                           
+                             待付款						
+                       </a>
+                           <elseif condition="$n['status'] eq '已发货'"/>
+                               <a  class="btn btn-info">                           
+                               已发货
+                               </a>
+                    </if>
+                       
+                   </td>
                
                </tr>
         </foreach>

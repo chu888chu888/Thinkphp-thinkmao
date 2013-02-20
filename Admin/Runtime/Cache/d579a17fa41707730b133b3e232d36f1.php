@@ -20,7 +20,7 @@
                     <td>价钱总计</td>
                     <td>订单备注</td>
                     <td>订单状态</td>
-
+                    <td>操作</td>
                 </tr>
             </thead>
         <tbody>
@@ -35,21 +35,13 @@
                    <?php else: ?>
                      请输入备注<?php endif; ?>
                    </td>
-                   <td>
-                   <?php if($n['status'] == '待发货'): ?><a class="btn btn-success">                          
-                           待发货				
-                       </a>
-                       <?php elseif($n['status'] == '待付款'): ?>
-                           <a class="btn btn-danger">                           
-                             待付款						
-                       </a>
-                           <?php elseif($n['status'] == '已发货'): ?>
-                               <a  class="btn btn-info">                           
-                               已发货
-                               </a><?php endif; ?>
-                       
+                   <td><?php echo ($n["status"]); ?></td>
+                   <td class="mod">
+                       <a href="<?php echo U('mod_order');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View				
+                       </a>                       
                    </td>
-               
                </tr><?php endforeach; endif; ?>
          </tbody>
         </table>

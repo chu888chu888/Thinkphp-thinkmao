@@ -210,8 +210,11 @@ class Db {
             // 采用分布式数据库
             $this->_linkID = $this->multiConnect($master);
         else
-            // 默认单数据库
-            if ( !$this->connected ) $this->_linkID = $this->connect();
+            // 默认单数据库           
+            if ( !$this->connected ) {                                     
+                $this->_linkID = $this->connect();
+                
+            }
     }
 
     /**

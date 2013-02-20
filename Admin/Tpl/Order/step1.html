@@ -39,10 +39,19 @@
                </if>
                    </td>
                    <td>{$n.status}</td>
-                   <td class="mod">
-                       <a href="{:U('mod_order')}?id={$n.id}">修改订单</a>
-                       <a href="{:U('del_order')}?id={$n.id}">删除订单</a>
-                       <a href="{:U('pass')}?id={$n.id}&status=3">更改状态</a>
+                   <td class="mod" style="width: 30%">
+                       <a href="{:U('pass')}?id={$n.id}&status=3" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           更改状态				
+                       </a>
+                       <a href="{:U('mod_order')}?id={$n.id}" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           修改订单
+                       </a>
+                       <a href="{:U('del_order')}?id={$n.id}" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            删除订单							
+                       </a>
                    </td>
                </tr>
         </foreach>

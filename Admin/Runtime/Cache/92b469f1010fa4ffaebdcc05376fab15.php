@@ -23,20 +23,29 @@
             <?php if(is_array($goods)): foreach($goods as $key=>$n): ?><tr>
                    <td class="good_id"><?php echo ($n["id"]); ?></td>
                    <td class="c_title gname"><?php echo ($n["name"]); ?></td>
-                   <td>
+                   <td class="list_td_img">
                        <img src="<?php echo ($n["pic"]); ?>" class="list_img"/>
                    </td>
-                   <td>
+                   <td class="number">
                        <?php echo ($n["number"]); ?>
                    </td>
-                   <td>
+                   <td class="td_price">
                        <?php echo ($n["price"]); ?>
                    </td>
                    
                    <td class="mod">
-                       <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>">查看</a>
-                       <a href="<?php echo U('good_attr_edit_show');?>?id=<?php echo ($n["id"]); ?>">修改</a>
-                       <a href="<?php echo U('good_del');?>?id=<?php echo ($n["id"]); ?>">删除</a>
+                       <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View				
+                       </a>
+                       <a href="<?php echo U('good_attr_edit_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="<?php echo U('good_del');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>

@@ -22,19 +22,31 @@ and open the template in the editor.
             </thead>
         <tbody>
         <?php if(is_array($brands)): foreach($brands as $key=>$n): ?><tr>
-                   <td><?php echo ($n["id"]); ?></td>
-                   <td class="c_title"><?php echo ($n["name"]); ?></td>
-                   <td class="c_title" style="text-align: center">
-                       <img src="<?php echo ($n["logo"]); ?>" style="height:50px"/>
+                   <td class="good_id"><?php echo ($n["id"]); ?></td>
+                   <td class="c_title" style="width: 10%;text-align: center"><?php echo ($n["name"]); ?></td>
+                   <td class="c_title" style="width: 15%;text-align: center">
+                       <img src="<?php echo ($n["logo"]); ?>" style="height:40px"/>
                    </td>
                    <td class="mod">
-                       |&nbsp;<a href="<?php echo U('edit_brand_show');?>?id=<?php echo ($n["id"]); ?>">编辑品牌</a>|
-                       <a href="<?php echo U('del_good_type');?>?id=<?php echo ($n["id"]); ?>">删除该品牌</a>
+                       <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View				
+                       </a>
+                       <a href="<?php echo U('edit_brand_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-edit icon-white"></i>
+                           Edit
+                       </a>
+                       <a href="<?php echo U('del_good_type');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
+                       </a>                      
                    </td>
                </tr><?php endforeach; endif; ?>
          </tbody>
         </table>
 
-        <h4><a href="<?php echo U('Brands/add_brand_show');?>" class="addtop">添加品牌</a></h4>
+        <h4><a href="<?php echo U('Brands/add_brand_show');?>" class="btn addtop btn-danger" style="float: right">
+                <i class="icon-trash icon-white"></i>
+                添加品牌</a></h4>
     </body>
 </html>
