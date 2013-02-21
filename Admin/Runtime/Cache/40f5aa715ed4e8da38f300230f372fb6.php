@@ -50,7 +50,8 @@ and open the template in the editor.
         <h4>
              <a href="<?php echo U('add_good_type_show');?>" class="btn addtop btn-danger" style="float: right">
                 <i class="icon-trash icon-white"></i>
-                添加商品类型</a>
+                添加商品类型
+             </a>
            </h4>
     </body>
 </html>

@@ -9,6 +9,7 @@
         <script type="text/javascript">
             var brands_url = '<?php echo U("brands");?>';
             var attr_url = '<?php echo U("attr");?>';
+            var type_url ='<?php echo U("type");?>';
         </script>
     </head>
     <body>
@@ -24,7 +25,8 @@
             <li class="rudio">售后服务</li>
         </ul>
         <form action="<?php echo U('put_good');?>" method="post" class="form">
-            <div class="innerbox">
+            <div class="innerbox" >
+                
                 <table class="tb">
                     <tr>
                         <td class="tname">商品名称:</td>
@@ -46,22 +48,41 @@
                     </tr>
                     <tr id="clone">
                         <td class="tname">商品分类:</td>
-                        <td>
-                            <select name="cid[]" id="cate">
-                                <option value="">选择分类</option>
-                                <?php if(is_array($cate)): foreach($cate as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>" tid="<?php echo ($v["tid"]); ?>" pid='<?php echo ($v["pid"]); ?>'>
-                                        <?php echo ($v["html"]); echo ($v["name"]); ?>
-                                    </option><?php endforeach; endif; ?>
-                            </select>
-                            <input type="button"  value="more+" class="button addtype"/>
+                        <td  style="position:relative">
+                            <div class="select_char inputstyle" id="res_char">
+                                请选择栏目
+                            </div>
+                            <div class="show_cate rudio">
+                                <?php $db = M("category");$data = $db->where(array("pid"=>0))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><span ss="{}" class="c1 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>                                    
+                                            <ul class="ul1">
+                                                <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li>                                                        
+                                                            <span ss="{}" class="c2 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>                                                       
+                                                        <ul class="ul1">
+                                                            <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li>                                                                   
+                                                                       <span ss="{}" class="c3 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>
+                                                                           <ul class="ul1">
+                                                                              <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li ss="{}" class="c4 catename" flag="false" cateid="<?php echo ($field["id"]); ?>" val="<?php echo ($field['name']); ?>">                                                                   
+                                                                                 <?php echo ($field['name']); ?>                                                                   
+                                                                                 </li><?php }; ?>
+                                                                           </ul>
+                                                                </li><?php }; ?>
+                                                        </ul>
+                                                    </li><?php }; ?>
+                                            </ul>
+                                    <p></p><?php }; ?>
+                                
+                                
+                            </div>
+
                         </td>
                     </tr>
                     <tr>
                         <td class="tname">商品品牌:</td>
-                        <td>
-                            <select name="bid" id="brand">
-                                <option value="0">选择品牌:</option>
-                            </select>
+                        <td style="position:relative">
+                            <div id="brand_div"></div>
+                            <div class="select_char inputstyle" id="res_brand">
+                                请选品牌
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -142,14 +163,13 @@
             </div>
 
             <div class="innerbox">
-                <table class="tb" id="attr">
-                    <tr>
+                <table class="tb" id="attr" style="width: auto">
+                    <tr id="head_type">
                         <td class="tfont" width="100px;">选择商品类型:</td>
-                         <td>
-                        <select name="tid" id="good_type">
-                            <option value="0">选择商品类型</option>
-                            <?php if(is_array($goods_type)): foreach($goods_type as $key=>$v): ?><option value="<?php echo ($v["id"]); ?>"><?php echo ($v["name"]); ?></option><?php endforeach; endif; ?>
-                        </select>
+                         <td>                             
+                            <div class="select_char inputstyle" id="good_type">
+                                请选类型
+                            </div>                        
                         </td>
                     </tr>
                 </table>

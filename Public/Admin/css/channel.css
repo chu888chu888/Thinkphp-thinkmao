@@ -22,6 +22,9 @@
     color: #fff;
     font-weight: bolder;
 }
+.channel_list thead tr td{
+    color:#fff;
+}
 .mod{    
     width: 18%;
 }

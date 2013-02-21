@@ -14,9 +14,15 @@ class AddGoodAction extends CommonAction  {
    *
    */
   public function brands(){
-     $cid = (int)$_POST['cid'];
-     $pcids = $this->get_parents_cid($cid);
-     $brands_arr = $this->get_brands($pcids);
+     $cidstr = rtrim($_POST['cid'], "|");
+     $cidarr = explode("|", $cidstr);
+     $barrs = array();
+     foreach ($cidarr as $arr) {
+         $cid = (int)$arr;
+         $pcids = $this->get_parents_cid($cid);
+         $brands_arr = $this->get_brands($pcids);        
+         $barrs += $brands_arr;        
+     }    
      echo json_encode($brands_arr);
   }
   /**
@@ -52,12 +58,13 @@ class AddGoodAction extends CommonAction  {
          foreach ($allbrands as $key => $value) {
              foreach ($cate_arr as $v) {
                  if($v==$value['cid']){
-                     $se_arr[]=$allbrands[$key];
+                     $bid = $allbrands[$key]['id'];
+                     $se_arr[$bid]=$allbrands[$key];
                  }else{
                      continue;
                  }
              }
-         }
+         }        
          return $se_arr;
      }
 
@@ -70,7 +77,26 @@ class AddGoodAction extends CommonAction  {
          $attr = M('type_attr');
          $attr_arr = array();
          $data = $attr->where("tid = ".$tid)->select();
+        
          echo json_encode($data);
+     }
+     /**
+      * 返回栏目的类型
+      */
+     public function type(){
+         $cidstr = rtrim($_POST['strcid'], "|");
+         $cidarr = explode("|", $cidstr);
+         $db = D("CategoryView");
+         $data = $db->select();
+         $arr_ttype = array();
+         foreach ($cidarr as $value) {
+             foreach ($data as $v) {
+                 if($v['cid']==$value){
+                     $arr_ttype[$v['tid']]=$v['tname'];
+                 }
+             }
+         }         
+         echo json_encode($arr_ttype);
      }
      /**
       * 插入商品数据
