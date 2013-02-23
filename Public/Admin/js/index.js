@@ -1,7 +1,3 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 var wid;
 $(function(){
 /**
@@ -95,13 +91,13 @@ $(window).resize(
     }
 );
  function change(){
-   if($(window).width()>970){
+   if($(window).width()>=1270){
        wid = $(window).width();      
        var widfor =  wid - 180;
      $(".right").css("width",widfor+"px");
      $("#ou").css("width",wid+"px")
-   }else{   
-     $(".right").css("width","790px");
-     $("#ou").css("width","970px")
+   }else{
+     $(".right").css("width","1091px");
+     $("#ou").css("width","1270px")
    }   
     }

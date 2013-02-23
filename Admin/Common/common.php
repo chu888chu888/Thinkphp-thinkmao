@@ -11,6 +11,7 @@
   }
   /**
  * 商品无限级分类
+ * $array[$id]['top'] = 0,1,2    顶级栏目，中间栏目，末级栏目
  * @param  [type]  $arr   [description]
  * @param  integer $type  [description]
  * @param  integer $pid   [description]
@@ -27,8 +28,22 @@ function recursion ($arr, $type=1, $pid=0, $level=1) {
 			foreach ($arr as $v) {
 				if ($v['pid'] == $pid) {
 					$array[$id] = $v;
-					$array[$id]['html'] = $pid ? '|' . str_repeat('-', $level) : '';
-					recursion($arr, $type, $v['id'], $level + 2);
+					$array[$id]['html'] = $pid ? '|' . str_repeat('-', $level) : ''; 
+                                                                                                     $flag = 0;
+                                                                                                     foreach ($arr as $val) {
+                                                                                                         if($v['id']==$val['pid']){
+                                                                                                             $flag = 1;
+                                                                                                         }
+                                                                                                     }
+                                                                                                     if($pid==0){
+                                                                                                             $array[$id]['top']='1';
+                                                                                                       }elseif($flag){
+                                                                                                             $array[$id]['top']=$level;
+                                                                                                       }else{
+                                                                                                             $array[$id]['top']=$level;
+                                                                                                             $array[$id]['end']='true';
+                                                                                                       }                                                                                                
+					recursion($arr, $type, $v['id'], $level + 5);
 				}
 			}
 			return $array;

@@ -44,11 +44,10 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
 .gsubmit{
     width:60px;
     height:25px;
-    font-size: 15px;
-    line-height: 10px;
-    color:blue;
+    font-size: 13px;
+    line-height: 10px;   
     text-align: center;
-    font-weight: bold;
+    cursor: pointer;
 }
 .upload-img img{
     height:100px;
@@ -63,21 +62,16 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
 }
 .btn {
-  background-color: #ffffff;
-  margin: 5px 0px;
-  color:#fff;
-    margin-left: 10px;
-    display: inline-block;
-    padding: 0px 5px;
-    border: 1px solid #eee;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 4px;
+   -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    
+    border-radius: 4px; 
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #BDBDBD;
+    color:#fff;
+    margin-right: 10px;
+    padding-left:5px;
+    padding-right: 5px;
+  background-color: #ffffff;
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), color-stop(5%, #ffffff), to(#ffffff));
   background-image: -webkit-linear-gradient(#ffffff, #ffffff 5%, #ffffff);
   background-image: -moz-linear-gradient(top, #ffffff, #ffffff 5%, #ffffff);
@@ -245,4 +239,108 @@ i[class^="icon-"] {
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 3px #BDBDBD;
 }
+.btn-primary {
+    color:#fff;
+  background-color: #43a1da;
+  background-image: -moz-linear-gradient(top, #4ba6db, #369bd7);
+  background-image: -ms-linear-gradient(top, #4ba6db, #369bd7);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4ba6db), to(#369bd7));
+  background-image: -webkit-linear-gradient(top, #4ba6db, #369bd7);
+  background-image: -o-linear-gradient(top, #4ba6db, #369bd7);
+  background-image: linear-gradient(top, #4ba6db, #369bd7);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4ba6db', endColorstr='#369bd7', GradientType=0);
+  border-color: #369bd7 #369bd7 #2071a1;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #369bd7;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.disabled,
+.btn-primary[disabled] {
+  background-color: #369bd7;
+  *background-color: #288ecb;
+}
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #2480b6 \9;
+}
+.endform{
+    padding: 17px 20px 18px;
+    margin-top: 18px;
+    margin-bottom: 0px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #e5e5e5;
+    position: absolute;
+}
+.butage{
+    background:url("../img/off.jpg") no-repeat;
+    width:97px;
+    height:27px;
+}
+.page *{
+    display: inline-block;   
+}
+.page{
+     color:#2071AF;
+     margin-top: 20px;
+     float: right;
+     margin-right: 30px;
+}
+.page a{
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #BDBDBD;
+    background-color: #fff;
+    color:#36B2E5;
+    margin-right: 5px;
+}
+.current{
+    padding: 5px 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 3px #BDBDBD;
+    background-color: #F5F5F5;
+    color:#2071AC;
+    margin-right: 5px;
+}
+.attrtype li,.catelist li{
+    display: inline-block;
+    padding: 7px;
+    color:#369BD7;
+    cursor: pointer;
+    border-right: 1px solid #DDDDDD;
+}
+.attrtype,.catelist{
+ margin: 0px auto;
+ width: 94px;
+ border: 1px solid #DDDDDD;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+.catenum{
+    padding: 7px 22px;
+    text-align: center;
+    width: 24px;
+}
+
 

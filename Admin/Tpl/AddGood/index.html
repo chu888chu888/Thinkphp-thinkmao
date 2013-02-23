@@ -10,6 +10,7 @@
             var brands_url = '{:U("brands")}';
             var attr_url = '{:U("attr")}';
             var type_url ='{:U("type")}';
+            var public_url = "__PUBLIC__";
         </script>
     </head>
     <body>
@@ -112,10 +113,7 @@
 
 
             <div class="innerbox">
-                <table class="tb ed">
-                    <tr>
-                        <td class="tfont">商品详细介绍:</td>
-                    </tr>
+                <table class="tb ed">                    
                     <tr  class="edit">
                         <td>
                             <editor name='intro'/>
@@ -135,27 +133,15 @@
                     <tr>
                         <td style="width:200px;">是否为推荐商品：</td>
                         <td align="left">
-                            <label>
-                                <span>是</span>
-                                <input type="radio" name="recommend" value="1"/>
-                            </label>
-                            <label>
-                                <span>否</span>
-                                <input type="radio" name="recommend" value="0" />
-                            </label>
+                            <input type="button" class="butage" flag="0">
+                            <input type="hidden"  name="recommend" value="0">
                         </td>
                     </tr>
                     <tr>
                         <td style="width:200px;">是否为热卖商品：</td>
                         <td align="left">
-                               <label>
-                                <span>是</span>
-                                <input type="radio" name="hot" value="1"/>
-                            </label>
-                            <label>
-                                <span>否</span>
-                                <input type="radio" name="hot" value="0" />
-                            </label>
+                            <input type="button" class="butage" flag="0">
+                            <input type="hidden"  name="hot" value="0">                   
                         </td>
                     </tr>
                 </table>
@@ -164,7 +150,7 @@
             <div class="innerbox">
                 <table class="tb" id="attr" style="width: auto">
                     <tr id="head_type">
-                        <td class="tfont" width="100px;">选择商品类型:</td>
+                        <td class="ifont" width="100px;">选择商品类型:</td>
                          <td>                             
                             <div class="select_char inputstyle" id="good_type">
                                 请选类型
@@ -172,6 +158,10 @@
                         </td>
                     </tr>
                 </table>
+                <ul class="attrtype">
+                    <li class="endpoint">Prev</li>
+                    <li style="border:none" class="endpoint">Next</li>
+                </ul>
             </div>
 
              <div class="innerbox">
@@ -197,10 +187,7 @@
 
 
              <div class="innerbox">
-                <table class="tb ed">
-                    <tr>
-                        <td class="tfont">售后服务:</td>
-                    </tr>
+                <table class="tb ed">                    
                     <tr  class="edit">
                         <td>
                             <editor name='service'/>
@@ -210,8 +197,10 @@
             </div>
 
 
-
-            <input type="submit" value="确定" class="gsubmit" style="margin-left: 85%"/>
+            <div class="endform">
+            <input type="submit" value="确定" class="gsubmit btn btn-primary" style="margin-left: 85%"/>
+            <input type="reset" value="取消" class="gsubmit btn" style="color:#000"/>
+            </div>
         </form>
     </body>
 </html>

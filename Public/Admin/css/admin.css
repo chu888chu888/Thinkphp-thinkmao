@@ -1,7 +1,4 @@
-#ou{
-    /*height:652px;*/
-    height:2000px;
-}
+
 .head{
     height:50px;
     width:100%;
@@ -87,15 +84,16 @@
     margin-top: 60px;
     width:auto;
     margin-left: 20px;
-    height:5000px;   
+    /*height:5000px;*/   
 }
 .right iframe{
     width: 100%;
-    height: 100%;
+    height: 615px;;
    border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px #BDBDBD;
     border: 1px solid rgba(0, 0, 0, 0.05);
      padding-top: 8px;
+    margin-bottom: 50px;
 }
 .flagchange{
     display: inline-block;

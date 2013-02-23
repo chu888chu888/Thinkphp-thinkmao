@@ -15,6 +15,7 @@
 }
 .channel_list tbody tr .c_title{
     text-align: left;
+    cursor: pointer;
 }
 .channel_list thead{
     /*background-color: #009A61;*/
@@ -36,27 +37,13 @@ tbody tr td{
 .addtop .icon-trash{
     background-position:0 -95px;
 }
-.page *{
-    display:inline-block;
-    float: left;
-    margin-left: 10px;
-    padding: 3px 5px;
-    background-color: #F2F2F2;
-    line-height: 20px;
-}
- .page{
-    height:20px !important;
-    height:50px;
-    width: auto;
-    overflow: hidden;
-    line-height: 20px;
-    margin-top: 30px;
-}
-.page .selfpage{
-    font-weight: bolder;
-    color:blue;
-}
-.page a{
-    color:#009A61;
+.catep{
+    background-image: url('../img/opa-icons-blue32.png');
+    background-position: -42px -10px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 10px;   
+    width: 10px;
+    cursor: pointer;
 }
 

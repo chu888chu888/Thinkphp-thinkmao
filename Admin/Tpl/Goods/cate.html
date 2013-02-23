@@ -8,7 +8,9 @@ and open the template in the editor.
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
-        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />        
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+        <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
+        <script src="__PUBLIC__/Admin/js/cate.js"></script>
     </head>
     <body>
         <table class="channel_list">
@@ -19,11 +21,20 @@ and open the template in the editor.
                     <td>操作</td>
                 </tr>
             </thead>
-        <tbody>
+        <tbody id="catetbody">
         <foreach name='cate' item="n">
-               <tr>
+            <if condition="$n['top'] eq '1'">
+                 <tr flag="{$n.top}">
+           <else/>
+                  <tr style="display: none" flag="{$n.top}">
+            </if>
                    <td >{$n.id}</td>
-                   <td class="c_title">{$n.html}{$n.name}</td>
+                   <td class="c_title">
+                       {$n.html}{$n.name}
+                   <if condition="$n['end'] neq 'true'">
+                       <span class="catep" openx='0'></span>
+                   </if>
+                   </td>
                    <td class="mod" style="width: 40%">
                        <a href="{:U('add_top_cate_show')}?pid={$n.id}" class="btn btn-success">
                            <i class="icon-zoom-in icon-white"></i>
@@ -43,9 +54,13 @@ and open the template in the editor.
         </foreach>
          </tbody>
         </table>
-        <div class="page">
-            {$page}
-        </div>
-        <h4><a href="{:U('add_top_cate_show')}?pid=0" class="addtop">添加顶级分类</a></h4>
+        <ul class="catelist" style="float: left;margin-top: 20px;margin-left: 30px;">
+                    <li class="endcpoint">Prev</li>
+                    <li style="border:none" class="endcpoint">Next</li>
+                </ul>
+        <a href="{:U('add_top_cate_show')}?pid=0" class="btn addtop btn-danger" style="float: right;margin-top: 30px;">
+                <i class="icon-trash icon-white"></i>
+                添加顶级分类
+        </a>        
     </body>
 </html>

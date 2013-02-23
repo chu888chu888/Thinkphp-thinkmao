@@ -2,7 +2,12 @@
  class ListGoodsAction extends CommonAction{
      public function index(){
          $goods_data = M('goods');
-         $goods = $goods_data->select();
+         import("ORG.Util.Page");
+         $count = $goods_data->count();
+         $Page= new Page($count,10);
+         $show= $Page->show();
+         $this->assign('page',$show);
+         $goods = $goods_data->limit($Page->firstRow.','.$Page->listRows)->select();
          $this->assign("goods",$goods);
          $this->display();
      }

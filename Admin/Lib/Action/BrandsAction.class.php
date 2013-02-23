@@ -1,7 +1,12 @@
 <?php
 class BrandsAction extends CommonAction {
    public function index(){
-       $brands = M('Brand')->select();
+       import("ORG.Util.Page");
+       $count = M('Brand')->count();
+       $Page= new Page($count,11);
+       $show= $Page->show();
+       $this->assign('page',$show);
+       $brands = M('Brand')->limit($Page->firstRow.','.$Page->listRows)->select();
        $this->assign('brands',$brands);
        $this->display();
    }
