@@ -10,7 +10,28 @@
         <base target="iframe" />
     </head>
     <body id="ou">
-
+        <div class="fade"></div>
+        <div class="judge" flag="off">
+             <div class="judgetitle">
+                 <h3>Settings</h3>
+                 <button type="button" class="close">×</button>                 
+             </div>
+            <div class="judgebody">
+                你确定删除该商品吗？
+            </div>
+            <div class=" judgeend">
+                <input type="button" value="取消" id="cancel" class="gsubmit btn" style="color:#000">
+                 <input type="button" value="确定" id="affirm" class="gsubmit btn btn-primary" >                 
+            </div>
+        </div>
+        <div class="outmes">
+            <div class="judgetitle" style="background-color: #EEEEEE;">
+                提示信息
+            </div>
+            <div class="judgebody" style="color:red">
+                ....
+            </div>
+        </div>
         <div class="head">
             <span class="theme">
                 A<span class="themefont">d</span>min
@@ -28,6 +49,7 @@
                     <li class="main" flag="more">商品管理<span class="flagchange" ></span></li>
                     <li><a href="{:U('ListGoods/index')}">商品列表</a></li>
                     <li><a href="{:U('AddGood/index')}">添加商品</a></li>
+                    <li><a href="{:U('InventoryGood/index')}">商品库存</a></li>
                     <li><a href="{:U('Brands/index')}">商品品牌</a></li>
                     <li><a href="{:U('Goods/cate')}">商品分类</a></li>
                     <li><a href="{:U('Goods/good_type')}">商品类型</a></li>
@@ -39,6 +61,11 @@
                     <li><a href="{:U('Order/step2')}">待发货订单</a></li>
                     <li><a href="{:U('Order/step3')}">已完成订单</a></li>
                     <li><a href="{:U('Order/step3')}">退货订单</a></li>
+                </ul>
+                <ul>
+                    <li class="main"  flag="more">评论管理<span class="flagchange" ></span></li>
+                    <li><a href="#">数据备份</a></li>
+                    <li><a href="#">数据还原</a></li>
                 </ul>
                 <ul>
                     <li class="main"  flag="more">数据库管理<span class="flagchange" ></span></li>

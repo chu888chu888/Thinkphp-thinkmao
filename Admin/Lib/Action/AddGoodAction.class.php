@@ -8,6 +8,9 @@ class AddGoodAction extends CommonAction  {
      $this->assign('goods_type', $gtype);
      $this->display();
   }
+  /**
+   * 设置商品的库存   */
+
 
   /**
    * 获得包括该栏目以上的所有栏目下的品牌

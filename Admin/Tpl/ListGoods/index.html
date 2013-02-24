@@ -5,9 +5,14 @@
     <title></title>
     <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
     <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />   
-    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" /> 
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" />
+    <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
+    <script src="__PUBLIC__/Admin/js/lgoods.js"></script>
+    <script type="text/javascript">
+        var del_url = "{:U('good_del')}";
+    </script>
 </head>
- <body>
+ <body>      
         <table class="channel_list">
             <thead>
                 <tr>
@@ -43,7 +48,7 @@
                            <i class="icon-edit icon-white"></i>
                            Edit
                        </a>
-                       <a href="{:U('good_del')}?id={$n.id}" class="btn btn-danger">
+                       <a class="btn btn-danger gdel" gid="{$n.id}">
                             <i class="icon-trash icon-white"></i>
                             Delete							
                        </a>

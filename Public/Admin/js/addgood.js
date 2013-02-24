@@ -1,4 +1,10 @@
 $(function(){
+//初始化iframe的高度
+    $(function(){
+    $(".right iframe",window.parent.document).css("height",function(){
+        return "626px";
+    })
+})
 //侧边栏目的点击效果    
     $(".catename").click(function(){
         if($(this).next("ul").length==0){

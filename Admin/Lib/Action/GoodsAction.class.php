@@ -6,7 +6,12 @@
         */
        public function good_type(){
            $db= M('goods_type');
-           $good_type=$db->select();
+           import("ORG.Util.Page");
+           $count = $db->count();           
+           $Page= new Page($count,17);
+           $show= $Page->show();
+           $this->assign('page',$show);
+           $good_type=$db->limit($Page->firstRow.','.$Page->listRows)->select();
            $this->assign("good_type",$good_type);
            $this->display();
        }

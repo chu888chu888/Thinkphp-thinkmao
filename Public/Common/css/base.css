@@ -342,5 +342,113 @@ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     text-align: center;
     width: 24px;
 }
+.fade{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #000000;
+    width:100%;
+    height:100%;
+    display:none;
+}
+.mod a{
+    cursor: pointer;
+}
+.judge{
+    width:560px;
+    height:auto;
+    z-index: 1000;
+    border: 1px solid #B2B2B2;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+display:none;
+background-color: #fff;
+position: absolute;
+margin: 150px auto;
+}
+.outmes{
+    width:360px;
+    height:auto;
+    z-index: 1100;
+    border: 1px solid #B2B2B2;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+display:none;
+background-color: #fff;
+position: absolute;
+margin: 150px auto;
+}
+.judgetitle h3{
+     color:#317EAC;
+    font-size: 18px;
+}
+.judgetitle{
+    height:45px;
+    border-bottom: 1px solid #EEEEEE;
+    line-height: 45px;
+    -webkit-border-radius: 6px 6px 0px 0px;
+-moz-border-radius: 6px 6px 0px 0px;
+border-radius: 6px 6px 0px 0px;
+}
+.judgetitle *{
+    display: inline-block;
+    line-height: 45px;
+}
+.judgetitle button{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.judgetitle h3{
+    margin-left: 15px;
+}
+button.close {
+padding: 0;
+cursor: pointer;
+background: transparent;
+border: 0;
+-webkit-appearance: none;
+}
+.close {
+float: right;
+font-size: 20px;
+font-weight: bold;
+line-height: 18px;
+color: #000000;
+text-shadow: 0 1px 0 #ffffff;
+opacity: 0.2;
+filter: alpha(opacity=20);
+}
+.judgebody{
+    overflow-y: auto;
+    max-height: 400px;
+    padding: 15px;
+}
+.judgeend{
+    width: auto;
+    background-color: #F5F5F5;  
+    border-top: 1px solid #DDDDDD;
+    height:55px;
+    line-height: 55px;
+    -webkit-border-radius: 0px 0px 6px 6px;
+-moz-border-radius: 0px 0px 6px 6px;
+border-radius: 0px 0px 6px 6px;
+}
+.judgeend input{
+    float: right;
+    margin-top: 15px;
+}
 
 

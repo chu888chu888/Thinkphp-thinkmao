@@ -8,7 +8,9 @@ and open the template in the editor.
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
-        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />        
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
+        <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
+        <script src="__PUBLIC__/Admin/js/good_type.js"></script>        
     </head>
     <body>
         <table class="channel_list">
@@ -46,14 +48,12 @@ and open the template in the editor.
             </foreach>
          </tbody>
         </table>
-        <div class="page">
+        <div class="page" style="float:left;margin-left:20px">
             {$page}
         </div>
-        <h4>
-             <a href="{:U('add_good_type_show')}" class="btn addtop btn-danger" style="float: right">
+             <a href="{:U('add_good_type_show')}" class="btn addtop btn-danger" style="float: right;margin-top:30px;">
                 <i class="icon-trash icon-white"></i>
                 添加商品类型
              </a>
-           </h4>
     </body>
 </html>

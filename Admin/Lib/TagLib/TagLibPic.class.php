@@ -21,7 +21,7 @@ Class TagLibPic extends TagLib {
                                        'chgoods'=>array('attr'=>'cid,type,row,num','close'=>1),
                                        'segoods'=>array('attr'=>'gids,type,row','close'=>1),
                                        'allgood'=>array('attr'=>'gid','close'=>1),
-                                       'select'=>array('attr'=>'cid,row','close'=>1),
+                                       'selects'=>array('attr'=>'cid,row','close'=>1),
                                        'selval'=>array('attr'=>'value,row','close'=>1),
                                        'ncate'=>array('attr'=>'cid,row','close'=>1),
 		);
@@ -152,16 +152,14 @@ str;
          return $str;
     }
 
-
-
     /**
      * 遍历出筛选属性名
      * @param type $attr
      * @param type $content
      * @return string
      */
-    public function _select($attr,$content){
-          $tag = $this->parseXmlAttr($attr,'select');
+    public function _selects($attr,$content){
+          $tag = $this->parseXmlAttr($attr,'selects');
             if(!$tag['cid'] && !$_GET['cid']){
                 return;
          }
@@ -178,13 +176,15 @@ str;
            return $str;
     }
      /**
+
+/**
      * 遍历出筛选属性值
      * @param type $attr
      * @param type $content
      * @return string
      */
     public function _selval($attr,$content){
-          $tag = $this->parseXmlAttr($attr,'select');
+          $tag = $this->parseXmlAttr($attr,'selval');
             if(!$tag['value']){
                 return;
          }

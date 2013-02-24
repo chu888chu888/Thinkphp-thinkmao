@@ -1,6 +1,25 @@
 var wid;
 $(function(){
 /**
+ *确认框的效果
+ * */
+$(".close").mouseover(function(){
+    $(this).css("color","blue");
+})
+$(".close").mouseout(function(){
+    $(this).css("color","#000");
+})
+$(".close").click(function(){
+    $(".judge").slideUp("normal",function(){
+        $(".fade").hide("fast");
+    });
+})
+$("#cancel").click(function(){
+    $(".judge").slideUp("normal",function(){
+        $(".fade").hide("fast");
+    });
+})
+/**
 * 动态的调整右边窗口的大小
 */
   change();

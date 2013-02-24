@@ -172,7 +172,10 @@
                      }
            $this->success('操作成功',U("good_attr_edit_show?id=$gid"));
      }
-     public function good_del(){
+     /**
+      * 删除商品
+      */
+     public function good_del(){         
          $id = $_GET['id'];
          $imglist = M('goods');
          $datalist = $imglist->where(array('id'=>$id))->find();
@@ -192,9 +195,9 @@
          $db = D('GoodsRelation');
          $res = $db->relation(true)->delete($id);
          if($res){
-             $this->success('删除成功',U('index'));
+             echo 1;
          }else{
-             $this->error('删除失败',U('index'));
+              echo 0;
          }
 
 
