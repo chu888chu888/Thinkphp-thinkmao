@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <title></title>
@@ -7,9 +7,9 @@
         <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
         <script src="__PUBLIC__/Admin/js/addgood.js"></script>
         <script type="text/javascript">
-            var brands_url = '{:U("brands")}';
-            var attr_url = '{:U("attr")}';
-            var type_url ='{:U("type")}';
+            var brands_url = '<?php echo U("brands");?>';
+            var attr_url = '<?php echo U("attr");?>';
+            var type_url ='<?php echo U("type");?>';
             var public_url = "__PUBLIC__";
         </script>
     </head>
@@ -25,7 +25,7 @@
             <li class="rudio">商品相册</li>
             <li class="rudio">售后服务</li>
         </ul>
-        <form action="{:U('put_good')}" method="post" class="form">
+        <form action="<?php echo U('put_good');?>" method="post" class="form">
             <div class="innerbox" >
                 
                 <table class="tb">
@@ -54,32 +54,23 @@
                                 请选择栏目
                             </div>
                             <div class="show_cate rudio">
-                                <cate4 cid="top">                                        
-                                    <span ss="{}" class="c1 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>                                    
+                                <?php $db = M("category");$data = $db->where(array("pid"=>0))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><span ss="{}" class="c1 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>                                    
                                             <ul class="ul1">
-                                                <cate4 cid="$field['id']">
-                                                    <li>                                                        
-                                                            <span ss="{}" class="c2 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>                                                       
+                                                <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li>                                                        
+                                                            <span ss="{}" class="c2 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>                                                       
                                                         <ul class="ul1">
-                                                            <cate4 cid="$field['id']">
-                                                                <li>                                                                   
-                                                                       <span ss="{}" class="c3 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>
+                                                            <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li>                                                                   
+                                                                       <span ss="{}" class="c3 catename" flag="1"><?php echo ($field['name']); ?><span class="show_status">+</span></span>
                                                                            <ul class="ul1">
-                                                                              <cate4 cid="$field['id']">
-                                                                                <li ss="{}" class="c4 catename" flag="false" cateid="{$field.id}" val="{$field['name']}">                                                                   
-                                                                                 {$field['name']}                                                                   
-                                                                                 </li>
-                                                                             </cate4>
+                                                                              <?php $db = M("category");$data = $db->where(array("pid"=>$field['id']))->select(); foreach($data as $field){ $field["url"]=U("List/index",array('cid'=>$field['id']));?><li ss="{}" class="c4 catename" flag="false" cateid="<?php echo ($field["id"]); ?>" val="<?php echo ($field['name']); ?>">                                                                   
+                                                                                 <?php echo ($field['name']); ?>                                                                   
+                                                                                 </li><?php }; ?>
                                                                            </ul>
-                                                                </li>
-                                                            </cate4>
+                                                                </li><?php }; ?>
                                                         </ul>
-                                                    </li>
-                                                </cate4>
+                                                    </li><?php }; ?>
                                             </ul>
-                                    <p></p>
-                                        
-                                    </cate4>
+                                    <p></p><?php }; ?>
                                 
                                 
                             </div>
@@ -116,7 +107,17 @@
                 <table class="tb ed">                    
                     <tr  class="edit">
                         <td>
-                            <editor name='intro'/>
+                            <script type='text/javascript'>window.UEDITOR_HOME_URL = '__PUBLIC__/Ueditor/';</script>
+<script type='text/javascript' src='__PUBLIC__/Ueditor/editor_config.js'></script>
+<script type='text/javascript' src='__PUBLIC__/Ueditor/editor.min.js'></script><script type='text/plain' name='intro' id='intro'></script>
+<script type='text/javascript'>
+	UEDITOR_CONFIG.initialFrameWidth = '100%';
+    UEDITOR_CONFIG.initialFrameHeight = '300';
+    UEDITOR_CONFIG.initialContent = '';
+    UEDITOR_CONFIG.imageUrl = '__APP__/Common/editor?path=./Uploads/Editor/';
+    UEDITOR_CONFIG.imagePath = '__ROOT__';
+    UE.getEditor('intro');
+</script>
                         </td>
                     </tr>
                 </table>
@@ -171,7 +172,39 @@
                     </tr>
                      <tr>
                           <td>
-                              <upload name='img' limit='10' path='./Uploads/img_list' width="460,80" height="460,90"/>
+                              <link rel='stylesheet' href='__PUBLIC__/Uploadify/uploadify.css'/>
+<style>
+	.uploadify{margin-top:1em;}
+	.uploadify-button {background-color: transparent;border: none;padding: 0}
+    .uploadify:hover .uploadify-button {background-color: transparent}
+    .upload-img{width:140px;height:180px;float:left;margin-right:10px;position:relative;}
+    .upload-img .upload-del{
+    	display:block;width:16px;height:16px;
+    	background:url(__PUBLIC__/Uploadify/uploadify-cancel.png);
+    	position:absolute;top:0;right:0;
+    	cursor:pointer;
+    }
+</style>
+<script type='text/javascript' src='__PUBLIC__/Uploadify/jquery.uploadify.min.js'></script>
+<script type='text/javascript' src='__PUBLIC__/Uploadify/uploadify.js'></script>
+<script type='text/javascript'>
+	var uploadUrl = '__APP__/Common/uploadify';
+	uploadOptions.swf = '__PUBLIC__/Uploadify/uploadify.swf';
+	uploadOptions.uploader = uploadUrl;
+	uploadOptions.buttonImage = '__PUBLIC__/Uploadify/button.png';
+</script><input type='file' id='img' name='img'/><div></div>
+<script type='text/javascript'>
+	uploadOptions.uploadLimit = 10;
+	uploadOptions.disWidth = 140;
+	uploadOptions.disHeight = 180;
+	uploadOptions.formData = {
+		<?php echo C('VAR_SESSION_ID');?> : '<?php echo session_id();?>',
+		width : '460,80',
+		height : '460,90',
+		path : './Uploads/img_list/'
+	};
+	$('#img').uploadify(uploadOptions);
+</script>
                         </td>
                      </tr>
                       <tr>
@@ -179,7 +212,19 @@
                     </tr>
                      <tr>
                           <td>
-                              <upload name='pic' limit='1' path='./Uploads/img_list' />
+                              <input type='file' id='pic' name='pic'/><div></div>
+<script type='text/javascript'>
+	uploadOptions.uploadLimit = 1;
+	uploadOptions.disWidth = 140;
+	uploadOptions.disHeight = 180;
+	uploadOptions.formData = {
+		<?php echo C('VAR_SESSION_ID');?> : '<?php echo session_id();?>',
+		width : '0',
+		height : '0',
+		path : './Uploads/img_list/'
+	};
+	$('#pic').uploadify(uploadOptions);
+</script>
                         </td>
                      </tr>
                 </table>
@@ -190,7 +235,15 @@
                 <table class="tb ed">                    
                     <tr  class="edit">
                         <td>
-                            <editor name='service'/>
+                            <script type='text/plain' name='service' id='service'></script>
+<script type='text/javascript'>
+	UEDITOR_CONFIG.initialFrameWidth = '100%';
+    UEDITOR_CONFIG.initialFrameHeight = '300';
+    UEDITOR_CONFIG.initialContent = '';
+    UEDITOR_CONFIG.imageUrl = '__APP__/Common/editor?path=./Uploads/Editor/';
+    UEDITOR_CONFIG.imagePath = '__ROOT__';
+    UE.getEditor('service');
+</script>
                         </td>
                     </tr>
                 </table>

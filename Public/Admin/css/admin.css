@@ -4,19 +4,15 @@
     width:100%;
     background-image:url(../img/header-bg.png);
     background-repeat:repeat-x;
-    position:fixed;
+    position:absolute;
     top:0px;
     left:0px;
     margin-bottom: 0px;
 }
-.theme{
-    font-size: 35px;
-    font-weight: bolder;
+.theme{   
     display: inline-block;
     float: left;
     margin-left: 10px;
-    line-height: 50px;
-    color: #000;
 }
 .themefont{
     color:red;
@@ -28,8 +24,7 @@
 .t_guid li{
    display: inline-block;
    float: right;
-   height:20px !important;
-   height: 40px;
+   height: 20px;
    margin-top: 20px;
    padding: 0px 10px;
    margin-right: 5px;
@@ -38,7 +33,6 @@
 .t_guid li a{
     color:#000;
     font-size: 12px;
-
 }
 .left{
     display: inline-block;
@@ -72,11 +66,15 @@
 }
 
 .main{
-    margin-left: -10px;
-    font-size: 13px;   
-    background-color: #41A1D9;
-    color: #fff;
+    margin-left: -10px;   
+    background-color: #41A1D9;    
     cursor: pointer;
+}
+.mtitle{
+    font-size: 13px;   
+    color: #fff;
+    display: inline-block;
+    .float: left;
 }
 .right{
     display: inline-block;

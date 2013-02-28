@@ -181,9 +181,9 @@
         */
        public function cate(){
                           $category = M('category')->select();
-		                      $cate = recursion($category);
+                          $cate = recursion($category);
                           $this->assign('cate', $cate);
-		                      $this->display();
+                          $this->display();
        }
        public function add_top_cate_show(){
            $pid = $_REQUEST['pid'];

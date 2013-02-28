@@ -1,6 +1,17 @@
 var wid;
 $(function(){
 /**
+ *顶部栏目的固定效果
+ */
+$(window).scroll(function(){
+    var theight = $("body").scrollTop();
+    $(".head").css("top",theight+"px");
+})
+$(window).resize(function(){
+    var wwidth = parseInt($("body").css("width"));
+    $(".head").css("width",wwidth+"px");
+})
+/**
  *确认框的效果
  * */
 $(".close").mouseover(function(){
@@ -71,15 +82,7 @@ $("#cancel").click(function(){
            var other = $(".main[flag = 'more']").parents("ul");
            other.children("li[class != 'main']").slideUp("normal");
            $(".main").attr("flag","less");
-           other.children("li[class = 'main']").children("span").css("background-position","-288px -120px");
-//           $(".main").each(function(){
-//               if($(this).attr("flag")=="more"){
-//                   alert(123);
-//                   var other = $(this).parents("ul");
-//                   other.children("li[class != 'main']").slideDown("normal");
-//               }
-//           })
-           
+           other.children("li[class = 'main']").children("span").css("background-position","-288px -120px");           
           $(this).attr("flag","more");
           $(this).children("span").css("background-position","-313px -119px");
            var obj = $(this).parents("ul");
@@ -110,13 +113,17 @@ $(window).resize(
     }
 );
  function change(){
-   if($(window).width()>=1270){
+   if($(window).width()>1270){
        wid = $(window).width();      
        var widfor =  wid - 180;
      $(".right").css("width",widfor+"px");
      $("#ou").css("width",wid+"px")
    }else{
+       if($.browser.msie){
+           $(".right").css("width","1165px");
+       }else{
      $(".right").css("width","1091px");
+       }
      $("#ou").css("width","1270px")
    }   
     }

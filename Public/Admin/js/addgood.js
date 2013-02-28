@@ -2,7 +2,7 @@ $(function(){
 //初始化iframe的高度
     $(function(){
     $(".right iframe",window.parent.document).css("height",function(){
-        return "1026px";
+        return "650px";
     })
 })
 //侧边栏目的点击效果    
@@ -12,7 +12,7 @@ $(function(){
                 $(this).css("background-color","#DB1F26");
                  $(this).attr("flag",true);
                  var cateid = $(this).attr("cateid");
-                 var cateval = $(this).attr("val");
+                 var cateval =$(this).attr("val");
                  var str = $("#res_char").html();
                  if($("#res_char").children("input").length==0){                     
                      str = "";
@@ -115,7 +115,7 @@ $(function(){
        }
        str += '<li style="border:none" class="endpoint">Next</li>';
         $(".attrtype").html(str);
-       var wid = 94 + pagenum*38+"px";
+       var wid = 94 + pagenum*39+"px";
        $(".attrtype").css("width",wid);
        pageattr();
     }
@@ -130,7 +130,7 @@ $(function(){
                               }
                        })
                     $(".right iframe", window.parent.document).css("height",function(i,val){                           
-                            return 615+"px";
+                            return 645+"px";
                         });
             }
             //属性分页点击处理
@@ -276,7 +276,7 @@ function reend(){
    
    $("#res_brand").click(function(){
        if($("#brand_div").css("display")!="none"){
-           retrun;
+           return 0;
        }
          var strcid='';
         $("#res_char input[class='cateid']").each(function(){
@@ -298,7 +298,7 @@ function reend(){
                     $("#brand_div").show("normal");    
                 });
                 for(val in brands){
-                     var obj = "<input type='button' value="+brands[val].name+" brandid = "+brands[val].id+" class='bvalue'>";
+                     var obj = "<input type='button' style='float:left;display:inline-block' value="+brands[val].name+" brandid = "+brands[val].id+" class='bvalue'>";
                     var str = $("#brand_div").html();
                     str += obj;                    
                    $("#brand_div").html(str);

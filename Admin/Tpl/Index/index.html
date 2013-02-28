@@ -10,6 +10,7 @@
         <base target="iframe" />
     </head>
     <body id="ou">
+        <!---------------------------提示信息start------------------------------------->
         <div class="fade"></div>
         <div class="judge" flag="off">
              <div class="judgetitle">
@@ -32,10 +33,9 @@
                 ....
             </div>
         </div>
+         <!---------------------------提示信息end------------------------------------->
         <div class="head">
-            <span class="theme">
-                A<span class="themefont">d</span>min
-            </span>
+            <img src="__PUBLIC__/Admin/img/logo.png" class="theme"/>           
             <ul class="t_guid">
                 <li><a href="{:U('Index/loginOut')}">退出登陆</a></li>
                 <li><a href="{:U('ListGoods/index')}">商品列表</a></li>                
@@ -46,7 +46,7 @@
         <div class="by">
             <div class="left">               
                 <ul>
-                    <li class="main" flag="more">商品管理<span class="flagchange" ></span></li>
+                    <li class="main" flag="more"><span class="mtitle">商品管理</span><span class="flagchange" ></span></li>
                     <li><a href="{:U('ListGoods/index')}">商品列表</a></li>
                     <li><a href="{:U('AddGood/index')}">添加商品</a></li>
                     <li><a href="{:U('InventoryGood/index')}">商品库存</a></li>
@@ -55,7 +55,7 @@
                     <li><a href="{:U('Goods/good_type')}">商品类型</a></li>
                 </ul>
                  <ul>
-                    <li class="main"  flag="more">订单管理<span class="flagchange"></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">订单管理</span><span class="flagchange"></span></li>
                     <li><a href="{:U('Order/index')}">订单列表</a></li>
                     <li><a href="{:U('Order/step1')}">待付款订单</a></li>
                     <li><a href="{:U('Order/step2')}">待发货订单</a></li>
@@ -63,33 +63,33 @@
                     <li><a href="{:U('Order/step3')}">退货订单</a></li>
                 </ul>
                 <ul>
-                    <li class="main"  flag="more">评论管理<span class="flagchange" ></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">评论管理</span><span class="flagchange" ></span></li>
                     <li><a href="#">数据备份</a></li>
                     <li><a href="#">数据还原</a></li>
                 </ul>
                 <ul>
-                    <li class="main"  flag="more">数据库管理<span class="flagchange" ></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">数据库管理</span><span class="flagchange" ></span></li>
                     <li><a href="#">数据备份</a></li>
                     <li><a href="#">数据还原</a></li>
                 </ul>
                 <ul>
-                    <li class="main"  flag="more">广告管理<span class="flagchange" ></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">广告管理</span><span class="flagchange" ></span></li>
                     <li><a href="#">广告列表</a></li>
                     <li><a href="#">广告位置</a></li>
                 </ul>
                 <ul>
-                    <li class="main"  flag="more">用户管理<span class="flagchange" ></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">用户管理</span><span class="flagchange" ></span></li>
                     <li><a href="#">用户列表</a></li>
                     <li><a href="#">添加用户</a></li>
                     <li><a href="#">用户等级</a></li>
                 </ul>
                  <ul>
-                    <li class="main"  flag="more">验证码管理<span class="flagchange" ></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">验证码管理</span><span class="flagchange" ></span></li>
                     <li><a href="#">参数配置</a></li> 
                     <li><a href="#">风格配置</a></li>
                 </ul>
                 <ul>
-                    <li class="main"  flag="more">友情链接管理<span class="flagchange"></span></li>
+                    <li class="main"  flag="more"><span class="mtitle">友情链接管理</span><span class="flagchange"></span></li>
                      <li><a href="#">首页链接</a></li>
                     <li><a href="#">链接列表</a></li>
                     <li><a href="#">待审核链接</a></li>                    
@@ -98,7 +98,7 @@
 
             </div>
             <div class="right">
-                <iframe src="{:U('Index/welcome')}" name="iframe" scrolling="no">
+                <iframe src="{:U('Index/welcome')}" name="iframe" scrolling="no" align="center" frameborder="0">
                 </iframe>
             </div>
         </div>
