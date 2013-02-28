@@ -1,0 +1,227 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title></title>
+        <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
+        <link rel="stylesheet" href="__PUBLIC__/Admin/css/Agood.css" />
+        <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
+        <script src="__PUBLIC__/Admin/js/addgood.js"></script>
+        <script src="__PUBLIC__/Admin/js/viewedite.js"></script>
+        <script type="text/javascript">
+            var brands_url = '{:U("AddGood/brands")}';
+            var attr_url = '{:U("AddGood/attr")}';
+            var type_url ='{:U("AddGood/type")}';
+            var public_url = "__PUBLIC__";          
+        </script>
+    </head>
+    <body>
+        <div class="ititle">
+            商品编辑
+        </div>
+        <ul class="guid">
+            <li class="rudio">基本信息</li>
+            <li class="rudio">详细描述</li>
+            <li class="rudio">其他信息</li>
+            <li class="rudio">商品属性</li>
+            <li class="rudio">商品相册</li>
+            <li class="rudio">售后服务</li>
+        </ul>
+        <form action="{:U('good_modify')}" method="post" class="form">
+            <div class="innerbox" >
+                
+                <table class="tb">
+                    <tr>
+                        <td class="tname">商品名称:</td>
+                        <td>
+                            <input type="text" name="name" value="{$allmes.gname}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tname">商品单位:</td>
+                        <td>
+                            <input type="text" name="unit" value="{$allmes.unit}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tname">商品货号:</td>
+                        <td>
+                            <input type="text" name="number" value="{$allmes.number}"/>
+                        </td>
+                    </tr>
+                    <tr id="clone">
+                        <td class="tname">商品分类:</td>
+                        <td  style="position:relative">
+                            <div class="select_char inputstyle" id="res_char">
+                                请选择栏目
+                            </div>
+                            <div class="show_cate rudio">
+                                <cate4 cid="top">                                        
+                                    <span ss="{}" class="c1 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>                                    
+                                            <ul class="ul1">
+                                                <cate4 cid="$field['id']">
+                                                    <li>                                                        
+                                                            <span ss="{}" class="c2 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>                                                       
+                                                        <ul class="ul1">
+                                                            <cate4 cid="$field['id']">
+                                                                <li>                                                                   
+                                                                       <span ss="{}" class="c3 catename" flag="1">{$field['name']}<span class="show_status">+</span></span>
+                                                                           <ul class="ul1">
+                                                                              <cate4 cid="$field['id']">
+                                                                                  <if condition="in_array($field['id'],$allmes['cid'])">
+                                                                                      <li ss="{}" class="c4 catename" flag="true" cateid="{$field.id}" style="background-color:#DB1F26" val="{$field['name']}">
+                                                                                      <else/>
+                                                                                       <li ss="{}" class="c4 catename" flag="false" cateid="{$field.id}" val="{$field['name']}">   
+                                                                                  </if>                                                                                                                                               
+                                                                                 {$field['name']}                                                                   
+                                                                                 </li>
+                                                                             </cate4>
+                                                                           </ul>
+                                                                </li>
+                                                            </cate4>
+                                                        </ul>
+                                                    </li>
+                                                </cate4>
+                                            </ul>
+                                    <p></p>
+                                        
+                                    </cate4>
+                                
+                                
+                            </div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tname">商品品牌:</td>
+                        <td style="position:relative">
+                            <div id="brand_div"></div>
+                            <div class="select_char inputstyle" id="res_brand">
+                                <input type="button" value="{$allmes.brand_name}" class="brandval" style="background-color:blue">
+                                <input type="button" value="{$allmes.bid}" name="bid" class="cateid">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tname">本店售价:</td>
+                        <td>
+                            <input type="text" name="price" value="{$allmes.price}"/>&nbsp;&nbsp;&nbsp;元
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tname">市场售价:</td>
+                        <td>
+                            <input type="text" name="mprice" value="{$allmes.mprice}"/>&nbsp;&nbsp;&nbsp;元
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+
+            <div class="innerbox">
+                <table class="tb ed">                    
+                    <tr  class="edit">
+                        <td>
+                            <editor name='intro'/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="innerbox">
+                <table class="tb ed">
+                    <tr>
+                        <td style="width:200px;">商品的点击次数:</td>
+                        <td align="left">
+                            <input type="text" name="click" style="width: 60px" value="{$allmes.click}"/>&nbsp;&nbsp;&nbsp;次
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">是否为推荐商品：</td>
+                    <if condition="$allmes['recommend'] eq 0">
+                        <td align="left">
+                            <input type="button" class="butage" flag="1" style="background-image: url('__PUBLIC__/Common/img/on.jpg')">
+                            <input type="hidden"  name="recommend" value="1" >
+                        </td>
+                        <else/>
+                        <td align="left">
+                            <input type="button" class="butage" flag="0">
+                            <input type="hidden"  name="recommend" value="0">
+                        </td>
+                    </if>
+                        
+                    </tr>
+                    <tr>
+                        <td style="width:200px;">是否为热卖商品：</td>
+                         <if condition="$allmes['hot'] eq 0">
+                        <td align="left">
+                            <input type="button" class="butage" flag="1" style="background-image: url('__PUBLIC__/Common/img/on.jpg')">
+                            <input type="hidden"  name="hot" value="1" >
+                        </td>
+                        <else/>
+                        <td align="left">
+                            <input type="button" class="butage" flag="0">
+                            <input type="hidden"  name="hot" value="0">
+                        </td>
+                    </if>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="innerbox">
+                <table class="tb" id="attr" style="width: auto">
+                    <tr id="head_type">
+                        <td class="ifont" width="100px;">选择商品类型:</td>
+                         <td>                             
+                            <div class="select_char inputstyle" id="good_type">
+                                请选类型
+                            </div>                        
+                        </td>
+                    </tr>
+                </table>
+                <ul class="attrtype">
+                    <li class="endpoint">Prev</li>
+                    <li style="border:none" class="endpoint">Next</li>
+                </ul>
+            </div>
+
+             <div class="innerbox">
+                 <table class="tb" style="width:80%">
+                    <tr>
+                        <td class="tfont" width="100px;">商品图册:</td>
+                    </tr>
+                     <tr>
+                          <td>
+                              <upload name='img' limit='10' path='./Uploads/img_list' width="460,80" height="460,90"/>
+                        </td>
+                     </tr>
+                      <tr>
+                        <td class="tfont" width="100px;">列表页展示图:</td>
+                    </tr>
+                     <tr>
+                          <td>
+                              <upload name='pic' limit='1' path='./Uploads/img_list' />
+                        </td>
+                     </tr>
+                </table>
+            </div>
+
+
+             <div class="innerbox">
+                <table class="tb ed">                    
+                    <tr  class="edit">
+                        <td>
+                            <editor name='service'/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="endform">
+            <input type="button" value="确定" class="gsubmit btn btn-primary" id="modify" style="margin-left: 85%"/>
+            <input type="reset" value="取消" class="gsubmit btn" style="color:#000"/>
+            </div>
+        </form>
+    </body>
+</html>

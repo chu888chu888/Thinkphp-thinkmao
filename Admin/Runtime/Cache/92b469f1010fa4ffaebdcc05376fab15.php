@@ -39,11 +39,13 @@
                    </td>
                    
                    <td class="mod">
-                       <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
+                       <!-- <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
                            <i class="icon-zoom-in icon-white"></i>
                            View				
-                       </a>
-                       <a href="<?php echo U('good_attr_edit_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                       </a> -->
+                       <a href="<?php echo U('viewedite');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
+                           <i class="icon-zoom-in icon-white"></i>
+                           View
                            <i class="icon-edit icon-white"></i>
                            Edit
                        </a>

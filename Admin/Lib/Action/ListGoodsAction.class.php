@@ -53,6 +53,83 @@
          $this->assign('attr_all',$gt_all);
 //         p($gt_all);
      }
+     //商品修改模板显示
+     public function viewedite(){
+        $id = $_GET["id"];            
+        $mes = get_goods_mes($id);
+        $this->assign("allmes",$mes);
+        $this->display();
+     }
+     //商品修改
+     public function good_modify(){
+         $cid_arr = $_POST['cid'];
+         $cid_str = '';
+         foreach ($cid_arr as $key => $value) {
+             $cid_str .= $value.'|';
+         }
+         $cid_str = rtrim($cid_str, '|');
+         $data = array(
+             'name'=>$_POST['name'],
+             'unit'=>$_POST['unit'],
+             'number'=>$_POST['number'],
+             'price'=>(float)$_POST['price'],
+             'pic'=>$_POST['pic'],
+             'click'=>(int)$_POST['click'],
+             'recommend'=>isset($_POST['recommend']) ? 1 : 0,
+             'hot'=>isset ($_POST['hot']) ? 1 :0,
+             'time'=>$_SERVER['REQUEST_TIME'],
+             'cid'=>$cid_str,
+             'bid'=>$_POST['bid'],
+              'tid'=>$_POST['tid'],
+              'aid'=>$_SESSION['uid'],
+             'mprice'=>$_POST['mprice'],
+             'goods_intro'=>array(
+                'mini' => implode('|', $_POST['img'][2]),
+                'medium' => implode('|', $_POST['img'][1]),
+                'max' => implode('|', $_POST['img'][0]),
+                'intro' => $_POST['intro'],
+                'service' => $_POST['service']
+             )
+         );
+         $attr = array();
+         /**
+          * 组合属性
+          */
+         if(isset($_POST['attr'])){
+         foreach ($_POST['attr'] as $key => $value) {
+             if(empty($_POST['attr'][$key]))
+                                  continue;
+             $attr[]=array(
+                 'aid'=>$key,
+                 'value'=>$value
+                );
+            }
+         }
+         /**
+          * 组合规格
+          */
+         if(isset($_POST['spec'])){
+             foreach ($_POST['spec'] as $key => $v) {
+                 for($i=0;$i<count($v["value"]);$i++){
+                     if(empty($v['value'][$i])){
+                         continue;
+                     }
+                     $attr[] = array(
+                         'value'=>$v['value'][$i],
+                         'price'=>(float)$v['price'][$i],
+                         'aid'=>(int)$key
+                     );
+                 }
+             }
+         }
+         $data['goods_attr']=$attr;
+
+      if (D('GoodsRelation')->modify($data)) {
+			$this->success('添加成功', U('index'));
+		} else {
+			$this->error('添加失败 请重试');
+		}
+     }
 
      /**
       * 首次添加商品库存

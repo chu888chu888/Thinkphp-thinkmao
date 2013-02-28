@@ -167,7 +167,7 @@ class AddGoodAction extends CommonAction  {
          }
          $data['goods_attr']=$attr;
 
-         	  if (D('GoodsRelation')->insert($data)) {
+      if (D('GoodsRelation')->insert($data)) {
 			$this->success('添加成功', U('index'));
 		} else {
 			$this->error('添加失败 请重试');

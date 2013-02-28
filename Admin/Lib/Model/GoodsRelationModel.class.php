@@ -15,7 +15,10 @@ class GoodsRelationModel extends RelationModel{
 		$data = is_null($data) ? $_POST : $data;
 		return $this->relation(true)->add($data);
 	}
-    
+    Public function modify($data = NULL){
+                                        $data = is_null($data) ? $_POST : $data;
+		return $this->relation(true)->save($data);
+    }
 }
 
 ?>
