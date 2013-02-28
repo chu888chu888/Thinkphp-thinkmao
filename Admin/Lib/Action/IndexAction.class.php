@@ -5,6 +5,13 @@ class IndexAction extends CommonAction {
        $this->display();
    }
    public function welcome(){
+       $ip = get_client_ip(1);
+       $this->assign("ip", $ip);     
        $this->display();
    }
+   Public function loginOut () {
+		session_unset();
+		session_destroy();
+		redirect('Login/index');
+	}
 }

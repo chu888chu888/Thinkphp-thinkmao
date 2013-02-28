@@ -37,8 +37,8 @@
                 A<span class="themefont">d</span>min
             </span>
             <ul class="t_guid">
-                <li><a href="#">栏目列表</a></li>
-                <li><a href="#">文章列表</a></li>
+                <li><a href="<?php echo U('Index/loginOut');?>">退出登陆</a></li>
+                <li><a href="<?php echo U('ListGoods/index');?>">商品列表</a></li>                
                 <li><a href="#">用户管理</a></li>
                 <li><a href="<?php echo U('Index/welcome');?>">查看首页</a></li>
             </ul>
