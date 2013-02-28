@@ -55,7 +55,7 @@
      }
 
      /**
-      * 显示商品规格列表
+      * 首次添加商品库存
       */
      public function good_show(){
          $this->gs();
