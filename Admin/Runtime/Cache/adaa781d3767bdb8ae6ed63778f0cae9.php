@@ -1,4 +1,4 @@
-<!--
+<?php if (!defined('THINK_PATH')) exit();?><!--
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
@@ -22,43 +22,37 @@ and open the template in the editor.
                 </tr>
             </thead>
         <tbody id="catetbody">
-        <foreach name='cate' item="n">
-            <if condition="$n['top'] eq '1'">
-                 <tr flag="{$n.top}">
-           <else/>
-                  <tr style="display: none" flag="{$n.top}">
-            </if>
-                   <td >{$n.id}</td>
+        <?php if(is_array($cate)): foreach($cate as $key=>$n): if($n['top'] == '1'): ?><tr flag="<?php echo ($n["top"]); ?>">
+           <?php else: ?>
+                  <tr style="display: none" flag="<?php echo ($n["top"]); ?>"><?php endif; ?>
+                   <td ><?php echo ($n["id"]); ?></td>
                    <td class="c_title">
-                       {$n.html}{$n.name}
-                   <if condition="$n['end'] neq 'true'">
-                       <span class="catep" openx='0'></span>
-                   </if>
+                       <?php echo ($n["html"]); echo ($n["name"]); ?>
+                   <?php if($n['end'] != 'true'): ?><span class="catep" openx='0'></span><?php endif; ?>
                    </td>
                    <td class="mod" style="width: 40%">
-                       <a href="{:U('add_top_cate_show')}?pid={$n.id}" class="btn btn-success">
+                       <a href="<?php echo U('add_top_cate_show');?>?pid=<?php echo ($n["id"]); ?>" class="btn btn-success">
                            <i class="icon-zoom-in icon-white"></i>
                            AddChildren				
                        </a>
-                       <a href="{:U('mod_cate')}?id={$n.id}" class="btn btn-info">
+                       <a href="<?php echo U('mod_cate');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
                            <i class="icon-edit icon-white"></i>
                            Edit
                        </a>
-                       <a url="{:U('del_cate')}?id={$n.id}" class="btn btn-danger">
+                       <a url="<?php echo U('del_cate');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-danger">
                             <i class="icon-trash icon-white"></i>
                             Delete							
                        </a>
                      
                    </td>
-               </tr>            
-        </foreach>
+               </tr><?php endforeach; endif; ?>
          </tbody>
         </table>
         <ul class="catelist" style="float: left;margin-top: 20px;margin-left: 30px;">
                     <li class="endcpoint">Prev</li>
                     <li style="border:none" class="endcpoint">Next</li>
                 </ul>
-        <a href="{:U('add_top_cate_show')}?pid=0" class="btn addtop btn-danger" style="float: right;margin-top: 30px;">
+        <a href="<?php echo U('add_top_cate_show');?>?pid=0" class="btn addtop btn-danger" style="float: right;margin-top: 30px;">
                 <i class="icon-trash icon-white"></i>
                 添加顶级分类
         </a>        

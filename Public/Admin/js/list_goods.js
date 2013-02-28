@@ -1,4 +1,5 @@
 $(function(){
+
     /**
      * 设定套餐
      */
@@ -10,7 +11,7 @@ $(function(){
             var num = $(this).index();
             $(this).next().attr("value",times);
             var price = prompt("请输入该套餐的价格：",0);
-            $(this).val(price);
+            $(this).val(price+"元");
             $(this).next().next().attr("value",price);
         }else{
             $(this).attr("class","series0 zb");
@@ -28,12 +29,43 @@ $(function(){
         obj.children("#gnum").append('<span class="ldel">del-</span>');
         $("#tbody").append(obj);
     })
-    $(".ldel").live("click",function(){
+    $(".ldel").live("click",function(){       
         $(this).parent().parent().remove();
     })
     $(".adde").click(function(){
         var obj2 = $(".tmplate").last().clone(true);
         $("#tbody").append(obj2);
+    })  
+    $(".turnoff").click(function(){       
+      location.reload();
+    })    
+
+    $("#formput").click(function(){
+      var res = mes();
     })
 
 })
+
+
+
+    function mes(){      
+           var outwid = $("body",parent.document).outerWidth();
+           var wid = parseInt((parseInt(outwid)-560)/2)+"px";
+           var widmes = parseInt((parseInt(outwid)-360)/2)+"px";
+           $(".fade",window.parent.document).show("fast",function(){
+               $(".judgebody",window.parent.document).html("确定修改库存");
+               $(".outmes",window.parent.document).css("left",widmes);
+               $(".judge",window.parent.document).css("left",wid).slideDown("normal");
+           }); 
+   
+          $(".judgeend input",window.parent.document).click(function(){              
+                   if($(this).attr("id")=="affirm"){
+                        $(".judge",window.parent.document).slideUp("fast",function(){                                                        
+                                                         $(".fade",window.parent.document).hide("fast",function(){                                                            
+                                                             $("#inventform").submit();
+                                                         });
+                                                  });
+              }              
+         
+   })
+}

@@ -62,7 +62,6 @@
         */
        public function edit_good_attr_show(){
            $id = $_GET['id'];
-
            $this->assign("id",$id);
            $this->display();
        }
@@ -92,7 +91,12 @@
            $id = $_GET['id'];
            $this->assign("id", $id);
            $db = M('type_attr');
-           $data = $db->where(array('tid'=>$id))->select();
+           import("ORG.Util.Page");
+           $count = $db->where(array('tid'=>$id))->count();           
+           $Page= new Page($count,17);
+           $show= $Page->show();
+           $this->assign('page',$show);
+           $data = $db->where(array('tid'=>$id))->limit($Page->firstRow.','.$Page->listRows)->select();
            foreach ($data as $key => $value) {
                if($value['value']=='0'){
                    $data[$key]['value']='手工录入';
@@ -101,11 +105,73 @@
            $this->assign("data", $data);
            $this->display();
        }
+       //修改商品属性显示页面
        public function edit_type_attr_show(){
-
+           $id = $_GET['id'];
+           $db = M("type_attr");
+           $data = $db->where(array("id"=>$id))->find();
+           $this->assign("data",$data);               
+           $this->display();     
+       }
+       //修改商品属性
+       public function edit_type_attr(){       
+             $data =array();
+             $data['id']=$_POST['id'];
+             $data['name']=$_POST['name'];
+             $data['value']=$_POST['select']?$_POST['select']:0;
+             $data['type']=$_POST['type'];
+             $data['gselect']=$_POST['gselect'];
+             $db = M("type_attr");
+             $res = $db->data($data)->save();
+             if($res){
+              $this->success("属性修改成功",U('good_type'));
+             }else{
+              $this->success("属性修改失败",U('edit_type_attr_show',array("id"=>$_POST['id'])));
+             }            
+       }
+       //获得套餐属性与套餐id数组；
+       private function getinventmes(){
+                  $db3 = M("goods_list");
+                  $data1 = $db3->field(array("id","attr"))->select();
+                  $arr=array();
+                  foreach ($data1 as $value) {
+                    $arrt=explode("|", $value['attr']);
+                    foreach ($arrt as $k => $v) {
+                      $tmp=explode(",",$v);                      
+                      $arr[$value['id']][]=$tmp['0'];
+                    }
+                  }
+                  return $arr;     
        }
        public function del_type_attr(){
-
+                 $id = $_GET['id'];
+                 $db = M("type_attr");
+                 $db2 = M("goods_attr");
+                 $res1 = $db2->where(array("aid"=>$id))->delete();
+                 $data = $db->where(array("id"=>$id))->find();
+                 $res = $db->where(array("id"=>$id))->delete();
+                 if($data['type']==0){
+                    if($res1 && $res){
+                      echo 1;
+                    }else{
+                      echo 0;
+                    }
+                 }else{
+                  $result =array();
+                  $db = M("goods_list");
+                  $arr = $this->getinventmes();
+                  foreach ($arr as $key => $value) {
+                    if(in_array($id,$value)){
+                      $tmp = $db->where(array("id"=>$key))->delete();
+                      $result[] = $tmp;
+                    }
+                    if(!in_array(false, $result) && $res1 && $res){
+                      echo 1;
+                    }else{
+                      echo 0;
+                    }
+                  }
+                 }
        }
 
 
@@ -115,9 +181,9 @@
         */
        public function cate(){
                           $category = M('category')->select();
-		$cate = recursion($category);
+		                      $cate = recursion($category);
                           $this->assign('cate', $cate);
-		$this->display();
+		                      $this->display();
        }
        public function add_top_cate_show(){
            $pid = $_REQUEST['pid'];

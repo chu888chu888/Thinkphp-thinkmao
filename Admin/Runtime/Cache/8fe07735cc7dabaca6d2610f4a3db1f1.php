@@ -1,4 +1,4 @@
-<!--
+<?php if (!defined('THINK_PATH')) exit();?><!--
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
@@ -19,14 +19,14 @@ and open the template in the editor.
          <div class="ititle">
             商品属性添加
         </div>
-        <form action="{:U('edit_good_attr')}" method="post" class="agform">
+        <form action="<?php echo U('edit_good_attr');?>" method="post" class="agform">
             <table>
             <tr>
                 <td class="ahead">
                 请输入属性名称:
                 </td>
                 <td>
-                   <input type="hidden" name="id" value="{$id}"/>
+                   <input type="hidden" name="id" value="<?php echo ($id); ?>"/>
                   <input type="text" name="name" class="put"/>
                    </td>
             </tr>            

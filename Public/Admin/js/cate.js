@@ -1,4 +1,7 @@
 $(function(){
+     $(".right iframe",window.parent.document).css("height",function(){
+        return "610px";
+    })
     //栏目的显示与关闭
             $(".c_title").click(function(){
                 var objp = $(this).parents("tr");
@@ -88,6 +91,27 @@ $(function(){
             $(".catenum[sele != '1']").live("mouseout",function(){               
                  $(this).css("background-color","#fff").css("color","#369BD7");
             })
+            //删除栏目
+            var url;
+  $(".delta").click(function(){   
+    url = $(this).attr("url");
+     var outwid = $("body",parent.document).outerWidth();
+           var wid = parseInt((parseInt(outwid)-560)/2)+"px";
+           var widmes = parseInt((parseInt(outwid)-360)/2)+"px";
+           $(".fade",window.parent.document).show("fast",function(){             
+               $(".judgebody",window.parent.document).html("确定删除该栏目吗？");
+               $(".judge",window.parent.document).css("left",wid).slideDown("normal");
+           });          
+  })
+    $(".judgeend input",window.parent.document).click(function(){ 
+                   if($(this).attr("id")=="affirm"){
+                      $(".judge",window.parent.document).slideUp("fast",function(){
+                        $(".fade",window.parent.document).hide("fast",function(){
+                          location.href=url;
+                        });
+                      })
+              }
+   })
 })
 //栏目分页函数以及颜色处理
     function catepage(){
@@ -107,6 +131,7 @@ $(function(){
        $(".catelist").css("width",wid);
        cateattr();
     }
+
      //栏目分页--显示当前分页下的栏目
             function cateattr(){
                   var pagenum = Number($(".catenum[sele = '1']").text());          

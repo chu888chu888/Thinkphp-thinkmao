@@ -20,7 +20,7 @@
     cursor: pointer;
 }
 .adde{
-    height:15px;
+    height:25px;
     padding: 3px 0px;
     margin-bottom: -2px;
     background-color: #eee;
@@ -39,6 +39,7 @@
     height:20px;
     border: 0px;
     background-color:red;
+    color:#fff;
 }
 .series0{
     height:20px;
@@ -47,4 +48,9 @@
 }
 input{
     width:80px;
+}
+.turnoff{
+    float: left;
+    display: inline-block;
+    margin-top: -25px;
 }

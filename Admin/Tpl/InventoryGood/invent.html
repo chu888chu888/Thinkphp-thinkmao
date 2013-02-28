@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
     <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
     <link rel="stylesheet" href="__PUBLIC__/Admin/css/list_goods.css" />
-    <script type="text/javascript" src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/Admin/js/list_goods.js"></script>
+    <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>    
+    <script src="__PUBLIC__/Admin/js/list_goods.js"></script>
 </head>
  <body>
-     <form action="{:U('attr_modify')}" method="post">
+     <form action="{:U('ListGoods/attr_modify')}" method="post" id="inventform">
         <table class="channel_list">
             <thead>
                 <tr>
@@ -60,7 +60,7 @@
                        <if condition="$t[series]">
                            <input type="button" class="series1 zb" value="{$t.price}元"/>
                            <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
-                           <input type="hidden" name="{$gid}[price][]" class="zzdprice" value="{$t.price}"/>
+                           <input type="hidden" name="{$gid}[price][]" class="zzdprice" value="{$t.price}"/>                           
                        <else/>
                            <input type="button" class="series0 zb"/>
                            <input type="hidden" name="{$gid}[series][]" class='zzd' value="{$t.series}"/>
@@ -80,9 +80,8 @@
             
          <input type="button" value="确定" id="formput" class="gsubmit btn btn-primary" style="margin-left: 85%"/>
          <input type="button" value="添加" class="adde gsubmit btn" style="color:#000;"/>
-         <input type="button" value="重置" class="turnoff gsubmit btn" style="color:#000;"/>
-            
-        </div>
+         <input type="button" value="重置" class="turnoff gsubmit btn" id="as" style="color:#000;"/>            
+        </div>        
         </form>
     </body>
 </html>

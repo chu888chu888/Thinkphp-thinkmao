@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -9,7 +9,7 @@
     <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
     <script src="__PUBLIC__/Admin/js/lgoods.js"></script>
     <script type="text/javascript">
-        var del_url = "{:U('good_del')}";
+        var del_url = "<?php echo U('good_del');?>";
     </script>
 </head>
  <body>      
@@ -25,38 +25,36 @@
                 </tr>
             </thead>
         <tbody>
-            <foreach name='goods' item="n">
-               <tr>
-                   <td class="good_id">{$n.id}</td>
-                   <td class="c_title gname">{$n.name}</td>
+            <?php if(is_array($goods)): foreach($goods as $key=>$n): ?><tr>
+                   <td class="good_id"><?php echo ($n["id"]); ?></td>
+                   <td class="c_title gname"><?php echo ($n["name"]); ?></td>
                    <td class="list_td_img">
-                       <img src="{$n.pic}" class="list_img"/>
+                       <img src="<?php echo ($n["pic"]); ?>" class="list_img"/>
                    </td>
                    <td class="number">
-                       {$n.number}
+                       <?php echo ($n["number"]); ?>
                    </td>
                    <td class="td_price">
-                       {$n.price}
+                       <?php echo ($n["price"]); ?>
                    </td>
                    
                    <td class="mod">
-                       <a href="{:U('good_show')}?id={$n.id}" class="btn btn-success">
+                       <a href="<?php echo U('good_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-success">
                            <i class="icon-zoom-in icon-white"></i>
                            View				
                        </a>
-                       <a href="{:U('good_attr_edit_show')}?id={$n.id}" class="btn btn-info">
+                       <a href="<?php echo U('good_attr_edit_show');?>?id=<?php echo ($n["id"]); ?>" class="btn btn-info">
                            <i class="icon-edit icon-white"></i>
                            Edit
                        </a>
-                       <a class="btn btn-danger gdel" gid="{$n.id}">
-                           <i class="icon-trash icon-white"></i>
-                           Delete							
+                       <a class="btn btn-danger gdel" gid="<?php echo ($n["id"]); ?>">
+                            <i class="icon-trash icon-white"></i>
+                            Delete							
                        </a>
                    </td>
-               </tr>            
-            </foreach>
+               </tr><?php endforeach; endif; ?>
          </tbody>
         </table>
-     <div class="page">{$page}</div>
+     <div class="page"><?php echo ($page); ?></div>
     </body>
 </html>

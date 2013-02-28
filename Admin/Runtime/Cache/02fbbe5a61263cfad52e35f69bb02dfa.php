@@ -1,4 +1,4 @@
-<html>
+<?php if (!defined('THINK_PATH')) exit();?><html>
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,41 +21,37 @@
                 </tr>
             </thead>
         <tbody>
-            <foreach name='goods_mes' item="n">
-               <tr>
-                   <td class="good_id">{$n.gid}</td>
-                   <td class="c_title gname" title="{$n.gname}" style="width:210px;overflow: hidden">
-                       {$n.gname}
+            <?php if(is_array($goods_mes)): foreach($goods_mes as $key=>$n): ?><tr>
+                   <td class="good_id"><?php echo ($n["gid"]); ?></td>
+                   <td class="c_title gname" title="<?php echo ($n["gname"]); ?>" style="width:210px;overflow: hidden">
+                       <?php echo ($n["gname"]); ?>
                      </td>
                    <td>
-                       {$n.number}
+                       <?php echo ($n["number"]); ?>
                    </td>
                    <td>
-                    <if condition="$n['inventnum'] eq 0">
-                       0{$n.unit}
-                      <else/>
-                       {$n.inventnum}{$n.unit}
-                     </if>
+                    <?php if($n['inventnum'] == 0): ?>0<?php echo ($n["unit"]); ?>
+                      <?php else: ?>
+                       <?php echo ($n["inventnum"]); echo ($n["unit"]); endif; ?>
                    </td>
                    <td>
-                       {$n.sell_num}{$n.unit}
+                       <?php echo ($n["sell_num"]); echo ($n["unit"]); ?>
                    </td>
                    <td class="td_price">
-                       {$n.price}元
+                       <?php echo ($n["price"]); ?>元
                    </td>
                    
                    <td class="mod">
-                       <a href="{:U('invent')}?id={$n.gid}" class="btn btn-success">
+                       <a href="<?php echo U('invent');?>?id=<?php echo ($n["gid"]); ?>" class="btn btn-success">
                            <i class="icon-zoom-in icon-white"></i>
                            View	
                            <i class="icon-edit icon-white"></i>
                            Edit			
                        </a>                                           
                    </td>
-               </tr>            
-            </foreach>
+               </tr><?php endforeach; endif; ?>
          </tbody>
         </table>
-     <div class="page">{$page}</div>
+     <div class="page"><?php echo ($page); ?></div>
     </body>
 </html>

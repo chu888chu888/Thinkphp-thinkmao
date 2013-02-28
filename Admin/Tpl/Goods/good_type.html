@@ -10,7 +10,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="__PUBLIC__/Common/css/base.css" />
         <link rel="stylesheet" href="__PUBLIC__/Admin/css/channel.css" />
         <script src="__PUBLIC__/Common/js/jquery-1.8.3.js"></script>
-        <script src="__PUBLIC__/Admin/js/good_type.js"></script>        
+        <script src="__PUBLIC__/Admin/js/good_type.js"></script>              
     </head>
     <body>
         <table class="channel_list">
@@ -32,13 +32,12 @@ and open the template in the editor.
                            View				
                        </a>
                        <a href="{:U('edit_good_attr_show')}?id={$n.id}" class="btn addtop btn-danger" >
-                <i class="icon-trash icon-white"></i>
-                Add</a>
+                            <i class="icon-trash icon-white"></i>Add</a>
                        <a href="{:U('edit_good_type_show')}?id={$n.id}" class="btn btn-info">
                            <i class="icon-edit icon-white"></i>
                            Edit
                        </a>
-                       <a href="{:U('del_good_type')}?id={$n.id}" class="btn btn-danger">
+                       <a url="{:U('del_good_type')}?id={$n.id}" class="btn btn-danger delta">
                             <i class="icon-trash icon-white"></i>
                             Delete							
                        </a>                      
