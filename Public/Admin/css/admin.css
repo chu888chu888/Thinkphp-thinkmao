@@ -42,15 +42,17 @@
     margin-left: 10px;
     float: left;
     text-indent: 0.5em;
-    border-right: 4px solid #EAEAEA;
     margin-top: 60px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0 10px #BDBDBD;
+    -webkit-box-shadow: 0 0 10px #BDBDBD;
     box-shadow: 0 0 10px #BDBDBD;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4); 
+    -ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4);
     margin-bottom: 0;
     min-height: 0;
     padding-bottom: 0;
     background-color: #F5F5F5;
-    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 .left ul{
     margin-bottom: 20px;
@@ -81,17 +83,21 @@
     float: left;
     margin-top: 60px;
     width:auto;
-    margin-left: 20px;
-    /*height:5000px;*/   
+    margin-left: 20px; 
 }
 .right iframe{
     width: 100%;
     height: 615px;;
    border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px #BDBDBD;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+     -moz-box-shadow: 0 0 10px #BDBDBD;
+    -webkit-box-shadow: 0 0 10px #BDBDBD;
+    box-shadow: 0 0 10px #BDBDBD;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4); 
+    -ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4);
      padding-top: 8px;
     margin-bottom: 50px;
+    
 }
 .flagchange{
     display: inline-block;

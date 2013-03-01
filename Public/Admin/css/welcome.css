@@ -13,10 +13,11 @@ body div{
 	height:auto;
 	overflow: hidden;
 	border: 1px solid #ccc;
-	border-radius: 8px;
+	border-radius: 8px;                   
 	margin: 10px auto;
 	background: url(../Img/copy.jpg) no-repeat;
 	display: none;
+                  
 }
 #main dl {
 	width:44%;
@@ -32,6 +33,7 @@ body div{
 	padding:5px;
 	margin-bottom: 10px;
 	border:1px solid #fff;
+       
 }
 #main dl dd {
 	color:#dcdcdc;

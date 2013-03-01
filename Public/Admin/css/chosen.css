@@ -40,7 +40,9 @@
   border: 1px solid #aaaaaa;
   -webkit-box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
   -moz-box-shadow   : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
-  box-shadow        : 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px #ffffff inset, 0 1px 1px rgba(0,0,0,0.1);
+   filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4); 
+    -ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4);
   display: block;
   overflow: hidden;
   white-space: nowrap;
@@ -50,6 +52,7 @@
   padding: 0 0 0 8px;
   color: #444444;
   text-decoration: none;
+  
 }
 .chzn-container-single .chzn-default {
   color: #999;
@@ -122,6 +125,7 @@
   -moz-background-clip   : padding;
   -webkit-background-clip: padding-box;
   background-clip        : padding-box;
+  
 }
 /* @end */
 
@@ -200,6 +204,7 @@
   margin: 3px 0 3px 5px;
   position: relative;
   cursor: default;
+  
 }
 .chzn-container-multi .chzn-choices .search-choice-focus {
   background: #d4d4d4;
@@ -333,6 +338,7 @@
   -moz-border-radius-bottomright: 0;
   border-bottom-left-radius : 0;
   border-bottom-right-radius: 0;
+  
 }
 .chzn-container-active .chzn-single-with-drop div {
   background: transparent;

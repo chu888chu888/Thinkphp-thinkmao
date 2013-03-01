@@ -153,6 +153,7 @@ input{
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);   
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 3px #BDBDBD;
+    behavior: url(http://localhost/thinkmao/Public/Common/css/ie-css3.htc);
 }
 .brandval{
      line-height: 14px;
@@ -165,7 +166,10 @@ input{
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);   
     border-radius: 5px 5px 5px 5px;
-    box-shadow: 0 0 3px #BDBDBD;
+    box-shadow: 0 0 3px #BDBDBD;  
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4); 
+    -ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4);
+    behavior: url(http://localhost/thinkmao/Public/Common/css/ie-css3.htc);
 }
 #brand_div,#type_div{
     display: none;
@@ -181,6 +185,9 @@ input{
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);   
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px #BDBDBD;
+     filter:progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4); 
+    -ms-filter: progid:DXImageTransform.Microsoft.Shadow(color=#BDBDBD,direction=120,strength=4);
+    behavior: url(http://localhost/thinkmao/Public/Common/css/ie-css3.htc);
     
 }
 .bvalue{

@@ -5,6 +5,7 @@
     font: 14px/20px 微软雅黑;
     color:#555555;
     .font-weight: bold;
+    .font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -28,7 +29,7 @@ font-weight: bolder;
     font-size: 15px;
 }
 input,.inputstyle{
-  background-color: #ffffff;
+  background-color: #fff; 
   border: 1px solid #cccccc;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
@@ -44,6 +45,7 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
     padding: 2px 4px !important;
     padding: 2px 0px;
     height:20px;
+    
 }
 .gsubmit{
     width:60px;
@@ -107,6 +109,7 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+
 }
 .btn-info:hover,
 .btn-info:active,
@@ -136,6 +139,7 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+
 }
 .btn-success:hover,
 .btn-success:active,
@@ -170,6 +174,7 @@ transition: border linear 0.2s, box-shadow linear 0.2s;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+
 }
 .btn-danger:hover,
 .btn-danger:active,
@@ -233,6 +238,8 @@ i[class^="icon-"] {
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 10px #BDBDBD;
+
+   
 }
 .catename,.setype{
     -webkit-border-radius: 4px;
@@ -242,6 +249,8 @@ i[class^="icon-"] {
     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);   
     border-radius: 5px 5px 5px 5px;
     box-shadow: 0 0 3px #BDBDBD;
+   
+
 }
 .btn-primary {
     color:#fff;
@@ -309,6 +318,8 @@ i[class^="icon-"] {
     background-color: #fff;
     color:#36B2E5;
     margin-right: 5px;
+
+    
 }
 .current{
     padding: 5px 10px;
@@ -323,6 +334,8 @@ i[class^="icon-"] {
     background-color: #F5F5F5;
     color:#2071AC;
     margin-right: 5px;
+
+    
 }
 .attrtype li,.catelist li{
     display: inline-block;
@@ -341,6 +354,8 @@ border-radius: 3px;
 -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+
 }
 .catenum{
     padding: 7px 22px;
@@ -379,6 +394,8 @@ display:none;
 background-color: #fff;
 position: absolute;
 margin: 150px auto;
+
+
 }
 .outmes{
     width:360px;
@@ -395,6 +412,8 @@ display:none;
 background-color: #fff;
 position: absolute;
 margin: 150px auto;
+
+
 }
 .judgetitle h3{
      color:#317EAC;
@@ -407,6 +426,8 @@ margin: 150px auto;
     -webkit-border-radius: 6px 6px 0px 0px;
 -moz-border-radius: 6px 6px 0px 0px;
 border-radius: 6px 6px 0px 0px;
+
+
 }
 .judgetitle *{
     display: inline-block;
@@ -450,6 +471,7 @@ filter: alpha(opacity=20);
     -webkit-border-radius: 0px 0px 6px 6px;
 -moz-border-radius: 0px 0px 6px 6px;
 border-radius: 0px 0px 6px 6px;
+
 }
 .judgeend input{
     float: right;
@@ -468,6 +490,8 @@ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
    height:80px;
    width:300px;
    border: 2px solid #009A61;
+
+   
 }
 .endcpoint{     
     width: 30px;
