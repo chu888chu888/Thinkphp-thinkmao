@@ -94,7 +94,7 @@ abstract class Action {
      * @return void
      +----------------------------------------------------------
      */
-    protected function display($templateFile='',$charset='',$contentType='') {
+    protected function display($templateFile='',$charset='',$contentType='') {        
         $this->view->display($templateFile,$charset,$contentType);
     }
 

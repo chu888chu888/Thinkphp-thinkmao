@@ -33,9 +33,9 @@
 
 
 
-          $this->display("../Public/top");
-          $this ->display("../Public/lg_top");
-          $this ->display("../Public/endgoods");
+          $this->display("./Public/IndexTpl/top.html");
+          $this ->display("./Public/IndexTpl/lg_top.html");
+          $this ->display("./Public/IndexTpl/endgoods.html");
           }
       }
       /**

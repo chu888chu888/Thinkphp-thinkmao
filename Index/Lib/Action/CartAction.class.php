@@ -18,7 +18,7 @@ class CartAction extends Action {
               $goods_number = count($g_arr);
               $this->assign("goods_number",$goods_number);
               $this->assign('mes', $g_arr);
-              $this ->display("../Public/car");
+              $this ->display("./Public/IndexTpl/car.html");
    }
    /**
     * 格式化购物车商品信息

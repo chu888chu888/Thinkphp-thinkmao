@@ -174,6 +174,12 @@ class AddGoodAction extends CommonAction  {
 		}
 
      }
+     
+     
+    public function thumb_admin(){        
+    
+ }
+}
 
 
 }

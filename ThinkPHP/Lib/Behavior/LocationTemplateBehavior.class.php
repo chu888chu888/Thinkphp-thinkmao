@@ -18,6 +18,7 @@
 class LocationTemplateBehavior extends Behavior {
     // 行为扩展的执行入口必须是run
     public function run(&$templateFile){
+        
         // 自动定位模板文件
         if(!file_exists_case($templateFile))
             $templateFile   = $this->parseTemplateFile($templateFile);

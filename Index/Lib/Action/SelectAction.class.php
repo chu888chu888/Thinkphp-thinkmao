@@ -25,9 +25,9 @@
           $c_arr = $this->cates($_SESSION['cid']);
           $c_arr = array_reverse($c_arr,true);
           $this->assign("c_arr", $c_arr);
-          $this->display("../Public/top");
-          $this ->display("../Public/lg_top_1");
-          $this ->display("../Public/endgoods");
+          $this->display("./Public/IndexTpl/top.html");
+          $this ->display("./Public/IndexTpl/lg_top_1.html");
+          $this ->display("./Public/IndexTpl/endgoods.html");
          }
 
 /**

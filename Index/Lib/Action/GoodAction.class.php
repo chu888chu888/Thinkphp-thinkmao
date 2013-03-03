@@ -7,17 +7,10 @@
           $gid = $_GET['gid'];
           $num = get_all_number($gid);
           $data = get_goods_mes($gid);
-//           if (S('num')) {
-//              $num = S('num');
-//          } else {
-//              $num = get_all_number($gid);
-//              S('num', $num, 3600);
-//          }
-//          $data = $db->where(array('id'=>$gid))->find();
           $this->assign('gdata', $data);
           $this->assign("num",$num);
-          $this->display("../Public/top");
-          $this->display("../Public/test_good_guid");
+          $this->display("./Public/IndexTpl/top.html");
+          $this->display("./Public/IndexTpl/test_good_guid.html");
       }
       }
       /**

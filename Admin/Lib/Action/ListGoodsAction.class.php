@@ -8,6 +8,9 @@
          $show= $Page->show();
          $this->assign('page',$show);
          $goods = $goods_data->limit($Page->firstRow.','.$Page->listRows)->select();
+         foreach ($goods as $k=>$v){
+             $goods[$k]['pic_thumb']=thumb_admin($v['pic'],"100","100");
+         }
          $this->assign("goods",$goods);
          $this->display();
      }

@@ -24,5 +24,32 @@
         return $string;
     }
   }
+  
+  
+  function thumb_admin($url,$w,$h){      
+      $url = str_replace('\\','/', dirname(realpath("."))).$url;    
+      if(!is_file($url)){ 
+          return;
+      }
+      $basename = basename($url);
+      $url_thumb = str_replace('\\','/',realpath(".").'/Public/Admin/list_img_thumb/'.$basename);
+      if(is_file($url_thumb)){
+          return $url_thumb;
+      }
+      $str = trim(ltrim(strstr($basename, "."),"."));    
+      if($str=="jpg"){
+          $str = "jpeg";
+      }
+      $res = "imageCreateFrom".$str;
+      $img_res = $res($url);
+      list($width, $height) = getimagesize($url);
+      $thumb = imagecreatetruecolor($w,$h); 
+      imagefill($thumb,"#fff");
+      imagecopyresized($thumb, $img_res, 0, 0, 0, 0, $w,$h, $width, $height);
+      $img = "image".$str;      
+      $img($thumb,$url_thumb);
+      return str_replace(str_replace('\\','/', dirname(realpath("."))), "", $url_thumb);   
+         
+  }
 
 ?>

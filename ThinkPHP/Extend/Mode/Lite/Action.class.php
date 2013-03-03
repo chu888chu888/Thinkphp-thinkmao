@@ -321,7 +321,7 @@ abstract class Action {
      * @return mixed
      +----------------------------------------------------------
      */
-    public function display($templateFile='',$charset='',$contentType='') {
+    public function display($templateFile='',$charset='',$contentType='') {      
         G('viewStartTime');
         // 视图开始标签
         tag('view_begin',$templateFile);

@@ -27,9 +27,9 @@
               $goods_number = count($g_arr);
               $this->assign("goods_number",$goods_number);
               $this->assign('mes', $g_arr);
-          $this->display("../Public/pay_top");
-          $this->display("../Public/pay_start");
-          $this->display("../Public/end");
+          $this->display("./Public/IndexTpl/pay_top.html");
+          $this->display("./Public/IndexTpl/pay_start.html");
+          $this->display("./Public/IndexTpl/end.html");
       }
 
         /**
