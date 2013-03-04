@@ -1,3 +1,7 @@
+html {
+    /*这个可以让IE6下滚动时无抖动*/
+    background: url(about:black) no-repeat fixed
+}
 *{
     margin: 0px;
     padding:0px;

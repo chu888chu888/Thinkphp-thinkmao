@@ -34,7 +34,7 @@
       $basename = basename($url);
       $url_thumb = str_replace('\\','/',realpath(".").'/Public/Admin/list_img_thumb/'.$basename);
       if(is_file($url_thumb)){
-          return $url_thumb;
+           return str_replace(str_replace('\\','/', dirname(realpath("."))), "", $url_thumb); 
       }
       $str = trim(ltrim(strstr($basename, "."),"."));    
       if($str=="jpg"){
