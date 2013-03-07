@@ -357,8 +357,7 @@
     overflow: hidden;
     position: absolute;
     right: 10px;
-    top: 40%;
-    visibility: hidden;
+    top: 40%;   
     width: 7px;
     overflow: hidden;
     padding-right: 0px;
@@ -373,7 +372,7 @@
     left: 240px !important;
     left:238px;
     display: none;
-    z-index:3;
+    z-index:30;
 }
 #guid_box .list .getout ul{
     width: 218px;

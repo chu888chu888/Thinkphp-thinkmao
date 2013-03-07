@@ -22,8 +22,10 @@ $(function(){
         $(this).children(".list_head").children("div").css("background-image","url("+img_url+"/T1.png)");
         $(this).children("p").children("a").css("color","#fff");
         $(this).children(".lsmall").css("display","block");
-        if($.browser.msie){           
-            $(this).children('.getout').css("display","block").css("width","745px");  
+        if($.browser.msie){ 
+           
+            $(this).children('.getout').css("display","block").css("width","745px").css("height","600px").css("background-color","#ff0000");  
+            
         }else{
             $(this).children('.getout').css("display","block").animate({
                 width: '745px'

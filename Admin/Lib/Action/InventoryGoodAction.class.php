@@ -17,7 +17,7 @@
          	 		$invent += $value['inventory'];
          	 	}
          	 }
-             $arr[$v['id']]['inventnum'] = $invent;           
+             $arr[$v['id']]['inventnum'] = $invent;       
              $this->assign("goods_mes",$arr);                                   
              $this->display();
          }
